@@ -66,6 +66,7 @@ export async function POST(request: Request) {
       fuel_type: body.fuelType,
       transmission: body.transmission,
       engine_size: body.engineSize || null,
+      variant: body.variant || null,
       price: body.price,
       status: body.status,
       description: body.description,

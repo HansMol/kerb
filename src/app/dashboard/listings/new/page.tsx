@@ -394,6 +394,7 @@ const listingSchema = z.object({
   fuelType:     z.enum(FUEL_TYPES, { error: 'Select a fuel type' }),
   transmission: z.enum(['Manual', 'Automatic'] as const, { error: 'Select transmission' }),
   engineSize:   z.string().optional(),
+  variant:      z.string().optional(),
   price:        z.number({ error: 'Enter a valid price' }).min(500, 'Price must be at least £500'),
   status:       z.enum(['draft', 'live'] as const),
   description:  z.string().min(20, 'Please write at least 20 characters'),
@@ -649,6 +650,13 @@ export default function NewListingPage() {
                   />
                 </Field>
               </div>
+
+              <Field label="Variant" hint="Optional — e.g. 997, E46, W204, S-Line. Helps buyers identify the exact generation or trim.">
+                <TextInput
+                  {...register('variant')}
+                  placeholder="e.g. 997"
+                />
+              </Field>
 
               <div className="grid grid-cols-2 gap-4">
                 <Field label="Year" required error={errors.year?.message}>

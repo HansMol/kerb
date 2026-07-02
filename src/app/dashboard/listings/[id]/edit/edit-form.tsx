@@ -55,6 +55,7 @@ export function EditForm({ listing }: { listing: ListingRow }) {
     fuel_type: listing.fuel_type,
     transmission: listing.transmission,
     engine_size: listing.engine_size ?? '',
+    variant: listing.variant ?? '',
     mileage: listing.mileage.toString(),
     price: listing.price.toString(),
     status: listing.status,
@@ -200,6 +201,9 @@ export function EditForm({ listing }: { listing: ListingRow }) {
               </Field>
               <Field label="Engine size (optional)">
                 <input className={inputCls} placeholder="e.g. 2.0L" value={form.engine_size} onChange={e => set('engine_size', e.target.value)} />
+              </Field>
+              <Field label="Variant (optional)">
+                <input className={inputCls} placeholder="e.g. 997, E46, W204" value={form.variant} onChange={e => set('variant', e.target.value)} />
               </Field>
             </div>
           </div>

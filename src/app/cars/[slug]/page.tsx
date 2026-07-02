@@ -104,6 +104,7 @@ export default async function ListingDetailPage({ params }: { params: Promise<{ 
     { label: 'Body type', value: listing.body_type, icon: null },
     { label: 'Doors', value: listing.doors, icon: null },
     { label: 'Engine', value: listing.engine_size ?? '—', icon: null },
+    ...(listing.variant ? [{ label: 'Variant', value: listing.variant, icon: null }] : []),
     { label: 'Colour', value: listing.colour, icon: null },
   ]
 

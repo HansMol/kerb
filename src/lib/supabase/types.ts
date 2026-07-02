@@ -43,6 +43,7 @@ type ListingRow = {
   fuel_type: string
   transmission: string
   engine_size: string | null
+  variant: string | null
   price: number
   status: 'draft' | 'live' | 'sold' | 'archived'
   description: string

@@ -38,6 +38,7 @@ export async function PATCH(
   if ('fuel_type' in body)    updateData.fuel_type = body.fuel_type
   if ('transmission' in body) updateData.transmission = body.transmission
   if ('engine_size' in body)  updateData.engine_size = body.engine_size
+  if ('variant' in body)      updateData.variant = body.variant
   if ('price' in body)        updateData.price = body.price
   if ('status' in body)       updateData.status = body.status
   if ('description' in body)  updateData.description = body.description
