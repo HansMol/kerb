@@ -3,6 +3,26 @@ import { auth } from '@clerk/nextjs/server'
 import { NextResponse } from 'next/server'
 import { createServerClient } from '@/lib/supabase/server'
 
+async function generateSlug(
+  supabase: ReturnType<typeof createServerClient>,
+  businessName: string
+): Promise<string> {
+  const base = businessName
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '')
+
+  const { data } = await supabase.from('dealers').select('slug').eq('slug', base).maybeSingle()
+  if (!data) return base
+
+  for (let i = 2; i <= 99; i++) {
+    const candidate = `${base}-${i}`
+    const { data: d } = await supabase.from('dealers').select('slug').eq('slug', candidate).maybeSingle()
+    if (!d) return candidate
+  }
+  return `${base}-${Date.now()}`
+}
+
 export async function POST(request: Request) {
   const { userId } = await auth()
   if (!userId) {
@@ -73,6 +93,8 @@ export async function POST(request: Request) {
     }
   }
 
+  const slug = await generateSlug(supabase, body.businessName)
+
   const { data, error } = await supabase
     .from('dealers')
     .insert({
@@ -93,6 +115,7 @@ export async function POST(request: Request) {
       verified_via:     verifiedVia,
       status:           dealerStatus,
       plan:             body.plan ?? 'solo',
+      slug,
       stripe_customer_id: stripeCustomerId,
     })
     .select('id')
