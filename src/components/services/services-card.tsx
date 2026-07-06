@@ -1,7 +1,8 @@
+import type { ReactNode } from 'react'
 import { ExternalLink, ShieldCheck, CreditCard, Shield, Sparkles, Search } from 'lucide-react'
 
 interface Service {
-  icon: React.ReactNode
+  icon: ReactNode
   label: string
   description: string
   href: string
