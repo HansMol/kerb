@@ -5,27 +5,37 @@ import { useCallback } from 'react'
 import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { Input } from '@/components/ui/input'
-import { Button } from '@/components/ui/button'
 import { Separator } from '@/components/ui/separator'
 
+const sortOptions = [
+  { value: 'newest',      label: 'Most recent' },
+  { value: 'price_asc',   label: 'Price: low to high' },
+  { value: 'price_desc',  label: 'Price: high to low' },
+  { value: 'mileage_asc', label: 'Lowest mileage' },
+  { value: 'year_desc',   label: 'Age: newest first' },
+  { value: 'year_asc',    label: 'Age: oldest first' },
+]
+
 const bodyTypes = [
-  { value: 'hatchback', label: 'Hatchback' },
-  { value: 'saloon', label: 'Saloon' },
-  { value: 'estate', label: 'Estate' },
-  { value: 'suv', label: 'SUV / 4x4' },
-  { value: 'coupe', label: 'Coupe' },
+  { value: 'hatchback',   label: 'Hatchback' },
+  { value: 'saloon',      label: 'Saloon' },
+  { value: 'estate',      label: 'Estate' },
+  { value: 'suv',         label: 'SUV / 4x4' },
+  { value: 'coupe',       label: 'Coupe' },
   { value: 'convertible', label: 'Convertible' },
-  { value: 'mpv', label: 'MPV' },
+  { value: 'mpv',         label: 'MPV' },
 ]
+
 const fuelTypes = [
-  { value: 'petrol', label: 'Petrol' },
-  { value: 'diesel', label: 'Diesel' },
-  { value: 'hybrid', label: 'Hybrid' },
+  { value: 'petrol',         label: 'Petrol' },
+  { value: 'diesel',         label: 'Diesel' },
+  { value: 'hybrid',         label: 'Hybrid' },
   { value: 'plug_in_hybrid', label: 'Plug-in Hybrid' },
-  { value: 'electric', label: 'Electric' },
+  { value: 'electric',       label: 'Electric' },
 ]
+
 const transmissions = [
-  { value: 'manual', label: 'Manual' },
+  { value: 'manual',    label: 'Manual' },
   { value: 'automatic', label: 'Automatic' },
 ]
 
@@ -43,26 +53,46 @@ export function SearchFilters({ makes }: { makes: string[] }) {
     router.push(`/search?${params.toString()}`)
   }, [router, searchParams])
 
-  const clearAll = () => {
-    router.push('/search')
-  }
+  const clearAll = () => router.push('/search')
 
   const hasFilters = searchParams.toString().length > 0
 
   return (
     <aside className="w-full space-y-6">
       <div className="flex items-center justify-between">
-        <h2 className="font-semibold text-slate-900">Filters</h2>
+        <h2 className="font-semibold text-[#0A0A0F]">Filters</h2>
         {hasFilters && (
-          <button onClick={clearAll} className="text-sm text-slate-500 hover:text-slate-900 underline underline-offset-2">
+          <button onClick={clearAll} className="text-sm text-[#6E6E73] hover:text-[#0A0A0F] underline underline-offset-2">
             Clear all
           </button>
         )}
       </div>
 
       <div className="space-y-4">
+
+        {/* Sort */}
         <div>
-          <Label className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2 block">Make</Label>
+          <Label className="text-xs font-semibold text-[#A8AAB0] uppercase tracking-wider mb-2 block">Sort by</Label>
+          <Select
+            value={searchParams.get('sort') ?? 'newest'}
+            onValueChange={v => updateFilter('sort', v === 'newest' ? null : v)}
+          >
+            <SelectTrigger className="w-full">
+              <SelectValue placeholder="Most recent" />
+            </SelectTrigger>
+            <SelectContent>
+              {sortOptions.map(o => (
+                <SelectItem key={o.value} value={o.value}>{o.label}</SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
+
+        <Separator />
+
+        {/* Make */}
+        <div>
+          <Label className="text-xs font-semibold text-[#A8AAB0] uppercase tracking-wider mb-2 block">Make</Label>
           <Select
             value={searchParams.get('make') ?? 'any'}
             onValueChange={v => updateFilter('make', v)}
@@ -79,8 +109,9 @@ export function SearchFilters({ makes }: { makes: string[] }) {
 
         <Separator />
 
+        {/* Price */}
         <div>
-          <Label className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2 block">Price</Label>
+          <Label className="text-xs font-semibold text-[#A8AAB0] uppercase tracking-wider mb-2 block">Price</Label>
           <div className="flex gap-2 items-center">
             <Input
               placeholder="Min"
@@ -89,7 +120,7 @@ export function SearchFilters({ makes }: { makes: string[] }) {
               onBlur={e => updateFilter('minPrice', e.target.value)}
               className="text-sm"
             />
-            <span className="text-slate-400 text-sm">to</span>
+            <span className="text-[#A8AAB0] text-sm shrink-0">to</span>
             <Input
               placeholder="Max"
               type="number"
@@ -102,8 +133,9 @@ export function SearchFilters({ makes }: { makes: string[] }) {
 
         <Separator />
 
+        {/* Year */}
         <div>
-          <Label className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2 block">Year</Label>
+          <Label className="text-xs font-semibold text-[#A8AAB0] uppercase tracking-wider mb-2 block">Year</Label>
           <div className="flex gap-2 items-center">
             <Input
               placeholder="From"
@@ -112,7 +144,7 @@ export function SearchFilters({ makes }: { makes: string[] }) {
               onBlur={e => updateFilter('yearMin', e.target.value)}
               className="text-sm"
             />
-            <span className="text-slate-400 text-sm">to</span>
+            <span className="text-[#A8AAB0] text-sm shrink-0">to</span>
             <Input
               placeholder="To"
               type="number"
@@ -125,8 +157,9 @@ export function SearchFilters({ makes }: { makes: string[] }) {
 
         <Separator />
 
+        {/* Body type */}
         <div>
-          <Label className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2 block">Body Type</Label>
+          <Label className="text-xs font-semibold text-[#A8AAB0] uppercase tracking-wider mb-2 block">Body type</Label>
           <Select
             value={searchParams.get('bodyType') ?? 'any'}
             onValueChange={v => updateFilter('bodyType', v)}
@@ -143,8 +176,9 @@ export function SearchFilters({ makes }: { makes: string[] }) {
 
         <Separator />
 
+        {/* Fuel type */}
         <div>
-          <Label className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2 block">Fuel Type</Label>
+          <Label className="text-xs font-semibold text-[#A8AAB0] uppercase tracking-wider mb-2 block">Fuel type</Label>
           <Select
             value={searchParams.get('fuelType') ?? 'any'}
             onValueChange={v => updateFilter('fuelType', v)}
@@ -161,8 +195,9 @@ export function SearchFilters({ makes }: { makes: string[] }) {
 
         <Separator />
 
+        {/* Transmission */}
         <div>
-          <Label className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2 block">Transmission</Label>
+          <Label className="text-xs font-semibold text-[#A8AAB0] uppercase tracking-wider mb-2 block">Transmission</Label>
           <Select
             value={searchParams.get('transmission') ?? 'any'}
             onValueChange={v => updateFilter('transmission', v)}
@@ -179,8 +214,9 @@ export function SearchFilters({ makes }: { makes: string[] }) {
 
         <Separator />
 
+        {/* Seller type */}
         <div>
-          <Label className="text-xs font-semibold text-slate-500 uppercase tracking-wider mb-2 block">Seller</Label>
+          <Label className="text-xs font-semibold text-[#A8AAB0] uppercase tracking-wider mb-2 block">Seller</Label>
           <Select
             value={searchParams.get('sellerType') ?? 'any'}
             onValueChange={v => updateFilter('sellerType', v)}
@@ -195,6 +231,7 @@ export function SearchFilters({ makes }: { makes: string[] }) {
             </SelectContent>
           </Select>
         </div>
+
       </div>
     </aside>
   )
