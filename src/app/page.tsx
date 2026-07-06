@@ -113,6 +113,17 @@ export default async function HomePage() {
         )}
       </section>
 
+      {/* ── Real Kerb Appeal ── */}
+      <section className="bg-[#0A0A0F] px-6 sm:px-10 lg:px-20 py-20">
+        <div className="max-w-2xl">
+          <h2 className="text-[clamp(28px,4vw,48px)] font-light text-white leading-[1.1] tracking-[-0.02em] mb-6">
+            That one. The one you keep coming back to.
+          </h2>
+          <p className="text-[16px] text-[#6E6E73] font-light leading-relaxed">
+            You&apos;ve scrolled a hundred listings. But there&apos;s one you keep reopening. Trust that feeling. Not every car earns its spot on the kerb. Find the one that does.
+          </p>
+        </div>
+      </section>
 
 {/* ── Dealer CTA ── */}
       <section className="px-6 sm:px-10 lg:px-20 py-16 bg-white border-t border-[#E5E5E7]">
