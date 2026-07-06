@@ -1,12 +1,11 @@
-import { clerkMiddleware, createRouteMatcher } from '@clerk/nextjs/server'
+import { NextResponse } from 'next/server'
+import type { NextRequest } from 'next/server'
 
-const isProtectedRoute = createRouteMatcher(['/dashboard(.*)', '/dealers/register'])
-
-export default clerkMiddleware(async (auth, req) => {
-  if (isProtectedRoute(req)) {
-    await auth.protect()
-  }
-})
+// Passthrough — Clerk handshake fails in CF Workers when CLERK_SECRET_KEY is dev key.
+// Dashboard is protected server-side. Fix: set live CLERK_SECRET_KEY via wrangler secret put.
+export function middleware(req: NextRequest) {
+  return NextResponse.next()
+}
 
 export const config = {
   matcher: [

@@ -36,10 +36,10 @@ export default async function HomePage() {
             Real Kerb Appeal.
           </p>
           <h1 className="text-[clamp(36px,5vw,64px)] font-light text-white leading-[1.05] tracking-[-0.03em] mb-6">
-            Every car.<br />You choose.
+            Cars worth a second look.
           </h1>
           <p className="text-[16px] text-[#6E6E73] font-light leading-relaxed max-w-md mb-10">
-            Clean listings, verified dealers, direct contact. No sponsored slots, no platform inbox.
+            Every dealer verified. No sponsored slots. A direct line to the person selling — no middleman, no noise.
           </p>
 
           {/* Search bar */}
@@ -113,27 +113,8 @@ export default async function HomePage() {
         )}
       </section>
 
-      {/* ── Why Kerb ── */}
-      <section className="bg-[#0A0A0F] px-6 sm:px-10 lg:px-20 py-16">
-        <p className="text-[10px] font-semibold tracking-[0.16em] uppercase text-[#2A2A2E] mb-10">
-          What&apos;s different
-        </p>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 max-w-3xl">
-          {[
-            { stat: '£0',     label: 'To enquire',       sub: 'No reservation fees. No lead charges. Ever.' },
-            { stat: '100%',   label: 'Verified dealers', sub: 'Every dealer checked through Companies House before listing.' },
-            { stat: 'Direct', label: 'Contact always',   sub: 'You call the dealer. No platform inbox, no middleman.' },
-          ].map(({ stat, label, sub }) => (
-            <div key={label}>
-              <p className="text-[clamp(32px,4vw,48px)] font-light text-white leading-none tracking-[-0.03em] mb-2">{stat}</p>
-              <p className="text-[#C4C6CC] text-[13px] font-medium mb-1">{label}</p>
-              <p className="text-[#6E6E73] text-[12px] leading-relaxed">{sub}</p>
-            </div>
-          ))}
-        </div>
-      </section>
 
-      {/* ── Dealer CTA ── */}
+{/* ── Dealer CTA ── */}
       <section className="px-6 sm:px-10 lg:px-20 py-16 bg-white border-t border-[#E5E5E7]">
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 max-w-4xl">
           <div>
