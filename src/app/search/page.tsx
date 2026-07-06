@@ -29,7 +29,7 @@ export default async function SearchPage({
   const params = await searchParams
   const {
     q, make, bodyType, fuelType, transmission, sellerType, sort,
-    minPrice, maxPrice, yearMin, yearMax,
+    minPrice, maxPrice, yearMin, yearMax, minMileage, maxMileage,
   } = params
 
   const supabase = createServerClient()
@@ -56,8 +56,10 @@ export default async function SearchPage({
   if (transmission) query = query.ilike('transmission', transmission)
   if (minPrice)     query = query.gte('price', parseInt(minPrice))
   if (maxPrice)     query = query.lte('price', parseInt(maxPrice))
-  if (yearMin)      query = query.gte('year', parseInt(yearMin))
-  if (yearMax)      query = query.lte('year', parseInt(yearMax))
+  if (yearMin)       query = query.gte('year', parseInt(yearMin))
+  if (yearMax)       query = query.lte('year', parseInt(yearMax))
+  if (minMileage)    query = query.gte('mileage', parseInt(minMileage))
+  if (maxMileage)    query = query.lte('mileage', parseInt(maxMileage))
   if (sellerType === 'dealer')  query = query.not('dealer_id', 'is', null)
   if (sellerType === 'private') query = query.is('dealer_id', null)
 

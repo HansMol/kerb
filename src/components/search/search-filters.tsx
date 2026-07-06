@@ -114,7 +114,8 @@ export function SearchFilters({ makes }: { makes: string[] }) {
           <Label className="text-xs font-semibold text-[#A8AAB0] uppercase tracking-wider mb-2 block">Price</Label>
           <div className="flex gap-2 items-center">
             <Input
-              placeholder="Min"
+              key={`minPrice-${searchParams.get('minPrice') ?? ''}`}
+              placeholder="Min £"
               type="number"
               defaultValue={searchParams.get('minPrice') ?? ''}
               onBlur={e => updateFilter('minPrice', e.target.value)}
@@ -122,7 +123,8 @@ export function SearchFilters({ makes }: { makes: string[] }) {
             />
             <span className="text-[#A8AAB0] text-sm shrink-0">to</span>
             <Input
-              placeholder="Max"
+              key={`maxPrice-${searchParams.get('maxPrice') ?? ''}`}
+              placeholder="Max £"
               type="number"
               defaultValue={searchParams.get('maxPrice') ?? ''}
               onBlur={e => updateFilter('maxPrice', e.target.value)}
@@ -138,6 +140,7 @@ export function SearchFilters({ makes }: { makes: string[] }) {
           <Label className="text-xs font-semibold text-[#A8AAB0] uppercase tracking-wider mb-2 block">Year</Label>
           <div className="flex gap-2 items-center">
             <Input
+              key={`yearMin-${searchParams.get('yearMin') ?? ''}`}
               placeholder="From"
               type="number"
               defaultValue={searchParams.get('yearMin') ?? ''}
@@ -146,10 +149,37 @@ export function SearchFilters({ makes }: { makes: string[] }) {
             />
             <span className="text-[#A8AAB0] text-sm shrink-0">to</span>
             <Input
+              key={`yearMax-${searchParams.get('yearMax') ?? ''}`}
               placeholder="To"
               type="number"
               defaultValue={searchParams.get('yearMax') ?? ''}
               onBlur={e => updateFilter('yearMax', e.target.value)}
+              className="text-sm"
+            />
+          </div>
+        </div>
+
+        <Separator />
+
+        {/* Mileage */}
+        <div>
+          <Label className="text-xs font-semibold text-[#A8AAB0] uppercase tracking-wider mb-2 block">Mileage</Label>
+          <div className="flex gap-2 items-center">
+            <Input
+              key={`minMileage-${searchParams.get('minMileage') ?? ''}`}
+              placeholder="Min"
+              type="number"
+              defaultValue={searchParams.get('minMileage') ?? ''}
+              onBlur={e => updateFilter('minMileage', e.target.value)}
+              className="text-sm"
+            />
+            <span className="text-[#A8AAB0] text-sm shrink-0">to</span>
+            <Input
+              key={`maxMileage-${searchParams.get('maxMileage') ?? ''}`}
+              placeholder="Max"
+              type="number"
+              defaultValue={searchParams.get('maxMileage') ?? ''}
+              onBlur={e => updateFilter('maxMileage', e.target.value)}
               className="text-sm"
             />
           </div>
