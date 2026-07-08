@@ -9,6 +9,8 @@ export const metadata: Metadata = {
   description: 'Detailing, storage, mechanics, transport, and photography services for classic and prestige car owners.',
 }
 
+export const dynamic = 'force-dynamic'
+
 const CATEGORY_LABELS: Record<AdvertiserCategory, string> = {
   detailing_protection: 'Detailing & Protection',
   storage: 'Storage',
