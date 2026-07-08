@@ -76,7 +76,20 @@ type AdvertiserClickRow = {
   clicked_at: string
 }
 
-export type { DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate, AdvertiserRow, AdvertiserClickRow }
+type AdvertiserApplicationRow = {
+  id: string
+  business_name: string
+  website: string
+  contact_name: string
+  email: string
+  phone: string | null
+  what_they_offer: string
+  why_relevant: string | null
+  status: 'pending' | 'approved' | 'rejected'
+  created_at: string
+}
+
+export type { DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate, AdvertiserRow, AdvertiserClickRow, AdvertiserApplicationRow }
 
 export type Database = {
   public: {
@@ -105,6 +118,12 @@ export type Database = {
         Row: AdvertiserRow
         Insert: Omit<AdvertiserRow, 'id' | 'created_at'>
         Update: Partial<Omit<AdvertiserRow, 'id' | 'created_at'>>
+        Relationships: []
+      }
+      advertiser_applications: {
+        Row: AdvertiserApplicationRow
+        Insert: Omit<AdvertiserApplicationRow, 'id' | 'created_at' | 'status'> & Partial<Pick<AdvertiserApplicationRow, 'status'>>
+        Update: Partial<Pick<AdvertiserApplicationRow, 'status'>>
         Relationships: []
       }
       advertiser_clicks: {

@@ -102,6 +102,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                   <p className="font-semibold text-[#0A0A0F]">Dealers</p>
                   <a href="/dealers/join" className="block text-[#6E6E73] hover:text-[#0A0A0F] transition-colors">Why Kerb</a>
                   <a href="/dealers/register" className="block text-[#6E6E73] hover:text-[#0A0A0F] transition-colors">List your cars</a>
+                  <a href="/advertise" className="block text-[#6E6E73] hover:text-[#0A0A0F] transition-colors">Advertise</a>
                 </div>
                 <div className="space-y-2">
                   <p className="font-semibold text-[#0A0A0F]">Company</p>
