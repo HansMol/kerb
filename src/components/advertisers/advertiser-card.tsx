@@ -5,12 +5,12 @@ interface Props {
 }
 
 export function AdvertiserCard({ advertiser }: Props) {
-  const { name, tagline, logo_url, cta_text, cta_url } = advertiser
+  const { id, name, tagline, logo_url, cta_text } = advertiser
   const initials = name.split(' ').map(w => w[0]).slice(0, 2).join('')
 
   return (
     <a
-      href={cta_url}
+      href={`/api/advertisers/${id}/click`}
       target="_blank"
       rel="noopener noreferrer"
       className="flex items-center gap-4 bg-white border border-[#E5E5E7] rounded-md p-4 hover:border-[#A0714A] transition-colors group"

@@ -70,7 +70,13 @@ type AdvertiserRow = {
   created_at: string
 }
 
-export type { DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate, AdvertiserRow }
+type AdvertiserClickRow = {
+  id: string
+  advertiser_id: string
+  clicked_at: string
+}
+
+export type { DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate, AdvertiserRow, AdvertiserClickRow }
 
 export type Database = {
   public: {
@@ -100,6 +106,20 @@ export type Database = {
         Insert: Omit<AdvertiserRow, 'id' | 'created_at'>
         Update: Partial<Omit<AdvertiserRow, 'id' | 'created_at'>>
         Relationships: []
+      }
+      advertiser_clicks: {
+        Row: AdvertiserClickRow
+        Insert: Omit<AdvertiserClickRow, 'id' | 'clicked_at'>
+        Update: never
+        Relationships: [
+          {
+            foreignKeyName: 'advertiser_clicks_advertiser_id_fkey'
+            columns: ['advertiser_id']
+            isOneToOne: false
+            referencedRelation: 'advertisers'
+            referencedColumns: ['id']
+          }
+        ]
       }
     }
     Views: Record<string, never>
