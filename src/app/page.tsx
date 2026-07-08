@@ -117,7 +117,7 @@ export default async function HomePage() {
       {/* ── Partner advertisers ── */}
       <section className="bg-[#F8F8FA] border-t border-b border-[#E5E5E7] px-4 sm:px-6 lg:px-8 py-8">
         <div className="max-w-7xl mx-auto">
-          <AdvertiserStrip placement="homepage" />
+          <AdvertiserStrip />
         </div>
       </section>
 

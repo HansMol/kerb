@@ -6,6 +6,29 @@ export const metadata: Metadata = {
   description: 'Reach buyers the moment they are deciding. Advertise your automotive service on Kerb — the UK marketplace for classic and prestige car buyers.',
 }
 
+const HOW_IT_WORKS = [
+  {
+    step: '01',
+    title: 'Apply',
+    body: 'A two-minute form. Tell us what your business does and why it matters to Kerb buyers.',
+  },
+  {
+    step: '02',
+    title: 'We review it personally',
+    body: 'Every application is read by a real person — not auto-approved. Most hear back within one working day.',
+  },
+  {
+    step: '03',
+    title: "You're live within 24 hours",
+    body: 'Approved advertisers appear on the homepage and on relevant car listing pages the same day, or the next.',
+  },
+  {
+    step: '04',
+    title: 'Every click tracked, reported monthly',
+    body: 'We log every referral with a timestamp. You see exactly how many buyers Kerb sent your way — no impressions, no guesswork.',
+  },
+]
+
 const PLACEMENTS = [
   {
     label: 'Homepage',
@@ -13,9 +36,9 @@ const PLACEMENTS = [
     body: 'Your brand is on the Kerb homepage alongside car listings. Every visitor — whether browsing, searching, or returning — passes your placement.',
   },
   {
-    label: 'Car Detail',
-    title: 'Shown at the moment of decision.',
-    body: "When a buyer is viewing a specific car — the highest-intent moment in their journey — your ad appears on the listing page. Not before they arrive. Not after they leave.",
+    label: 'Services Directory',
+    title: 'Findable exactly when it matters.',
+    body: "Every car listing links to our services directory — where buyers go when they need detailing, storage, mechanics, transport, or photography. Your listing appears there, grouped by category.",
   },
   {
     label: 'Click Tracking',
@@ -27,9 +50,6 @@ const PLACEMENTS = [
 const WHO = [
   'Car detailing and protection services',
   'Classic and prestige car storage',
-  'Car history and provenance checks',
-  'Insurance specialists',
-  'Finance providers',
   'Mechanics, MOT centres, and service garages',
   'Car transporters and logistics',
   'Photography and valuation services',
@@ -59,13 +79,13 @@ export default function AdvertisePage() {
             <span className="text-[#C4C6CC]">is looking at a car right now.</span>
           </h1>
           <p className="text-[18px] text-[#6E6E73] leading-[1.75] max-w-[540px] mb-13">
-            Kerb is a marketplace for classic and prestige car buyers — people actively spending money on vehicles. Your service reaches them at the exact moment they are deciding.
+            Kerb is a marketplace for classic and prestige car buyers — people actively spending money on vehicles. Your brand reaches them on the homepage, and stays findable in our services directory for as long as they own the car.
           </p>
           <div className="flex gap-4 flex-wrap">
             <Link href="/advertise/apply" className="bg-[#A0714A] hover:bg-[#8A6040] text-white text-[14px] font-semibold tracking-[0.04em] px-8 py-4 rounded-md transition-colors">
               Apply to advertise
             </Link>
-            <a href="#placements" className="text-[#6E6E73] hover:text-white text-[14px] font-medium py-4 transition-colors flex items-center gap-2">
+            <a href="#how-it-works" className="text-[#6E6E73] hover:text-white text-[14px] font-medium py-4 transition-colors flex items-center gap-2">
               See how it works →
             </a>
           </div>
@@ -86,6 +106,26 @@ export default function AdvertisePage() {
         </div>
       </section>
 
+      {/* ── How it works ── */}
+      <section className="bg-white px-6 sm:px-10 lg:px-16 py-[72px] border-b border-[#E5E5E7]" id="how-it-works">
+        <SectionLabel light>How it works</SectionLabel>
+        <h2 className="text-[clamp(32px,3.5vw,48px)] font-normal text-[#0A0A0F] leading-[1.15] tracking-[-0.01em] max-w-[640px] mb-4">
+          Apply, get approved, go live. That&apos;s it.
+        </h2>
+        <p className="text-[17px] text-[#6E6E73] leading-[1.75] max-w-[600px] mb-16">
+          No ad platform to configure, no self-serve dashboard to fight with. We set up your placement and hand you the numbers.
+        </p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+          {HOW_IT_WORKS.map(({ step, title, body }) => (
+            <div key={step}>
+              <p className="text-[13px] font-semibold tracking-[0.08em] text-[#A0714A] mb-3">{step}</p>
+              <h3 className="text-[17px] font-semibold text-[#0A0A0F] leading-[1.3] mb-2.5">{title}</h3>
+              <p className="text-[14px] text-[#6E6E73] leading-[1.7]">{body}</p>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* ── Placements ── */}
       <section className="bg-white px-6 sm:px-10 lg:px-16 py-[72px]" id="placements">
         <SectionLabel light>What you get</SectionLabel>
@@ -93,7 +133,7 @@ export default function AdvertisePage() {
           Three things. No filler.
         </h2>
         <p className="text-[17px] text-[#6E6E73] leading-[1.75] max-w-[600px] mb-16">
-          Your brand appears in two places on Kerb — the homepage and every car listing page. Every click to your website is tracked and reported.
+          Your brand appears in two places on Kerb — the homepage, and our services directory, linked from every car listing page. Every click to your website is tracked and reported.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-px bg-[#E5E5E7] border border-[#E5E5E7] rounded-lg overflow-hidden">
           {PLACEMENTS.map(({ label, title, body }) => (
@@ -114,7 +154,7 @@ export default function AdvertisePage() {
             If your business serves car buyers or owners, this is your audience.
           </h2>
           <p className="text-[16px] text-[#6E6E73] leading-[1.8]">
-            Kerb buyers are purchasing classic, prestige, and performance vehicles. They spend on protecting, maintaining, financing, and insuring those vehicles — often before the car is even collected.
+            Kerb buyers are purchasing classic, prestige, and performance vehicles. They spend on protecting, maintaining, and storing those vehicles for as long as they own them.
           </p>
         </div>
         <ul className="flex flex-col divide-y divide-[#E5E5E7] mt-2">
@@ -129,46 +169,40 @@ export default function AdvertisePage() {
             </li>
           ))}
         </ul>
+        <p className="lg:col-span-2 text-[13px] text-[#A8AAB0] mt-2">
+          Insurance, finance, and vehicle history checks are handled as direct partnerships, not through this application — if that&apos;s you, get in touch separately.
+        </p>
       </section>
 
       {/* ── Pricing ── */}
       <section className="px-6 sm:px-10 lg:px-16 py-[72px]" id="pricing">
-        <SectionLabel>Pricing</SectionLabel>
+        <SectionLabel>Founding advertiser rate</SectionLabel>
         <h2 className="text-[clamp(32px,3.5vw,48px)] font-normal text-white leading-[1.15] tracking-[-0.01em] max-w-[640px] mb-4">
-          Fair now. Scales with us.
+          Free while we build the audience.
         </h2>
         <p className="text-[17px] text-[#6E6E73] leading-[1.75] max-w-[600px] mb-16">
-          We&apos;re building this together. That means we start at a price you can justify without thinking, and we renegotiate as traffic and referral volume grows.
+          Kerb is newly launched. The first advertisers on the platform pay nothing — placement is free until Kerb has real, provable traffic to sell.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-14">
-          {[
-            {
-              phase: 'Phase 01 — Now',
-              title: 'Free until your first referral.',
-              body: "Your listing goes live. No charge until Kerb sends your first click-through. Once that happens, we agree a monthly rate together. No surprises.",
-            },
-            {
-              phase: 'Phase 02 — As we grow',
-              title: 'Low flat monthly rate.',
-              body: 'A fixed fee that reflects what the platform actually delivers — transparent, predictable, easy to justify on a spreadsheet. You will have real referral data before you pay a penny.',
-            },
-            {
-              phase: 'Phase 03 — At scale',
-              title: 'Cost-per-lead. Tied to outcomes.',
-              body: "As Kerb scales and we can attribute buyer intent with confidence, we move to cost-per-lead pricing. You pay for qualified interest, not impressions. That's the direction we're building toward.",
-            },
-          ].map(({ phase, title, body }) => (
-            <div key={phase} className="bg-[#0F0F14] border border-[#1C1C1E] rounded-xl p-8">
-              <p className="text-[11px] font-semibold tracking-[0.1em] uppercase text-[#C4C6CC] mb-5">{phase}</p>
-              <h3 className="text-[18px] font-medium text-white leading-[1.3] mb-3">{title}</h3>
-              <p className="text-[14px] text-[#6E6E73] leading-[1.7]">{body}</p>
-            </div>
-          ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
+          <div className="bg-[#0F0F14] border border-[#1C1C1E] rounded-xl p-8">
+            <p className="text-[11px] font-semibold tracking-[0.1em] uppercase text-[#C4C6CC] mb-5">Now — founding period</p>
+            <h3 className="text-[18px] font-medium text-white leading-[1.3] mb-3">Free placement. No cost, no card required.</h3>
+            <p className="text-[14px] text-[#6E6E73] leading-[1.7]">
+              Apply, get approved, go live — at no charge. This is a genuine early-access rate, not a trial that quietly starts billing.
+            </p>
+          </div>
+          <div className="bg-[#0F0F14] border border-[#1C1C1E] rounded-xl p-8">
+            <p className="text-[11px] font-semibold tracking-[0.1em] uppercase text-[#C4C6CC] mb-5">At threshold — standard rate</p>
+            <h3 className="text-[18px] font-medium text-white leading-[1.3] mb-3">Kicks in the moment Kerb proves its traffic.</h3>
+            <p className="text-[14px] text-[#6E6E73] leading-[1.7]">
+              The founding rate ends as soon as either happens first: Kerb reaches 5,000 visitors in a month, or your placement generates 50 referral clicks in a month. Whichever comes first, for everyone.
+            </p>
+          </div>
         </div>
 
         <p className="text-[14px] text-[#6E6E73] max-w-[540px]">
-          We do not sell impressions. We do not charge for eyeballs you cannot verify. Every pricing conversation starts with the click data we can show you.
+          We will tell you before the rate changes, not after — no surprise invoices. And we do not sell impressions: every pricing conversation starts with the click data we can show you.
         </p>
       </section>
 

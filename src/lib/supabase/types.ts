@@ -56,6 +56,8 @@ type ListingRow = {
 type ListingInsert = Omit<ListingRow, 'id' | 'created_at' | 'updated_at'>
 type ListingUpdate = Partial<ListingInsert>
 
+type AdvertiserCategory = 'detailing_protection' | 'storage' | 'mechanic_mot' | 'transport' | 'photography_valuation'
+
 type AdvertiserRow = {
   id: string
   name: string
@@ -63,8 +65,8 @@ type AdvertiserRow = {
   logo_url: string | null
   cta_text: string
   cta_url: string
+  category: AdvertiserCategory
   show_on_homepage: boolean
-  show_on_detail: boolean
   active: boolean
   display_order: number
   created_at: string
@@ -83,13 +85,14 @@ type AdvertiserApplicationRow = {
   contact_name: string
   email: string
   phone: string | null
+  category: AdvertiserCategory | null
   what_they_offer: string
   why_relevant: string | null
   status: 'pending' | 'approved' | 'rejected'
   created_at: string
 }
 
-export type { DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate, AdvertiserRow, AdvertiserClickRow, AdvertiserApplicationRow }
+export type { DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate, AdvertiserCategory, AdvertiserRow, AdvertiserClickRow, AdvertiserApplicationRow }
 
 export type Database = {
   public: {

@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react'
-import { ExternalLink, ShieldCheck, CreditCard, Shield, Sparkles, Search } from 'lucide-react'
+import Link from 'next/link'
+import { ExternalLink, ShieldCheck, CreditCard, Shield, ArrowRight } from 'lucide-react'
 
 interface Service {
   icon: ReactNode
@@ -24,7 +25,7 @@ export function ServicesCard({ make, model, year }: Props) {
       icon: <ShieldCheck size={16} />,
       label: 'Vehicle history check',
       description: 'Check for finance, write-offs, stolen status, and mileage discrepancies.',
-      href: 'https://www.hpicheck.com', // TODO: replace with affiliate link
+      href: 'https://www.carvertical.com', // TODO: replace with CarVertical affiliate link once signed up
       highlight: true,
       badge: 'Recommended',
     },
@@ -32,25 +33,13 @@ export function ServicesCard({ make, model, year }: Props) {
       icon: <CreditCard size={16} />,
       label: 'Finance this car',
       description: 'Get a quote in minutes. No impact on your credit score.',
-      href: 'https://www.zuto.com', // TODO: replace with affiliate link
+      href: 'https://www.zuto.com', // TODO: replace with prequalifying partner link
     },
     {
       icon: <Shield size={16} />,
       label: 'Insure this car',
       description: 'Compare quotes from 100+ insurers. Takes 3 minutes.',
-      href: 'https://www.comparethemarket.com/car-insurance', // TODO: replace with affiliate link
-    },
-    {
-      icon: <Sparkles size={16} />,
-      label: 'Book a professional detail',
-      description: `IGL Aegis graphene protection for your ${make} — professional applied.`,
-      href: 'https://ice-clean-works.com', // TODO: update with live ICW domain
-    },
-    {
-      icon: <Search size={16} />,
-      label: 'Pre-purchase inspection',
-      description: 'Independent engineer check before you commit.',
-      href: 'https://www.theaa.com/car-services/inspection', // TODO: replace with affiliate link
+      href: 'https://www.comparethemarket.com/car-insurance', // TODO: replace with prequalifying partner link
     },
   ]
 
@@ -92,6 +81,14 @@ export function ServicesCard({ make, model, year }: Props) {
           </a>
         ))}
       </div>
+
+      <Link
+        href="/services"
+        className="flex items-center justify-between gap-2 mt-2 p-3 rounded-md text-sm font-medium text-[#0A0A0F] hover:bg-[#F8F8FA] transition-colors group"
+      >
+        More services for this car
+        <ArrowRight size={14} className="text-[#A8AAB0] group-hover:text-[#A0714A] transition-colors" />
+      </Link>
 
       <p className="text-[10px] text-[#A8AAB0] mt-4 text-center">
         Some links are affiliate links. Kerb may earn a small commission at no cost to you.

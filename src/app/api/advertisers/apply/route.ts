@@ -1,6 +1,19 @@
 import { NextRequest } from 'next/server'
 import { Resend } from 'resend'
 import { createServerClient } from '@/lib/supabase/server'
+import type { AdvertiserCategory } from '@/lib/supabase/types'
+
+const VALID_CATEGORIES: AdvertiserCategory[] = [
+  'detailing_protection', 'storage', 'mechanic_mot', 'transport', 'photography_valuation',
+]
+
+const CATEGORY_LABELS: Record<AdvertiserCategory, string> = {
+  detailing_protection: 'Detailing & Protection',
+  storage: 'Storage',
+  mechanic_mot: 'Mechanics & MOT',
+  transport: 'Transport & Logistics',
+  photography_valuation: 'Photography & Valuation',
+}
 
 function esc(s: string): string {
   return s
@@ -18,14 +31,19 @@ export async function POST(req: NextRequest) {
     contactName: string
     email: string
     phone?: string
+    category: string
     whatTheyOffer: string
     whyRelevant?: string
   }
 
-  const { businessName, website, contactName, email, phone, whatTheyOffer, whyRelevant } = body
+  const { businessName, website, contactName, email, phone, category, whatTheyOffer, whyRelevant } = body
 
   if (!businessName?.trim() || !website?.trim() || !contactName?.trim() || !email?.trim() || !whatTheyOffer?.trim()) {
     return Response.json({ error: 'Missing required fields' }, { status: 400 })
+  }
+
+  if (!VALID_CATEGORIES.includes(category as AdvertiserCategory)) {
+    return Response.json({ error: 'Invalid category' }, { status: 400 })
   }
 
   if (
@@ -45,6 +63,7 @@ export async function POST(req: NextRequest) {
       contact_name: contactName.trim(),
       email: email.trim(),
       phone: phone?.trim() || null,
+      category: category as AdvertiserCategory,
       what_they_offer: whatTheyOffer.trim(),
       why_relevant: whyRelevant?.trim() || null,
     })
@@ -73,7 +92,8 @@ export async function POST(req: NextRequest) {
             <tr><td style="padding:8px 0;border-bottom:1px solid #E5E5E7;color:#6E6E73">Website</td><td style="padding:8px 0;border-bottom:1px solid #E5E5E7"><a href="${esc(website)}" style="color:#0A0A0F">${esc(website)}</a></td></tr>
             <tr><td style="padding:8px 0;border-bottom:1px solid #E5E5E7;color:#6E6E73">Contact</td><td style="padding:8px 0;border-bottom:1px solid #E5E5E7">${esc(contactName)}</td></tr>
             <tr><td style="padding:8px 0;border-bottom:1px solid #E5E5E7;color:#6E6E73">Email</td><td style="padding:8px 0;border-bottom:1px solid #E5E5E7"><a href="mailto:${esc(email)}" style="color:#0A0A0F">${esc(email)}</a></td></tr>
-            <tr><td style="padding:8px 0;color:#6E6E73">Phone</td><td style="padding:8px 0">${esc(phone ?? 'Not provided')}</td></tr>
+            <tr><td style="padding:8px 0;border-bottom:1px solid #E5E5E7;color:#6E6E73">Phone</td><td style="padding:8px 0;border-bottom:1px solid #E5E5E7">${esc(phone ?? 'Not provided')}</td></tr>
+            <tr><td style="padding:8px 0;color:#6E6E73">Category</td><td style="padding:8px 0">${esc(CATEGORY_LABELS[category as AdvertiserCategory])}</td></tr>
           </table>
 
           <p style="color:#6E6E73;font-size:13px;margin-bottom:4px">What they offer</p>

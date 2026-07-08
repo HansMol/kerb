@@ -1,19 +1,14 @@
 import { createServerClient } from '@/lib/supabase/server'
 import { AdvertiserCard } from './advertiser-card'
 
-interface Props {
-  placement: 'homepage' | 'detail'
-}
-
-export async function AdvertiserStrip({ placement }: Props) {
+export async function AdvertiserStrip() {
   const supabase = createServerClient()
-  const column = placement === 'homepage' ? 'show_on_homepage' : 'show_on_detail'
 
   const { data } = await supabase
     .from('advertisers')
     .select('*')
     .eq('active', true)
-    .eq(column, true)
+    .eq('show_on_homepage', true)
     .order('display_order', { ascending: true })
 
   if (!data || data.length === 0) return null

@@ -1,6 +1,6 @@
 # Kerb — Functional Specification
 
-*Last updated: 2026-07-01 (rev 5 — public search excludes photo-less listings)*
+*Last updated: 2026-07-08 (rev 6 — advertiser marketplace + services directory)*
 
 ---
 
@@ -89,6 +89,37 @@ Multi-step wizard:
 
 ---
 
+## Advertiser marketplace & services
+
+Two distinct systems, deliberately kept apart:
+
+### 1. Curated functional services (car detail page)
+`ServicesCard` on every car detail page — three fixed rows, each a single Kerb-chosen partner, monetised by affiliate/referral commission:
+- **Vehicle history check** → CarVertical (pending affiliate signup; placeholder link live)
+- **Finance this car** → prequalifying partner link
+- **Insure this car** → prequalifying partner link
+
+These are not open advertiser slots and are not solicited via `/advertise` — Hans sets up each partnership directly. Reason: this is the placement earmarked for a future auction/bid facility (Carwow-style, multiple finance/insurance providers competing for the lead). Advertising it as a self-serve category now would create expectations for a program that's intentionally temporary.
+
+A fourth row, **"More services for this car,"** links to `/services`.
+
+### 2. Open advertiser marketplace (homepage + `/services`)
+Businesses apply via `/advertise/apply`, reviewed manually, stored in Supabase `advertisers` table. Categories (`AdvertiserCategory`): `detailing_protection`, `storage`, `mechanic_mot`, `transport`, `photography_valuation`. Insurance, finance, and history checks are excluded from this taxonomy — they belong to the curated system above.
+
+Placement:
+- **Homepage** — `AdvertiserStrip` component, `show_on_homepage = true`
+- **`/services`** — buyer-facing directory, grouped by category, all active advertisers regardless of homepage flag, plus the static pre-purchase inspection entry
+
+Not shown on the car detail page directly — that placement doesn't scale past a couple of advertisers and was replaced by the `/services` link.
+
+### Pricing — founding advertiser rate
+- **Now:** free placement, no cost, no card
+- **At threshold:** standard rate begins the moment either happens first — Kerb reaches 5,000 monthly visitors, or a single advertiser's placement generates 50 referral clicks in a month (numbers are placeholders pending real traffic data; not yet enforced in code — no site-wide analytics table exists)
+- Applies to all advertisers at once when it triggers — no permanent founding-rate lock-in
+- Click-through tracking (`advertiser_clicks` table) already live; visitor-count tracking does not exist yet
+
+---
+
 ## Business rules
 
 - Dealers must be Companies House verified (or manually approved) before listings go live
@@ -147,6 +178,8 @@ Organic search results are ordered by relevance and recency only. No dealer can 
 - Companies House monthly monitoring cron + Resend alert email
 - Dealer acquisition landing page with screenshots
 - Security hardening: auth on all API routes, HTML injection prevention, server-side verification, file type validation (30 Jun 2026)
+- Advertiser marketplace: `/advertise` pitch page, `/advertise/apply` form (category select, Resend notification), homepage placement, click tracking
+- Services directory: `/services` hub page grouped by category, curated 3-row `ServicesCard` on car detail pages (history check, finance, insurance)
 
 ---
 
@@ -158,9 +191,10 @@ Organic search results are ordered by relevance and recency only. No dealer can 
 | Buyer-facing dealer directory / dealer profile page | P1 | `/dealers` currently shows acquisition page |
 | Spotlight feature (dashboard + dealer profile + homepage) | P1 | Schema ready — `spotlighted` column exists |
 | Admin panel | P2 | Currently managed via Supabase dashboard |
-| Vehicle history check (HPI) | P2 | Q1 2027 |
-| Finance introduction flow | P3 | 2027 |
-| Insurance referrals | P3 | 2027 |
+| CarVertical affiliate signup | P1 | `ServicesCard` history-check link is a placeholder until Hans signs up |
+| Finance/insurance prequalifying partners | P1 | `ServicesCard` links are placeholders (Zuto, CompareTheMarket) pending real partner deals |
+| Founding advertiser rate enforcement | P2 | Threshold (5,000 visitors / 50 clicks) is policy only — no site-wide analytics table or automated rate switch yet |
+| Auction/bid facility for finance, insurance, history checks | P3 | Carwow-style — replaces the single curated partner per slot once volume justifies it |
 
 ---
 

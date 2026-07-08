@@ -21,6 +21,7 @@ export default function AdvertiseApplyPage() {
       contactName:    (form.elements.namedItem('contactName')     as HTMLInputElement).value,
       email:          (form.elements.namedItem('email')           as HTMLInputElement).value,
       phone:          (form.elements.namedItem('phone')           as HTMLInputElement).value,
+      category:       (form.elements.namedItem('category')        as HTMLSelectElement).value,
       whatTheyOffer:  (form.elements.namedItem('whatTheyOffer')   as HTMLTextAreaElement).value,
       whyRelevant:    (form.elements.namedItem('whyRelevant')     as HTMLTextAreaElement).value,
     }
@@ -126,6 +127,21 @@ export default function AdvertiseApplyPage() {
               className="w-full border border-[#D1D1D6] rounded-md px-4 py-3 text-[15px] text-[#0A0A0F] bg-white placeholder:text-[#A8AAB0] focus:outline-none focus:border-[#0A0A0F] transition-colors"
               placeholder="+44 7700 000000"
             />
+          </div>
+
+          <div>
+            <label htmlFor="category" className="block text-[13px] font-semibold text-[#0A0A0F] mb-1.5">Category</label>
+            <select
+              id="category" name="category" required defaultValue=""
+              className="w-full border border-[#D1D1D6] rounded-md px-4 py-3 text-[15px] text-[#0A0A0F] bg-white focus:outline-none focus:border-[#0A0A0F] transition-colors"
+            >
+              <option value="" disabled>Select a category</option>
+              <option value="detailing_protection">Detailing & Protection</option>
+              <option value="storage">Storage</option>
+              <option value="mechanic_mot">Mechanics & MOT</option>
+              <option value="transport">Transport & Logistics</option>
+              <option value="photography_valuation">Photography & Valuation</option>
+            </select>
           </div>
 
           <div>
