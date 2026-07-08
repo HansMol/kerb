@@ -102,3 +102,4 @@ echo "sk_live_..." | wrangler secret put CLERK_SECRET_KEY
 | 2026-07-06 | Manual deploy baked test Clerk key into bundle → 500 on all handshake requests | Reverted to passthrough middleware, then set live key via `wrangler secret put` |
 | 2026-07-08 | Manual deploy again baked test Clerk key → same 500 | Added live key override to `build:worker` script in `package.json` |
 | 2026-07-08 | Favicon files replaced with incorrectly generated versions → globe icon in browser | Restored from `git checkout HEAD -- public/favicon.*` |
+| 2026-07-08 | `icons` metadata override in layout.tsx caused Safari to use SVG (dark-on-transparent, invisible in dark tab bar) → globe fallback | Removed `icons` key entirely — browser auto-discovers `/favicon.ico` which is correct |

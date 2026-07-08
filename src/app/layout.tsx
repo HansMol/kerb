@@ -22,10 +22,7 @@ export const metadata: Metadata = {
   title: { default: 'Kerb — Find Your Next Car', template: '%s | Kerb' },
   description: 'Real Kerb Appeal. The UK car marketplace built on transparency. Verified dealers, direct contact, no games.',
   keywords: ['used cars UK', 'buy used car UK', 'UK car marketplace', 'verified car dealers', 'transparent car buying', 'Kerb'],
-  icons: {
-    icon: '/favicon.svg?v=2',
-    shortcut: '/favicon.ico',
-  },
+
   verification: {
     google: process.env.NEXT_PUBLIC_SEARCH_CONSOLE_ID,
   },
