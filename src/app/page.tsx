@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { createServerClient } from '@/lib/supabase/server'
 import { ListingCard } from '@/components/listings/listing-card'
+import { AdvertiserStrip } from '@/components/advertisers/advertiser-strip'
 import { Search } from 'lucide-react'
 
 export const dynamic = 'force-dynamic'
@@ -111,6 +112,13 @@ export default async function HomePage() {
             ))}
           </div>
         )}
+      </section>
+
+      {/* ── Partner advertisers ── */}
+      <section className="bg-[#F8F8FA] border-t border-b border-[#E5E5E7] px-4 sm:px-6 lg:px-8 py-8">
+        <div className="max-w-7xl mx-auto">
+          <AdvertiserStrip placement="homepage" />
+        </div>
       </section>
 
       {/* ── Real Kerb Appeal ── */}

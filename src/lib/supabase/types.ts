@@ -56,7 +56,21 @@ type ListingRow = {
 type ListingInsert = Omit<ListingRow, 'id' | 'created_at' | 'updated_at'>
 type ListingUpdate = Partial<ListingInsert>
 
-export type { DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate }
+type AdvertiserRow = {
+  id: string
+  name: string
+  tagline: string
+  logo_url: string | null
+  cta_text: string
+  cta_url: string
+  show_on_homepage: boolean
+  show_on_detail: boolean
+  active: boolean
+  display_order: number
+  created_at: string
+}
+
+export type { DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate, AdvertiserRow }
 
 export type Database = {
   public: {
@@ -80,6 +94,12 @@ export type Database = {
             referencedColumns: ['id']
           }
         ]
+      }
+      advertisers: {
+        Row: AdvertiserRow
+        Insert: Omit<AdvertiserRow, 'id' | 'created_at'>
+        Update: Partial<Omit<AdvertiserRow, 'id' | 'created_at'>>
+        Relationships: []
       }
     }
     Views: Record<string, never>

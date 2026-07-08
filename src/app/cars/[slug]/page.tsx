@@ -11,6 +11,7 @@ import EnquiryForm from './enquiry-form'
 import { CarPhotoGallery } from '@/components/listings/car-photo-gallery'
 import { ServicesCard } from '@/components/services/services-card'
 import { ListingCard } from '@/components/listings/listing-card'
+import { AdvertiserStrip } from '@/components/advertisers/advertiser-strip'
 
 type ListingWithDealer = ListingRow & { dealers: DealerRow | null }
 
@@ -258,6 +259,11 @@ export default async function ListingDetailPage({
             <ServicesCard make={listing.make} model={listing.model} year={listing.year} />
 
           </div>
+        </div>
+
+        {/* Advertiser strip */}
+        <div className="mt-10 pt-8 border-t border-[#E5E5E7]">
+          <AdvertiserStrip placement="detail" />
         </div>
       </div>
     </>
