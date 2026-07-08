@@ -114,9 +114,9 @@ Not shown on the car detail page directly — that placement doesn't scale past 
 
 ### Pricing — founding advertiser rate
 - **Now:** free placement, no cost, no card
-- **At threshold:** standard rate begins the moment either happens first — Kerb reaches 5,000 monthly visitors, or a single advertiser's placement generates 50 referral clicks in a month (numbers are placeholders pending real traffic data; not yet enforced in code — no site-wide analytics table exists)
+- **At threshold:** £29/month flat fee begins the moment either happens first — Kerb reaches 5,000 monthly visitors, or a single advertiser's placement generates 50 referral clicks in a month (thresholds are placeholders pending real traffic data; not yet enforced in code — no site-wide analytics table exists)
 - Applies to all advertisers at once when it triggers — no permanent founding-rate lock-in
-- Click-through tracking (`advertiser_clicks` table) already live; visitor-count tracking does not exist yet
+- Click-through tracking (`advertiser_clicks` table) already live; visitor-count tracking does not exist yet; billing itself (Stripe charge for advertisers) is not yet built — threshold trigger is currently a manual/policy commitment, not automated
 
 ---
 
@@ -193,7 +193,7 @@ Organic search results are ordered by relevance and recency only. No dealer can 
 | Admin panel | P2 | Currently managed via Supabase dashboard |
 | CarVertical affiliate signup | P1 | `ServicesCard` history-check link is a placeholder until Hans signs up |
 | Finance/insurance prequalifying partners | P1 | `ServicesCard` links are placeholders (Zuto, CompareTheMarket) pending real partner deals |
-| Founding advertiser rate enforcement | P2 | Threshold (5,000 visitors / 50 clicks) is policy only — no site-wide analytics table or automated rate switch yet |
+| Founding advertiser rate enforcement | P2 | £29/month rate + threshold (5,000 visitors / 50 clicks) is policy only — no site-wide analytics table, billing integration, or automated rate switch yet |
 | Auction/bid facility for finance, insurance, history checks | P3 | Carwow-style — replaces the single curated partner per slot once volume justifies it |
 
 ---

@@ -50,7 +50,7 @@ export default async function ServicesPage() {
       <div className="mb-14">
         <p className="text-[11px] font-semibold tracking-[0.1em] uppercase text-[#A8AAB0] mb-4">Before you buy</p>
         <a
-          href="https://www.theaa.com/car-services/inspection"
+          href="https://www.theaa.com/vehicle-inspection/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-4 bg-white border border-[#E5E5E7] rounded-md p-4 hover:border-[#A0714A] transition-colors group max-w-md"

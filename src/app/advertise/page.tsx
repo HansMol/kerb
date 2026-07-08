@@ -194,9 +194,9 @@ export default function AdvertisePage() {
           </div>
           <div className="bg-[#0F0F14] border border-[#1C1C1E] rounded-xl p-8">
             <p className="text-[11px] font-semibold tracking-[0.1em] uppercase text-[#C4C6CC] mb-5">At threshold — standard rate</p>
-            <h3 className="text-[18px] font-medium text-white leading-[1.3] mb-3">Kicks in the moment Kerb proves its traffic.</h3>
+            <h3 className="text-[18px] font-medium text-white leading-[1.3] mb-3">£29/month. Flat, no surprises.</h3>
             <p className="text-[14px] text-[#6E6E73] leading-[1.7]">
-              The founding rate ends as soon as either happens first: Kerb reaches 5,000 visitors in a month, or your placement generates 50 referral clicks in a month. Whichever comes first, for everyone.
+              Kicks in the moment either happens first: Kerb reaches 5,000 visitors in a month, or your placement generates 50 referral clicks in a month. Whichever comes first, for everyone, at the same flat rate.
             </p>
           </div>
         </div>
