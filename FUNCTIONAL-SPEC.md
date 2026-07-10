@@ -81,11 +81,16 @@ Multi-step wizard:
 
 ## Billing model
 
-- Free until first buyer enquiry
-- First enquiry triggers: Stripe checkout session → billing link emailed to dealer
-- Trial: free until 1st of following calendar month
-- Plans: Solo £55/month · Pro £132/month
-- Annual: 10 months paid, 12 listed. Switch to monthly before renewal — no forced rollover.
+**"No leads, no pay" — decided 10 Jul 2026, supersedes the single-trigger model below. Not yet implemented — see roadmap.**
+
+- Free to register, no payment details required, ever
+- No calendar month is invoiced unless the dealer received at least one verified buyer enquiry during that month — this is permanent, not a trial window. A zero-lead month is a zero-charge month, indefinitely.
+- Activation threshold: 3 cumulative verified leads before the first invoice is ever generated. After first activation, every later month only needs ≥1 lead to be billed.
+- Each invoice states the enquiry count for that period and the resulting effective cost per lead (e.g. "4 leads, £55, £13.75/lead") — a retrospective report, not a published rate.
+- Plans: Solo £55/month · Pro £132/month (founding rate, see below)
+- Annual billing (10 months paid, 12 listed) has not been reconciled with per-month lead gating — prepaying a year up front conflicts with "no leads, no pay" as currently worded. Open decision, flagged in roadmap below; annual copy is unchanged on site pending that call.
+
+*Previous model (superseded): free until first buyer enquiry, which triggered a standard recurring Stripe subscription that then charged every month regardless of subsequent lead flow. Still what the code in `/api/stripe/checkout` and `/api/enquiries` actually does — see roadmap.*
 
 ---
 
@@ -187,7 +192,9 @@ Organic search results are ordered by relevance and recency only. No dealer can 
 
 | Feature | Priority | Notes |
 |---|---|---|
-| Stripe live mode | P0 | Switch secret key to live when first dealer onboards |
+| Rebuild billing engine for "no leads, no pay" | P0 | Blocks Stripe live mode. Replace the recurring Stripe subscription (`/api/stripe/checkout`, triggered once in `/api/enquiries`) with a monthly job that counts each dealer's verified leads for the prior calendar month and only creates + sends an invoice if count ≥ threshold (3 first time, 1 thereafter). Must land before any dealer can reach the 3-lead activation point — copy and terms already promise this model live on site. |
+| Stripe live mode | P0 | Switch secret key to live when first dealer onboards. Depends on the billing engine rebuild above. |
+| Reconcile annual billing with per-month lead gating | P1 | Prepaid annual plan conflicts with "no leads, no pay" as currently worded — needs a decision before annual is offered under the new model |
 | Buyer-facing dealer directory / dealer profile page | P1 | `/dealers` currently shows acquisition page |
 | Spotlight feature (dashboard + dealer profile + homepage) | P1 | Schema ready — `spotlighted` column exists |
 | Admin panel | P2 | Currently managed via Supabase dashboard |

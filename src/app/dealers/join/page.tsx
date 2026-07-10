@@ -111,7 +111,7 @@ const PRICING_FOOTNOTES = [
         <path d="M9 2L4 9h4l-1 5 5-7H8l1-5z" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
-    text: 'No payment details required to register. Billing only begins when your first buyer enquiry arrives.',
+    text: 'No payment details required to register. You are only ever charged in a month we deliver at least one buyer enquiry — never before your third.',
   },
 ]
 
@@ -313,10 +313,10 @@ export default function DealersPage() {
             No surprises.
           </h2>
           <p className="text-[#A0714A] text-[13px] font-semibold tracking-[0.04em] mb-6">
-            Billing starts with your first buyer enquiry
+            You only pay for months we deliver
           </p>
           <p className="text-[17px] text-[#6E6E73] leading-[1.7] max-w-[520px] mb-14">
-            List free. When your first buyer enquiry arrives, billing begins on the 1st of the following month — not immediately. If a buyer enquires in June, your first charge is 1 July. No enquiry, no charge.
+            List free. We don&apos;t charge you until you&apos;ve had three real buyer enquiries — enough to prove it&apos;s not a fluke. After that, it&apos;s month by month: send you an enquiry that month and you pay your rate; send you nothing and you pay nothing. No enquiry, no charge — every month, not just at the start.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">

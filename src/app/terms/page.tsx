@@ -22,7 +22,7 @@ export default function TermsPage() {
         <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#A8AAB0] mb-4">Legal</p>
         <h1 className="text-[clamp(32px,4vw,48px)] font-light leading-[1.15] text-[#0A0A0F] tracking-[-0.01em] mb-3">Terms of Service</h1>
         <p className="text-sm text-[#6E6E73] mb-14 pb-10 border-b border-[#E5E5E7]">
-          Kerb Ltd &nbsp;·&nbsp; Last updated: 16 June 2026 &nbsp;·&nbsp; Version 1.0
+          Kerb Ltd &nbsp;·&nbsp; Last updated: 10 July 2026 &nbsp;·&nbsp; Version 1.1
         </p>
 
         <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
@@ -77,7 +77,7 @@ export default function TermsPage() {
 
         <h3 className="text-base font-semibold text-[#0A0A0F] mt-7 mb-2.5">2.6 Subscription and billing</h3>
         <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
-          Listing is free at launch. When subscription billing is introduced you will be given not less than 30 days&apos; notice, with clear pricing, before any charges apply. You will have real data on platform performance before committing to a paid plan. No retroactive charges will be applied to the free period.
+          Listing is free. No payment details are required at registration. You will not be invoiced in any calendar month unless you received at least one verified buyer enquiry through the platform during that month — this applies for as long as you use Kerb, not only during an initial period. Before your first invoice you will need at least three verified buyer enquiries in total; this one-off threshold does not apply again to any later invoice, which each require only one enquiry in the relevant month. Every invoice states the number of enquiries delivered in that period. No charge will ever be applied for a month in which no enquiry was delivered.
         </p>
 
         <h3 className="text-base font-semibold text-[#0A0A0F] mt-7 mb-2.5">2.7 Your data</h3>
