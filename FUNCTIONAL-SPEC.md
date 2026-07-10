@@ -81,16 +81,17 @@ Multi-step wizard:
 
 ## Billing model
 
-**"No leads, no pay" — decided 10 Jul 2026, supersedes the single-trigger model below. Not yet implemented — see roadmap.**
+**"No leads, no pay" — decided 10 Jul 2026, built 10 Jul 2026.** Replaces the old single-trigger-then-forever-subscription model entirely; no Stripe Subscription object is used anywhere in this flow.
 
-- Free to register, no payment details required, ever
-- No calendar month is invoiced unless the dealer received at least one verified buyer enquiry during that month — this is permanent, not a trial window. A zero-lead month is a zero-charge month, indefinitely.
-- Activation threshold: 3 cumulative verified leads before the first invoice is ever generated. After first activation, every later month only needs ≥1 lead to be billed.
-- Each invoice states the enquiry count for that period and the resulting effective cost per lead (e.g. "4 leads, £55, £13.75/lead") — a retrospective report, not a published rate.
-- Plans: Solo £55/month · Pro £132/month (founding rate, see below)
-- Annual billing (10 months paid, 12 listed) has not been reconciled with per-month lead gating — prepaying a year up front conflicts with "no leads, no pay" as currently worded. Open decision, flagged in roadmap below; annual copy is unchanged on site pending that call.
-
-*Previous model (superseded): free until first buyer enquiry, which triggered a standard recurring Stripe subscription that then charged every month regardless of subsequent lead flow. Still what the code in `/api/stripe/checkout` and `/api/enquiries` actually does — see roadmap.*
+- Free to register, no payment details required, ever. Registration still creates a Stripe customer (no payment method) as before.
+- Every buyer enquiry is persisted to a new `enquiries` table (`dealer_id`, `listing_id`, `name`, `email`, `phone`, `message`, `created_at`) — previously enquiries were emailed only and never stored, which made counting leads impossible.
+- **Activation:** the monthly cron (`/api/cron/billing`, GitHub Actions `billing-monitor.yml`, 1st of each month 09:00 UTC) checks each `not_activated` dealer's lifetime enquiry count. At **3 cumulative leads**, the dealer flips to `awaiting_payment_method`, `billing_activated_at` is set, and an email goes out linking to `/dashboard`, where a banner (`BillingActivationBanner`) calls `/api/stripe/checkout` (now a `mode: 'setup'` Checkout session, not a subscription purchase) to save a card.
+- **On card save:** the Stripe webhook (`checkout.session.completed`, `session.mode === 'setup'`) sets the card as the customer's default payment method, counts every enquiry the dealer has ever received, immediately invoices for all of them via `chargeForLeads` (`src/lib/billing.ts`), sets `subscription_status = 'active'`, and sets `leads_invoiced_through = now()` as the billing cursor.
+- **Every month after:** the same cron counts enquiries for `active`/`past_due` dealers *since `leads_invoiced_through`* (not by calendar month — a cursor, so a lead is never counted or charged twice, and a dealer who gets zero leads for several months in a row is simply skipped until the next real lead arrives, at which point the invoice covers the full gap correctly). If the count is ≥1, an invoice is created via `stripe.invoiceItems.create` + `stripe.invoices.create({ collection_method: 'charge_automatically' })` and the cursor advances. If the count is 0, nothing happens — no invoice, no charge, cursor unchanged.
+- Each invoice's line-item description states the exact lead count, the date range covered, and the resulting effective cost per lead — the same figure the dealer sees is the same figure the invoice charges, never a separately published rate.
+- Plans: Solo £55/month · Pro £132/month (founding rate, see below) — flat fee regardless of lead count in a qualifying period, not metered per lead.
+- `invoice.paid` flips a `past_due` dealer back to `active`; `invoice.payment_failed` flips `active` → `past_due` (cron still evaluates `past_due` dealers each month and will keep attempting to invoice/charge).
+- Annual billing (10 months paid, 12 listed) is still unreconciled with per-month lead gating — open decision, unchanged, see roadmap.
 
 ---
 
@@ -146,6 +147,7 @@ Organic search results are ordered by relevance and recency only. No dealer can 
 | `/api/stripe/checkout` | `auth()` + dealer `clerk_user_id` match — prevents cross-account session creation |
 | `/api/stripe/identity` | `auth()` — prevents unauthenticated identity session creation |
 | `/api/companies-house` | `auth()` — prevents API key drain |
+| `/api/cron/billing`, `/api/cron/companies-house` | `Authorization: Bearer $CRON_SECRET` header check — 401 otherwise |
 | `/api/listings/[id]` PATCH + DELETE | Ownership check — `dealer_id` must match the authenticated user's dealer |
 | Company verification | Server-side Companies House call — client `companyStatus` is never trusted |
 | Stripe webhook | Signature verified with `constructEvent` before processing |
@@ -165,6 +167,11 @@ Organic search results are ordered by relevance and recency only. No dealer can 
 - Sends alert email to `hans@kerb.autos` via Resend if any status changed
 - Silence = all clear
 
+### Monthly billing run
+- GitHub Actions cron: 1st of each month at 09:00 UTC (`billing-monitor.yml`)
+- For each approved dealer: activates at 3 cumulative leads (sends "add payment method" email), invoices `active`/`past_due` dealers for every lead since `leads_invoiced_through`, skips anyone with zero leads since their last invoice
+- No summary email to Hans yet — only per-dealer activation/reminder emails. Consider adding a monthly digest to `hans@kerb.autos` (mirroring the Companies House alert) once real dealers are live.
+
 ---
 
 ## What's built ✅
@@ -176,11 +183,12 @@ Organic search results are ordered by relevance and recency only. No dealer can 
 - Delete listing
 - Homepage and search pulling real Supabase data
 - Car detail page with dealer card and wired enquiry form
-- Buyer enquiry → Resend email direct to dealer (HTML-escaped, UUID-validated)
-- Billing trigger on first enquiry → Stripe checkout link emailed to dealer
-- Dashboard with stats and listings table
+- Buyer enquiry → persisted to `enquiries` table + Resend email direct to dealer (HTML-escaped, UUID-validated)
+- "No leads, no pay" billing engine: 3-lead activation → Stripe setup Checkout (save card, no subscription) → cursor-based monthly invoicing via `/api/cron/billing`, only charges months with ≥1 lead since the last invoice
+- Dashboard with stats and listings table, billing activation banner when a dealer crosses the 3-lead threshold
 - Analytics: Google Analytics 4, Clarity, Search Console
 - Companies House monthly monitoring cron + Resend alert email
+- Monthly billing cron (GitHub Actions `billing-monitor.yml`, 1st of month) + Resend activation/reminder emails
 - Dealer acquisition landing page with screenshots
 - Security hardening: auth on all API routes, HTML injection prevention, server-side verification, file type validation (30 Jun 2026)
 - Advertiser marketplace: `/advertise` pitch page, `/advertise/apply` form (category select, Resend notification), homepage placement, click tracking
@@ -192,8 +200,10 @@ Organic search results are ordered by relevance and recency only. No dealer can 
 
 | Feature | Priority | Notes |
 |---|---|---|
-| Rebuild billing engine for "no leads, no pay" | P0 | Blocks Stripe live mode. Replace the recurring Stripe subscription (`/api/stripe/checkout`, triggered once in `/api/enquiries`) with a monthly job that counts each dealer's verified leads for the prior calendar month and only creates + sends an invoice if count ≥ threshold (3 first time, 1 thereafter). Must land before any dealer can reach the 3-lead activation point — copy and terms already promise this model live on site. |
-| Stripe live mode | P0 | Switch secret key to live when first dealer onboards. Depends on the billing engine rebuild above. |
+| Run the new migration in production Supabase | P0 | `supabase/migrations/20260710_billing_engine.sql` — creates `enquiries`, adds `billing_activated_at`/`leads_invoiced_through`, drops `stripe_subscription_id`/`billing_starts_at`/`first_lead_received_at`. Must run before this branch deploys or the app will 500 on every enquiry/dealer query. |
+| Set `billing@kerb.autos` as a verified Resend sender | P0 | Activation/reminder emails send from this address — domain is verified, but confirm the address isn't blocked before first real send |
+| Stripe live mode | P0 | Switch secret key to live when first dealer onboards. Billing engine itself is built — this is purely the test→live key swap plus a manual smoke test of one real setup Checkout session. |
+| End-to-end test in Stripe test mode | P0 | No dealer has gone through activation yet — before live mode, manually drive one dealer through 3 test enquiries → activation email → setup Checkout → webhook → first invoice → a second cron run with/without further leads |
 | Reconcile annual billing with per-month lead gating | P1 | Prepaid annual plan conflicts with "no leads, no pay" as currently worded — needs a decision before annual is offered under the new model |
 | Buyer-facing dealer directory / dealer profile page | P1 | `/dealers` currently shows acquisition page |
 | Spotlight feature (dashboard + dealer profile + homepage) | P1 | Schema ready — `spotlighted` column exists |

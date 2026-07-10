@@ -14,6 +14,7 @@ import {
 } from 'lucide-react'
 import { createServerClient } from '@/lib/supabase/server'
 import type { Database } from '@/lib/supabase/types'
+import { BillingActivationBanner } from './billing-activation-banner'
 
 type DealerRow  = Database['public']['Tables']['dealers']['Row']
 type ListingRow = Database['public']['Tables']['listings']['Row']
@@ -127,6 +128,10 @@ export default async function DashboardPage() {
   return (
     <div className="bg-[#F8F8FA] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+
+        {dealer.subscription_status === 'awaiting_payment_method' && (
+          <BillingActivationBanner dealerId={dealer.id} />
+        )}
 
         {/* ── Dealer header ─────────────────────────────────────────────── */}
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4 mb-8">

@@ -1,0 +1,25 @@
+name: Monthly Billing Run
+
+on:
+  schedule:
+    # 09:00 UTC on the 1st of every month — after the Companies House check
+    - cron: '0 9 1 * *'
+  workflow_dispatch:
+
+jobs:
+  bill:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger monthly billing run
+        run: |
+          response=$(curl -s -w "\n%{http_code}" \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            https://kerb.autos/api/cron/billing)
+          body=$(echo "$response" | head -n -1)
+          status=$(echo "$response" | tail -n 1)
+          echo "HTTP $status"
+          echo "$body"
+          if [ "$status" != "200" ]; then
+            echo "::error::Billing run returned HTTP $status"
+            exit 1
+          fi
