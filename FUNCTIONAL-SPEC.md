@@ -200,10 +200,10 @@ Organic search results are ordered by relevance and recency only. No dealer can 
 
 | Feature | Priority | Notes |
 |---|---|---|
-| Run the new migration in production Supabase | P0 | `supabase/migrations/20260710_billing_engine.sql` — creates `enquiries`, adds `billing_activated_at`/`leads_invoiced_through`, drops `stripe_subscription_id`/`billing_starts_at`/`first_lead_received_at`. Must run before this branch deploys or the app will 500 on every enquiry/dealer query. |
-| Set `billing@kerb.autos` as a verified Resend sender | P0 | Activation/reminder emails send from this address — domain is verified, but confirm the address isn't blocked before first real send |
-| Stripe live mode | P0 | Switch secret key to live when first dealer onboards. Billing engine itself is built — this is purely the test→live key swap plus a manual smoke test of one real setup Checkout session. |
-| End-to-end test in Stripe test mode | P0 | No dealer has gone through activation yet — before live mode, manually drive one dealer through 3 test enquiries → activation email → setup Checkout → webhook → first invoice → a second cron run with/without further leads |
+| ~~Run the new migration in production Supabase~~ | Done 10 Jul 2026 | `enquiries` table + new dealer columns confirmed live |
+| ~~End-to-end test in Stripe test mode~~ | Done 10 Jul 2026 | Full flow driven against real Stripe test-mode API (real customer, real attached card, real signed webhook, real invoices): 3-lead activation → email delivered (confirmed via Resend API) → setup Checkout webhook → first invoice (found + fixed two real bugs, see `git log`: pending invoice items weren't attaching, and charges weren't collected immediately) → zero-lead month correctly skipped → new lead correctly invoiced solo at £55.00/enquiry. Test data cleaned up after. |
+| Stripe live mode | P0 | Switch secret key to live when first dealer onboards. Billing engine itself is now proven correct in test mode — this is purely the test→live key swap. |
+| Set `billing@kerb.autos` as a verified Resend sender | P0 | Activation email confirmed delivered from this address in testing — domain is verified, but double check deliverability isn't degraded once real dealer volume starts |
 | Reconcile annual billing with per-month lead gating | P1 | Prepaid annual plan conflicts with "no leads, no pay" as currently worded — needs a decision before annual is offered under the new model |
 | Buyer-facing dealer directory / dealer profile page | P1 | `/dealers` currently shows acquisition page |
 | Spotlight feature (dashboard + dealer profile + homepage) | P1 | Schema ready — `spotlighted` column exists |
