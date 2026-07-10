@@ -91,7 +91,7 @@ Multi-step wizard:
 - Each invoice's line-item description states the exact lead count, the date range covered, and the resulting effective cost per lead — the same figure the dealer sees is the same figure the invoice charges, never a separately published rate.
 - Plans: Solo £55/month · Pro £132/month (founding rate, see below) — flat fee regardless of lead count in a qualifying period, not metered per lead.
 - `invoice.paid` flips a `past_due` dealer back to `active`; `invoice.payment_failed` flips `active` → `past_due` (cron still evaluates `past_due` dealers each month and will keep attempting to invoice/charge).
-- Annual billing (10 months paid, 12 listed) is still unreconciled with per-month lead gating — open decision, unchanged, see roadmap.
+- **Annual billing — dropped, 10 Jul 2026.** Never actually reconciled with per-month lead gating despite being flagged repeatedly; confirmed by Hans it was never resolved (he'd conflated it with the separate, also-parked Founding Partner/Kickstarter idea). Removed from `/dealers/join` copy (feature bullets + dedicated footnote) — the checkout flow never referenced it either after the billing engine rebuild, so this was copy catching up to code, not a functional change.
 
 **Pause mechanism — decided + built 10 Jul 2026.** A dealer who crosses the 3-lead threshold and never adds a card previously faced zero consequence — listings stayed live and free leads kept flowing forever. Confirmed thresholds: **14 days** grace after `billing_activated_at`, then listings are excluded from all public-facing queries; **90 days** flags the dealer for Hans to manually review (not auto-removed — kept partly because Kerb may still use their content for social promotion under the new marketing licence, see terms 4).
 
@@ -212,7 +212,6 @@ Organic search results are ordered by relevance and recency only. No dealer can 
 | ~~End-to-end test in Stripe test mode~~ | Done 10 Jul 2026 | Full flow driven against real Stripe test-mode API (real customer, real attached card, real signed webhook, real invoices): 3-lead activation → email delivered (confirmed via Resend API) → setup Checkout webhook → first invoice (found + fixed two real bugs, see `git log`: pending invoice items weren't attaching, and charges weren't collected immediately) → zero-lead month correctly skipped → new lead correctly invoiced solo at £55.00/enquiry. Test data cleaned up after. |
 | Stripe live mode | P0 | Switch secret key to live when first dealer onboards. Billing engine itself is now proven correct in test mode — this is purely the test→live key swap. |
 | Set `billing@kerb.autos` as a verified Resend sender | P0 | Activation email confirmed delivered from this address in testing — domain is verified, but double check deliverability isn't degraded once real dealer volume starts |
-| Reconcile annual billing with per-month lead gating | P1 | Prepaid annual plan conflicts with "no leads, no pay" as currently worded — needs a decision before annual is offered under the new model |
 | Buyer-facing dealer directory / dealer profile page | P1 | `/dealers` currently shows acquisition page |
 | Spotlight feature (dashboard + dealer profile + homepage) | P1 | Schema ready — `spotlighted` column exists |
 | Admin panel | P2 | Currently managed via Supabase dashboard |

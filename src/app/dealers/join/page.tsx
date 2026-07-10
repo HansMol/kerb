@@ -73,7 +73,6 @@ const SOLO_FEATURES = [
   'Every enquiry goes direct to you — no platform inbox',
   'Verified dealer badge',
   'Listing performance dashboard',
-  'Annual option — 2 months free',
 ]
 
 const PRO_FEATURES = [
@@ -82,7 +81,6 @@ const PRO_FEATURES = [
   'Spotlight showcase — pin 3 vehicles to the top of your profile',
   'Verified dealer badge',
   'Listing performance dashboard',
-  'Annual option — 2 months free',
 ]
 
 const PRICING_FOOTNOTES = [
@@ -94,16 +92,6 @@ const PRICING_FOOTNOTES = [
       </svg>
     ),
     text: 'Founding rate is locked for life. The first 50 dealers on the platform keep their rate regardless of future pricing changes.',
-  },
-  {
-    icon: (
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
-        <rect x="2" y="3.5" width="12" height="11" rx="1.5" stroke="currentColor" strokeWidth="1.4"/>
-        <path d="M2 7h12" stroke="currentColor" strokeWidth="1.4"/>
-        <path d="M5 2v3M11 2v3" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/>
-      </svg>
-    ),
-    text: 'Annual billing saves 2 months. Pay for 10, list for 12. Switch to monthly before your renewal date — no forced rollover.',
   },
   {
     icon: (
@@ -296,9 +284,6 @@ export default function DealersPage() {
         <div className="space-y-4">
           <p className="text-[16px] text-[#6E6E73] leading-[1.8]">
             Kerb is a new platform. We don't have ten years of traffic data and we won't claim to. What we have is a commitment to building something the industry actually needs — and the willingness to earn your trust over time, not demand it on day one.
-          </p>
-          <p className="text-[16px] text-[#6E6E73] leading-[1.8]">
-            Listing is free at launch. When we begin charging — which we will — you'll have months of real data on what the platform delivered before you pay a penny. We grow when you grow.
           </p>
           <p className="text-[16px] text-[#0A0A0F] font-medium leading-[1.8]">
             If that sounds like the kind of platform you've been waiting for, list your cars today.
