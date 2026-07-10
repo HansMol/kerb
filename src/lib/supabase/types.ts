@@ -55,6 +55,11 @@ type ListingRow = {
 type ListingInsert = Omit<ListingRow, 'id' | 'created_at' | 'updated_at'>
 type ListingUpdate = Partial<ListingInsert>
 
+// Read-only view — `listings` filtered to status='live', has photos, and the
+// dealer isn't paused for non-payment (see supabase/migrations/20260710_billing_pause.sql).
+// Every public-facing listing query should read from this, not `listings` directly.
+type PublicListingRow = ListingRow
+
 type AdvertiserCategory = 'detailing_protection' | 'storage' | 'mechanic_mot' | 'transport' | 'photography_valuation'
 
 type AdvertiserRow = {
@@ -104,7 +109,7 @@ type AdvertiserApplicationRow = {
   created_at: string
 }
 
-export type { DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate, EnquiryRow, EnquiryInsert, AdvertiserCategory, AdvertiserRow, AdvertiserClickRow, AdvertiserApplicationRow }
+export type { DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate, PublicListingRow, EnquiryRow, EnquiryInsert, AdvertiserCategory, AdvertiserRow, AdvertiserClickRow, AdvertiserApplicationRow }
 
 export type Database = {
   public: {
@@ -170,7 +175,12 @@ export type Database = {
         ]
       }
     }
-    Views: Record<string, never>
+    Views: {
+      public_listings: {
+        Row: PublicListingRow
+        Relationships: []
+      }
+    }
     Functions: Record<string, never>
     Enums: Record<string, never>
   }

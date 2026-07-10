@@ -93,6 +93,14 @@ Multi-step wizard:
 - `invoice.paid` flips a `past_due` dealer back to `active`; `invoice.payment_failed` flips `active` → `past_due` (cron still evaluates `past_due` dealers each month and will keep attempting to invoice/charge).
 - Annual billing (10 months paid, 12 listed) is still unreconciled with per-month lead gating — open decision, unchanged, see roadmap.
 
+**Pause mechanism — decided + built 10 Jul 2026.** A dealer who crosses the 3-lead threshold and never adds a card previously faced zero consequence — listings stayed live and free leads kept flowing forever. Confirmed thresholds: **14 days** grace after `billing_activated_at`, then listings are excluded from all public-facing queries; **90 days** flags the dealer for Hans to manually review (not auto-removed — kept partly because Kerb may still use their content for social promotion under the new marketing licence, see terms 4).
+
+- Enforced via a Postgres view, `public_listings` (`supabase/migrations/20260710_billing_pause.sql`) — `listings` filtered to `status='live'`, has photos, and NOT (`subscription_status='awaiting_payment_method'` AND `billing_activated_at` older than 14 days). Computed live on every query, so the 14-day cutoff is exact to the day regardless of cron timing, and reactivation is instant and automatic the moment a card is added (subscription_status flips to `active`, the exclusion condition no longer matches) — no separate "unpause" step needed anywhere.
+- Every public-facing listing query (`page.tsx`, `search/page.tsx`, `sitemap.ts`, `dealers/page.tsx`, `dealers/[slug]/page.tsx`, and the related-cars query on `cars/[slug]/page.tsx`) now reads from `public_listings` instead of `listings` directly. The dealer's own dashboard/edit views still read `listings` directly and are unaffected — a paused dealer can still manage their listings, they just aren't publicly discoverable. Direct links to a specific car (`/cars/[id]`) also still resolve even if the dealer is paused — deindexed, not deleted.
+- Dealer-facing: dashboard banner and Enquiries stat card both reflect paused state distinctly from "awaiting payment, still in grace period."
+- Dealer emails: `sendActivationEmail` (first crossing, within grace) vs `sendPausedEmail` (past 14 days, different tone — notice not pitch) vs `sendReviewFlagEmail` to `hans@kerb.autos` (past 90 days, internal only).
+- **Not yet built/verified:** the migration hasn't been run against production Supabase yet, and the pause behaviour hasn't been live-tested the way the core billing engine was (see below) — needs the same treatment before this ships.
+
 ---
 
 ## Advertiser marketplace & services

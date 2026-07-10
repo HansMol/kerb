@@ -22,7 +22,7 @@ export default function TermsPage() {
         <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#A8AAB0] mb-4">Legal</p>
         <h1 className="text-[clamp(32px,4vw,48px)] font-light leading-[1.15] text-[#0A0A0F] tracking-[-0.01em] mb-3">Terms of Service</h1>
         <p className="text-sm text-[#6E6E73] mb-14 pb-10 border-b border-[#E5E5E7]">
-          Kerb Ltd &nbsp;·&nbsp; Last updated: 10 July 2026 &nbsp;·&nbsp; Version 1.1
+          Kerb Ltd &nbsp;·&nbsp; Last updated: 10 July 2026 &nbsp;·&nbsp; Version 1.2
         </p>
 
         <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
@@ -79,6 +79,9 @@ export default function TermsPage() {
         <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
           Listing is free. No payment details are required at registration. You will not be invoiced in any calendar month unless you received at least one verified buyer enquiry through the platform during that month — this applies for as long as you use Kerb, not only during an initial period. Before your first invoice you will need at least three verified buyer enquiries in total; this one-off threshold does not apply again to any later invoice, which each require only one enquiry in the relevant month. Every invoice states the number of enquiries delivered in that period. No charge will ever be applied for a month in which no enquiry was delivered.
         </p>
+        <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
+          Once you reach three verified buyer enquiries, you have 14 days to add a payment method before your listings are paused from buyer search — this is not a charge or a penalty, and nothing already delivered is clawed back. Adding a payment method at any point reactivates your listings immediately and automatically, with no review or delay.
+        </p>
 
         <h3 className="text-base font-semibold text-[#0A0A0F] mt-7 mb-2.5">2.7 Your data</h3>
         <Callout>Your listing history, enquiry records, and contact data belong to you. You may request a full export at any time by emailing hello@kerb.autos. Leaving Kerb costs nothing and loses nothing — your data is returned to you in full.</Callout>
@@ -118,6 +121,9 @@ export default function TermsPage() {
         <h2 className="text-xl font-semibold text-[#0A0A0F] mt-12 mb-4 leading-snug">4. Intellectual property</h2>
         <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
           The Kerb name, wordmark, and platform design are the property of Kerb Ltd. Dealers grant Kerb a non-exclusive licence to display listing content (text, photos, specifications) on the platform for the purpose of presenting the listing to buyers. This licence ends when the listing is removed or the dealer account is closed.
+        </p>
+        <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
+          Dealers also grant Kerb a non-exclusive licence to use listing content — including photos — in Kerb&apos;s own marketing, including social media, to promote the listing and the Kerb platform. No dealer is paid for this use, and no dealer is identified in the resulting post — a buyer only learns which dealer holds the car by clicking through to its listing on Kerb. This licence ends when the listing is removed or the dealer account is closed, except that marketing material already published before that point is not required to be taken down retrospectively.
         </p>
 
         <h2 className="text-xl font-semibold text-[#0A0A0F] mt-12 mb-4 leading-snug">5. Limitation of liability</h2>

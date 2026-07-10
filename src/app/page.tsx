@@ -12,18 +12,14 @@ export default async function HomePage() {
   const supabase = createServerClient()
 
   const { data: listings } = await supabase
-    .from('listings')
+    .from('public_listings')
     .select('*')
-    .eq('status', 'live')
-    .not('photos', 'eq', '{}')
     .order('created_at', { ascending: false })
     .limit(6)
 
   const { count } = await supabase
-    .from('listings')
+    .from('public_listings')
     .select('*', { count: 'exact', head: true })
-    .eq('status', 'live')
-    .not('photos', 'eq', '{}')
 
   const totalListings = count ?? 0
 

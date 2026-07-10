@@ -2,6 +2,21 @@ import Stripe from 'stripe'
 
 export const ACTIVATION_THRESHOLD = 3
 
+// A dealer who crosses ACTIVATION_THRESHOLD leads but never adds a payment
+// method keeps listings live and free for this many days — after that,
+// public_listings (see supabase/migrations) excludes their listings until
+// they add a card. Confirmed by Hans 10 Jul 2026.
+export const PAUSE_AFTER_DAYS = 14
+
+// If still awaiting a payment method this many days after crossing the
+// threshold, flag the dealer for Hans to manually review — not an
+// automated removal, see /api/cron/billing.
+export const REVIEW_FLAG_AFTER_DAYS = 90
+
+export function daysSince(iso: string, now: Date): number {
+  return Math.floor((now.getTime() - new Date(iso).getTime()) / (1000 * 60 * 60 * 24))
+}
+
 const PLAN_AMOUNTS: Record<'solo' | 'pro', { amount: number; name: string }> = {
   solo: { amount: 5500,  name: 'Kerb Solo' },
   pro:  { amount: 13200, name: 'Kerb Pro'  },

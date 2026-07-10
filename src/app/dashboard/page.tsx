@@ -16,7 +16,7 @@ import {
 import { createServerClient } from '@/lib/supabase/server'
 import type { Database } from '@/lib/supabase/types'
 import { BillingActivationBanner } from './billing-activation-banner'
-import { ACTIVATION_THRESHOLD } from '@/lib/billing'
+import { ACTIVATION_THRESHOLD, PAUSE_AFTER_DAYS, daysSince } from '@/lib/billing'
 
 type DealerRow  = Database['public']['Tables']['dealers']['Row']
 type ListingRow = Database['public']['Tables']['listings']['Row']
@@ -142,12 +142,20 @@ export default async function DashboardPage() {
   const avgPrice     = liveListings.length ? Math.round(totalValue / liveListings.length) : 0
   const topListing   = [...liveListings].sort((a, b) => b.price - a.price)[0]
 
+  const isPaused = dealer.subscription_status === 'awaiting_payment_method' && dealer.billing_activated_at
+    ? daysSince(dealer.billing_activated_at, new Date()) >= PAUSE_AFTER_DAYS
+    : false
+
   return (
     <div className="bg-[#F8F8FA] min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
         {dealer.subscription_status === 'awaiting_payment_method' && (
-          <BillingActivationBanner dealerId={dealer.id} enquiryCount={totalEnquiries ?? 0} />
+          <BillingActivationBanner
+            dealerId={dealer.id}
+            enquiryCount={totalEnquiries ?? 0}
+            isPaused={isPaused}
+          />
         )}
 
         {/* ── Dealer header ─────────────────────────────────────────────── */}
@@ -210,7 +218,7 @@ export default async function DashboardPage() {
               dealer.subscription_status === 'not_activated'
                 ? `${Math.max(0, ACTIVATION_THRESHOLD - (totalEnquiries ?? 0))} more until billing starts`
                 : dealer.subscription_status === 'awaiting_payment_method'
-                ? 'add a payment method to keep them coming'
+                ? (isPaused ? 'listings paused — add a payment method' : 'add a payment method to keep them coming')
                 : enquiriesThisPeriod === 0
                 ? 'no charge yet this period'
                 : 'will be on your next invoice'

@@ -35,19 +35,15 @@ export default async function SearchPage({
   const supabase = createServerClient()
 
   const { data: makesData } = await supabase
-    .from('listings')
+    .from('public_listings')
     .select('make')
-    .eq('status', 'live')
-    .not('photos', 'eq', '{}')
     .not('make', 'is', null)
 
   const availableMakes = [...new Set((makesData ?? []).map(l => l.make as string))].sort()
 
   let query = supabase
-    .from('listings')
+    .from('public_listings')
     .select('*')
-    .eq('status', 'live')
-    .not('photos', 'eq', '{}')
 
   if (q)            query = query.or(`make.ilike.%${q}%,model.ilike.%${q}%,description.ilike.%${q}%`)
   if (make)         query = query.ilike('make', make)

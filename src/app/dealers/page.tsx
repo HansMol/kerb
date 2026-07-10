@@ -19,10 +19,8 @@ export default async function DealersPage() {
       .eq('status', 'approved')
       .order('created_at', { ascending: false }),
     supabase
-      .from('listings')
-      .select('dealer_id')
-      .eq('status', 'live')
-      .not('photos', 'eq', '{}'),
+      .from('public_listings')
+      .select('dealer_id'),
   ])
 
   const countsByDealer = (listingData ?? []).reduce<Record<string, number>>((acc, l) => {
