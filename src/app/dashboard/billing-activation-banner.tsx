@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { CreditCard } from 'lucide-react'
 
-export function BillingActivationBanner({ dealerId }: { dealerId: string }) {
+export function BillingActivationBanner({ dealerId, enquiryCount }: { dealerId: string; enquiryCount: number }) {
   const [loading, setLoading] = useState(false)
   const [error, setError]     = useState<string | null>(null)
 
@@ -34,7 +34,7 @@ export function BillingActivationBanner({ dealerId }: { dealerId: string }) {
       <div className="flex items-start gap-3">
         <CreditCard size={18} className="text-[#C4C6CC] flex-shrink-0 mt-0.5" />
         <div>
-          <p className="text-[14px] font-semibold text-white">You've had 3 real buyer enquiries</p>
+          <p className="text-[14px] font-semibold text-white">You&apos;ve had {enquiryCount} real buyer {enquiryCount === 1 ? 'enquiry' : 'enquiries'}</p>
           <p className="text-[13px] text-[#A8AAB0] mt-0.5">
             Add a payment method to activate billing. You&apos;re only ever charged in a month we send you an enquiry.
           </p>
