@@ -90,6 +90,7 @@ type EnquiryRow = {
   email: string
   phone: string | null
   message: string
+  source_ip: string | null
   created_at: string
 }
 
@@ -109,7 +110,19 @@ type AdvertiserApplicationRow = {
   created_at: string
 }
 
-export type { DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate, PublicListingRow, EnquiryRow, EnquiryInsert, AdvertiserCategory, AdvertiserRow, AdvertiserClickRow, AdvertiserApplicationRow }
+type WaitlistEntryRow = {
+  id: string
+  email: string
+  make: string | null
+  model: string | null
+  max_price: number | null
+  area: string | null
+  created_at: string
+}
+
+type WaitlistEntryInsert = Omit<WaitlistEntryRow, 'id' | 'created_at'>
+
+export type { DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate, PublicListingRow, EnquiryRow, EnquiryInsert, AdvertiserCategory, AdvertiserRow, AdvertiserClickRow, AdvertiserApplicationRow, WaitlistEntryRow, WaitlistEntryInsert }
 
 export type Database = {
   public: {
@@ -173,6 +186,12 @@ export type Database = {
             referencedColumns: ['id']
           }
         ]
+      }
+      waitlist_entries: {
+        Row: WaitlistEntryRow
+        Insert: WaitlistEntryInsert
+        Update: never
+        Relationships: []
       }
     }
     Views: {

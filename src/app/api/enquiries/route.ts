@@ -6,6 +6,19 @@ export const dynamic = 'force-dynamic'
 
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i
 
+// Enquiries now trigger the "no leads, no pay" billing engine, so an
+// unthrottled bot here can falsely activate a dealer's billing — not just
+// spam their inbox. Keep this generous enough for a real buyer messaging
+// a few dealers, tight enough to stop a script.
+const RATE_LIMIT_MAX = 5
+const RATE_LIMIT_WINDOW_MINUTES = 10
+
+function getClientIp(req: NextRequest): string {
+  return req.headers.get('cf-connecting-ip')
+    ?? req.headers.get('x-forwarded-for')?.split(',')[0]?.trim()
+    ?? 'unknown'
+}
+
 function esc(s: string): string {
   return s
     .replace(/&/g, '&amp;')
@@ -45,6 +58,21 @@ export async function POST(req: NextRequest) {
   }
 
   const supabase = createServerClient()
+
+  // ── Rate limit: block bursts from the same source before they reach billing ──
+
+  const ip = getClientIp(req)
+  const windowStart = new Date(Date.now() - RATE_LIMIT_WINDOW_MINUTES * 60 * 1000).toISOString()
+  const { count: recentCount } = await supabase
+    .from('enquiries')
+    .select('id', { count: 'exact', head: true })
+    .eq('source_ip', ip)
+    .gte('created_at', windowStart)
+
+  if ((recentCount ?? 0) >= RATE_LIMIT_MAX) {
+    return Response.json({ error: 'Too many enquiries — please try again shortly' }, { status: 429 })
+  }
+
   const { data: dealer, error } = await supabase
     .from('dealers')
     .select('email, first_name, last_name')
@@ -81,6 +109,7 @@ export async function POST(req: NextRequest) {
     email,
     phone: phone ?? null,
     message,
+    source_ip: ip,
   })
 
   if (insertError) {

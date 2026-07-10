@@ -35,36 +35,68 @@ export default async function ComingSoonPage({
           </p>
           <CountdownTimer targetDate="2026-08-01T00:00:00Z" />
 
-          {/* Buyer email capture */}
+          {/* Buyer email capture + waitlist */}
           {notify === 'ok' ? (
             <div className="mt-14 max-w-md">
-              <p className="text-[#C4C6CC] text-[14px]">You&apos;re on the list. We&apos;ll email you when we go live.</p>
+              <p className="text-[#C4C6CC] text-[14px]">You&apos;re on the list. Tell us what you&apos;re after and we&apos;ll email you the moment matching stock lands.</p>
             </div>
           ) : (
             <>
+              <p className="mt-14 text-[13px] font-medium text-[#C4C6CC]">Tell us what you&apos;re looking for</p>
+              <p className="text-[#6E6E73] text-[11px] mt-1 mb-4 max-w-md">Optional — just an email works too. But the more you tell us, the sooner we can match you to real stock.</p>
               <form
                 action="/api/notify"
                 method="POST"
-                className="mt-14 flex flex-col sm:flex-row gap-3 max-w-md"
+                className="flex flex-col gap-3 max-w-md"
               >
                 <input
                   type="email"
                   name="email"
                   placeholder="Your email address"
-                  className="flex-1 px-4 py-3.5 bg-[#1C1C1E] border border-[#2A2A2E] text-white rounded-md text-sm placeholder:text-[#3A3A3E] focus:outline-none focus:border-[#C4C6CC] transition-colors"
+                  required
+                  className="px-4 py-3.5 bg-[#1C1C1E] border border-[#2A2A2E] text-white rounded-md text-sm placeholder:text-[#3A3A3E] focus:outline-none focus:border-[#C4C6CC] transition-colors"
                 />
+                <div className="grid grid-cols-2 gap-3">
+                  <input
+                    type="text"
+                    name="make"
+                    placeholder="Make (e.g. Volkswagen)"
+                    className="px-4 py-3.5 bg-[#1C1C1E] border border-[#2A2A2E] text-white rounded-md text-sm placeholder:text-[#3A3A3E] focus:outline-none focus:border-[#C4C6CC] transition-colors"
+                  />
+                  <input
+                    type="text"
+                    name="model"
+                    placeholder="Model (e.g. Golf GTI)"
+                    className="px-4 py-3.5 bg-[#1C1C1E] border border-[#2A2A2E] text-white rounded-md text-sm placeholder:text-[#3A3A3E] focus:outline-none focus:border-[#C4C6CC] transition-colors"
+                  />
+                </div>
+                <div className="grid grid-cols-2 gap-3">
+                  <input
+                    type="number"
+                    name="max_price"
+                    placeholder="Max price (£)"
+                    min={0}
+                    className="px-4 py-3.5 bg-[#1C1C1E] border border-[#2A2A2E] text-white rounded-md text-sm placeholder:text-[#3A3A3E] focus:outline-none focus:border-[#C4C6CC] transition-colors"
+                  />
+                  <input
+                    type="text"
+                    name="area"
+                    placeholder="Area (e.g. Bournemouth)"
+                    className="px-4 py-3.5 bg-[#1C1C1E] border border-[#2A2A2E] text-white rounded-md text-sm placeholder:text-[#3A3A3E] focus:outline-none focus:border-[#C4C6CC] transition-colors"
+                  />
+                </div>
                 <button
                   type="submit"
                   className="bg-[#A0714A] hover:bg-[#8A6040] text-white font-semibold px-6 py-3.5 rounded-md transition-colors text-sm shrink-0"
                 >
-                  Notify me at launch
+                  Join the waitlist
                 </button>
               </form>
               {notify === 'invalid' && (
                 <p className="text-red-400 text-[11px] mt-3">Please enter a valid email address.</p>
               )}
               {notify !== 'invalid' && (
-                <p className="text-[#2A2A2E] text-[11px] mt-3">No spam. One email when we go live.</p>
+                <p className="text-[#2A2A2E] text-[11px] mt-3">No spam. One email when matching stock lands.</p>
               )}
             </>
           )}

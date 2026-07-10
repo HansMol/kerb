@@ -1,21 +1,32 @@
 import { Resend } from 'resend'
 import { NextRequest, NextResponse } from 'next/server'
+import { createServerClient } from '@/lib/supabase/server'
 
 export const dynamic = 'force-dynamic'
+
+function readField(params: URLSearchParams | Record<string, unknown>, key: string): string | null {
+  const value = params instanceof URLSearchParams ? params.get(key) : params[key]
+  return typeof value === 'string' && value.trim() ? value.trim() : null
+}
 
 export async function POST(req: NextRequest) {
   const contentType = req.headers.get('content-type') ?? ''
 
-  let email: string | null = null
+  let fields: URLSearchParams | Record<string, unknown>
 
   if (contentType.includes('application/json')) {
-    const body = await req.json()
-    email = body.email ?? null
+    fields = await req.json()
   } else {
     const text = await req.text()
-    const params = new URLSearchParams(text)
-    email = params.get('email')
+    fields = new URLSearchParams(text)
   }
+
+  const email = readField(fields, 'email')
+  const make = readField(fields, 'make')
+  const model = readField(fields, 'model')
+  const area = readField(fields, 'area')
+  const maxPriceRaw = readField(fields, 'max_price')
+  const maxPrice = maxPriceRaw ? Number(maxPriceRaw) : null
 
   if (!email || !email.includes('@')) {
     return NextResponse.redirect(new URL('/?notify=invalid', req.url))
@@ -33,6 +44,21 @@ export async function POST(req: NextRequest) {
     unsubscribed: false,
     audienceId,
   })
+
+  // ── Structured waitlist entry — what buyers are actually looking for ───────
+  // Best-effort: a failure here shouldn't block the email signup above.
+  const supabase = createServerClient()
+  const { error: waitlistError } = await supabase.from('waitlist_entries').insert({
+    email,
+    make,
+    model,
+    max_price: maxPrice !== null && !Number.isNaN(maxPrice) ? maxPrice : null,
+    area,
+  })
+
+  if (waitlistError) {
+    console.error('[Notify] Failed to store waitlist entry:', waitlistError)
+  }
 
   return NextResponse.redirect(new URL('/?notify=ok', req.url))
 }
