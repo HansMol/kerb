@@ -19,16 +19,15 @@ type DealerRow = {
   plan: 'solo' | 'pro' | null
   slug: string | null
   stripe_customer_id: string | null
-  stripe_subscription_id: string | null
-  subscription_status: 'free' | 'active' | 'cancelled' | 'past_due'
-  billing_starts_at: string | null
-  first_lead_received_at: string | null
+  subscription_status: 'not_activated' | 'awaiting_payment_method' | 'active' | 'past_due'
+  billing_activated_at: string | null
+  leads_invoiced_through: string | null
   created_at: string
 }
 
 type DealerInsert =
-  Omit<DealerRow, 'id' | 'created_at' | 'slug' | 'stripe_subscription_id' | 'subscription_status' | 'billing_starts_at' | 'first_lead_received_at'>
-  & Partial<Pick<DealerRow, 'slug' | 'stripe_subscription_id' | 'subscription_status' | 'billing_starts_at' | 'first_lead_received_at'>>
+  Omit<DealerRow, 'id' | 'created_at' | 'slug' | 'subscription_status' | 'billing_activated_at' | 'leads_invoiced_through'>
+  & Partial<Pick<DealerRow, 'slug' | 'subscription_status' | 'billing_activated_at' | 'leads_invoiced_through'>>
 type DealerUpdate = Partial<Omit<DealerRow, 'id' | 'created_at'>>
 
 type ListingRow = {
@@ -56,6 +55,11 @@ type ListingRow = {
 type ListingInsert = Omit<ListingRow, 'id' | 'created_at' | 'updated_at'>
 type ListingUpdate = Partial<ListingInsert>
 
+// Read-only view — `listings` filtered to status='live', has photos, and the
+// dealer isn't paused for non-payment (see supabase/migrations/20260710_billing_pause.sql).
+// Every public-facing listing query should read from this, not `listings` directly.
+type PublicListingRow = ListingRow
+
 type AdvertiserCategory = 'detailing_protection' | 'storage' | 'mechanic_mot' | 'transport' | 'photography_valuation'
 
 type AdvertiserRow = {
@@ -78,6 +82,19 @@ type AdvertiserClickRow = {
   clicked_at: string
 }
 
+type EnquiryRow = {
+  id: string
+  dealer_id: string
+  listing_id: string | null
+  name: string
+  email: string
+  phone: string | null
+  message: string
+  created_at: string
+}
+
+type EnquiryInsert = Omit<EnquiryRow, 'id' | 'created_at'>
+
 type AdvertiserApplicationRow = {
   id: string
   business_name: string
@@ -92,7 +109,7 @@ type AdvertiserApplicationRow = {
   created_at: string
 }
 
-export type { DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate, AdvertiserCategory, AdvertiserRow, AdvertiserClickRow, AdvertiserApplicationRow }
+export type { DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate, PublicListingRow, EnquiryRow, EnquiryInsert, AdvertiserCategory, AdvertiserRow, AdvertiserClickRow, AdvertiserApplicationRow }
 
 export type Database = {
   public: {
@@ -110,6 +127,20 @@ export type Database = {
         Relationships: [
           {
             foreignKeyName: 'listings_dealer_id_fkey'
+            columns: ['dealer_id']
+            isOneToOne: false
+            referencedRelation: 'dealers'
+            referencedColumns: ['id']
+          }
+        ]
+      }
+      enquiries: {
+        Row: EnquiryRow
+        Insert: EnquiryInsert
+        Update: never
+        Relationships: [
+          {
+            foreignKeyName: 'enquiries_dealer_id_fkey'
             columns: ['dealer_id']
             isOneToOne: false
             referencedRelation: 'dealers'
@@ -144,7 +175,12 @@ export type Database = {
         ]
       }
     }
-    Views: Record<string, never>
+    Views: {
+      public_listings: {
+        Row: PublicListingRow
+        Relationships: []
+      }
+    }
     Functions: Record<string, never>
     Enums: Record<string, never>
   }

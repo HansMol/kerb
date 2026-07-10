@@ -39,7 +39,7 @@ const faqItems = [
   },
   {
     question: 'How do dealers join Kerb?',
-    answer: 'Dealers sign up at kerb.autos/dealers. The service is free to start — dealers only pay once they start receiving genuine buyer traction from the platform.',
+    answer: "Dealers sign up at kerb.autos/dealers/join. Listing is free — no payment details required. Dealers only start paying once they've had 3 real buyer enquiries, and even then only in months a new enquiry actually arrives.",
   },
 ]
 
@@ -121,7 +121,7 @@ export default function AboutPage() {
               <p className="text-xs font-semibold tracking-widest uppercase text-[#A0714A] mb-3">For dealers</p>
               <p className="text-[#0A0A0F] font-medium mb-3">List without the squeeze</p>
               <p className="text-[#6E6E73] text-sm leading-relaxed">
-                No inflated platform fees. No algorithm deciding your car is priced too high and burying your listing. You list, buyers find you, and you deal with them directly. The service is free until you start receiving genuine buyer traction.
+                No inflated platform fees. No algorithm deciding your car is priced too high and burying your listing. You list, buyers find you, and you deal with them directly. Free until you've had 3 real enquiries — after that, only in months we actually send you one.
               </p>
             </div>
             <div className="bg-white border border-[#E5E5E7] rounded-md p-6">
@@ -207,7 +207,7 @@ export default function AboutPage() {
           <div className="flex gap-3 justify-center flex-wrap items-start">
             <div className="flex flex-col items-center gap-1.5">
               <Link
-                href="/dealers"
+                href="/dealers/join"
                 className="bg-[#A0714A] hover:bg-[#8A6040] text-white px-6 py-2.5 rounded text-sm font-medium transition-colors no-underline"
               >
                 List your cars

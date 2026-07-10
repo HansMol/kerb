@@ -569,7 +569,7 @@ export function DealerWizard({ initialPlan }: { initialPlan?: 'solo' | 'pro' }) 
                 </button>
               </div>
               <p className="text-[11px] text-[#6E6E73] mt-2 px-1">
-                No payment required now. Billing starts the month after your first buyer enquiry.
+                No payment required now. You won&apos;t be charged until you&apos;ve had 3 real buyer enquiries — and after that, only in months we send you one.
               </p>
             </div>
 
@@ -770,7 +770,7 @@ export function DealerWizard({ initialPlan }: { initialPlan?: 'solo' | 'pro' }) 
                 />
                 <span className="text-[13px] text-[#6E6E73]">
                   I agree to the{' '}
-                  <a href="/dealers/terms.html" target="_blank" rel="noopener noreferrer" className="text-[#C4C6CC] underline underline-offset-2">
+                  <a href="/terms" target="_blank" rel="noopener noreferrer" className="text-[#C4C6CC] underline underline-offset-2">
                     Kerb Terms of Service
                   </a>
                   , including the three founding commitments above.

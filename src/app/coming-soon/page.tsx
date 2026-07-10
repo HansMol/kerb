@@ -168,7 +168,7 @@ export default async function ComingSoonPage({
         <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 max-w-4xl">
           <div>
             <p className="text-white text-[15px] font-medium mb-1">Are you a dealer?</p>
-            <p className="text-[#6E6E73] text-[13px] font-light">You don&apos;t pay a penny until we send you a buyer. Then £55/month.</p>
+            <p className="text-[#6E6E73] text-[13px] font-light">List free. No charge until you&apos;ve had 3 real buyer enquiries — then only in months we send you one.</p>
           </div>
           <Link
             href="/dealers/register"

@@ -102,12 +102,10 @@ export default async function ListingDetailPage({
 
   // Related cars — same make, not this listing, max 4
   const { data: related } = await supabase
-    .from('listings')
+    .from('public_listings')
     .select('*')
-    .eq('status', 'live')
     .eq('make', listing.make)
     .neq('id', listing.id)
-    .not('photos', 'eq', '{}')
     .order('created_at', { ascending: false })
     .limit(4)
 

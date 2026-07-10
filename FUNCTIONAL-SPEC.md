@@ -81,11 +81,25 @@ Multi-step wizard:
 
 ## Billing model
 
-- Free until first buyer enquiry
-- First enquiry triggers: Stripe checkout session → billing link emailed to dealer
-- Trial: free until 1st of following calendar month
-- Plans: Solo £55/month · Pro £132/month
-- Annual: 10 months paid, 12 listed. Switch to monthly before renewal — no forced rollover.
+**"No leads, no pay" — decided 10 Jul 2026, built 10 Jul 2026.** Replaces the old single-trigger-then-forever-subscription model entirely; no Stripe Subscription object is used anywhere in this flow.
+
+- Free to register, no payment details required, ever. Registration still creates a Stripe customer (no payment method) as before.
+- Every buyer enquiry is persisted to a new `enquiries` table (`dealer_id`, `listing_id`, `name`, `email`, `phone`, `message`, `created_at`) — previously enquiries were emailed only and never stored, which made counting leads impossible.
+- **Activation:** the monthly cron (`/api/cron/billing`, GitHub Actions `billing-monitor.yml`, 1st of each month 09:00 UTC) checks each `not_activated` dealer's lifetime enquiry count. At **3 cumulative leads**, the dealer flips to `awaiting_payment_method`, `billing_activated_at` is set, and an email goes out linking to `/dashboard`, where a banner (`BillingActivationBanner`) calls `/api/stripe/checkout` (now a `mode: 'setup'` Checkout session, not a subscription purchase) to save a card.
+- **On card save:** the Stripe webhook (`checkout.session.completed`, `session.mode === 'setup'`) sets the card as the customer's default payment method, counts every enquiry the dealer has ever received, immediately invoices for all of them via `chargeForLeads` (`src/lib/billing.ts`), sets `subscription_status = 'active'`, and sets `leads_invoiced_through = now()` as the billing cursor.
+- **Every month after:** the same cron counts enquiries for `active`/`past_due` dealers *since `leads_invoiced_through`* (not by calendar month — a cursor, so a lead is never counted or charged twice, and a dealer who gets zero leads for several months in a row is simply skipped until the next real lead arrives, at which point the invoice covers the full gap correctly). If the count is ≥1, an invoice is created via `stripe.invoiceItems.create` + `stripe.invoices.create({ collection_method: 'charge_automatically' })` and the cursor advances. If the count is 0, nothing happens — no invoice, no charge, cursor unchanged.
+- Each invoice's line-item description states the exact lead count, the date range covered, and the resulting effective cost per lead — the same figure the dealer sees is the same figure the invoice charges, never a separately published rate.
+- Plans: Solo £55/month · Pro £132/month (founding rate, see below) — flat fee regardless of lead count in a qualifying period, not metered per lead.
+- `invoice.paid` flips a `past_due` dealer back to `active`; `invoice.payment_failed` flips `active` → `past_due` (cron still evaluates `past_due` dealers each month and will keep attempting to invoice/charge).
+- **Annual billing — dropped, 10 Jul 2026.** Never actually reconciled with per-month lead gating despite being flagged repeatedly; confirmed by Hans it was never resolved (he'd conflated it with the separate, also-parked Founding Partner/Kickstarter idea). Removed from `/dealers/join` copy (feature bullets + dedicated footnote) — the checkout flow never referenced it either after the billing engine rebuild, so this was copy catching up to code, not a functional change.
+
+**Pause mechanism — decided + built 10 Jul 2026.** A dealer who crosses the 3-lead threshold and never adds a card previously faced zero consequence — listings stayed live and free leads kept flowing forever. Confirmed thresholds: **14 days** grace after `billing_activated_at`, then listings are excluded from all public-facing queries; **90 days** flags the dealer for Hans to manually review (not auto-removed — kept partly because Kerb may still use their content for social promotion under the new marketing licence, see terms 4).
+
+- Enforced via a Postgres view, `public_listings` (`supabase/migrations/20260710_billing_pause.sql`) — `listings` filtered to `status='live'`, has photos, and NOT (`subscription_status='awaiting_payment_method'` AND `billing_activated_at` older than 14 days). Computed live on every query, so the 14-day cutoff is exact to the day regardless of cron timing, and reactivation is instant and automatic the moment a card is added (subscription_status flips to `active`, the exclusion condition no longer matches) — no separate "unpause" step needed anywhere.
+- Every public-facing listing query (`page.tsx`, `search/page.tsx`, `sitemap.ts`, `dealers/page.tsx`, `dealers/[slug]/page.tsx`, and the related-cars query on `cars/[slug]/page.tsx`) now reads from `public_listings` instead of `listings` directly. The dealer's own dashboard/edit views still read `listings` directly and are unaffected — a paused dealer can still manage their listings, they just aren't publicly discoverable. Direct links to a specific car (`/cars/[id]`) also still resolve even if the dealer is paused — deindexed, not deleted.
+- Dealer-facing: dashboard banner and Enquiries stat card both reflect paused state distinctly from "awaiting payment, still in grace period."
+- Dealer emails: `sendActivationEmail` (first crossing, within grace) vs `sendPausedEmail` (past 14 days, different tone — notice not pitch) vs `sendReviewFlagEmail` to `hans@kerb.autos` (past 90 days, internal only).
+- **Migration applied + live-tested 10 Jul 2026.** Verified against real Supabase data across three dealer states (paused past 14 days, within grace period, active regardless of `billing_activated_at` age) and confirmed correct at every public surface — `sitemap.xml`, `/search`, `/dealers` directory (listing counts, not the dealer entry itself), and homepage all correctly excluded only the paused dealer's listing. Confirmed instant, automatic reactivation the moment `subscription_status` flips to `active` — no separate unpause step exists or is needed. Confirmed a direct link to a paused listing still resolves (200, not 404) — deindexed, not deleted, as designed. Test data cleaned up after.
 
 ---
 
@@ -141,6 +155,7 @@ Organic search results are ordered by relevance and recency only. No dealer can 
 | `/api/stripe/checkout` | `auth()` + dealer `clerk_user_id` match — prevents cross-account session creation |
 | `/api/stripe/identity` | `auth()` — prevents unauthenticated identity session creation |
 | `/api/companies-house` | `auth()` — prevents API key drain |
+| `/api/cron/billing`, `/api/cron/companies-house` | `Authorization: Bearer $CRON_SECRET` header check — 401 otherwise |
 | `/api/listings/[id]` PATCH + DELETE | Ownership check — `dealer_id` must match the authenticated user's dealer |
 | Company verification | Server-side Companies House call — client `companyStatus` is never trusted |
 | Stripe webhook | Signature verified with `constructEvent` before processing |
@@ -160,6 +175,11 @@ Organic search results are ordered by relevance and recency only. No dealer can 
 - Sends alert email to `hans@kerb.autos` via Resend if any status changed
 - Silence = all clear
 
+### Monthly billing run
+- GitHub Actions cron: 1st of each month at 09:00 UTC (`billing-monitor.yml`)
+- For each approved dealer: activates at 3 cumulative leads (sends "add payment method" email), invoices `active`/`past_due` dealers for every lead since `leads_invoiced_through`, skips anyone with zero leads since their last invoice
+- No summary email to Hans yet — only per-dealer activation/reminder emails. Consider adding a monthly digest to `hans@kerb.autos` (mirroring the Companies House alert) once real dealers are live.
+
 ---
 
 ## What's built ✅
@@ -171,11 +191,12 @@ Organic search results are ordered by relevance and recency only. No dealer can 
 - Delete listing
 - Homepage and search pulling real Supabase data
 - Car detail page with dealer card and wired enquiry form
-- Buyer enquiry → Resend email direct to dealer (HTML-escaped, UUID-validated)
-- Billing trigger on first enquiry → Stripe checkout link emailed to dealer
-- Dashboard with stats and listings table
+- Buyer enquiry → persisted to `enquiries` table + Resend email direct to dealer (HTML-escaped, UUID-validated)
+- "No leads, no pay" billing engine: 3-lead activation → Stripe setup Checkout (save card, no subscription) → cursor-based monthly invoicing via `/api/cron/billing`, only charges months with ≥1 lead since the last invoice
+- Dashboard with stats and listings table, billing activation banner when a dealer crosses the 3-lead threshold
 - Analytics: Google Analytics 4, Clarity, Search Console
 - Companies House monthly monitoring cron + Resend alert email
+- Monthly billing cron (GitHub Actions `billing-monitor.yml`, 1st of month) + Resend activation/reminder emails
 - Dealer acquisition landing page with screenshots
 - Security hardening: auth on all API routes, HTML injection prevention, server-side verification, file type validation (30 Jun 2026)
 - Advertiser marketplace: `/advertise` pitch page, `/advertise/apply` form (category select, Resend notification), homepage placement, click tracking
@@ -187,7 +208,10 @@ Organic search results are ordered by relevance and recency only. No dealer can 
 
 | Feature | Priority | Notes |
 |---|---|---|
-| Stripe live mode | P0 | Switch secret key to live when first dealer onboards |
+| ~~Run the new migration in production Supabase~~ | Done 10 Jul 2026 | `enquiries` table + new dealer columns confirmed live |
+| ~~End-to-end test in Stripe test mode~~ | Done 10 Jul 2026 | Full flow driven against real Stripe test-mode API (real customer, real attached card, real signed webhook, real invoices): 3-lead activation → email delivered (confirmed via Resend API) → setup Checkout webhook → first invoice (found + fixed two real bugs, see `git log`: pending invoice items weren't attaching, and charges weren't collected immediately) → zero-lead month correctly skipped → new lead correctly invoiced solo at £55.00/enquiry. Test data cleaned up after. |
+| Stripe live mode | P0 | Switch secret key to live when first dealer onboards. Billing engine itself is now proven correct in test mode — this is purely the test→live key swap. |
+| Set `billing@kerb.autos` as a verified Resend sender | P0 | Activation email confirmed delivered from this address in testing — domain is verified, but double check deliverability isn't degraded once real dealer volume starts |
 | Buyer-facing dealer directory / dealer profile page | P1 | `/dealers` currently shows acquisition page |
 | Spotlight feature (dashboard + dealer profile + homepage) | P1 | Schema ready — `spotlighted` column exists |
 | Admin panel | P2 | Currently managed via Supabase dashboard |

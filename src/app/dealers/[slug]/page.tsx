@@ -38,10 +38,8 @@ export default async function DealerProfilePage({ params }: Props) {
       .eq('status', 'approved')
       .single(),
     supabase
-      .from('listings')
+      .from('public_listings')
       .select('*')
-      .eq('status', 'live')
-      .not('photos', 'eq', '{}')
       .order('created_at', { ascending: false }),
   ])
 

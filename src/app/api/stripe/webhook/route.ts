@@ -1,6 +1,7 @@
 import Stripe from 'stripe'
 import { NextRequest } from 'next/server'
 import { createServerClient } from '@/lib/supabase/server'
+import { chargeForLeads } from '@/lib/billing'
 
 export const dynamic = 'force-dynamic'
 
@@ -54,64 +55,71 @@ export async function POST(req: NextRequest) {
     console.log(`[Identity] REQUIRES INPUT — ${session.metadata?.email} · ${session.id}`)
   }
 
-  // ── Subscriptions ──────────────────────────────────────────────────────────
+  // ── Billing activation — payment method setup ───────────────────────────────
+  // Fires when a dealer completes the "add payment method" Checkout session
+  // sent once they cross the 3-lead activation threshold (see /api/cron/billing).
+  // Saves the card as the customer's default, then immediately invoices for
+  // every lead received up to now — there is no prior cursor at this point,
+  // so this always covers the dealer's whole pre-activation lead history.
 
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object as Stripe.Checkout.Session
     const dealerId = session.metadata?.dealer_id
-    if (!dealerId || session.mode !== 'subscription') return Response.json({ received: true })
+    if (!dealerId || session.mode !== 'setup') return Response.json({ received: true })
 
-    const subscriptionId = typeof session.subscription === 'string'
-      ? session.subscription
-      : session.subscription?.id
+    const setupIntentId = typeof session.setup_intent === 'string' ? session.setup_intent : session.setup_intent?.id
+    const customerId     = typeof session.customer === 'string' ? session.customer : session.customer?.id
 
-    if (subscriptionId) {
-      await supabase
-        .from('dealers')
-        .update({
-          stripe_subscription_id: subscriptionId,
-          stripe_customer_id:     typeof session.customer === 'string' ? session.customer : session.customer?.id ?? null,
-          subscription_status:    'active',
-        })
-        .eq('id', dealerId)
-      console.log(`[Checkout] Subscription active — dealer ${dealerId}`)
-    }
-  }
+    if (!setupIntentId || !customerId) return Response.json({ received: true })
 
-  if (event.type === 'customer.subscription.updated') {
-    const sub     = event.data.object as Stripe.Subscription
-    const dealerId = sub.metadata?.dealer_id
-    if (!dealerId) return Response.json({ received: true })
+    const setupIntent = await stripe.setupIntents.retrieve(setupIntentId)
+    const paymentMethodId = typeof setupIntent.payment_method === 'string'
+      ? setupIntent.payment_method
+      : setupIntent.payment_method?.id
 
-    type SubStatus = 'free' | 'active' | 'cancelled' | 'past_due'
-    const statusMap: Record<string, SubStatus> = {
-      active:   'active',
-      past_due: 'past_due',
-      canceled: 'cancelled',
-      unpaid:   'past_due',
-    }
-    const status: SubStatus = statusMap[sub.status] ?? 'free'
-    const billingStartsAt = sub.trial_end
-      ? new Date(sub.trial_end * 1000).toISOString()
-      : null
+    if (!paymentMethodId) return Response.json({ received: true })
+
+    await stripe.customers.update(customerId, {
+      invoice_settings: { default_payment_method: paymentMethodId },
+    })
+
+    const { data: dealer } = await supabase
+      .from('dealers')
+      .select('plan')
+      .eq('id', dealerId)
+      .single()
+
+    const { count } = await supabase
+      .from('enquiries')
+      .select('id', { count: 'exact', head: true })
+      .eq('dealer_id', dealerId)
+
+    const now = new Date()
+
+    await chargeForLeads(stripe, { plan: dealer?.plan ?? 'solo', stripe_customer_id: customerId }, count ?? 0, null, now)
 
     await supabase
       .from('dealers')
-      .update({ subscription_status: status, billing_starts_at: billingStartsAt })
+      .update({
+        stripe_customer_id:     customerId,
+        subscription_status:    'active',
+        leads_invoiced_through: now.toISOString(),
+      })
       .eq('id', dealerId)
-    console.log(`[Subscription] Updated — dealer ${dealerId} → ${status}`)
+
+    console.log(`[Billing] Activated and invoiced ${count ?? 0} leads — dealer ${dealerId}`)
   }
 
-  if (event.type === 'customer.subscription.deleted') {
-    const sub     = event.data.object as Stripe.Subscription
-    const dealerId = sub.metadata?.dealer_id
-    if (!dealerId) return Response.json({ received: true })
+  if (event.type === 'invoice.paid') {
+    const invoice  = event.data.object as Stripe.Invoice
+    const customer = typeof invoice.customer === 'string' ? invoice.customer : invoice.customer?.id
+    if (!customer) return Response.json({ received: true })
 
     await supabase
       .from('dealers')
-      .update({ subscription_status: 'cancelled', stripe_subscription_id: null })
-      .eq('id', dealerId)
-    console.log(`[Subscription] Cancelled — dealer ${dealerId}`)
+      .update({ subscription_status: 'active' })
+      .eq('stripe_customer_id', customer)
+    console.log(`[Invoice] Paid — customer ${customer}`)
   }
 
   if (event.type === 'invoice.payment_failed') {

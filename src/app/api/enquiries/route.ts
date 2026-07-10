@@ -1,4 +1,3 @@
-import Stripe from 'stripe'
 import { NextRequest } from 'next/server'
 import { Resend } from 'resend'
 import { createServerClient } from '@/lib/supabase/server'
@@ -14,18 +13,6 @@ function esc(s: string): string {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#039;')
-}
-
-function startOfNextMonth(): number {
-  const now = new Date()
-  const next = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() + 1, 1))
-  return Math.floor(next.getTime() / 1000)
-}
-
-function nextMonthLabel(): string {
-  const now = new Date()
-  const next = new Date(Date.UTC(now.getUTCFullYear(), now.getUTCMonth() + 1, 1))
-  return next.toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })
 }
 
 export async function POST(req: NextRequest) {
@@ -60,7 +47,7 @@ export async function POST(req: NextRequest) {
   const supabase = createServerClient()
   const { data: dealer, error } = await supabase
     .from('dealers')
-    .select('email, first_name, last_name, plan, stripe_customer_id, first_lead_received_at, subscription_status')
+    .select('email, first_name, last_name')
     .eq('id', dealer_id)
     .single()
 
@@ -84,6 +71,22 @@ export async function POST(req: NextRequest) {
   const safePhone   = phone ? esc(phone) : null
   const safeMessage = esc(message)
   const safeTitle   = esc(String(listing_title))
+
+  // ── Persist the enquiry — the monthly billing job counts against this ──────
+
+  const { error: insertError } = await supabase.from('enquiries').insert({
+    dealer_id,
+    listing_id,
+    name,
+    email,
+    phone: phone ?? null,
+    message,
+  })
+
+  if (insertError) {
+    console.error('[Enquiry] Failed to store enquiry:', insertError)
+    return Response.json({ error: 'Failed to record enquiry' }, { status: 500 })
+  }
 
   // ── Send enquiry email to dealer ──────────────────────────────────────────
 
@@ -111,98 +114,6 @@ export async function POST(req: NextRequest) {
       </div>
     `,
   })
-
-  // ── Billing trigger — first enquiry only ──────────────────────────────────
-
-  const isFirstEnquiry = dealer.first_lead_received_at === null
-
-  if (isFirstEnquiry) {
-    // Mark immediately to prevent duplicate triggers from concurrent enquiries
-    await supabase
-      .from('dealers')
-      .update({ first_lead_received_at: new Date().toISOString() })
-      .eq('id', dealer_id)
-
-    const stripeKey = process.env.STRIPE_SECRET_KEY
-    if (stripeKey && stripeKey !== 'sk_test_REPLACE_ME') {
-      try {
-        const stripe = new Stripe(stripeKey)
-
-        const PRICE_LOOKUP: Record<string, string> = {
-          solo: 'kerb-solo-monthly',
-          pro:  'kerb-pro-monthly',
-        }
-        const plan = (dealer.plan ?? 'solo') as 'solo' | 'pro'
-        const lookupKey = PRICE_LOOKUP[plan]
-
-        const existing = await stripe.prices.list({ lookup_keys: [lookupKey], limit: 1 })
-        let priceId = existing.data[0]?.id
-
-        if (!priceId) {
-          const PRICE_AMOUNTS: Record<string, { amount: number; name: string }> = {
-            solo: { amount: 5500,  name: 'Kerb Solo' },
-            pro:  { amount: 13200, name: 'Kerb Pro'  },
-          }
-          const cfg = PRICE_AMOUNTS[plan]
-          const product = await stripe.products.create({ name: cfg.name })
-          const price = await stripe.prices.create({
-            product: product.id,
-            unit_amount: cfg.amount,
-            currency: 'gbp',
-            recurring: { interval: 'month' },
-            lookup_key: lookupKey,
-            transfer_lookup_key: true,
-          })
-          priceId = price.id
-        }
-
-        const session = await stripe.checkout.sessions.create({
-          mode: 'subscription',
-          customer: dealer.stripe_customer_id ?? undefined,
-          customer_email: dealer.stripe_customer_id ? undefined : dealer.email,
-          line_items: [{ price: priceId, quantity: 1 }],
-          subscription_data: {
-            billing_cycle_anchor: startOfNextMonth(),
-            proration_behavior: 'none',
-            metadata: { dealer_id, plan, billing_period: 'monthly' },
-          },
-          metadata: { dealer_id },
-          success_url: `${baseUrl}/dashboard?billing=success`,
-          cancel_url:  `${baseUrl}/dashboard?billing=cancelled`,
-        })
-
-        const checkoutUrl = session.url ?? `${baseUrl}/dashboard`
-        const planLabel = plan === 'pro' ? 'Kerb Pro — £132/month' : 'Kerb Solo — £55/month'
-        const billingDate = nextMonthLabel()
-
-        await resend.emails.send({
-          from,
-          to: dealer.email,
-          subject: 'You just received your first buyer enquiry — set up billing',
-          html: `
-            <div style="font-family:sans-serif;max-width:560px;margin:0 auto;color:#0A0A0F">
-              <p style="font-size:18px;font-weight:600;margin-bottom:4px">Great news, ${esc(dealer.first_name)}</p>
-              <p style="color:#6E6E73;margin-top:0">A buyer just enquired about your listing on Kerb.</p>
-
-              <p>To keep receiving buyer enquiries, set up your subscription now. You won't be charged until <strong>${billingDate}</strong>.</p>
-
-              <a href="${checkoutUrl}" style="display:inline-block;background:#0A0A0F;color:#fff;text-decoration:none;padding:14px 28px;border-radius:6px;font-weight:600;margin:16px 0">Set up billing →</a>
-
-              <table style="width:100%;border-collapse:collapse;margin:24px 0">
-                <tr><td style="padding:8px 0;border-bottom:1px solid #E5E5E7;color:#6E6E73;width:160px">Your plan</td><td style="padding:8px 0;border-bottom:1px solid #E5E5E7;font-weight:500">${planLabel}</td></tr>
-                <tr><td style="padding:8px 0;border-bottom:1px solid #E5E5E7;color:#6E6E73">First charge</td><td style="padding:8px 0;border-bottom:1px solid #E5E5E7;font-weight:500">${billingDate}</td></tr>
-                <tr><td style="padding:8px 0;color:#6E6E73">Cancel any time</td><td style="padding:8px 0;font-weight:500">No lock-in</td></tr>
-              </table>
-
-              <p style="margin-top:32px;font-size:13px;color:#A8AAB0">Questions? Reply to this email.<br>Kerb — Real Kerb Appeal. <a href="${baseUrl}" style="color:#A8AAB0">${baseUrl.replace('https://', '')}</a></p>
-            </div>
-          `,
-        })
-      } catch (err) {
-        console.error('[Enquiry] Billing trigger failed:', err)
-      }
-    }
-  }
 
   return Response.json({ success: true })
 }

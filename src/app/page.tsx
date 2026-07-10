@@ -12,18 +12,14 @@ export default async function HomePage() {
   const supabase = createServerClient()
 
   const { data: listings } = await supabase
-    .from('listings')
+    .from('public_listings')
     .select('*')
-    .eq('status', 'live')
-    .not('photos', 'eq', '{}')
     .order('created_at', { ascending: false })
     .limit(6)
 
   const { count } = await supabase
-    .from('listings')
+    .from('public_listings')
     .select('*', { count: 'exact', head: true })
-    .eq('status', 'live')
-    .not('photos', 'eq', '{}')
 
   const totalListings = count ?? 0
 
@@ -139,7 +135,7 @@ export default async function HomePage() {
           <div>
             <p className="text-[#0A0A0F] text-[16px] font-medium mb-1">Are you a dealer?</p>
             <p className="text-[#6E6E73] text-[14px] font-light">
-              You don&apos;t pay a penny until we send you a buyer. Then £55/month.
+              List free. No charge until you&apos;ve had 3 real buyer enquiries — then only in months we send you one.
             </p>
           </div>
           <Link
