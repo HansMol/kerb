@@ -41,9 +41,14 @@ export async function chargeForLeads(
     customer: dealer.stripe_customer_id,
     collection_method: 'charge_automatically',
     auto_advance: true,
+    pending_invoice_items_behavior: 'include',
   })
 
   if (invoice.id) {
     await stripe.invoices.finalizeInvoice(invoice.id)
+    // finalizeInvoice does not itself attempt collection — without this,
+    // Stripe schedules the first charge attempt asynchronously (can be
+    // over an hour later). We want the dealer charged immediately.
+    await stripe.invoices.pay(invoice.id)
   }
 }
