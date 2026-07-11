@@ -36,7 +36,7 @@ const STANDARDS = [
   {
     num: 'Standard 01',
     title: 'Direct leads. Every time.',
-    body: 'Your phone number is visible on your listing without the buyer creating an account. Every enquiry routes to you directly. Kerb is never in the middle of your conversation.',
+    body: 'Your phone number is one tap away on your listing — no account, no email verification required from the buyer. Every enquiry routes to you directly. Kerb is never in the middle of your conversation.',
   },
   {
     num: 'Standard 02',
