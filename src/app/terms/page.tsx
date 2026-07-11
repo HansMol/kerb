@@ -34,7 +34,7 @@ export default function TermsPage() {
           Every dealer who registers with Kerb enters into an agreement that includes these three commitments. They are not marketing promises — they are binding contractual terms. They cannot be removed or watered down by a product update, a policy revision, or a change in commercial direction.
         </p>
 
-        <Callout>Commitment 01 — Lead Ownership{'\n'}Every buyer enquiry is delivered directly to you. Kerb does not intercept, qualify, re-route, hold, or monetise your leads. Ever.</Callout>
+        <Callout>Commitment 01 — Lead Ownership{'\n'}Every buyer enquiry is delivered directly to you. &quot;Lead&quot; and &quot;buyer enquiry&quot; mean the same thing throughout these terms. Kerb does not intercept, qualify, re-route, hold, or monetise your leads. Ever.</Callout>
         <Callout>Commitment 02 — Search Integrity{'\n'}Organic search results are ordered by relevance and recency only. No dealer can pay to rank above another. Spotlight — a dealer-curated showcase on a dealer&apos;s own profile page — is the only paid visibility feature and it never affects search position.</Callout>
         <Callout>Commitment 03 — Exit With Your Data{'\n'}Your listing history, enquiry records, and contact data belong to you. You may request a full export at any time. Leaving Kerb costs nothing and loses nothing.</Callout>
 
