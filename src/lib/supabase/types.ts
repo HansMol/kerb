@@ -122,7 +122,17 @@ type WaitlistEntryRow = {
 
 type WaitlistEntryInsert = Omit<WaitlistEntryRow, 'id' | 'created_at'>
 
-export type { DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate, PublicListingRow, EnquiryRow, EnquiryInsert, AdvertiserCategory, AdvertiserRow, AdvertiserClickRow, AdvertiserApplicationRow, WaitlistEntryRow, WaitlistEntryInsert }
+type PhoneRevealEventRow = {
+  id: string
+  dealer_id: string
+  listing_id: string | null
+  source_ip: string | null
+  created_at: string
+}
+
+type PhoneRevealEventInsert = Omit<PhoneRevealEventRow, 'id' | 'created_at'>
+
+export type { DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate, PublicListingRow, EnquiryRow, EnquiryInsert, AdvertiserCategory, AdvertiserRow, AdvertiserClickRow, AdvertiserApplicationRow, WaitlistEntryRow, WaitlistEntryInsert, PhoneRevealEventRow, PhoneRevealEventInsert }
 
 export type Database = {
   public: {
@@ -192,6 +202,20 @@ export type Database = {
         Insert: WaitlistEntryInsert
         Update: never
         Relationships: []
+      }
+      phone_reveal_events: {
+        Row: PhoneRevealEventRow
+        Insert: PhoneRevealEventInsert
+        Update: never
+        Relationships: [
+          {
+            foreignKeyName: 'phone_reveal_events_dealer_id_fkey'
+            columns: ['dealer_id']
+            isOneToOne: false
+            referencedRelation: 'dealers'
+            referencedColumns: ['id']
+          }
+        ]
       }
     }
     Views: {

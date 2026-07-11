@@ -1,8 +1,9 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { Phone, Globe, MapPin } from 'lucide-react'
+import { Globe, MapPin } from 'lucide-react'
 import { createServerClient } from '@/lib/supabase/server'
 import { ListingCard } from '@/components/listings/listing-card'
+import { PhoneReveal } from '@/components/phone-reveal'
 
 export const dynamic = 'force-dynamic'
 
@@ -77,13 +78,11 @@ export default async function DealerProfilePage({ params }: Props) {
               </p>
 
               <div className="flex flex-wrap gap-5 text-[14px]">
-                <a
-                  href={`tel:${dealer.phone}`}
+                <PhoneReveal
+                  dealer_id={dealer.id}
                   className="flex items-center gap-2 text-[#6E6E73] hover:text-[#0A0A0F] transition-colors"
-                >
-                  <Phone size={14} className="text-[#A8AAB0]" />
-                  {dealer.phone}
-                </a>
+                  iconClassName="text-[#A8AAB0]"
+                />
                 {dealer.website && (
                   <a
                     href={dealer.website}
