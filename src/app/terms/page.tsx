@@ -22,7 +22,7 @@ export default function TermsPage() {
         <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#A8AAB0] mb-4">Legal</p>
         <h1 className="text-[clamp(32px,4vw,48px)] font-light leading-[1.15] text-[#0A0A0F] tracking-[-0.01em] mb-3">Terms of Service</h1>
         <p className="text-sm text-[#6E6E73] mb-14 pb-10 border-b border-[#E5E5E7]">
-          Kerb Ltd &nbsp;·&nbsp; Last updated: 10 July 2026 &nbsp;·&nbsp; Version 1.2
+          Kerb is operated by Ice Clean Works Ltd &nbsp;·&nbsp; Last updated: 11 July 2026 &nbsp;·&nbsp; Version 1.3
         </p>
 
         <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
@@ -40,7 +40,7 @@ export default function TermsPage() {
 
         <h2 className="text-xl font-semibold text-[#0A0A0F] mt-12 mb-4 leading-snug">1. About Kerb</h2>
         <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
-          Kerb is a UK vehicle marketplace operated by Kerb Ltd. We connect buyers directly with dealers. We do not buy, sell, value, or intermediate the sale of any vehicle. We are not a party to any transaction between a buyer and a dealer.
+          Kerb is a UK vehicle marketplace, currently operated as a service of Ice Clean Works Ltd (company number 17027354). We connect buyers directly with dealers. We do not buy, sell, value, or intermediate the sale of any vehicle. We are not a party to any transaction between a buyer and a dealer.
         </p>
 
         <h2 className="text-xl font-semibold text-[#0A0A0F] mt-12 mb-4 leading-snug">2. Dealer terms</h2>
@@ -77,10 +77,13 @@ export default function TermsPage() {
 
         <h3 className="text-base font-semibold text-[#0A0A0F] mt-7 mb-2.5">2.6 Subscription and billing</h3>
         <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
-          Listing is free. No payment details are required at registration. You will not be invoiced in any calendar month unless you received at least one verified buyer enquiry through the platform during that month — this applies for as long as you use Kerb, not only during an initial period. Before your first invoice you will need at least three verified buyer enquiries in total; this one-off threshold does not apply again to any later invoice, which each require only one enquiry in the relevant month. Every invoice states the number of enquiries delivered in that period. No charge will ever be applied for a month in which no enquiry was delivered.
+          Listing is free. No payment details are required at registration. You will not be invoiced in any calendar month unless you received at least one buyer enquiry through the platform during that month — this applies for as long as you use Kerb, not only during an initial period. Before your first invoice you will need at least three buyer enquiries in total; this one-off threshold does not apply again to any later invoice, which each require only one enquiry in the relevant month. Every invoice states the number of enquiries delivered in that period. No charge will ever be applied for a month in which no enquiry was delivered.
         </p>
         <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
-          Once you reach three verified buyer enquiries, you have 14 days to add a payment method before your listings are paused from buyer search — this is not a charge or a penalty, and nothing already delivered is clawed back. Adding a payment method at any point reactivates your listings immediately and automatically, with no review or delay.
+          Once you reach three buyer enquiries, you have 14 days to add a payment method before your listings are paused from buyer search — this is not a charge or a penalty, and nothing already delivered is clawed back. Adding a payment method at any point reactivates your listings immediately and automatically, with no review or delay.
+        </p>
+        <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
+          A &quot;buyer enquiry&quot; is a message or phone-number reveal submitted through Kerb and delivered to your dealer account, protected by basic anti-spam and rate-limiting controls. Kerb does not assess, qualify, score, or otherwise vet the seriousness, intent, or genuineness of any individual enquiry beyond these controls, and does not guarantee that any enquiry will result in a viewing, a negotiation, or a sale. Responding to and converting enquiries is your responsibility. Fees are charged for the delivery of enquiries meeting this definition and are not refundable on the basis of an enquiry&apos;s quality, seriousness, or outcome.
         </p>
 
         <h3 className="text-base font-semibold text-[#0A0A0F] mt-7 mb-2.5">2.7 Your data</h3>
@@ -120,7 +123,7 @@ export default function TermsPage() {
 
         <h2 className="text-xl font-semibold text-[#0A0A0F] mt-12 mb-4 leading-snug">4. Intellectual property</h2>
         <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
-          The Kerb name, wordmark, and platform design are the property of Kerb Ltd. Dealers grant Kerb a non-exclusive licence to display listing content (text, photos, specifications) on the platform for the purpose of presenting the listing to buyers. This licence ends when the listing is removed or the dealer account is closed.
+          The Kerb name, wordmark, and platform design are the property of Ice Clean Works Ltd. Dealers grant Kerb a non-exclusive licence to display listing content (text, photos, specifications) on the platform for the purpose of presenting the listing to buyers. This licence ends when the listing is removed or the dealer account is closed.
         </p>
         <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
           Dealers also grant Kerb a non-exclusive licence to use listing content — including photos — in Kerb&apos;s own marketing, including social media, to promote the listing and the Kerb platform. No dealer is paid for this use, and no dealer is identified in the resulting post — a buyer only learns which dealer holds the car by clicking through to its listing on Kerb. This licence ends when the listing is removed or the dealer account is closed, except that marketing material already published before that point is not required to be taken down retrospectively.
@@ -128,7 +131,7 @@ export default function TermsPage() {
 
         <h2 className="text-xl font-semibold text-[#0A0A0F] mt-12 mb-4 leading-snug">5. Limitation of liability</h2>
         <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
-          Kerb provides the platform on an &quot;as is&quot; basis. We do not guarantee uninterrupted availability. To the maximum extent permitted by UK law, Kerb Ltd is not liable for any indirect, consequential, or incidental loss arising from use of the platform. Our total liability to any dealer in any 12-month period shall not exceed the subscription fees paid by that dealer in the same period.
+          Kerb provides the platform on an &quot;as is&quot; basis. We do not guarantee uninterrupted availability. To the maximum extent permitted by UK law, Ice Clean Works Ltd is not liable for any indirect, consequential, or incidental loss arising from use of the platform. Our total liability to any dealer in any 12-month period shall not exceed the subscription fees paid by that dealer in the same period.
         </p>
 
         <h2 className="text-xl font-semibold text-[#0A0A0F] mt-12 mb-4 leading-snug">6. Changes to these terms</h2>
@@ -144,9 +147,10 @@ export default function TermsPage() {
 
         <h2 className="text-xl font-semibold text-[#0A0A0F] mt-12 mb-4 leading-snug">8. Contact</h2>
         <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
-          Kerb Ltd<br />
+          Kerb is a service of Ice Clean Works Ltd<br />
           <a href="mailto:hello@kerb.autos" className="text-[#0A0A0F] underline underline-offset-2">hello@kerb.autos</a><br />
-          Registered in England and Wales
+          Company number 17027354, registered in England and Wales<br />
+          3rd Floor, 86-90 Paul Street, London, England, EC2A 4NE
         </p>
 
       </main>
