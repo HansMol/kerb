@@ -112,7 +112,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </div>
             </div>
             <div className="mt-8 pt-8 border-t border-[#E5E5E7] text-xs text-[#6E6E73] flex flex-wrap gap-4 items-center justify-between">
-              <span>© 2026 Kerb Ltd. All rights reserved.</span>
+              <span>© 2026 Kerb, a service of Ice Clean Works Ltd. All rights reserved.</span>
               <div className="flex gap-4">
                 <a href="/terms" className="hover:text-[#0A0A0F] transition-colors">Terms</a>
                 <a href="/privacy" className="hover:text-[#0A0A0F] transition-colors">Privacy</a>

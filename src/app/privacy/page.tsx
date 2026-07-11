@@ -14,11 +14,11 @@ export default function PrivacyPage() {
         <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#A8AAB0] mb-4">Legal</p>
         <h1 className="text-[clamp(32px,4vw,48px)] font-light leading-[1.15] text-[#0A0A0F] tracking-[-0.01em] mb-3">Privacy Policy</h1>
         <p className="text-sm text-[#6E6E73] mb-14 pb-10 border-b border-[#E5E5E7]">
-          Kerb Ltd &nbsp;·&nbsp; Last updated: 26 June 2026 &nbsp;·&nbsp; Version 1.0
+          Kerb is operated by Ice Clean Works Ltd &nbsp;·&nbsp; Last updated: 11 July 2026 &nbsp;·&nbsp; Version 1.1
         </p>
 
         <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
-          This policy explains how Kerb Ltd (&quot;Kerb&quot;, &quot;we&quot;, &quot;us&quot;) collects, uses, and protects personal data when you use the Kerb platform at kerb.autos. We are the data controller for personal data processed under this policy.
+          This policy explains how Ice Clean Works Ltd (company number 17027354), operating the Kerb platform (&quot;Kerb&quot;, &quot;we&quot;, &quot;us&quot;), collects, uses, and protects personal data when you use kerb.autos. We are the data controller for personal data processed under this policy.
         </p>
 
         <h2 className="text-xl font-semibold text-[#0A0A0F] mt-12 mb-4 leading-snug">1. What data we collect</h2>
@@ -108,9 +108,10 @@ export default function PrivacyPage() {
 
         <h2 className="text-xl font-semibold text-[#0A0A0F] mt-12 mb-4 leading-snug">9. Contact</h2>
         <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
-          Kerb Ltd<br />
+          Kerb is a service of Ice Clean Works Ltd<br />
           <a href="mailto:hello@kerb.autos" className="text-[#0A0A0F] underline underline-offset-2">hello@kerb.autos</a><br />
-          Registered in England and Wales
+          Company number 17027354, registered in England and Wales<br />
+          3rd Floor, 86-90 Paul Street, London, England, EC2A 4NE
         </p>
 
       </main>
