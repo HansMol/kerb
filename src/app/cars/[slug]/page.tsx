@@ -3,7 +3,7 @@ import Script from 'next/script'
 import { notFound } from 'next/navigation'
 import {
   MapPin, Gauge, Fuel, Settings, Calendar, ChevronRight,
-  ShieldCheck, Phone, Mail,
+  ShieldCheck, Mail,
 } from 'lucide-react'
 import { createServerClient } from '@/lib/supabase/server'
 import type { DealerRow, ListingRow } from '@/lib/supabase/types'
@@ -11,6 +11,7 @@ import EnquiryForm from './enquiry-form'
 import { CarPhotoGallery } from '@/components/listings/car-photo-gallery'
 import { ServicesCard } from '@/components/services/services-card'
 import { ListingCard } from '@/components/listings/listing-card'
+import { PhoneReveal } from '@/components/phone-reveal'
 
 type ListingWithDealer = ListingRow & { dealers: DealerRow | null }
 
@@ -240,10 +241,12 @@ export default async function ListingDetailPage({
                   )}
                 </div>
                 <div className="space-y-2 text-sm mt-4">
-                  <a href={`tel:${dealer.phone}`} className="flex items-center gap-2 text-[#6E6E73] hover:text-[#0A0A0F] transition-colors">
-                    <Phone size={14} className="text-[#A8AAB0]" />
-                    {dealer.phone}
-                  </a>
+                  <PhoneReveal
+                    dealer_id={dealer.id}
+                    listing_id={listing.id}
+                    className="flex items-center gap-2 text-[#6E6E73] hover:text-[#0A0A0F] transition-colors"
+                    iconClassName="text-[#A8AAB0]"
+                  />
                   <a href={`mailto:${dealer.email}`} className="flex items-center gap-2 text-[#6E6E73] hover:text-[#0A0A0F] transition-colors">
                     <Mail size={14} className="text-[#A8AAB0]" />
                     {dealer.email}
