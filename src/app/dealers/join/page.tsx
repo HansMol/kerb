@@ -13,7 +13,7 @@ const PROBLEMS = [
   {
     label: 'Deal Builder',
     title: 'Your buyer is intercepted before they reach you',
-    body: 'A compulsory £99 reservation and mandatory account creation sits between your buyer and your number. Stock tied up. Lead control gone. The platform is now in your deal.',
+    body: 'A compulsory £99 reservation and mandatory account creation sits between your buyer and your number. Stock tied up. Deal control gone. The platform is now in your deal.',
   },
   {
     label: 'The Algorithm',
@@ -35,7 +35,7 @@ const PROBLEMS = [
 const STANDARDS = [
   {
     num: 'Standard 01',
-    title: 'Direct leads. Every time.',
+    title: 'Direct enquiries. Every time.',
     body: 'Your phone number is one tap away on your listing — no account, no email verification required from the buyer. Every enquiry routes to you directly. Kerb is never in the middle of your conversation.',
   },
   {
@@ -53,8 +53,8 @@ const STANDARDS = [
 const CHARTER = [
   {
     num: 'Commitment 01',
-    title: 'Lead Ownership',
-    body: 'Every buyer enquiry is delivered directly to you. Kerb does not intercept, qualify, re-route, or monetise your leads. This is not a policy that can be changed by a product update.',
+    title: 'Enquiry Ownership',
+    body: 'Every buyer enquiry is delivered directly to you. Kerb does not intercept, qualify, re-route, or monetise your enquiries. This is not a policy that can be changed by a product update.',
   },
   {
     num: 'Commitment 02',
@@ -99,7 +99,7 @@ const PRICING_FOOTNOTES = [
         <path d="M9 2L4 9h4l-1 5 5-7H8l1-5z" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round" strokeLinejoin="round"/>
       </svg>
     ),
-    text: 'No payment details required to register. You are only ever charged in a month we deliver at least one buyer enquiry — never before your third.',
+    text: "No card required to register. Your first charge can only happen after your 3rd real buyer enquiry — and even then, only in months you actually receive one. Zero enquiries that month means zero charge. Every month, for as long as you're on Kerb.",
   },
 ]
 
@@ -173,7 +173,7 @@ export default function DealersPage() {
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 pt-12 border-t border-[#1C1C1E]">
           {[
             { label: 'Cost at launch',          value: 'Free' },
-            { label: 'Lead ownership',           value: '100%' },
+            { label: 'Enquiry ownership',        value: '100%' },
             { label: 'Platform cut',             value: '£0' },
             { label: 'Commitment required',      value: 'None' },
           ].map(({ label, value }) => (
@@ -316,6 +316,9 @@ export default function DealersPage() {
                 <span className="text-[44px] font-light text-[#0A0A0F] tracking-[-0.02em] leading-none">55</span>
                 <span className="text-[15px] text-[#6E6E73]">/mo</span>
               </div>
+              <p className="text-[12px] font-semibold text-[#A0714A] mb-3">
+                Free until your 3rd enquiry — billed only in months you get one
+              </p>
               <p className="text-[13px] text-[#6E6E73] mb-5 pb-5 border-b border-[#E5E5E7]">
                 Standard rate <span className="line-through text-[#A8AAB0]">£79/mo</span> after founding places are filled
               </p>
@@ -337,6 +340,9 @@ export default function DealersPage() {
                 <span className="text-[44px] font-light text-[#0A0A0F] tracking-[-0.02em] leading-none">132</span>
                 <span className="text-[15px] text-[#6E6E73]">/mo</span>
               </div>
+              <p className="text-[12px] font-semibold text-[#A0714A] mb-3">
+                Free until your 3rd enquiry — billed only in months you get one
+              </p>
               <p className="text-[13px] text-[#6E6E73] mb-5 pb-5 border-b border-[#E5E5E7]">
                 Standard rate <span className="line-through text-[#A8AAB0]">£189/mo</span> after founding places are filled
               </p>

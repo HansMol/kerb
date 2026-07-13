@@ -1,6 +1,6 @@
 # Kerb — Functional Specification
 
-*Last updated: 2026-07-13 (rev 7 — relevance-ranked search)*
+*Last updated: 2026-07-13 (rev 8 — bulk CSV listing upload, Phase A)*
 
 ---
 
@@ -224,6 +224,11 @@ The `q` free-text param on `/search` is matched and ranked via `search_listings_
 | Founding advertiser rate enforcement | P2 | £29/month rate + threshold (5,000 visitors / 50 clicks) is policy only — no site-wide analytics table, billing integration, or automated rate switch yet |
 | Auction/bid facility for finance, insurance, history checks | P3 | Carwow-style — replaces the single curated partner per slot once volume justifies it |
 | Full Typesense search (real search engine, sync pipeline) | P3 | Deferred 13 Jul 2026 — live listing count is zero, a search engine adds nothing yet. Interim Postgres trigram/relevance search shipped instead (see Search ranking above). Revisit once live listings reach ~50-100, or dealers report search feels rough. `typesense` remains an installed, unused dependency until then. |
+| Bulk CSV listing upload | P1 | Built 13 Jul 2026, PR #10 open (`feat/bulk-upload-phase-a`) — not yet merged/deployed, not yet tested against an authenticated dealer session (no staging environment; `/dashboard` is Clerk-protected). `POST /api/listings/bulk-upload` + `/dashboard/listings/bulk-upload` page, creates listings as drafts, photos still added per-listing via the existing edit flow. |
+| Bulk upload — DMS/stock-feed integration | P3 | Deferred 13 Jul 2026 — AutoTrader-style automatic feed from a dealer's own DMS (Keyloop, Dragon2000, Pinewood). Big lift, per-vendor integration; only worth it once dealers actually have a DMS and ask for it. |
+| Bulk upload — VRM/DVLA auto-populate | P3 | Deferred 13 Jul 2026 — DVLA's free Vehicle Enquiry Service API is currently closed to new registrations, and even when open doesn't return model, only make/colour/fuel/year. Revisit if DVLA reopens registrations or a paid provider becomes worth the cost at volume. |
+| Bulk upload — filename-matched batch photos | P3 | Deferred 13 Jul 2026 — industry-standard `01_REG.jpg` convention matched to a stock number/reg column, so a dealer can drop a whole photo folder at once. Build only once a real dealer with a large inventory asks. |
+| Bulk upload — CSV re-upload to edit existing listings | P3 | Deferred 13 Jul 2026 — Phase A is create-only. Updating/syncing existing listings via re-upload is a separate, harder problem (matching rows to existing listings, partial updates) — not needed until Phase A is proven out. |
 
 ---
 
