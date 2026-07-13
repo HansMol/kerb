@@ -1,6 +1,6 @@
 # Kerb — Functional Specification
 
-*Last updated: 2026-07-08 (rev 6 — advertiser marketplace + services directory)*
+*Last updated: 2026-07-13 (rev 7 — relevance-ranked search)*
 
 ---
 
@@ -144,6 +144,9 @@ Not shown on the car detail page directly — that placement doesn't scale past 
 ### Search integrity rule
 Organic search results are ordered by relevance and recency only. No dealer can pay to rank above another. This is a founding charter commitment — never break this rule in code or product decisions.
 
+### Search ranking (13 Jul 2026)
+The `q` free-text param on `/search` is matched and ranked via `search_listings_relevance()`, a Postgres RPC using `pg_trgm` — `similarity()` on make/model, `word_similarity()`/`<%` on description (so a short query like "BMW" scores correctly against a long free-text field, not just whole-string `similarity()`). Default view for a search term is "Best match" (relevance order); an explicit sort-dropdown choice always overrides it. Decided as an interim fix ahead of a full Typesense build — see the roadmap table below for the deferral trigger.
+
 ---
 
 ## Security model
@@ -201,6 +204,7 @@ Organic search results are ordered by relevance and recency only. No dealer can 
 - Security hardening: auth on all API routes, HTML injection prevention, server-side verification, file type validation (30 Jun 2026)
 - Advertiser marketplace: `/advertise` pitch page, `/advertise/apply` form (category select, Resend notification), homepage placement, click tracking
 - Services directory: `/services` hub page grouped by category, curated 3-row `ServicesCard` on car detail pages (history check, finance, insurance)
+- Relevance-ranked search: `pg_trgm` indexes + `search_listings_relevance()` RPC, typo-tolerant free-text ranking on `/search`, replacing a flat `ilike` substring match
 
 ---
 
@@ -219,6 +223,7 @@ Organic search results are ordered by relevance and recency only. No dealer can 
 | Finance/insurance prequalifying partners | P1 | `ServicesCard` links are placeholders (Zuto, CompareTheMarket) pending real partner deals |
 | Founding advertiser rate enforcement | P2 | £29/month rate + threshold (5,000 visitors / 50 clicks) is policy only — no site-wide analytics table, billing integration, or automated rate switch yet |
 | Auction/bid facility for finance, insurance, history checks | P3 | Carwow-style — replaces the single curated partner per slot once volume justifies it |
+| Full Typesense search (real search engine, sync pipeline) | P3 | Deferred 13 Jul 2026 — live listing count is zero, a search engine adds nothing yet. Interim Postgres trigram/relevance search shipped instead (see Search ranking above). Revisit once live listings reach ~50-100, or dealers report search feels rough. `typesense` remains an installed, unused dependency until then. |
 
 ---
 
