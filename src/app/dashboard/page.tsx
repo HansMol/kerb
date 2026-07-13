@@ -12,6 +12,7 @@ import {
   MoreHorizontal,
   PoundSterling,
   MessageSquare,
+  Upload,
 } from 'lucide-react'
 import { createServerClient } from '@/lib/supabase/server'
 import type { Database } from '@/lib/supabase/types'
@@ -169,13 +170,22 @@ export default async function DashboardPage() {
               {dealer.first_name} {dealer.last_name} · {dealer.city}, {dealer.postcode} · Member since {formatMonth(dealer.created_at)}
             </p>
           </div>
-          <Link
-            href="/dashboard/listings/new"
-            className="inline-flex items-center gap-2 bg-[#0A0A0F] hover:bg-[#1C1C1E] text-white text-[13px] font-semibold px-5 py-2.5 rounded-lg transition-colors whitespace-nowrap self-start"
-          >
-            <Plus size={15} />
-            Add listing
-          </Link>
+          <div className="flex gap-2 self-start">
+            <Link
+              href="/dashboard/listings/bulk-upload"
+              className="inline-flex items-center gap-2 bg-white border border-[#E5E5E7] hover:border-[#C4C6CC] text-[#0A0A0F] text-[13px] font-semibold px-5 py-2.5 rounded-lg transition-colors whitespace-nowrap"
+            >
+              <Upload size={15} />
+              Bulk upload
+            </Link>
+            <Link
+              href="/dashboard/listings/new"
+              className="inline-flex items-center gap-2 bg-[#0A0A0F] hover:bg-[#1C1C1E] text-white text-[13px] font-semibold px-5 py-2.5 rounded-lg transition-colors whitespace-nowrap"
+            >
+              <Plus size={15} />
+              Add listing
+            </Link>
+          </div>
         </div>
 
         {/* ── Stats ─────────────────────────────────────────────────────── */}
