@@ -224,7 +224,12 @@ export type Database = {
         Relationships: []
       }
     }
-    Functions: Record<string, never>
+    Functions: {
+      search_listings_relevance: {
+        Args: { search_term: string }
+        Returns: { id: string; rank: number }[]
+      }
+    }
     Enums: Record<string, never>
   }
 }
