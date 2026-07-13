@@ -2,7 +2,7 @@ import { DealerWizard } from './wizard'
 
 export const metadata = {
   title: 'Register Your Dealership — Kerb',
-  description: 'List your inventory on Kerb. Free to list, direct leads, no platform intermediation.',
+  description: 'List your inventory on Kerb. Free to list, direct enquiries, no platform intermediation.',
 }
 
 export default async function DealerRegisterPage({

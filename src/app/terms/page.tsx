@@ -22,7 +22,7 @@ export default function TermsPage() {
         <p className="text-[11px] font-semibold tracking-[0.12em] uppercase text-[#A8AAB0] mb-4">Legal</p>
         <h1 className="text-[clamp(32px,4vw,48px)] font-light leading-[1.15] text-[#0A0A0F] tracking-[-0.01em] mb-3">Terms of Service</h1>
         <p className="text-sm text-[#6E6E73] mb-14 pb-10 border-b border-[#E5E5E7]">
-          Kerb is operated by Ice Clean Works Ltd &nbsp;·&nbsp; Last updated: 11 July 2026 &nbsp;·&nbsp; Version 1.3
+          Kerb is operated by Ice Clean Works Ltd &nbsp;·&nbsp; Last updated: 13 July 2026 &nbsp;·&nbsp; Version 1.4
         </p>
 
         <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
@@ -34,7 +34,7 @@ export default function TermsPage() {
           Every dealer who registers with Kerb enters into an agreement that includes these three commitments. They are not marketing promises — they are binding contractual terms. They cannot be removed or watered down by a product update, a policy revision, or a change in commercial direction.
         </p>
 
-        <Callout>Commitment 01 — Lead Ownership{'\n'}Every buyer enquiry is delivered directly to you. &quot;Lead&quot; and &quot;buyer enquiry&quot; mean the same thing throughout these terms. Kerb does not intercept, qualify, re-route, hold, or monetise your leads. Ever.</Callout>
+        <Callout>Commitment 01 — Enquiry Ownership{'\n'}Every buyer enquiry is delivered directly to you. Kerb does not intercept, qualify, re-route, hold, or monetise your enquiries. Ever.</Callout>
         <Callout>Commitment 02 — Search Integrity{'\n'}Organic search results are ordered by relevance and recency only. No dealer can pay to rank above another. Spotlight — a dealer-curated showcase on a dealer&apos;s own profile page — is the only paid visibility feature and it never affects search position.</Callout>
         <Callout>Commitment 03 — Exit With Your Data{'\n'}Your listing history, enquiry records, and contact data belong to you. You may request a full export at any time. Leaving Kerb costs nothing and loses nothing.</Callout>
 
@@ -55,8 +55,8 @@ export default function TermsPage() {
           You are responsible for ensuring every listing is accurate, current, and compliant with the Consumer Rights Act 2015, the Consumer Protection from Unfair Trading Regulations 2008, and all other applicable UK consumer law. Mileage, condition, service history, and MOT status must be truthful. Listings must be removed or updated promptly when a vehicle is sold or details change.
         </p>
 
-        <h3 className="text-base font-semibold text-[#0A0A0F] mt-7 mb-2.5">2.3 Lead ownership</h3>
-        <Callout>Every buyer enquiry is delivered directly to you. Kerb does not intercept, qualify, re-route, hold, or monetise your leads. This is a founding commitment and is not subject to change by product update or policy revision.</Callout>
+        <h3 className="text-base font-semibold text-[#0A0A0F] mt-7 mb-2.5">2.3 Enquiry ownership</h3>
+        <Callout>Every buyer enquiry is delivered directly to you. Kerb does not intercept, qualify, re-route, hold, or monetise your enquiries. This is a founding commitment and is not subject to change by product update or policy revision.</Callout>
 
         <h3 className="text-base font-semibold text-[#0A0A0F] mt-7 mb-2.5">2.4 Search integrity</h3>
         <Callout>Organic search results on Kerb are ordered by relevance and recency only. No dealer can pay to rank above another dealer in search results. This rule applies permanently and without exception.</Callout>

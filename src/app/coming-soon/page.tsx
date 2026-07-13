@@ -110,7 +110,7 @@ export default async function ComingSoonPage({
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 max-w-3xl">
           {[
-            { stat: '£0',    label: 'To enquire',       sub: 'No reservation fees. No lead charges. Ever.' },
+            { stat: '£0',    label: 'To enquire',       sub: 'No reservation fees. No hidden charges. Ever.' },
             { stat: '100%',  label: 'Verified dealers', sub: 'Every dealer checked through Companies House before listing.' },
             { stat: 'Direct', label: 'Contact always',  sub: 'You call the dealer. No platform inbox, no middleman.' },
           ].map(({ stat, label, sub }) => (

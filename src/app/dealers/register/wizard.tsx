@@ -752,7 +752,7 @@ export function DealerWizard({ initialPlan }: { initialPlan?: 'solo' | 'pro' }) 
               <p className="text-[11px] font-semibold tracking-[0.1em] uppercase text-[#6E6E73]">Founding commitments — binding at signup</p>
               <ul className="flex flex-col gap-1.5">
                 {[
-                  'Lead Ownership — every enquiry goes directly to you. We never intercept or monetise your leads.',
+                  'Enquiry Ownership — every enquiry goes directly to you. We never intercept or monetise your enquiries.',
                   'Search Integrity — organic results are ordered by relevance and recency only. No dealer can pay to rank above another.',
                   'Exit With Your Data — your data belongs to you. Full export available at any time. Leaving costs nothing.',
                 ].map((line, i) => (
