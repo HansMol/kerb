@@ -45,7 +45,15 @@ export default async function SearchPage({
     .from('public_listings')
     .select('*')
 
-  if (q)            query = query.or(`make.ilike.%${q}%,model.ilike.%${q}%,description.ilike.%${q}%`)
+  // Ranked by trigram similarity (see supabase/migrations/20260713_search_trigram.sql)
+  // instead of a plain ilike substring match — gives typo-tolerance and lets a
+  // short query like "BMW" score correctly against a long description field.
+  let relevanceIds: string[] | null = null
+  if (q) {
+    const { data: ranked } = await supabase.rpc('search_listings_relevance', { search_term: q })
+    relevanceIds = (ranked ?? []).map(r => r.id)
+    query = query.in('id', relevanceIds.length > 0 ? relevanceIds : ['00000000-0000-0000-0000-000000000000'])
+  }
   if (make)         query = query.ilike('make', make)
   if (bodyType)     query = query.ilike('body_type', bodyType)
   if (fuelType)     query = query.ilike('fuel_type', fuelType)
@@ -59,20 +67,31 @@ export default async function SearchPage({
   if (sellerType === 'dealer')  query = query.not('dealer_id', 'is', null)
   if (sellerType === 'private') query = query.is('dealer_id', null)
 
-  const { col, asc } = sortConfig[sort as SortKey] ?? sortConfig.newest
-  query = query.order(col, { ascending: asc })
+  // Default view for a search term is relevance order (from the RPC above);
+  // an explicit sort choice from the dropdown always overrides it.
+  const useRelevanceOrder = Boolean(q) && !sort
+  if (!useRelevanceOrder) {
+    const { col, asc } = sortConfig[sort as SortKey] ?? sortConfig.newest
+    query = query.order(col, { ascending: asc })
+  }
 
   const { data } = await query
-  const listings = data ?? []
+  let listings = data ?? []
+  if (useRelevanceOrder && relevanceIds) {
+    const rankIndex = new Map(relevanceIds.map((id, i) => [id, i]))
+    listings = [...listings].sort((a, b) => (rankIndex.get(a.id) ?? 0) - (rankIndex.get(b.id) ?? 0))
+  }
 
   // Encode current filters for breadcrumb back-link on car detail pages
   const fromQuery = Object.keys(params).length > 0
     ? `/search?${new URLSearchParams(params).toString()}`
     : '/search'
 
-  const sortLabel = sortConfig[sort as SortKey]
-    ? sortOptions.find(o => o.value === sort)?.label ?? 'Most recent'
-    : 'Most recent'
+  const sortLabel = useRelevanceOrder
+    ? 'Best match'
+    : sortConfig[sort as SortKey]
+      ? sortOptions.find(o => o.value === sort)?.label ?? 'Most recent'
+      : 'Most recent'
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
