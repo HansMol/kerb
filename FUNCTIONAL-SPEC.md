@@ -195,7 +195,7 @@ The `q` free-text param on `/search` is matched and ranked via `search_listings_
 - Homepage and search pulling real Supabase data
 - Car detail page with dealer card and wired enquiry form
 - Buyer enquiry → persisted to `enquiries` table + Resend email direct to dealer (HTML-escaped, UUID-validated)
-- "No leads, no pay" billing engine: 3-lead activation → Stripe setup Checkout (save card, no subscription) → cursor-based monthly invoicing via `/api/cron/billing`, only charges months with ≥1 lead since the last invoice
+- "No leads, no pay" billing engine: 3-lead activation → Stripe setup Checkout (save card, no subscription) → cursor-based monthly invoicing via `/api/cron/billing`, only charges months with ≥1 lead since the last invoice — live-tested end to end in Stripe test mode, then switched to Stripe live mode (10 Jul 2026)
 - Dashboard with stats and listings table, billing activation banner when a dealer crosses the 3-lead threshold
 - Analytics: Google Analytics 4, Clarity, Search Console
 - Companies House monthly monitoring cron + Resend alert email
@@ -214,7 +214,7 @@ The `q` free-text param on `/search` is matched and ranked via `search_listings_
 |---|---|---|
 | ~~Run the new migration in production Supabase~~ | Done 10 Jul 2026 | `enquiries` table + new dealer columns confirmed live |
 | ~~End-to-end test in Stripe test mode~~ | Done 10 Jul 2026 | Full flow driven against real Stripe test-mode API (real customer, real attached card, real signed webhook, real invoices): 3-lead activation → email delivered (confirmed via Resend API) → setup Checkout webhook → first invoice (found + fixed two real bugs, see `git log`: pending invoice items weren't attaching, and charges weren't collected immediately) → zero-lead month correctly skipped → new lead correctly invoiced solo at £55.00/enquiry. Test data cleaned up after. |
-| Stripe live mode | P0 | Switch secret key to live when first dealer onboards. Billing engine itself is now proven correct in test mode — this is purely the test→live key swap. |
+| ~~Stripe live mode~~ | Done 10 Jul 2026 | Live secret key + webhook secret added before PR #3 merged. Billing engine now runs against real Stripe, not test mode. |
 | Set `billing@kerb.autos` as a verified Resend sender | P0 | Activation email confirmed delivered from this address in testing — domain is verified, but double check deliverability isn't degraded once real dealer volume starts |
 | Buyer-facing dealer directory / dealer profile page | P1 | `/dealers` currently shows acquisition page |
 | Spotlight feature (dashboard + dealer profile + homepage) | P1 | Schema ready — `spotlighted` column exists |
