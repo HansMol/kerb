@@ -24,6 +24,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `${data.business_name} — Kerb`,
     description: `Browse used cars from ${data.business_name} in ${data.city}. Verified dealer on Kerb. Direct contact, no intermediation.`,
+    alternates: {
+      canonical: `/dealers/${slug}`,
+    },
   }
 }
 

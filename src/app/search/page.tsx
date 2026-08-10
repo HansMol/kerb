@@ -1,12 +1,58 @@
 import { Suspense } from 'react'
+import type { Metadata } from 'next'
 import { ListingCard } from '@/components/listings/listing-card'
 import { SearchFilters } from '@/components/search/search-filters'
 import { MobileFilterDrawer } from '@/components/search/mobile-filter-drawer'
 import { createServerClient } from '@/lib/supabase/server'
 
-export const metadata = {
-  title: 'Search Cars',
-  description: 'Search used cars across the UK. Filter by make, model, price, mileage, and more.',
+// Canonical always points at the bare /search URL regardless of filter params —
+// every make/price/mileage/sort combination is the same underlying page from
+// Google's perspective, not a separate indexable landing page. Fixes Search
+// Console's "Duplicate without user-selected canonical" (found 10 Aug 2026,
+// zero canonical tags existed anywhere on the site before this).
+export async function generateMetadata({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string>>
+}): Promise<Metadata> {
+  const params = await searchParams
+  const supabase = createServerClient()
+
+  // Lightweight existence check mirroring the main query's filters (see below) —
+  // a zero-result filtered search returns 200 with a "No cars found" message,
+  // which Google flags as a Soft 404. noindex tells it this specific
+  // combination has no unique content, without faking a real 404 on a page
+  // that's still a working search UI.
+  let countQuery = supabase.from('public_listings').select('id', { count: 'exact', head: true })
+  if (params.q) {
+    const { data: ranked } = await supabase.rpc('search_listings_relevance', { search_term: params.q })
+    const ids = (ranked ?? []).map(r => r.id)
+    countQuery = countQuery.in('id', ids.length > 0 ? ids : ['00000000-0000-0000-0000-000000000000'])
+  }
+  if (params.make)         countQuery = countQuery.ilike('make', params.make)
+  if (params.bodyType)     countQuery = countQuery.ilike('body_type', params.bodyType)
+  if (params.fuelType)     countQuery = countQuery.ilike('fuel_type', params.fuelType)
+  if (params.transmission) countQuery = countQuery.ilike('transmission', params.transmission)
+  if (params.minPrice)     countQuery = countQuery.gte('price', parseInt(params.minPrice))
+  if (params.maxPrice)     countQuery = countQuery.lte('price', parseInt(params.maxPrice))
+  if (params.yearMin)      countQuery = countQuery.gte('year', parseInt(params.yearMin))
+  if (params.yearMax)      countQuery = countQuery.lte('year', parseInt(params.yearMax))
+  if (params.minMileage)   countQuery = countQuery.gte('mileage', parseInt(params.minMileage))
+  if (params.maxMileage)   countQuery = countQuery.lte('mileage', parseInt(params.maxMileage))
+  if (params.sellerType === 'dealer')  countQuery = countQuery.not('dealer_id', 'is', null)
+  if (params.sellerType === 'private') countQuery = countQuery.is('dealer_id', null)
+
+  const { count } = await countQuery
+  const hasResults = (count ?? 0) > 0
+
+  return {
+    title: 'Search Cars',
+    description: 'Search used cars across the UK. Filter by make, model, price, mileage, and more.',
+    alternates: {
+      canonical: '/search',
+    },
+    ...(hasResults ? {} : { robots: { index: false, follow: true } }),
+  }
 }
 
 type SortKey = 'newest' | 'oldest' | 'price_asc' | 'price_desc' | 'mileage_asc' | 'year_desc' | 'year_asc'
