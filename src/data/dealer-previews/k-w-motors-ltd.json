@@ -1,0 +1,16 @@
+{
+  "dealer_name": "K W Motors Ltd",
+  "cars": [
+    {
+      "year": "2015",
+      "make": "AUDI",
+      "model": "R8",
+      "trim": "4.2 FSI V8 S Tronic quattro Euro 5 2dr",
+      "mileage": "43,544 miles",
+      "price": "\u00a341,984",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/e83d5e9a089b458d880e832e1b6c2c93.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

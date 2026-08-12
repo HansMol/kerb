@@ -1,0 +1,27 @@
+{
+  "dealer_name": "Wheelbase Bagshot",
+  "cars": [
+    {
+      "year": "1968",
+      "make": "MERCEDES",
+      "model": "280 SL",
+      "trim": "",
+      "mileage": "26,736 miles",
+      "price": "\u00a3249,999",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/2b198e31d97347c88c10fed7a9d17dd8.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2008",
+      "make": "AUDI",
+      "model": "R8",
+      "trim": "4.2 FSI V8 quattro Euro 4 2dr",
+      "mileage": "44,850 miles",
+      "price": "\u00a342,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/3a4bec951cc6413896aed1879edb20e5.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

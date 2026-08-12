@@ -1,0 +1,27 @@
+{
+  "dealer_name": "German Car Specialist Limited",
+  "cars": [
+    {
+      "year": "2021",
+      "make": "AUDI",
+      "model": "RS7",
+      "trim": "4.0 TFSI V8 Carbon Black Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "24,000 miles",
+      "price": "\u00a368,990",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/094afdf0dbd2416981c5c0c0c6d7a55d.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2020",
+      "make": "AUDI",
+      "model": "RSQ8",
+      "trim": "4.0 TFSI V8 Carbon Black Tiptronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "47,000 miles",
+      "price": "\u00a369,990",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/30e2e6f59f2a448a90c1f0620a1aee35.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

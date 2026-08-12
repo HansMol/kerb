@@ -1,0 +1,16 @@
+{
+  "dealer_name": "WINSLOW MOTOR LTD",
+  "cars": [
+    {
+      "year": "2015",
+      "make": "BMW",
+      "model": "M4",
+      "trim": "3.0 BiTurbo DCT Euro 6 (s/s) 2dr",
+      "mileage": "78,000 miles",
+      "price": "\u00a318,689",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/90e349eeabbd4c4997767e0b40c5b3bc.jpg",
+      "hook": "DCT dual-clutch gearbox.",
+      "dealer_website": "https://winslowmotors.co.uk/"
+    }
+  ]
+}

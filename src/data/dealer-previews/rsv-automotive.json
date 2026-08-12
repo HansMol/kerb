@@ -1,0 +1,16 @@
+{
+  "dealer_name": "RSV Automotive",
+  "cars": [
+    {
+      "year": "2006",
+      "make": "BMW",
+      "model": "Z4 M",
+      "trim": "3.2i Euro 4 2dr",
+      "mileage": "52,000 miles",
+      "price": "\u00a324,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/2a7500d575bd46c19ce948647af8afe7.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": "http://www.rsvautomotive.co.uk/"
+    }
+  ]
+}

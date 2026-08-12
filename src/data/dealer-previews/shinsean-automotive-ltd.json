@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Shinsean Automotive Ltd",
+  "cars": [
+    {
+      "year": "2017",
+      "make": "PORSCHE",
+      "model": "356",
+      "trim": "Super 90 1600 Type B Coupe Manual 2dr LHD 1962 PORSCHE 356B 1600 SUPER 90 1.6",
+      "mileage": "55,950 miles",
+      "price": "\u00a396,950",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/da18a546d36e44dba165d36c09174041.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

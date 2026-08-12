@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Wynyard Motor Company",
+  "cars": [
+    {
+      "year": "2020",
+      "make": "PORSCHE",
+      "model": "718 Cayman",
+      "trim": "2.0T T PDK Euro 6 (s/s) 2dr",
+      "mileage": "50,029 miles",
+      "price": "\u00a337,390",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/a27095cb36404edbaea6e7fec72159c0.jpg",
+      "hook": "PDK dual-clutch gearbox.",
+      "dealer_website": ""
+    }
+  ]
+}

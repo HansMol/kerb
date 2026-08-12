@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Portland Of Bawtry Ltd",
+  "cars": [
+    {
+      "year": "2012",
+      "make": "MERCEDES",
+      "model": "SLS",
+      "trim": "6.2 63 V8 AMG SpdS DCT Euro 5 2dr",
+      "mileage": "20,674 miles",
+      "price": "\u00a3375,000",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/718d2ea740bb40609e2d127ee793abca.jpg",
+      "hook": "DCT dual-clutch gearbox.",
+      "dealer_website": "http://www.portlandautos.co.uk"
+    }
+  ]
+}

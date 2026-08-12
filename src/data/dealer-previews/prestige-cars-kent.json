@@ -1,0 +1,82 @@
+{
+  "dealer_name": "Prestige Cars Kent",
+  "cars": [
+    {
+      "year": "2022",
+      "make": "BMW",
+      "model": "M4",
+      "trim": "3.0 BiTurbo Competition Steptronic M xDrive Euro 6 (s/s) 2dr",
+      "mileage": "48,502 miles",
+      "price": "\u00a346,046",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/ea39ab55b55c48dfa6ba80b9ebbad233.jpg",
+      "hook": "Competition package, xDrive four-wheel drive, Steptronic automatic gearbox.",
+      "dealer_website": "https://www.prestigecarskent.co.uk/autotradervehiclelocator?vehicleid=202606053038081&VRM=SP72LCK"
+    },
+    {
+      "year": "2020",
+      "make": "BMW",
+      "model": "M2",
+      "trim": "3.0 BiTurbo Competition DCT Euro 6 (s/s) 2dr",
+      "mileage": "51,868 miles",
+      "price": "\u00a332,551",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/5b0d0b829c364b078197de9409e77bbe.jpg",
+      "hook": "Competition package, DCT dual-clutch gearbox.",
+      "dealer_website": "https://www.prestigecarskent.co.uk/autotradervehiclelocator?vehicleid=202607204337019&VRM=AO70HJK"
+    },
+    {
+      "year": "2020",
+      "make": "MERCEDES",
+      "model": "G Class",
+      "trim": "2.9 G350d AMG Line (Premium) G-Tronic+ 4MATIC Euro 6 (s/s) 5dr",
+      "mileage": "61,384 miles",
+      "price": "\u00a398,949",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/328a5eff02624bdc93e14037458f9afe.jpg",
+      "hook": "4MATIC four-wheel drive, AMG Line Premium trim.",
+      "dealer_website": "https://www.prestigecarskent.co.uk/autotradervehiclelocator?vehicleid=202608064870290&VRM=AL11GEX"
+    },
+    {
+      "year": "2022",
+      "make": "PORSCHE",
+      "model": "718 Cayman",
+      "trim": "2.0T PDK Euro 6 (s/s) 2dr",
+      "mileage": "7,300 miles",
+      "price": "\u00a345,149",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/c5bffccab4aa40e5958d12272d499079.jpg",
+      "hook": "PDK dual-clutch gearbox.",
+      "dealer_website": "https://www.prestigecarskent.co.uk/autotradervehiclelocator?vehicleid=202605262696014&VRM=LD22VNY"
+    },
+    {
+      "year": "2024",
+      "make": "AUDI",
+      "model": "RS7",
+      "trim": "4.0 TFSI V8 Performance Carbon Vorsprung Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "17,000 miles",
+      "price": "\u00a391,149",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/e2ef624ec6f646f28db645c4c75be3d6.jpg",
+      "hook": "Range-topping Carbon Vorsprung trim, quattro four-wheel drive, Performance spec.",
+      "dealer_website": "https://www.prestigecarskent.co.uk/autotradervehiclelocator?vehicleid=202607164247479&VRM=KY74ELX"
+    },
+    {
+      "year": "2021",
+      "make": "AUDI",
+      "model": "RS Q3",
+      "trim": "2.5 TFSI S Tronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "29,369 miles",
+      "price": "\u00a335,499",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/e95519343a0f45fdbcdd4620f92fcece.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": "https://www.prestigecarskent.co.uk/autotradervehiclelocator?vehicleid=202605282781839&VRM=FT21MKK"
+    },
+    {
+      "year": "2019",
+      "make": "AUDI",
+      "model": "R8",
+      "trim": "5.2 FSI V10 Performance S Tronic quattro Euro 6 (s/s) 2dr",
+      "mileage": "40,479 miles",
+      "price": "\u00a393,149",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/95025a4f36bd4f9abbbe815e42576033.jpg",
+      "hook": "Quattro four-wheel drive, Performance spec.",
+      "dealer_website": "https://www.prestigecarskent.co.uk/autotradervehiclelocator?vehicleid=202606183401685&VRM=R888PFL"
+    }
+  ]
+}

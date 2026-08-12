@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Ascot Automotive UK",
+  "cars": [
+    {
+      "year": "2020",
+      "make": "AUDI",
+      "model": "RS7",
+      "trim": "4.0 TFSI V8 Carbon Black Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "44,800 miles",
+      "price": "\u00a356,990",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/75cd501dc9db4e11971aeca77d38ecb6.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

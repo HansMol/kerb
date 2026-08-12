@@ -1,0 +1,16 @@
+{
+  "dealer_name": "JZM Limited",
+  "cars": [
+    {
+      "year": "1991",
+      "make": "PORSCHE",
+      "model": "356",
+      "trim": "",
+      "mileage": "68,839 miles",
+      "price": "\u00a3189,900",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/7e70daea329f4b71ab297866b7be0c7b.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

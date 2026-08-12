@@ -1,0 +1,27 @@
+{
+  "dealer_name": "Tom Hartley Jnr",
+  "cars": [
+    {
+      "year": "2000",
+      "make": "BMW",
+      "model": "Z8",
+      "trim": "5.0 V8 Euro 3 2dr",
+      "mileage": "22,012 miles",
+      "price": "\u00a3199,500",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/26f9e26d6c03461ca4378e4d3e4a3139.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": "http://www.tomhartleyjnr.com/"
+    },
+    {
+      "year": "1955",
+      "make": "PORSCHE",
+      "model": "356",
+      "trim": "Pre-A Super Speedster 1.5",
+      "mileage": "1,122 miles",
+      "price": "\u00a3350,000",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/9b087c47a14d4038af8e2fb6a7ef25bf.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": "http://www.tomhartleyjnr.com/"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Rdm Direct Ltd",
+  "cars": [
+    {
+      "year": "2020",
+      "make": "AUDI",
+      "model": "RSQ8",
+      "trim": "4.0 TFSI V8 Carbon Black Tiptronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "47,987 miles",
+      "price": "\u00a366,098",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/71baf38408a94a92bbb1cc4834c7ff2b.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

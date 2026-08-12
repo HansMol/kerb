@@ -1,0 +1,16 @@
+{
+  "dealer_name": "PCBS-SALES",
+  "cars": [
+    {
+      "year": "2007",
+      "make": "BMW",
+      "model": "Z4 M",
+      "trim": "3.2i Euro 4 2dr",
+      "mileage": "43,500 miles",
+      "price": "\u00a318,975",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/0ba60fddd0c94ffcb0961606a0a16db7.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

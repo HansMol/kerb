@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Paul Riley Cars Ltd",
+  "cars": [
+    {
+      "year": "2003",
+      "make": "AUDI",
+      "model": "A2",
+      "trim": "1.4 SE 5dr",
+      "mileage": "69,597 miles",
+      "price": "\u00a35,495",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/b6e547b04b5e483385e5006e402ab59b.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

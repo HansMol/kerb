@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Northumbria Prestige",
+  "cars": [
+    {
+      "year": "2019",
+      "make": "AUDI",
+      "model": "TT RS",
+      "trim": "2.5 TFSI Roadster S Tronic quattro Euro 6 (s/s) 2dr",
+      "mileage": "15,800 miles",
+      "price": "\u00a336,950",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/f4e6353296904036936bef600764149d.jpg",
+      "hook": "Quattro four-wheel drive, roadster body.",
+      "dealer_website": "https://www.northumbriaprestige.com"
+    }
+  ]
+}

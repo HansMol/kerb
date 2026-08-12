@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Starlight Autos Limited",
+  "cars": [
+    {
+      "year": "2017",
+      "make": "AUDI",
+      "model": "A1",
+      "trim": "1.4 TFSI CoD S line Sportback S Tronic Euro 6 (s/s) 5dr",
+      "mileage": "70,000 miles",
+      "price": "\u00a310,000",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/8a9da4c1daa94f19bbcc67236f74053f.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

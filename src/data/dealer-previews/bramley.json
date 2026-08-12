@@ -1,0 +1,27 @@
+{
+  "dealer_name": "Bramley",
+  "cars": [
+    {
+      "year": "2024",
+      "make": "BMW",
+      "model": "Alpina B5",
+      "trim": "4.4i V8 GT Touring Switchtronic AWD Euro 6 (s/s) 5dr",
+      "mileage": "5,476 miles",
+      "price": "\u00a3149,850",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/bf03b590f31d43eda22070321c945a7f.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2018",
+      "make": "BMW",
+      "model": "Alpina D4",
+      "trim": "3.0d BiTurbo Switchtronic Euro 6 (s/s) 2dr",
+      "mileage": "63,002 miles",
+      "price": "\u00a334,850",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/0bf8572756974cea9d3f9063ae61d226.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

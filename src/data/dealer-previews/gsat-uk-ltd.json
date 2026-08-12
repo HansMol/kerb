@@ -1,0 +1,16 @@
+{
+  "dealer_name": "GSAT UK LTD",
+  "cars": [
+    {
+      "year": "1987",
+      "make": "MERCEDES",
+      "model": "G Class",
+      "trim": "ULTRA LOW MILE,STUNNING, 1 OWNER,1 Y MOT 2.4 3dr",
+      "mileage": "5,000 miles",
+      "price": "\u00a327,980",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/a68eb87862b34ef59458f428a08b5799.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "dealer_name": "FTR Performance Ltd",
+  "cars": [
+    {
+      "year": "2017",
+      "make": "BMW",
+      "model": "M4",
+      "trim": "3.0 BiTurbo Competition DCT Euro 6 (s/s) 2dr",
+      "mileage": "50,000 miles",
+      "price": "\u00a328,849",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/3b08970035eb4e51afb06f1ad8ef09e1.jpg",
+      "hook": "Competition package, DCT dual-clutch gearbox.",
+      "dealer_website": "http://www.ftrperformance.co.uk"
+    }
+  ]
+}

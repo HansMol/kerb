@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Trans City Skoda Ltd",
+  "cars": [
+    {
+      "year": "2020",
+      "make": "MERCEDES",
+      "model": "230 SL",
+      "trim": "",
+      "mileage": "",
+      "price": "\u00a360,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/f697126aefb042d48ecec10508b51666.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

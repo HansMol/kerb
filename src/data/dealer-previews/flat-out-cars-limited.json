@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Flat Out Cars Limited",
+  "cars": [
+    {
+      "year": "2002",
+      "make": "BMW",
+      "model": "Z3",
+      "trim": "1.9i Roadster 2dr",
+      "mileage": "71,000 miles",
+      "price": "\u00a34,000",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/1b0459c300374ef99b2ef799e178e4a9.jpg",
+      "hook": "Roadster body.",
+      "dealer_website": ""
+    }
+  ]
+}

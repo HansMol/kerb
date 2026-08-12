@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Preston Ramsey Cars",
+  "cars": [
+    {
+      "year": "2011",
+      "make": "AUDI",
+      "model": "R8",
+      "trim": "5.2 FSI V10 R Tronic quattro Euro 5 2dr",
+      "mileage": "41,119 miles",
+      "price": "\u00a347,450",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/e2c64174c118467a916f428f83700b57.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

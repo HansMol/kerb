@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Parkway Volkswagen Northampton",
+  "cars": [
+    {
+      "year": "2020",
+      "make": "AUDI",
+      "model": "TT RS",
+      "trim": "2.5 TFSI S Tronic quattro Euro 6 (s/s) 3dr",
+      "mileage": "48,901 miles",
+      "price": "\u00a334,499",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/bab3819ac0fe462bb97c1fa8742d8db0.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

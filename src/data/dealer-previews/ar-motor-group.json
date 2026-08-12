@@ -1,0 +1,27 @@
+{
+  "dealer_name": "AR Motor Group",
+  "cars": [
+    {
+      "year": "2015",
+      "make": "BMW",
+      "model": "Alpina D5",
+      "trim": "3.0d Switchtronic Euro 6 (s/s) 4dr",
+      "mileage": "64,622 miles",
+      "price": "\u00a323,990",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/5c20d4df25804a4aadf4fa5a1eea8da6.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": "http://www.armotorgroupuk.co.uk "
+    },
+    {
+      "year": "2015",
+      "make": "AUDI",
+      "model": "TT RS",
+      "trim": "2.5 TFSI Plus S Tronic quattro Euro 5 3dr",
+      "mileage": "59,651 miles",
+      "price": "\u00a321,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/88cd6ad7170746b1b02b75d79d17f0a2.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": "http://www.armotorgroupuk.co.uk "
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "dealer_name": "A&H AUTOS LIMITED",
+  "cars": [
+    {
+      "year": "2019",
+      "make": "PORSCHE",
+      "model": "718 Cayman",
+      "trim": "2.0T T Euro 6 (s/s) 2dr",
+      "mileage": "25,500 miles",
+      "price": "\u00a336,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/8fb2679fa4a7437aa1d9298972ec2f64.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

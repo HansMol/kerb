@@ -1,0 +1,27 @@
+{
+  "dealer_name": "European Prestige NI",
+  "cars": [
+    {
+      "year": "2009",
+      "make": "MERCEDES",
+      "model": "SLR McLaren",
+      "trim": "5.4 V8 2dr",
+      "mileage": "4,000 miles",
+      "price": "\u00a32,999,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/3e3439d3855d4839919665732c221a88.jpg",
+      "hook": "The lower-mileage of the 2 we sourced from this dealer.",
+      "dealer_website": "https://www.europeanprestigeni.com"
+    },
+    {
+      "year": "2009",
+      "make": "MERCEDES",
+      "model": "SLR McLaren",
+      "trim": "5.4 V8 2dr",
+      "mileage": "9,300 miles",
+      "price": "\u00a3799,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/f2de55bc1e4245428b5b75e1c0ed8f80.jpg",
+      "hook": "The higher-mileage of the 2 we sourced from this dealer.",
+      "dealer_website": "https://www.europeanprestigeni.com"
+    }
+  ]
+}

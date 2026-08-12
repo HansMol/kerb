@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Ryland Specialist Cars Birmingham",
+  "cars": [
+    {
+      "year": "2025",
+      "make": "BMW",
+      "model": "M2",
+      "trim": "3.0 BiTurbo Steptronic Euro 6 (s/s) 2dr",
+      "mileage": "9,139 miles",
+      "price": "\u00a353,850",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/dee0f28a943c42968a06b0e6ab3952b1.jpg",
+      "hook": "Steptronic automatic gearbox.",
+      "dealer_website": "https://www.ryland.co.uk/autotradervehiclelocator?vehicleid=202606083088963&VRM=LS25USO"
+    }
+  ]
+}

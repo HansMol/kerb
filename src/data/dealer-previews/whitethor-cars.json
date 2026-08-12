@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Whitethor Cars",
+  "cars": [
+    {
+      "year": "2019",
+      "make": "AUDI",
+      "model": "TT RS",
+      "trim": "2.5 TFSI Sport Edition S Tronic quattro Euro 6 (s/s) 3dr",
+      "mileage": "55,000 miles",
+      "price": "\u00a336,000",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/929e17e363ae4ca7b9b0b3f685ffc980.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

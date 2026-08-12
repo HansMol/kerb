@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Performance 28 Cars",
+  "cars": [
+    {
+      "year": "2017",
+      "make": "AUDI",
+      "model": "TT RS",
+      "trim": "2.5 TFSI S Tronic quattro Euro 6 (s/s) 3dr",
+      "mileage": "51,809 miles",
+      "price": "\u00a331,990",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/e9aba98715174c58b7439e429dc401f6.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

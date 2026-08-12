@@ -1,0 +1,27 @@
+{
+  "dealer_name": "Phantom Motor Company",
+  "cars": [
+    {
+      "year": "2016",
+      "make": "BMW",
+      "model": "M2",
+      "trim": "3.0i Euro 6 (s/s) 2dr",
+      "mileage": "41,036 miles",
+      "price": "\u00a325,990",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/227217b692f0437daa8966650b9d28f2.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": "http://www.phantommotorcompany.co.uk"
+    },
+    {
+      "year": "2024",
+      "make": "AUDI",
+      "model": "R8",
+      "trim": "5.2 FSI V10 Performance Edition S Tronic Euro 6 (s/s) 2dr",
+      "mileage": "5,400 miles",
+      "price": "\u00a3124,990",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/acf4ea41b41945df97b4df8cc6f2d5a8.jpg",
+      "hook": "Performance spec.",
+      "dealer_website": "http://www.phantommotorcompany.co.uk"
+    }
+  ]
+}

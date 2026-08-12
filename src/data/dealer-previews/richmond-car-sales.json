@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Richmond Car Sales",
+  "cars": [
+    {
+      "year": "2014",
+      "make": "BMW",
+      "model": "Alpina D5",
+      "trim": "3.0d Switchtronic Euro 6 (s/s) 4dr",
+      "mileage": "74,868 miles",
+      "price": "\u00a323,990",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/08ab60f80fb844eebe1d0a17b8ab5f04.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

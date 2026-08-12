@@ -1,0 +1,27 @@
+{
+  "dealer_name": "ALX Specialist Cars",
+  "cars": [
+    {
+      "year": "1969",
+      "make": "PORSCHE",
+      "model": "356",
+      "trim": "",
+      "mileage": "5,600 miles",
+      "price": "\u00a321,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/51bf69d7f8714928b8c055dde043a5a6.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": "https://www.alxcars.co.uk"
+    },
+    {
+      "year": "2006",
+      "make": "AUDI",
+      "model": "RS4",
+      "trim": "4.2 quattro 4dr",
+      "mileage": "61,500 miles",
+      "price": "\u00a327,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/238e7486725a45d2bf557fcc1fb4fdc4.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

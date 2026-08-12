@@ -1,0 +1,16 @@
+{
+  "dealer_name": "1Stop Car Sales",
+  "cars": [
+    {
+      "year": "2019",
+      "make": "AUDI",
+      "model": "S7",
+      "trim": "3.0 TDI V6 Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "71,543 miles",
+      "price": "\u00a328,500",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/d0cd70a1c07d45eba47a1d1be42b50c7.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

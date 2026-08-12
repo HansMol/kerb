@@ -1,0 +1,16 @@
+{
+  "dealer_name": "AUTO INVESTMENTS UK (AIUK) LIMITED",
+  "cars": [
+    {
+      "year": "2015",
+      "make": "AUDI",
+      "model": "RS Q3",
+      "trim": "2.5 TFSI S Tronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "66,985 miles",
+      "price": "\u00a316,489",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/aa0aac481f4b4eddabd181a30624a790.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

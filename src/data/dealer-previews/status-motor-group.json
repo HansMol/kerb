@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Status Motor Group",
+  "cars": [
+    {
+      "year": "2019",
+      "make": "AUDI",
+      "model": "Q2",
+      "trim": "1.5 TFSI CoD 35 S line S Tronic Euro 6 (s/s) 5dr",
+      "mileage": "61,100 miles",
+      "price": "\u00a312,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/e97977acce2b4c3eb2bb293f65e963da.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

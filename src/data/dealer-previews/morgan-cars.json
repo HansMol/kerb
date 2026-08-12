@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Morgan Cars",
+  "cars": [
+    {
+      "year": "2007",
+      "make": "MERCEDES",
+      "model": "SLR McLaren",
+      "trim": "5.4 V8 2dr",
+      "mileage": "3,140 miles",
+      "price": "\u00a3849,950",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/0f02976cc1ec41e8a16610a254d70e45.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

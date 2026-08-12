@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Audi Guildford",
+  "cars": [
+    {
+      "year": "2021",
+      "make": "AUDI",
+      "model": "RS Q3",
+      "trim": "2.5 TFSI Sportback S Tronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "23,305 miles",
+      "price": "\u00a339,546",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/8c06ff32cd114d00b5141f5a2c0aafe9.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

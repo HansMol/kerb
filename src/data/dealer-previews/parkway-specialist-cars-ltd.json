@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Parkway Specialist Cars Ltd",
+  "cars": [
+    {
+      "year": "1999",
+      "make": "BMW",
+      "model": "Z3 M",
+      "trim": "3.2 2dr",
+      "mileage": "36,120 miles",
+      "price": "\u00a344,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/a359bfa1ed1f4b4bbe21a051b186c9e7.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

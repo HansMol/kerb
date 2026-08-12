@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Ever Drive Motors",
+  "cars": [
+    {
+      "year": "2015",
+      "make": "BMW",
+      "model": "2 Series Active Tourer",
+      "trim": "2.0 218d Sport Auto Euro 6 (s/s) 5dr",
+      "mileage": "65,502 miles",
+      "price": "\u00a37,495",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/e70d10b639204969a485cf558958124c.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": "https://www.everdrivemotors.co.uk/"
+    }
+  ]
+}

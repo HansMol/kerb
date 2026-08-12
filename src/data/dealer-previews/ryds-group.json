@@ -1,0 +1,49 @@
+{
+  "dealer_name": "Ryds Group",
+  "cars": [
+    {
+      "year": "2015",
+      "make": "BMW",
+      "model": "M4",
+      "trim": "3.0 BiTurbo DCT Euro 6 (s/s) 2dr",
+      "mileage": "31,465 miles",
+      "price": "\u00a326,820",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/4045ffe8916e4b78a4059a1b454d5681.jpg",
+      "hook": "DCT dual-clutch gearbox.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2019",
+      "make": "BMW",
+      "model": "M2",
+      "trim": "3.0 BiTurbo Competition DCT Euro 6 (s/s) 2dr",
+      "mileage": "44,365 miles",
+      "price": "\u00a332,890",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/47cd8ff6c2414a868fcff915ece392f3.jpg",
+      "hook": "Competition package, DCT dual-clutch gearbox.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2017",
+      "make": "BMW",
+      "model": "M3",
+      "trim": "3.0 BiTurbo Competition DCT Euro 6 (s/s) 4dr",
+      "mileage": "56,522 miles",
+      "price": "\u00a336,000",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/2bfaca36820d4190add9c716c12379d1.jpg",
+      "hook": "Competition package, DCT dual-clutch gearbox.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2016",
+      "make": "AUDI",
+      "model": "S7",
+      "trim": "4.0 TFSI V8 Sportback S Tronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "50,026 miles",
+      "price": "\u00a323,250",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/73b92e53f2f4442baab48020d3bc5e50.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

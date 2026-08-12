@@ -1,0 +1,27 @@
+{
+  "dealer_name": "BEN HARRISON AUTOMOTIVE LTD",
+  "cars": [
+    {
+      "year": "2017",
+      "make": "BMW",
+      "model": "M2",
+      "trim": "3.0i DCT Euro 6 (s/s) 2dr",
+      "mileage": "67,000 miles",
+      "price": "\u00a325,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/f94f72756442466ab9e022c33c59d5f3.jpg",
+      "hook": "The lower-mileage of the 2 we sourced from this dealer. DCT dual-clutch gearbox.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2016",
+      "make": "BMW",
+      "model": "M2",
+      "trim": "3.0i DCT Euro 6 (s/s) 2dr",
+      "mileage": "78,000 miles",
+      "price": "\u00a322,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/14f9170dbd1b4c87bfca2c4d8e85e834.jpg",
+      "hook": "The higher-mileage of the 2 we sourced from this dealer. DCT dual-clutch gearbox.",
+      "dealer_website": ""
+    }
+  ]
+}

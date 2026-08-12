@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Hillington Renault / Dacia / Alpine / Vanstore",
+  "cars": [
+    {
+      "year": "2022",
+      "make": "Volkswagen",
+      "model": "Caddy California Maxi",
+      "trim": "1.5 TSI California Maxi DSG Euro 6 (s/s) 5dr",
+      "mileage": "28,579 miles",
+      "price": "\u00a327,998",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/1f1077336b10410b8ebe44116ddb279f.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": "http://www.arnoldclark.com/autotradervehiclelocator?vehicleid=202608064854107&VRM=VK72XXG"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "dealer_name": "AUTOMOTIVE PRESTIGE LTD",
+  "cars": [
+    {
+      "year": "1999",
+      "make": "BMW",
+      "model": "Z3",
+      "trim": "1.9i 2dr",
+      "mileage": "64,500 miles",
+      "price": "\u00a34,840",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/a6442022a4994deb91852e0de68f5f52.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

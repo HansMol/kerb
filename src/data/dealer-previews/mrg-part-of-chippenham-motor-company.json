@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Mrg Part Of Chippenham Motor Company",
+  "cars": [
+    {
+      "year": "2018",
+      "make": "BMW",
+      "model": "M3",
+      "trim": "3.0 BiTurbo Competition DCT Euro 6 (s/s) 4dr",
+      "mileage": "66,278 miles",
+      "price": "\u00a331,990",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/ecd95d208cd648de9542211890e45419.jpg",
+      "hook": "Competition package, DCT dual-clutch gearbox.",
+      "dealer_website": "https://www.chippenhammotor.co.uk/used-cars/"
+    }
+  ]
+}

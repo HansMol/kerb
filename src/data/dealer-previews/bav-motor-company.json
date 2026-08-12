@@ -1,0 +1,16 @@
+{
+  "dealer_name": "BAV Motor Company",
+  "cars": [
+    {
+      "year": "2016",
+      "make": "BMW",
+      "model": "M2",
+      "trim": "3.0i DCT Euro 6 (s/s) 2dr",
+      "mileage": "66,000 miles",
+      "price": "\u00a323,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/ab3d1b77808b4313bbf324ce709f1d5c.jpg",
+      "hook": "DCT dual-clutch gearbox.",
+      "dealer_website": "http://www.bavmotorcompany.co.uk/"
+    }
+  ]
+}

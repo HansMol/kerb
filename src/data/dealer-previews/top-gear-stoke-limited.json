@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Top Gear Stoke Limited",
+  "cars": [
+    {
+      "year": "2018",
+      "make": "BMW",
+      "model": "M2",
+      "trim": "DCT 3.0 3dr Saloon Automatic Petrol",
+      "mileage": "13,169 miles",
+      "price": "\u00a325,495",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/e856927c10784e34a973cd88d3026d41.jpg",
+      "hook": "DCT dual-clutch gearbox.",
+      "dealer_website": ""
+    }
+  ]
+}

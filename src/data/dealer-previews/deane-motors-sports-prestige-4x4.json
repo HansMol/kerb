@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Deane Motors Sports, Prestige & 4x4",
+  "cars": [
+    {
+      "year": "2019",
+      "make": "PORSCHE",
+      "model": "718 Cayman",
+      "trim": "2.0T PDK Euro 6 (s/s) 2dr",
+      "mileage": "68,700 miles",
+      "price": "\u00a331,991",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/2ff88be4cf0d48c69f33999f4e2b342c.jpg",
+      "hook": "PDK dual-clutch gearbox.",
+      "dealer_website": ""
+    }
+  ]
+}

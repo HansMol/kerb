@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Palmers Motor Company",
+  "cars": [
+    {
+      "year": "2010",
+      "make": "AUDI",
+      "model": "TT RS",
+      "trim": "2.5 TFSI quattro Euro 5 3dr",
+      "mileage": "55,000 miles",
+      "price": "\u00a319,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/c2f8921d264e408bb59fa10b9c273c95.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

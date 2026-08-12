@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Audi Ayr",
+  "cars": [
+    {
+      "year": "2022",
+      "make": "AUDI",
+      "model": "RS7",
+      "trim": "4.0 TFSI V8 Carbon Black Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "21,538 miles",
+      "price": "\u00a369,499",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/c471405de2724eed9aab9747b1783ce4.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

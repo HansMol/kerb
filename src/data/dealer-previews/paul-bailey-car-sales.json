@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Paul Bailey Car Sales",
+  "cars": [
+    {
+      "year": "2007",
+      "make": "AUDI",
+      "model": "R8",
+      "trim": "4.2 FSI V8 R Tronic quattro Euro 4 2dr",
+      "mileage": "61,143 miles",
+      "price": "\u00a331,495",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/50722e76c594467c9ed26533cb102f84.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

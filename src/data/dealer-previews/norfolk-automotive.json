@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Norfolk Automotive",
+  "cars": [
+    {
+      "year": "1998",
+      "make": "BMW",
+      "model": "Z3 M",
+      "trim": "3.2 2dr",
+      "mileage": "45,246 miles",
+      "price": "\u00a335,998",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/1ff89c2abac74e9f98200891dfde37da.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

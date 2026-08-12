@@ -1,0 +1,16 @@
+{
+  "dealer_name": "GSW Automotive Limited",
+  "cars": [
+    {
+      "year": "2019",
+      "make": "PORSCHE",
+      "model": "718 Cayman",
+      "trim": "2.5T GTS PDK Euro 6 (s/s) 2dr",
+      "mileage": "46,290 miles",
+      "price": "\u00a344,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/0ca1607e14dd4327bdb105e1f91a6a9e.jpg",
+      "hook": "PDK dual-clutch gearbox, GTS trim.",
+      "dealer_website": ""
+    }
+  ]
+}

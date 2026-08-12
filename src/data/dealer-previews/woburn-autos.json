@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Woburn Autos",
+  "cars": [
+    {
+      "year": "2009",
+      "make": "BMW",
+      "model": "M3",
+      "trim": "4.0 V8 DCT Euro 4 2dr",
+      "mileage": "79,000 miles",
+      "price": "\u00a314,999",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/10aa4313efd84747974fd56d7fa93734.jpg",
+      "hook": "DCT dual-clutch gearbox.",
+      "dealer_website": ""
+    }
+  ]
+}

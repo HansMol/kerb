@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Motorvana",
+  "cars": [
+    {
+      "year": "2021",
+      "make": "AUDI",
+      "model": "RSQ8",
+      "trim": "4.0 TFSI V8 Carbon Black Tiptronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "63,500 miles",
+      "price": "\u00a365,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/3ae0669beb074724b0a4cfac584a9b1c.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

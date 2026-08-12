@@ -1,0 +1,16 @@
+{
+  "dealer_name": "MD MOTORS",
+  "cars": [
+    {
+      "year": "2017",
+      "make": "AUDI",
+      "model": "S7",
+      "trim": "4.0 TFSI V8 Sportback S Tronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "66,500 miles",
+      "price": "\u00a322,000",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/9022b762f6164fc2993cd447876f9536.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

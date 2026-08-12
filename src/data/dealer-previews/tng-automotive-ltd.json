@@ -1,0 +1,49 @@
+{
+  "dealer_name": "TNG AUTOMOTIVE LTD",
+  "cars": [
+    {
+      "year": "2021",
+      "make": "BMW",
+      "model": "M4",
+      "trim": "3.0 BiTurbo Competition Steptronic Euro 6 (s/s) 2dr",
+      "mileage": "35,000 miles",
+      "price": "\u00a345,989",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/f15b34d75c36498395c405d6e48c5315.jpg",
+      "hook": "Competition package, Steptronic automatic gearbox.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2020",
+      "make": "BMW",
+      "model": "X2",
+      "trim": "2.0 20d M Sport Auto xDrive Euro 6 (s/s) 5dr",
+      "mileage": "37,000 miles",
+      "price": "\u00a316,589",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/94a0a264b39f4a49857cc6e33148e6f1.jpg",
+      "hook": "XDrive four-wheel drive.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2020",
+      "make": "AUDI",
+      "model": "RS Q3",
+      "trim": "2.5 TFSI Sportback S Tronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "55,000 miles",
+      "price": "\u00a332,989",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/f7de9c95d73e424babffdf865b0ad33b.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2018",
+      "make": "AUDI",
+      "model": "Q2",
+      "trim": "1.6 TDI 30 S line S Tronic Euro 6 (s/s) 5dr",
+      "mileage": "58,000 miles",
+      "price": "\u00a312,489",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/51b4ab10163f4140a8a7e2bceebefc67.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": "http://tngautomotive.com"
+    }
+  ]
+}

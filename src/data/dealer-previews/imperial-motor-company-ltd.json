@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Imperial Motor Company Ltd",
+  "cars": [
+    {
+      "year": "2017",
+      "make": "AUDI",
+      "model": "Q2",
+      "trim": "1.0 TFSI Sport Euro 6 (s/s) 5dr",
+      "mileage": "16,000 miles",
+      "price": "\u00a313,275",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/70ffedcbdb684fca86b4be759e2334ef.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

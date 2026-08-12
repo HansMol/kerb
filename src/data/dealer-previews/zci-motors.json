@@ -1,0 +1,38 @@
+{
+  "dealer_name": "ZCI Motors",
+  "cars": [
+    {
+      "year": "2014",
+      "make": "AUDI",
+      "model": "RS Q3",
+      "trim": "2.5 TFSI S Tronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "37,020 miles",
+      "price": "\u00a315,999",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/e663bee050e2418699c2e08f3b0a5095.jpg",
+      "hook": "The lower-mileage of the 3 we sourced from this dealer. Quattro four-wheel drive.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2014",
+      "make": "AUDI",
+      "model": "RS Q3",
+      "trim": "2.5 TFSI S Tronic quattro Euro 5 (s/s) 5dr",
+      "mileage": "39,296 miles",
+      "price": "\u00a316,499",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/43f6c345fb73444985c9d70f91e0b74e.jpg",
+      "hook": "One of 3 we sourced from this dealer. Quattro four-wheel drive.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2014",
+      "make": "AUDI",
+      "model": "RS Q3",
+      "trim": "2.5 TFSI S Tronic quattro Euro 5 (s/s) 5dr",
+      "mileage": "47,320 miles",
+      "price": "\u00a314,999",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/1cdf4ac0706c405b82c130007f5352c0.jpg",
+      "hook": "The higher-mileage of the 3 we sourced from this dealer. Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

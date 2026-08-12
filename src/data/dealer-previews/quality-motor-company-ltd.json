@@ -1,0 +1,27 @@
+{
+  "dealer_name": "Quality Motor Company Ltd",
+  "cars": [
+    {
+      "year": "2011",
+      "make": "MERCEDES",
+      "model": "G Class",
+      "trim": "5.4 G55 V8 AMG SUV 5dr Petrol Tiptronic 4WD Euro 5 (507 ps)",
+      "mileage": "60,000 miles",
+      "price": "\u00a336,950",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/aeab8bcd866f416bb35b205d89a4cb4c.jpg",
+      "hook": "The lower-mileage of the 2 we sourced from this dealer.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2000",
+      "make": "MERCEDES",
+      "model": "G Class",
+      "trim": "G500 Left Hand Drive 5dr BRABUS EDITION 5.0",
+      "mileage": "70,000 miles",
+      "price": "\u00a326,950",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/e68d1418344b459f9968f0f48e66dcec.jpg",
+      "hook": "The higher-mileage of the 2 we sourced from this dealer.",
+      "dealer_website": ""
+    }
+  ]
+}

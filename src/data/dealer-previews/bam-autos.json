@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Bam Autos",
+  "cars": [
+    {
+      "year": "2005",
+      "make": "Volkswagen",
+      "model": "Bora",
+      "trim": "2.0 S 4dr",
+      "mileage": "58,000 miles",
+      "price": "\u00a31,500",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/ac923b88c4d1457f8e30cba411a8b452.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

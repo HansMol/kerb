@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Sedgley Group Limited",
+  "cars": [
+    {
+      "year": "2020",
+      "make": "AUDI",
+      "model": "RSQ8",
+      "trim": "4.0 TFSI V8 Carbon Black Tiptronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "48,000 miles",
+      "price": "\u00a366,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/f2c35d03c1704807b8cbc35b5cc43ba7.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

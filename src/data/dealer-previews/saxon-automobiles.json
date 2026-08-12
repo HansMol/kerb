@@ -1,0 +1,27 @@
+{
+  "dealer_name": "Saxon Automobiles",
+  "cars": [
+    {
+      "year": "2006",
+      "make": "PORSCHE",
+      "model": "911",
+      "trim": "3.6 997 Carrera 2dr",
+      "mileage": "36,480 miles",
+      "price": "\u00a336,999",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/201ee15b17904cdca04d7d4e80a0f074.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2011",
+      "make": "AUDI",
+      "model": "R8",
+      "trim": "4.2 FSI V8 Spyder R Tronic quattro Euro 5 2dr",
+      "mileage": "35,850 miles",
+      "price": "\u00a339,999",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/acaec6dacc9e41689bcca91af7a2d94d.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

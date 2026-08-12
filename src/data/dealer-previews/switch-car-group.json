@@ -1,0 +1,27 @@
+{
+  "dealer_name": "Switch Car Group",
+  "cars": [
+    {
+      "year": "1991",
+      "make": "MERCEDES",
+      "model": "300",
+      "trim": "3.0 SL 2dr",
+      "mileage": "12,862 miles",
+      "price": "\u00a319,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/adea94fdd4e64066b9578bad61dc522d.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2021",
+      "make": "AUDI",
+      "model": "RS4",
+      "trim": "2.9 RS4 Avant TFSI Tiptronic Quattro Estate 5d Petrol Auto B&O SYSTEM, SPORTS SEATS",
+      "mileage": "49,443 miles",
+      "price": "\u00a349,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/fee92db8cd1e42178833c102606d646e.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

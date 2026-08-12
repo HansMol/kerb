@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Romano Automotive",
+  "cars": [
+    {
+      "year": "2017",
+      "make": "AUDI",
+      "model": "Q2",
+      "trim": "1.4 TFSI CoD Edition 1 S Tronic Euro 6 (s/s) 5dr",
+      "mileage": "63,000 miles",
+      "price": "\u00a315,295",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/0f689aff4723418aae1c85715057a74b.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

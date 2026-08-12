@@ -1,0 +1,16 @@
+{
+  "dealer_name": "X Motors",
+  "cars": [
+    {
+      "year": "1997",
+      "make": "BMW",
+      "model": "Z3",
+      "trim": "1.9i 2dr",
+      "mileage": "67,000 miles",
+      "price": "\u00a32,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/4e40c0b9bc29432d974516b5d5d46628.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": "http://highgrovemotorsdewsbury.flexwebsites.co.uk/"
+    }
+  ]
+}

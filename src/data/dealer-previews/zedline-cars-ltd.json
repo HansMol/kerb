@@ -1,0 +1,16 @@
+{
+  "dealer_name": "ZEDLINE CARS LTD",
+  "cars": [
+    {
+      "year": "2020",
+      "make": "AUDI",
+      "model": "RS7",
+      "trim": "4.0 TFSI V8 Carbon Black Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "59,000 miles",
+      "price": "\u00a355,989",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/f493b940b6bd42fcb10d36d82a5ff40d.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": "http://www.zedlinecarsltd.co.uk"
+    }
+  ]
+}

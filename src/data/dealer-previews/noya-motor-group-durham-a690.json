@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Noya Motor Group Durham A690",
+  "cars": [
+    {
+      "year": "2000",
+      "make": "BMW",
+      "model": "Z3 M",
+      "trim": "3.2 2dr",
+      "mileage": "53,317 miles",
+      "price": "\u00a317,490",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/7519a5c03ea74adb9e92723935727a0a.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": "https://www.nmg.co.uk/"
+    }
+  ]
+}

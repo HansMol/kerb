@@ -1,0 +1,38 @@
+{
+  "dealer_name": "Motorhub",
+  "cars": [
+    {
+      "year": "2005",
+      "make": "MERCEDES",
+      "model": "SLR McLaren",
+      "trim": "5.4 V8 2dr",
+      "mileage": "3,400 miles",
+      "price": "\u00a3439,989",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/e7944fb3ed9d4f9dbbe7e7aa8e61e414.jpg",
+      "hook": "The lower-mileage of the 2 we sourced from this dealer.",
+      "dealer_website": "https://www.motor-hub.co.uk"
+    },
+    {
+      "year": "2005",
+      "make": "MERCEDES",
+      "model": "SLR McLaren",
+      "trim": "5.4 V8 2dr",
+      "mileage": "16,800 miles",
+      "price": "\u00a3379,989",
+      "photo_url": "",
+      "hook": "The higher-mileage of the 2 we sourced from this dealer.",
+      "dealer_website": "https://www.motor-hub.co.uk"
+    },
+    {
+      "year": "2012",
+      "make": "MERCEDES",
+      "model": "SLS",
+      "trim": "6.2 63 V8 AMG Roadster SpdS DCT Euro 5 2dr",
+      "mileage": "29,000 miles",
+      "price": "\u00a3139,989",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/0310790b6e634fb1a24d22f781c4c778.jpg",
+      "hook": "DCT dual-clutch gearbox, roadster body.",
+      "dealer_website": ""
+    }
+  ]
+}

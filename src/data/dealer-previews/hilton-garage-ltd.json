@@ -1,0 +1,159 @@
+{
+  "dealer_name": "Hilton Garage Ltd",
+  "cars": [
+    {
+      "year": "2017",
+      "make": "BMW",
+      "model": "2 Series Active Tourer",
+      "trim": "1.5 225xe 7.6kWh Luxury Auto 4WD Euro 6 (s/s) 5dr",
+      "mileage": "18,650 miles",
+      "price": "\u00a312,700",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/dc33ab673e2143ceaf0c79827dd3f6f9.jpg",
+      "hook": "The lower-mileage of the 4 we sourced from this dealer.",
+      "dealer_website": "http://www.hiltongarage.co.uk/?COGDN=AT"
+    },
+    {
+      "year": "2016",
+      "make": "BMW",
+      "model": "2 Series Active Tourer",
+      "trim": "2.0 218d Luxury Auto Euro 6 (s/s) 5dr",
+      "mileage": "19,658 miles",
+      "price": "\u00a311,700",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/3afc1dbbf1f8433484054b6bd128edf7.jpg",
+      "hook": "One of 4 we sourced from this dealer.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2017",
+      "make": "BMW",
+      "model": "2 Series Active Tourer",
+      "trim": "2.0 220d M Sport Auto xDrive Euro 6 (s/s) 5dr",
+      "mileage": "31,313 miles",
+      "price": "\u00a312,700",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/4f36a449fb7a4a2b99ccd625f7c455d3.jpg",
+      "hook": "One of 4 we sourced from this dealer. XDrive four-wheel drive.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2018",
+      "make": "BMW",
+      "model": "X1",
+      "trim": "2.0 20i xLine Auto xDrive Euro 6 (s/s) 5dr",
+      "mileage": "38,627 miles",
+      "price": "\u00a313,800",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/c4026fcd9fa54791834f48a3438803a0.jpg",
+      "hook": "XDrive four-wheel drive.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2016",
+      "make": "BMW",
+      "model": "2 Series Active Tourer",
+      "trim": "2.0 220i M Sport Auto Euro 6 (s/s) 5dr",
+      "mileage": "38,850 miles",
+      "price": "\u00a310,900",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/a40d9c76f7f94003b5ece180e5f36a32.jpg",
+      "hook": "The higher-mileage of the 4 we sourced from this dealer.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2019",
+      "make": "BMW",
+      "model": "5 Series",
+      "trim": "2.0 520i GPF M Sport Auto Euro 6 (s/s) 4dr",
+      "mileage": "39,000 miles",
+      "price": "\u00a317,250",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/42629f33b6344e31a3fd5ac27a1a40ad.jpg",
+      "hook": "The lower-mileage of the 2 we sourced from this dealer.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2019",
+      "make": "BMW",
+      "model": "X2",
+      "trim": "1.5 18i M Sport X DCT sDrive Euro 6 (s/s) 5dr",
+      "mileage": "42,369 miles",
+      "price": "\u00a315,050",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/1214ff8dfd954c168d2a72770e1d8bff.jpg",
+      "hook": "DCT dual-clutch gearbox.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2020",
+      "make": "BMW",
+      "model": "1 Series",
+      "trim": "1.5 118i M Sport DCT Euro 6 (s/s) 5dr",
+      "mileage": "42,596 miles",
+      "price": "\u00a315,150",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/e558eea420eb43979e5027d17a9adcf6.jpg",
+      "hook": "The lower-mileage of the 2 we sourced from this dealer. DCT dual-clutch gearbox.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2019",
+      "make": "BMW",
+      "model": "5 Series",
+      "trim": "2.0 520i M Sport Auto Euro 6 (s/s) 4dr",
+      "mileage": "57,740 miles",
+      "price": "\u00a315,100",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/1b52d0fe3d554ddfaba2eef5246986c6.jpg",
+      "hook": "The higher-mileage of the 2 we sourced from this dealer.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2021",
+      "make": "BMW",
+      "model": "1 Series",
+      "trim": "1.5 118i M Sport (LCP) Euro 6 (s/s) 5dr",
+      "mileage": "61,434 miles",
+      "price": "\u00a314,150",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/506da7f21d24460280d060ad4d9ac02d.jpg",
+      "hook": "The higher-mileage of the 2 we sourced from this dealer.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2019",
+      "make": "AUDI",
+      "model": "A1",
+      "trim": "1.0 TFSI 30 S line Sportback Euro 6 (s/s) 5dr",
+      "mileage": "26,600 miles",
+      "price": "\u00a314,150",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/0008f04a806343ddb6a2b417d2bc4680.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2020",
+      "make": "AUDI",
+      "model": "Q2",
+      "trim": "1.0 TFSI 30 Sport Euro 6 (s/s) 5dr",
+      "mileage": "40,012 miles",
+      "price": "\u00a312,450",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/3c941c9134ec4636beb4d45b68ae03b1.jpg",
+      "hook": "The lower-mileage of the 3 we sourced from this dealer.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2021",
+      "make": "AUDI",
+      "model": "Q2",
+      "trim": "1.0 TFSI 30 Sport Euro 6 (s/s) 5dr",
+      "mileage": "44,837 miles",
+      "price": "\u00a313,700",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/5705113e05b7460d84229dac20e2ea9e.jpg",
+      "hook": "One of 3 we sourced from this dealer.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2018",
+      "make": "AUDI",
+      "model": "Q2",
+      "trim": "1.6 TDI 30 S line S Tronic Euro 6 (s/s) 5dr",
+      "mileage": "64,370 miles",
+      "price": "\u00a312,050",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/b53e2e97997545a093b137a3c579c274.jpg",
+      "hook": "The higher-mileage of the 3 we sourced from this dealer.",
+      "dealer_website": ""
+    }
+  ]
+}

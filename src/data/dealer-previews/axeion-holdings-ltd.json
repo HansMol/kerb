@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Axeion Holdings Ltd",
+  "cars": [
+    {
+      "year": "2012",
+      "make": "BMW",
+      "model": "1 Series",
+      "trim": "1.6 116i M Sport Auto Euro 5 (s/s) 5dr",
+      "mileage": "46,300 miles",
+      "price": "\u00a36,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/7c76e962812a4e5688ed58898b0f21b9.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": "https://axeioncars.co.uk/"
+    }
+  ]
+}

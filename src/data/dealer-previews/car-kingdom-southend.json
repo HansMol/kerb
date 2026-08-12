@@ -1,0 +1,27 @@
+{
+  "dealer_name": "CAR KINGDOM SOUTHEND",
+  "cars": [
+    {
+      "year": "2014",
+      "make": "BMW",
+      "model": "M4",
+      "trim": "3.0 BiTurbo DCT Euro 6 (s/s) 2dr",
+      "mileage": "60,233 miles",
+      "price": "\u00a321,795",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/ad9a94d65bb74a199c7fda994c2525df.jpg",
+      "hook": "DCT dual-clutch gearbox.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2017",
+      "make": "AUDI",
+      "model": "S7",
+      "trim": "4.0 TFSI V8 Black Edition Sportback S Tronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "55,233 miles",
+      "price": "\u00a324,795",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/e1b068f083c64bab82766c7804611583.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

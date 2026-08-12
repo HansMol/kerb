@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Charltons Of Boroughbridge",
+  "cars": [
+    {
+      "year": "2018",
+      "make": "BMW",
+      "model": "X2",
+      "trim": "2.0 18d SE sDrive Euro 6 (s/s) 5dr",
+      "mileage": "78,820 miles",
+      "price": "\u00a39,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/67351a53d11942d683a7feeb805228ae.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Port Van Sales Limited",
+  "cars": [
+    {
+      "year": "2014",
+      "make": "AUDI",
+      "model": "R8",
+      "trim": "4.2 FSI V8 S Tronic quattro Euro 5 2dr",
+      "mileage": "33,367 miles",
+      "price": "\u00a342,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/039ca47f204d43038b5d1932fd3cad8b.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": "https://www.portvansales.co.uk/"
+    }
+  ]
+}

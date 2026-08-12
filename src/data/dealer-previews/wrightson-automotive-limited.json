@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Wrightson Automotive Limited",
+  "cars": [
+    {
+      "year": "2015",
+      "make": "Volkswagen",
+      "model": "XL1",
+      "trim": "2.0 2dr",
+      "mileage": "3,400 miles",
+      "price": "\u00a369,950",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/2511c843082747a3b4c35bb0a5f656ac.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

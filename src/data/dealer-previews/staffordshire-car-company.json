@@ -1,0 +1,27 @@
+{
+  "dealer_name": "Staffordshire Car Company",
+  "cars": [
+    {
+      "year": "2014",
+      "make": "BMW",
+      "model": "Alpina D5",
+      "trim": "3.0d Switchtronic Euro 6 (s/s) 4dr",
+      "mileage": "63,315 miles",
+      "price": "\u00a322,990",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/8fa7bcc0a31d429a918f67dcfae1004c.jpg",
+      "hook": "The lower-mileage of the 2 we sourced from this dealer.",
+      "dealer_website": "https://www.staffordshirecars.com/used-cars-in-staffordshire"
+    },
+    {
+      "year": "2014",
+      "make": "BMW",
+      "model": "Alpina D5",
+      "trim": "3.0d Switchtronic Euro 6 (s/s) 4dr",
+      "mileage": "75,193 miles",
+      "price": "\u00a320,990",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/cd6a248993f348008757371cc1a15cf9.jpg",
+      "hook": "The higher-mileage of the 2 we sourced from this dealer.",
+      "dealer_website": "https://www.staffordshirecars.com/used-cars-in-staffordshire"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Car City UK Catterick",
+  "cars": [
+    {
+      "year": "2020",
+      "make": "AUDI",
+      "model": "RSQ8",
+      "trim": "4.0 TFSI V8 Carbon Black Tiptronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "76,488 miles",
+      "price": "\u00a359,990",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/bb97d05070f34e55806df434844c8211.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

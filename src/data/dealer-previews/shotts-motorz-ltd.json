@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Shotts Motorz Ltd",
+  "cars": [
+    {
+      "year": "2013",
+      "make": "AUDI",
+      "model": "RS3",
+      "trim": "2.5 TFSI Sportback S Tronic quattro Euro 5 5dr",
+      "mileage": "77,236 miles",
+      "price": "\u00a316,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/f44158f2edc746e2a4d38f7072ba7211.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

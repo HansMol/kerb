@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Total Vehicle Solutions",
+  "cars": [
+    {
+      "year": "2014",
+      "make": "BMW",
+      "model": "M4",
+      "trim": "3.0 BiTurbo DCT Euro 6 (s/s) 2dr",
+      "mileage": "51,122 miles",
+      "price": "\u00a320,999",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/40bf3c2c10cf4a878e8af5851a715c36.jpg",
+      "hook": "DCT dual-clutch gearbox.",
+      "dealer_website": ""
+    }
+  ]
+}

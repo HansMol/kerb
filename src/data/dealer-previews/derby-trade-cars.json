@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Derby Trade Cars",
+  "cars": [
+    {
+      "year": "2021",
+      "make": "AUDI",
+      "model": "RS7",
+      "trim": "4.0 TFSI V8 Vorsprung Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "30,000 miles",
+      "price": "\u00a372,990",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/f9879b411f154269822f334fd3b328bb.jpg",
+      "hook": "Range-topping Vorsprung trim, quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

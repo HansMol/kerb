@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Graham Walker Ltd",
+  "cars": [
+    {
+      "year": "1997",
+      "make": "BMW",
+      "model": "Z3",
+      "trim": "1.9i 2dr",
+      "mileage": "26,651 miles",
+      "price": "\u00a38,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/88a737fb8416453b874ff7bba3fa448f.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

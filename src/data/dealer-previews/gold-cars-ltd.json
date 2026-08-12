@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Gold Cars Ltd",
+  "cars": [
+    {
+      "year": "2015",
+      "make": "BMW",
+      "model": "Alpina B4",
+      "trim": "3.0 Bi Turbo 2dr",
+      "mileage": "36,934 miles",
+      "price": "\u00a333,495",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/8991e0bd0762458ba2e2e84df35dc081.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

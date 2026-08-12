@@ -1,0 +1,16 @@
+{
+  "dealer_name": "JBR Collection",
+  "cars": [
+    {
+      "year": "2012",
+      "make": "AUDI",
+      "model": "RS3",
+      "trim": "2.5 TFSI Sportback S Tronic quattro Euro 5 5dr",
+      "mileage": "60,615 miles",
+      "price": "\u00a316,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/d4926f1118844dcb97db1bc3c1d564c5.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

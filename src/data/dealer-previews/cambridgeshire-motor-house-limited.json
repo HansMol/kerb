@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Cambridgeshire Motor House Limited",
+  "cars": [
+    {
+      "year": "2017",
+      "make": "BMW",
+      "model": "M2",
+      "trim": "3.0i DCT Euro 6 (s/s) 2dr",
+      "mileage": "65,000 miles",
+      "price": "\u00a324,950",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/9a4fef61965e444294881b3b413f968c.jpg",
+      "hook": "DCT dual-clutch gearbox.",
+      "dealer_website": ""
+    }
+  ]
+}

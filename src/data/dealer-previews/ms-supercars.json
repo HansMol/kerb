@@ -1,0 +1,27 @@
+{
+  "dealer_name": "MS Supercars",
+  "cars": [
+    {
+      "year": "2017",
+      "make": "PORSCHE",
+      "model": "718 Cayman",
+      "trim": "2.0T PDK Euro 6 (s/s) 2dr",
+      "mileage": "43,173 miles",
+      "price": "\u00a331,985",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/29ef6d0499f34c88b246d82158b1780a.jpg",
+      "hook": "PDK dual-clutch gearbox.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2003",
+      "make": "PORSCHE",
+      "model": "911",
+      "trim": "3.6 996 Carrera 4 Cabriolet Tiptronic S AWD 2dr",
+      "mileage": "63,398 miles",
+      "price": "\u00a318,985",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/cd83f339c03d46ae8999cd21a776efa9.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Bucks motor trade",
+  "cars": [
+    {
+      "year": "2007",
+      "make": "AUDI",
+      "model": "R8",
+      "trim": "4.2 FSI V8 R Tronic quattro Euro 4 2dr",
+      "mileage": "67,805 miles",
+      "price": "\u00a324,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/0b286d4329354b5e8c02ba4dc3309826.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

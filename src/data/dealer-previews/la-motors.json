@@ -1,0 +1,27 @@
+{
+  "dealer_name": "LA Motors",
+  "cars": [
+    {
+      "year": "2022",
+      "make": "MERCEDES",
+      "model": "G Class",
+      "trim": "4.0 G63 V8 BiTurbo AMG SpdS+9GT 4MATIC Euro 6 (s/s) 5dr",
+      "mileage": "68,000 miles",
+      "price": "\u00a3129,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/a8181d2c84e14a01821c0d40c95bfa4a.jpg",
+      "hook": "4MATIC four-wheel drive.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2019",
+      "make": "AUDI",
+      "model": "RS3",
+      "trim": "2.5 TFSI Audi Sport Edition Sportback S Tronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "39,000 miles",
+      "price": "\u00a336,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/5623efaa01d14b63b5f19979537971e8.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "dealer_name": "JS Trader",
+  "cars": [
+    {
+      "year": "2016",
+      "make": "AUDI",
+      "model": "RS3",
+      "trim": "2.5 TFSI Sportback S Tronic quattro Euro 6 (s/s) 5dr (Nav)",
+      "mileage": "58,295 miles",
+      "price": "\u00a318,950",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/645bd1d0972c45c49fc7c23b918b54fc.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

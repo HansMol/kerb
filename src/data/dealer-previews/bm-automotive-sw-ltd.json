@@ -1,0 +1,16 @@
+{
+  "dealer_name": "BM AUTOMOTIVE (SW) LTD",
+  "cars": [
+    {
+      "year": "2009",
+      "make": "AUDI",
+      "model": "R8",
+      "trim": "4.2 FSI V8 quattro Euro 4 2dr",
+      "mileage": "75,100 miles",
+      "price": "\u00a339,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/5a7701929ad04a159eba2483045176a1.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": "https://www.bm-automotive.co.uk/"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "dealer_name": "P W Millar Ford",
+  "cars": [
+    {
+      "year": "2017",
+      "make": "MERCEDES",
+      "model": "G Class",
+      "trim": "3.0 G350 CDI V6 Night Edition G-Tronic 4WD Euro 6 (s/s) 5dr",
+      "mileage": "71,361 miles",
+      "price": "\u00a343,999",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/66820a2dc1d54bc182d027fd54abef4e.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

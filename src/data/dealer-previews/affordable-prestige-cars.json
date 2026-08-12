@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Affordable Prestige Cars",
+  "cars": [
+    {
+      "year": "2012",
+      "make": "AUDI",
+      "model": "RS3",
+      "trim": "2.5 TFSI Sportback S Tronic quattro Euro 5 5dr",
+      "mileage": "61,000 miles",
+      "price": "\u00a318,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/6ffdb0e0849941db998a14edb6a2b903.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

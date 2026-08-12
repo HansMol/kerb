@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Auto-Union",
+  "cars": [
+    {
+      "year": "1960",
+      "make": "Volkswagen",
+      "model": "Karmann",
+      "trim": "Ghia Convertible 1.6 2dr",
+      "mileage": "13,339 miles",
+      "price": "\u00a342,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/c13e4f282cad439da0993602ecfe46b9.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": "http://auto-union.co/"
+    }
+  ]
+}

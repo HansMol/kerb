@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Pavilion Motor Company",
+  "cars": [
+    {
+      "year": "2023",
+      "make": "AUDI",
+      "model": "RSQ8",
+      "trim": "4.0 TFSI V8 Vorsprung Tiptronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "14,929 miles",
+      "price": "\u00a369,000",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/0b199142ac464afc80148999e2cf5c16.jpg",
+      "hook": "Range-topping Vorsprung trim, quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

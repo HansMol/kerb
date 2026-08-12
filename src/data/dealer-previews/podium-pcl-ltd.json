@@ -1,0 +1,49 @@
+{
+  "dealer_name": "Podium PCL Ltd",
+  "cars": [
+    {
+      "year": "2006",
+      "make": "Volkswagen",
+      "model": "Fox",
+      "trim": "1.4 16V Urban Fox Euro 4 3dr",
+      "mileage": "32,000 miles",
+      "price": "\u00a32,490",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/87931cf7a9334e3fb120cfc7882d0d72.jpg",
+      "hook": "The lower-mileage of the 4 we sourced from this dealer.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2009",
+      "make": "Volkswagen",
+      "model": "Fox",
+      "trim": "1.2 6V Urban Fox Euro 4 3dr",
+      "mileage": "50,000 miles",
+      "price": "\u00a32,490",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/db586a0deebb422b9c7f623ca2452ff6.jpg",
+      "hook": "One of 4 we sourced from this dealer.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2009",
+      "make": "Volkswagen",
+      "model": "Fox",
+      "trim": "1.2 6V Euro 4 3dr",
+      "mileage": "59,000 miles",
+      "price": "\u00a31,990",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/d5bf86b58fba49749a242fb0172ebb7e.jpg",
+      "hook": "One of 4 we sourced from this dealer.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2007",
+      "make": "Volkswagen",
+      "model": "Fox",
+      "trim": "1.2 6V Urban Fox Euro 4 3dr",
+      "mileage": "62,000 miles",
+      "price": "\u00a32,490",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/ff3bd2598d1945528bc3d0cc6dda6297.jpg",
+      "hook": "The higher-mileage of the 4 we sourced from this dealer.",
+      "dealer_website": ""
+    }
+  ]
+}

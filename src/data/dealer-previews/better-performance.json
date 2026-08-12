@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Better Performance",
+  "cars": [
+    {
+      "year": "2022",
+      "make": "MERCEDES",
+      "model": "G Class",
+      "trim": "4.0 G63 V8 BiTurbo AMG SpdS+9GT 4MATIC Euro 6 (s/s) 5dr",
+      "mileage": "31,000 miles",
+      "price": "\u00a3149,991",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/06e7aea3c1e54eb392824efc35938623.jpg",
+      "hook": "4MATIC four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

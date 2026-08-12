@@ -1,0 +1,16 @@
+{
+  "dealer_name": "EXPRESSWAY CAR COMPANY LIMITED",
+  "cars": [
+    {
+      "year": "1992",
+      "make": "MERCEDES",
+      "model": "CE Class",
+      "trim": "2dr",
+      "mileage": "80,000 miles",
+      "price": "\u00a36,975",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/f0b79a942a99422e926d20e03118a5da.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": "https://www.expresswaycars.co.uk"
+    }
+  ]
+}

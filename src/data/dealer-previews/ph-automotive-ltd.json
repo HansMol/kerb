@@ -1,0 +1,16 @@
+{
+  "dealer_name": "PH AUTOMOTIVE LTD",
+  "cars": [
+    {
+      "year": "2021",
+      "make": "BMW",
+      "model": "Alpina D3",
+      "trim": "3.0d MHT S Touring Switchtronic AWD Euro 6 (s/s) 5dr STUNNING COLOUR|PANORAMIC ROOF",
+      "mileage": "47,058 miles",
+      "price": "\u00a353,840",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/145d73850a4644fdbbea19e38902ad8b.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

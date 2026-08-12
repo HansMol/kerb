@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Uber Gt Ltd",
+  "cars": [
+    {
+      "year": "1989",
+      "make": "BMW",
+      "model": "Z1",
+      "trim": "2.5I - Stunning Low Mileage Example 2dr",
+      "mileage": "11,480 miles",
+      "price": "\u00a354,950",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/98003a31f3f54296a90de5bfd970041e.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

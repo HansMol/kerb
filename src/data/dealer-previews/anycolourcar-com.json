@@ -1,0 +1,16 @@
+{
+  "dealer_name": "anycolourcar.com",
+  "cars": [
+    {
+      "year": "2002",
+      "make": "AUDI",
+      "model": "A2",
+      "trim": "1.4 TDI SE 5dr",
+      "mileage": "49,978 miles",
+      "price": "\u00a36,999",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/ad425a7a96d34ae28d8d7bf82ebd4d38.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

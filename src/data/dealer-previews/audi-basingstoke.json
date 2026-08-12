@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Audi Basingstoke",
+  "cars": [
+    {
+      "year": "2024",
+      "make": "AUDI",
+      "model": "Q2",
+      "trim": "1.0 TFSI 30 S line Euro 6 (s/s) 5dr",
+      "mileage": "44,829 miles",
+      "price": "\u00a316,871",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/1546b78e25ff4129a8ecc2f38157ceac.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

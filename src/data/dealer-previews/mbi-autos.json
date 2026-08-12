@@ -1,0 +1,27 @@
+{
+  "dealer_name": "MBI AUTOS",
+  "cars": [
+    {
+      "year": "2013",
+      "make": "BMW",
+      "model": "X1",
+      "trim": "2.0 20i xLine Auto sDrive Euro 6 (s/s) 5dr",
+      "mileage": "28,583 miles",
+      "price": "\u00a37,994",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/f12ad0cbb30b47bb930be9ce772d453a.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": "https://mbiautos.co.uk"
+    },
+    {
+      "year": "2015",
+      "make": "BMW",
+      "model": "5 Series",
+      "trim": "2.0 520i M Sport Auto Euro 6 (s/s) 4dr",
+      "mileage": "36,661 miles",
+      "price": "\u00a39,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/70c8a431b34a48d89a33a47e01d7e720.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": "https://mbiautos.co.uk"
+    }
+  ]
+}

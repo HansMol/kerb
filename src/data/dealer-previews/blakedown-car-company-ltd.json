@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Blakedown Car Company Ltd",
+  "cars": [
+    {
+      "year": "2018",
+      "make": "PORSCHE",
+      "model": "718 Cayman",
+      "trim": "2.0T PDK Euro 6 (s/s) 2dr",
+      "mileage": "57,950 miles",
+      "price": "\u00a335,999",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/c443f53957764e82b1ddfcd862d00fb4.jpg",
+      "hook": "PDK dual-clutch gearbox.",
+      "dealer_website": ""
+    }
+  ]
+}

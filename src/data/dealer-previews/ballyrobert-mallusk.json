@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Ballyrobert Mallusk",
+  "cars": [
+    {
+      "year": "2014",
+      "make": "AUDI",
+      "model": "RS Q3",
+      "trim": "2.5 TFSI S Tronic quattro Euro 5 (s/s) 5dr",
+      "mileage": "50,552 miles",
+      "price": "\u00a317,395",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/5ea82c24bb7f4cd4b5acc4c2d07444a4.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

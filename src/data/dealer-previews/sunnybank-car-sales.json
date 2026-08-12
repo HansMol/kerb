@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Sunnybank Car Sales",
+  "cars": [
+    {
+      "year": "2015",
+      "make": "BMW",
+      "model": "M4",
+      "trim": "3.0 BiTurbo DCT Euro 6 (s/s) 2dr",
+      "mileage": "78,000 miles",
+      "price": "\u00a320,000",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/3c84124f0b414057a83a0c7ded743ffd.jpg",
+      "hook": "DCT dual-clutch gearbox.",
+      "dealer_website": ""
+    }
+  ]
+}

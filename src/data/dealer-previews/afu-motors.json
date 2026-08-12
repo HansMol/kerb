@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Afu motors",
+  "cars": [
+    {
+      "year": "2008",
+      "make": "AUDI",
+      "model": "R8",
+      "trim": "4.2 FSI V8 R Tronic quattro Euro 4 2dr",
+      "mileage": "51,700 miles",
+      "price": "\u00a324,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/e5129996397e48a5baf32d39a79e9aab.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

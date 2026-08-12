@@ -1,0 +1,27 @@
+{
+  "dealer_name": "Blackstone Motors Ltd",
+  "cars": [
+    {
+      "year": "2016",
+      "make": "MERCEDES",
+      "model": "G Class",
+      "trim": "3.0 G350 CDI V6 G-Tronic 4WD Euro 6 (s/s) 5dr",
+      "mileage": "43,000 miles",
+      "price": "\u00a351,989",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/701f8fc2924e4396a55ed1283cde004d.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2020",
+      "make": "AUDI",
+      "model": "RS7",
+      "trim": "4.0 TFSI V8 Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+      "mileage": "36,000 miles",
+      "price": "\u00a360,989",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/b847a2d37e8a4148a5d35baba846da45.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

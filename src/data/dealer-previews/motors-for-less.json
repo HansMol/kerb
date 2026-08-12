@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Motors For Less",
+  "cars": [
+    {
+      "year": "2013",
+      "make": "MERCEDES",
+      "model": "G Class",
+      "trim": "3.0 G350 V6 BlueTEC G-Tronic 4WD Euro 5 5dr",
+      "mileage": "50,000 miles",
+      "price": "\u00a344,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/e13cc9eab9644237beac25a67d3a4639.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": "https://www.motors-forless.co.uk"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "dealer_name": "Mendip Autoserve Limited",
+  "cars": [
+    {
+      "year": "2015",
+      "make": "BMW",
+      "model": "2 Series Active Tourer",
+      "trim": "2.0 218d SE MPV 5dr Diesel Auto Euro 6 (s/s) (150 ps)",
+      "mileage": "37,282 miles",
+      "price": "\u00a38,895",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/24a5a500fb6c471194f748e5f4321424.jpg",
+      "hook": "The lower-mileage of the 2 we sourced from this dealer.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2015",
+      "make": "BMW",
+      "model": "5 Series",
+      "trim": "2.0 520d M Sport Saloon 4dr Diesel Auto Euro 6 (s/s) (184 ps)",
+      "mileage": "44,656 miles",
+      "price": "\u00a310,894",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/537a6320d09047e5994a2a10bf00ef4a.jpg",
+      "hook": "The lower-mileage of the 2 we sourced from this dealer.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2014",
+      "make": "BMW",
+      "model": "5 Series",
+      "trim": "2.0 520i Luxury Touring 5dr Petrol Auto Euro 6 (s/s) (184 ps)",
+      "mileage": "53,191 miles",
+      "price": "\u00a310,591",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/8ea30297ad2844698d0ae719535ce96b.jpg",
+      "hook": "The higher-mileage of the 2 we sourced from this dealer.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2015",
+      "make": "BMW",
+      "model": "2 Series Active Tourer",
+      "trim": "2.0 218d SE MPV 5dr Diesel Auto Euro 6 (s/s) (150 ps)",
+      "mileage": "54,764 miles",
+      "price": "\u00a37,496",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/ef3b76fcdef4496b91a4c28def5dbedc.jpg",
+      "hook": "The higher-mileage of the 2 we sourced from this dealer.",
+      "dealer_website": ""
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "dealer_name": "ILLYRIAN PERFORMANCE LTD",
+  "cars": [
+    {
+      "year": "2019",
+      "make": "BMW",
+      "model": "M4",
+      "trim": "3.0 BiTurbo GPF Competition DCT Euro 6 (s/s) 2dr",
+      "mileage": "31,000 miles",
+      "price": "\u00a333,990",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/278fef42733f4713bfd2844fd3ac60e9.jpg",
+      "hook": "Competition package, DCT dual-clutch gearbox.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2018",
+      "make": "BMW",
+      "model": "M3",
+      "trim": "3.0 BiTurbo Competition DCT Euro 6 (s/s) 4dr",
+      "mileage": "54,000 miles",
+      "price": "\u00a335,990",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/2e726a1d9d7e4adfad54742ef27049c2.jpg",
+      "hook": "Competition package, DCT dual-clutch gearbox.",
+      "dealer_website": ""
+    }
+  ]
+}

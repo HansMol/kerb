@@ -1,0 +1,16 @@
+{
+  "dealer_name": "AutoVero",
+  "cars": [
+    {
+      "year": "2025",
+      "make": "MERCEDES",
+      "model": "230 SL",
+      "trim": "2.3 2dr",
+      "mileage": "350 miles",
+      "price": "\u00a3175,000",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/4f169076227642fda7129c60c8089620.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    }
+  ]
+}

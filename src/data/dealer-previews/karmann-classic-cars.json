@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Karmann Classic Cars",
+  "cars": [
+    {
+      "year": "2014",
+      "make": "AUDI",
+      "model": "RS Q3",
+      "trim": "2.5 TFSI S Tronic quattro Euro 5 (s/s) 5dr",
+      "mileage": "58,002 miles",
+      "price": "\u00a317,990",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/8c8ac52145f74cf89d2fcd48ba24b0cb.jpg",
+      "hook": "Quattro four-wheel drive.",
+      "dealer_website": ""
+    }
+  ]
+}

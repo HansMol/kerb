@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Abbey Park Cars",
+  "cars": [
+    {
+      "year": "2018",
+      "make": "BMW",
+      "model": "X1",
+      "trim": "2.0 20d Sport Auto xDrive Euro 6 (s/s) 5dr",
+      "mileage": "69,802 miles",
+      "price": "\u00a311,850",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/523854e2a01844b89fb02cdfc904953a.jpg",
+      "hook": "XDrive four-wheel drive.",
+      "dealer_website": "https://www.abbeyparkcars.co.uk"
+    }
+  ]
+}

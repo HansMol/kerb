@@ -1,0 +1,27 @@
+{
+  "dealer_name": "BAM Specialist Cars",
+  "cars": [
+    {
+      "year": "1990",
+      "make": "BMW",
+      "model": "Z1",
+      "trim": "2.5l 2dr 170 BHP Superb example, Low Mileage, Iconic",
+      "mileage": "24,807 miles",
+      "price": "\u00a353,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/721114bcd00c4abd8324117f5003daa8.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": "https://www.bamspecialistcars.co.uk "
+    },
+    {
+      "year": "2000",
+      "make": "BMW",
+      "model": "Z3 M",
+      "trim": "3.2 2dr",
+      "mileage": "45,484 miles",
+      "price": "\u00a349,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/20d5bbea9511467bb2c5ddbcb5e083fa.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": "https://www.bamspecialistcars.co.uk "
+    }
+  ]
+}

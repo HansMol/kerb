@@ -1,0 +1,49 @@
+{
+  "dealer_name": "Cramag",
+  "cars": [
+    {
+      "year": "2003",
+      "make": "BMW",
+      "model": "Z3",
+      "trim": "2.2i Sapphire Edition Limited Edition Roadster 2dr",
+      "mileage": "42,000 miles",
+      "price": "\u00a310,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/169e850c450f49c88902ea7f702c84f6.jpg",
+      "hook": "The lower-mileage of the 3 we sourced from this dealer. Roadster body.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2002",
+      "make": "BMW",
+      "model": "Z3",
+      "trim": "1.9i Sport 2dr",
+      "mileage": "53,500 miles",
+      "price": "\u00a36,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/d6b5b35199dd4fa29c47ac1024375d48.jpg",
+      "hook": "One of 3 we sourced from this dealer.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2007",
+      "make": "BMW",
+      "model": "Z4 M",
+      "trim": "3.2i Euro 4 2dr",
+      "mileage": "64,000 miles",
+      "price": "\u00a322,500",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/719e48a26c474715b29e0e220b624600.jpg",
+      "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+      "dealer_website": ""
+    },
+    {
+      "year": "2002",
+      "make": "BMW",
+      "model": "Z3",
+      "trim": "2.2i Sport Roadster 2dr",
+      "mileage": "67,000 miles",
+      "price": "\u00a38,995",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/ad3d99accc2b47a985cfc21ae7cabce7.jpg",
+      "hook": "The higher-mileage of the 3 we sourced from this dealer. Roadster body.",
+      "dealer_website": ""
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "dealer_name": "Arbat Motors",
+  "cars": [
+    {
+      "year": "2017",
+      "make": "BMW",
+      "model": "M2",
+      "trim": "3.0i DCT Euro 6 (s/s) 2dr",
+      "mileage": "58,812 miles",
+      "price": "\u00a324,950",
+      "photo_url": "https://m.atcdn.co.uk/a/media/w800/a19c4a9b239345dd86cef39063818e3f.jpg",
+      "hook": "DCT dual-clutch gearbox.",
+      "dealer_website": ""
+    }
+  ]
+}
