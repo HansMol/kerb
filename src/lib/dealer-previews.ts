@@ -1,5 +1,4 @@
-import fs from 'fs'
-import path from 'path'
+import allPreviews from '@/data/dealer-previews.json'
 
 export type PreviewCar = {
   year: string
@@ -18,18 +17,17 @@ export type DealerPreview = {
   cars: PreviewCar[]
 }
 
-const DATA_DIR = path.join(process.cwd(), 'src', 'data', 'dealer-previews')
+// Bundled at build time via static import — Cloudflare Workers has no
+// filesystem at runtime, so fs.readFileSync per-request doesn't work there
+// (confirmed 12 Aug 2026: every preview page 404'd after deploy despite
+// building fine locally). A static import gets inlined into the JS bundle
+// by webpack, which works the same in Workers as anywhere else.
+const previews = allPreviews as Record<string, DealerPreview>
 
 export function getDealerPreview(slug: string): DealerPreview | null {
-  const filePath = path.join(DATA_DIR, `${slug}.json`)
-  if (!fs.existsSync(filePath)) return null
-  return JSON.parse(fs.readFileSync(filePath, 'utf-8'))
+  return previews[slug] ?? null
 }
 
 export function getAllDealerPreviewSlugs(): string[] {
-  if (!fs.existsSync(DATA_DIR)) return []
-  return fs
-    .readdirSync(DATA_DIR)
-    .filter((f) => f.endsWith('.json'))
-    .map((f) => f.replace(/\.json$/, ''))
+  return Object.keys(previews)
 }

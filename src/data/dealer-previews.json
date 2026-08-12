@@ -1,0 +1,5774 @@
+{
+  "1stop-car-sales": {
+    "dealer_name": "1Stop Car Sales",
+    "cars": [
+      {
+        "year": "2019",
+        "make": "AUDI",
+        "model": "S7",
+        "trim": "3.0 TDI V6 Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "71,543 miles",
+        "price": "\u00a328,500",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/d0cd70a1c07d45eba47a1d1be42b50c7.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "8-motor-group": {
+    "dealer_name": "8 Motor Group",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "MERCEDES",
+        "model": "G Class",
+        "trim": "3.0 G350 V6 BlueTEC G-Tronic 4WD Euro 5 5dr",
+        "mileage": "70,000 miles",
+        "price": "\u00a337,495",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/4bde24e69e904e54a480a0cb61c8a49f.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "a-p-hynes-and-co": {
+    "dealer_name": "A P Hynes And Co",
+    "cars": [
+      {
+        "year": "1984",
+        "make": "MERCEDES",
+        "model": "280 SL",
+        "trim": "2.7 2dr",
+        "mileage": "76,470 miles",
+        "price": "\u00a321,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/723b52bf9a2f460f9919a6c742167495.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "a-h-autos-limited": {
+    "dealer_name": "A&H AUTOS LIMITED",
+    "cars": [
+      {
+        "year": "2019",
+        "make": "PORSCHE",
+        "model": "718 Cayman",
+        "trim": "2.0T T Euro 6 (s/s) 2dr",
+        "mileage": "25,500 miles",
+        "price": "\u00a336,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/8fb2679fa4a7437aa1d9298972ec2f64.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "ab-performance-cars-ltd": {
+    "dealer_name": "AB performance cars LTD",
+    "cars": [
+      {
+        "year": "2014",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo DCT Euro 6 (s/s) 2dr",
+        "mileage": "57,000 miles",
+        "price": "\u00a319,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/67f35c255e5d4d4985940bf7c3712f71.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "adg-sevenoaks-limited": {
+    "dealer_name": "ADG SEVENOAKS LIMITED",
+    "cars": [
+      {
+        "year": "2001",
+        "make": "PORSCHE",
+        "model": "911",
+        "trim": "3.6 996 Carrera 2 Cabriolet Tiptronic S 2dr",
+        "mileage": "74,000 miles",
+        "price": "\u00a315,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/96e2f0b0252544d7898c75c104fe7c97.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://www.adgsevenoaks.co.uk/"
+      }
+    ]
+  },
+  "alx-specialist-cars": {
+    "dealer_name": "ALX Specialist Cars",
+    "cars": [
+      {
+        "year": "1969",
+        "make": "PORSCHE",
+        "model": "356",
+        "trim": "",
+        "mileage": "5,600 miles",
+        "price": "\u00a321,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/51bf69d7f8714928b8c055dde043a5a6.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://www.alxcars.co.uk"
+      },
+      {
+        "year": "2006",
+        "make": "AUDI",
+        "model": "RS4",
+        "trim": "4.2 quattro 4dr",
+        "mileage": "61,500 miles",
+        "price": "\u00a327,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/238e7486725a45d2bf557fcc1fb4fdc4.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "ar-motor-group": {
+    "dealer_name": "AR Motor Group",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "BMW",
+        "model": "Alpina D5",
+        "trim": "3.0d Switchtronic Euro 6 (s/s) 4dr",
+        "mileage": "64,622 miles",
+        "price": "\u00a323,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/5c20d4df25804a4aadf4fa5a1eea8da6.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "http://www.armotorgroupuk.co.uk "
+      },
+      {
+        "year": "2015",
+        "make": "AUDI",
+        "model": "TT RS",
+        "trim": "2.5 TFSI Plus S Tronic quattro Euro 5 3dr",
+        "mileage": "59,651 miles",
+        "price": "\u00a321,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/88cd6ad7170746b1b02b75d79d17f0a2.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": "http://www.armotorgroupuk.co.uk "
+      }
+    ]
+  },
+  "auto-investments-uk-aiuk-limited": {
+    "dealer_name": "AUTO INVESTMENTS UK (AIUK) LIMITED",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "AUDI",
+        "model": "RS Q3",
+        "trim": "2.5 TFSI S Tronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "66,985 miles",
+        "price": "\u00a316,489",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/aa0aac481f4b4eddabd181a30624a790.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "autohub-walsall": {
+    "dealer_name": "AUTOHUB WALSALL",
+    "cars": [
+      {
+        "year": "2006",
+        "make": "Volkswagen",
+        "model": "Fox",
+        "trim": "1.2 6V Urban Fox Euro 4 3dr",
+        "mileage": "61,000 miles",
+        "price": "\u00a31,295",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/be1fc581d5bf4479bd7d301a41dba9c4.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "automotive-prestige-ltd": {
+    "dealer_name": "AUTOMOTIVE PRESTIGE LTD",
+    "cars": [
+      {
+        "year": "1999",
+        "make": "BMW",
+        "model": "Z3",
+        "trim": "1.9i 2dr",
+        "mileage": "64,500 miles",
+        "price": "\u00a34,840",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/a6442022a4994deb91852e0de68f5f52.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "abbey-park-cars": {
+    "dealer_name": "Abbey Park Cars",
+    "cars": [
+      {
+        "year": "2018",
+        "make": "BMW",
+        "model": "X1",
+        "trim": "2.0 20d Sport Auto xDrive Euro 6 (s/s) 5dr",
+        "mileage": "69,802 miles",
+        "price": "\u00a311,850",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/523854e2a01844b89fb02cdfc904953a.jpg",
+        "hook": "XDrive four-wheel drive.",
+        "dealer_website": "https://www.abbeyparkcars.co.uk"
+      }
+    ]
+  },
+  "abeona-auto-services-ltd": {
+    "dealer_name": "Abeona Auto Services Ltd",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo Euro 6 (s/s) 2dr",
+        "mileage": "64,000 miles",
+        "price": "\u00a320,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/fd4766f72e61491b823033a84fb12a05.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "affordable-prestige-cars": {
+    "dealer_name": "Affordable Prestige Cars",
+    "cars": [
+      {
+        "year": "2012",
+        "make": "AUDI",
+        "model": "RS3",
+        "trim": "2.5 TFSI Sportback S Tronic quattro Euro 5 5dr",
+        "mileage": "61,000 miles",
+        "price": "\u00a318,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/6ffdb0e0849941db998a14edb6a2b903.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "afu-motors": {
+    "dealer_name": "Afu motors",
+    "cars": [
+      {
+        "year": "2008",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "4.2 FSI V8 R Tronic quattro Euro 4 2dr",
+        "mileage": "51,700 miles",
+        "price": "\u00a324,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e5129996397e48a5baf32d39a79e9aab.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "amari-supercars-gb": {
+    "dealer_name": "Amari Supercars (GB)",
+    "cars": [
+      {
+        "year": "1962",
+        "make": "PORSCHE",
+        "model": "356",
+        "trim": "",
+        "mileage": "75,831 miles",
+        "price": "\u00a399,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/fbe8a3a83b8247489031127c77988af5.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "http://www.amarisupercars.com"
+      }
+    ]
+  },
+  "anchor-cars-tadley": {
+    "dealer_name": "Anchor Cars Tadley",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "BMW",
+        "model": "X3",
+        "trim": "2.0 20d M Sport Auto xDrive Euro 6 (s/s) 5dr",
+        "mileage": "56,743 miles",
+        "price": "\u00a318,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f67f8a2f9e794c22ab053c48b638140e.jpg",
+        "hook": "XDrive four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "applecross-motor-company-limited": {
+    "dealer_name": "Applecross Motor Company Limited",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "PORSCHE",
+        "model": "718 Cayman",
+        "trim": "2.0T Euro 6 (s/s) 2dr",
+        "mileage": "38,421 miles",
+        "price": "\u00a331,000",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/1e2e0f23f6fb4f7bab64d086ad0e8985.jpg",
+        "hook": "The lower-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2018",
+        "make": "PORSCHE",
+        "model": "718 Cayman",
+        "trim": "2.0T PDK Euro 6 (s/s) 2dr",
+        "mileage": "60,029 miles",
+        "price": "\u00a331,500",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/26c50ab24e9f4d88a75ba7c4738151c1.jpg",
+        "hook": "The higher-mileage of the 2 we sourced from this dealer. PDK dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "arbat-motors": {
+    "dealer_name": "Arbat Motors",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "3.0i DCT Euro 6 (s/s) 2dr",
+        "mileage": "58,812 miles",
+        "price": "\u00a324,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/a19c4a9b239345dd86cef39063818e3f.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "ascot-automotive-uk": {
+    "dealer_name": "Ascot Automotive UK",
+    "cars": [
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "RS7",
+        "trim": "4.0 TFSI V8 Carbon Black Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "44,800 miles",
+        "price": "\u00a356,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/75cd501dc9db4e11971aeca77d38ecb6.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "audi-ayr": {
+    "dealer_name": "Audi Ayr",
+    "cars": [
+      {
+        "year": "2022",
+        "make": "AUDI",
+        "model": "RS7",
+        "trim": "4.0 TFSI V8 Carbon Black Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "21,538 miles",
+        "price": "\u00a369,499",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/c471405de2724eed9aab9747b1783ce4.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "audi-basingstoke": {
+    "dealer_name": "Audi Basingstoke",
+    "cars": [
+      {
+        "year": "2024",
+        "make": "AUDI",
+        "model": "Q2",
+        "trim": "1.0 TFSI 30 S line Euro 6 (s/s) 5dr",
+        "mileage": "44,829 miles",
+        "price": "\u00a316,871",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/1546b78e25ff4129a8ecc2f38157ceac.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "audi-guildford": {
+    "dealer_name": "Audi Guildford",
+    "cars": [
+      {
+        "year": "2021",
+        "make": "AUDI",
+        "model": "RS Q3",
+        "trim": "2.5 TFSI Sportback S Tronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "23,305 miles",
+        "price": "\u00a339,546",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/8c06ff32cd114d00b5141f5a2c0aafe9.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "auto-bahn-cars": {
+    "dealer_name": "Auto Bahn Cars",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "3.0i DCT Euro 6 (s/s) 2dr",
+        "mileage": "52,000 miles",
+        "price": "\u00a324,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/86ff051c069e415d85045a481cd6c11c.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "auto-gallery": {
+    "dealer_name": "Auto Gallery",
+    "cars": [
+      {
+        "year": "2009",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "4.2 FSI V8 R Tronic quattro Euro 4 2dr",
+        "mileage": "28,436 miles",
+        "price": "\u00a337,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/b2845100c18c49dca76beb60084be9ae.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "auto-prestige": {
+    "dealer_name": "Auto Prestige",
+    "cars": [
+      {
+        "year": "2023",
+        "make": "AUDI",
+        "model": "RS7",
+        "trim": "4.0 TFSI V8 Performance Carbon Vorsprung Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "15,000 miles",
+        "price": "\u00a396,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/4c3eb860793449d8a9b73c7a44582c7c.jpg",
+        "hook": "Range-topping Carbon Vorsprung trim, quattro four-wheel drive, Performance spec.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2016",
+        "make": "AUDI",
+        "model": "RS3",
+        "trim": "2.5 TFSI Sportback S Tronic quattro Euro 6 (s/s) 5dr (Nav)",
+        "mileage": "57,000 miles",
+        "price": "\u00a326,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/4af1108854db40d39c8425fb7a325e1a.jpg",
+        "hook": "The lower-mileage of the 2 we sourced from this dealer. Quattro four-wheel drive.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2016",
+        "make": "AUDI",
+        "model": "RS3",
+        "trim": "2.5 TFSI Sportback S Tronic quattro Euro 6 (s/s) 5dr (Nav)",
+        "mileage": "75,000 miles",
+        "price": "\u00a323,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/982df5428fde465f8dda976188690168.jpg",
+        "hook": "The higher-mileage of the 2 we sourced from this dealer. Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "auto-union": {
+    "dealer_name": "Auto-Union",
+    "cars": [
+      {
+        "year": "1960",
+        "make": "Volkswagen",
+        "model": "Karmann",
+        "trim": "Ghia Convertible 1.6 2dr",
+        "mileage": "13,339 miles",
+        "price": "\u00a342,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/c13e4f282cad439da0993602ecfe46b9.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "http://auto-union.co/"
+      }
+    ]
+  },
+  "autovero": {
+    "dealer_name": "AutoVero",
+    "cars": [
+      {
+        "year": "2025",
+        "make": "MERCEDES",
+        "model": "230 SL",
+        "trim": "2.3 2dr",
+        "mileage": "350 miles",
+        "price": "\u00a3175,000",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/4f169076227642fda7129c60c8089620.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "autochoice-car-supermarket": {
+    "dealer_name": "Autochoice Car Supermarket",
+    "cars": [
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "RSQ8",
+        "trim": "4.0 TFSI V8 Vorsprung Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "56,290 miles",
+        "price": "\u00a364,985",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/71c97cd8486649a58496e59fb3816495.jpg",
+        "hook": "Range-topping Vorsprung trim, quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "autostorico-partners-llp": {
+    "dealer_name": "Autostorico Partners LLP",
+    "cars": [
+      {
+        "year": "1983",
+        "make": "MERCEDES",
+        "model": "280 SL",
+        "trim": "",
+        "mileage": "78,372 miles",
+        "price": "\u00a329,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/06c9a0f4a77a4a0c90278866f148be6b.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "axeion-holdings-ltd": {
+    "dealer_name": "Axeion Holdings Ltd",
+    "cars": [
+      {
+        "year": "2012",
+        "make": "BMW",
+        "model": "1 Series",
+        "trim": "1.6 116i M Sport Auto Euro 5 (s/s) 5dr",
+        "mileage": "46,300 miles",
+        "price": "\u00a36,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/7c76e962812a4e5688ed58898b0f21b9.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://axeioncars.co.uk/"
+      }
+    ]
+  },
+  "bam-specialist-cars": {
+    "dealer_name": "BAM Specialist Cars",
+    "cars": [
+      {
+        "year": "1990",
+        "make": "BMW",
+        "model": "Z1",
+        "trim": "2.5l 2dr 170 BHP Superb example, Low Mileage, Iconic",
+        "mileage": "24,807 miles",
+        "price": "\u00a353,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/721114bcd00c4abd8324117f5003daa8.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://www.bamspecialistcars.co.uk "
+      },
+      {
+        "year": "2000",
+        "make": "BMW",
+        "model": "Z3 M",
+        "trim": "3.2 2dr",
+        "mileage": "45,484 miles",
+        "price": "\u00a349,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/20d5bbea9511467bb2c5ddbcb5e083fa.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://www.bamspecialistcars.co.uk "
+      }
+    ]
+  },
+  "bav-motor-company": {
+    "dealer_name": "BAV Motor Company",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "3.0i DCT Euro 6 (s/s) 2dr",
+        "mileage": "66,000 miles",
+        "price": "\u00a323,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/ab3d1b77808b4313bbf324ce709f1d5c.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": "http://www.bavmotorcompany.co.uk/"
+      }
+    ]
+  },
+  "beest-automotive": {
+    "dealer_name": "BEEST Automotive",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "AUDI",
+        "model": "RS Q3",
+        "trim": "2.5 TFSI S Tronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "64,090 miles",
+        "price": "\u00a318,495",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/15968cbe8c6348dbb318667eb36026c6.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": "https://beestautomotive.com/"
+      }
+    ]
+  },
+  "ben-harrison-automotive-ltd": {
+    "dealer_name": "BEN HARRISON AUTOMOTIVE LTD",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "3.0i DCT Euro 6 (s/s) 2dr",
+        "mileage": "67,000 miles",
+        "price": "\u00a325,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f94f72756442466ab9e022c33c59d5f3.jpg",
+        "hook": "The lower-mileage of the 2 we sourced from this dealer. DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2016",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "3.0i DCT Euro 6 (s/s) 2dr",
+        "mileage": "78,000 miles",
+        "price": "\u00a322,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/14f9170dbd1b4c87bfca2c4d8e85e834.jpg",
+        "hook": "The higher-mileage of the 2 we sourced from this dealer. DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "bhp-bournemouth-high-performance-ltd": {
+    "dealer_name": "BHP - Bournemouth High Performance Ltd",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "AUDI",
+        "model": "Q2",
+        "trim": "1.4 TFSI CoD Sport S Tronic Euro 6 (s/s) 5dr",
+        "mileage": "62,000 miles",
+        "price": "\u00a312,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/ef8e9074c79a405a830e93ff244671d2.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://www.bournemouthhighperformance.co.uk"
+      }
+    ]
+  },
+  "bjc-car-sales-limited": {
+    "dealer_name": "BJC Car Sales Limited",
+    "cars": [
+      {
+        "year": "2022",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo Competition Steptronic M xDrive Euro 6 (s/s) 2dr",
+        "mileage": "30,300 miles",
+        "price": "\u00a349,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/9d6b4603138d43c59ca7974d4d0d7b05.jpg",
+        "hook": "Competition package, xDrive four-wheel drive, Steptronic automatic gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "bluehawk-automotive-limited": {
+    "dealer_name": "BLUEHAWK AUTOMOTIVE LIMITED",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "BMW",
+        "model": "5 Series",
+        "trim": "2.0 525d M Sport Auto Euro 6 (s/s) 4dr",
+        "mileage": "57,000 miles",
+        "price": "\u00a312,289",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/50322fdaa56f4f82aa67f618734c8732.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2012",
+        "make": "BMW",
+        "model": "M3",
+        "trim": "4.0 V8 DCT Euro 5 2dr",
+        "mileage": "70,000 miles",
+        "price": "\u00a316,989",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/acde65f19c8f49d78d94d9a79c49199f.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2022",
+        "make": "AUDI",
+        "model": "RS3",
+        "trim": "2.5 TFSI S Tronic quattro Euro 6 (s/s) 4dr",
+        "mileage": "35,000 miles",
+        "price": "\u00a337,489",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/1fd11f4c4b804405a40df7a4a7bb9b40.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "bm-automotive-sw-ltd": {
+    "dealer_name": "BM AUTOMOTIVE (SW) LTD",
+    "cars": [
+      {
+        "year": "2009",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "4.2 FSI V8 quattro Euro 4 2dr",
+        "mileage": "75,100 miles",
+        "price": "\u00a339,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/5a7701929ad04a159eba2483045176a1.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": "https://www.bm-automotive.co.uk/"
+      }
+    ]
+  },
+  "buy-go-cars-ltd": {
+    "dealer_name": "BUY & GO CARS LTD",
+    "cars": [
+      {
+        "year": "2018",
+        "make": "AUDI",
+        "model": "TT RS",
+        "trim": "2.5 TFSI S Tronic quattro Euro 6 (s/s) 3dr",
+        "mileage": "66,582 miles",
+        "price": "\u00a328,630",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/01743f3332004ee3bb63b990d7aa66d0.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "ballyrobert-mallusk": {
+    "dealer_name": "Ballyrobert Mallusk",
+    "cars": [
+      {
+        "year": "2014",
+        "make": "AUDI",
+        "model": "RS Q3",
+        "trim": "2.5 TFSI S Tronic quattro Euro 5 (s/s) 5dr",
+        "mileage": "50,552 miles",
+        "price": "\u00a317,395",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/5ea82c24bb7f4cd4b5acc4c2d07444a4.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "bam-autos": {
+    "dealer_name": "Bam Autos",
+    "cars": [
+      {
+        "year": "2005",
+        "make": "Volkswagen",
+        "model": "Bora",
+        "trim": "2.0 S 4dr",
+        "mileage": "58,000 miles",
+        "price": "\u00a31,500",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/ac923b88c4d1457f8e30cba411a8b452.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "beenham-cars-limited": {
+    "dealer_name": "Beenham Cars Limited",
+    "cars": [
+      {
+        "year": "2011",
+        "make": "BMW",
+        "model": "3 Series",
+        "trim": "2.0 318d M Sport Euro 5 (s/s) 4dr",
+        "mileage": "68,810 miles",
+        "price": "\u00a35,490",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/6de57c2266fc4d98acc9493a7c7884af.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "benz-bavarian": {
+    "dealer_name": "Benz Bavarian",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo DCT Euro 6 (s/s) 2dr",
+        "mileage": "53,000 miles",
+        "price": "\u00a321,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/5af6f4e2e72547e182c31a0a00af02bb.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "better-performance": {
+    "dealer_name": "Better Performance",
+    "cars": [
+      {
+        "year": "2022",
+        "make": "MERCEDES",
+        "model": "G Class",
+        "trim": "4.0 G63 V8 BiTurbo AMG SpdS+9GT 4MATIC Euro 6 (s/s) 5dr",
+        "mileage": "31,000 miles",
+        "price": "\u00a3149,991",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/06e7aea3c1e54eb392824efc35938623.jpg",
+        "hook": "4MATIC four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "blackstone-motors-ltd": {
+    "dealer_name": "Blackstone Motors Ltd",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "MERCEDES",
+        "model": "G Class",
+        "trim": "3.0 G350 CDI V6 G-Tronic 4WD Euro 6 (s/s) 5dr",
+        "mileage": "43,000 miles",
+        "price": "\u00a351,989",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/701f8fc2924e4396a55ed1283cde004d.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "RS7",
+        "trim": "4.0 TFSI V8 Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "36,000 miles",
+        "price": "\u00a360,989",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/b847a2d37e8a4148a5d35baba846da45.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "blakedown-car-company-ltd": {
+    "dealer_name": "Blakedown Car Company Ltd",
+    "cars": [
+      {
+        "year": "2018",
+        "make": "PORSCHE",
+        "model": "718 Cayman",
+        "trim": "2.0T PDK Euro 6 (s/s) 2dr",
+        "mileage": "57,950 miles",
+        "price": "\u00a335,999",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/c443f53957764e82b1ddfcd862d00fb4.jpg",
+        "hook": "PDK dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "braidwood-motor-company": {
+    "dealer_name": "Braidwood Motor Company",
+    "cars": [
+      {
+        "year": "2014",
+        "make": "AUDI",
+        "model": "RS7",
+        "trim": "4.0 TFSI V8 Sportback Tiptronic quattro Euro 5 (s/s) 5dr",
+        "mileage": "61,363 miles",
+        "price": "\u00a328,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/355b391a4dfa4fb7a3df4f326c7ac482.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "bramley": {
+    "dealer_name": "Bramley",
+    "cars": [
+      {
+        "year": "2024",
+        "make": "BMW",
+        "model": "Alpina B5",
+        "trim": "4.4i V8 GT Touring Switchtronic AWD Euro 6 (s/s) 5dr",
+        "mileage": "5,476 miles",
+        "price": "\u00a3149,850",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/bf03b590f31d43eda22070321c945a7f.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2018",
+        "make": "BMW",
+        "model": "Alpina D4",
+        "trim": "3.0d BiTurbo Switchtronic Euro 6 (s/s) 2dr",
+        "mileage": "63,002 miles",
+        "price": "\u00a334,850",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/0bf8572756974cea9d3f9063ae61d226.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "bucks-motor-trade": {
+    "dealer_name": "Bucks motor trade",
+    "cars": [
+      {
+        "year": "2007",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "4.2 FSI V8 R Tronic quattro Euro 4 2dr",
+        "mileage": "67,805 miles",
+        "price": "\u00a324,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/0b286d4329354b5e8c02ba4dc3309826.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "caledonia-vehicle-solutions-limited": {
+    "dealer_name": "CALEDONIA VEHICLE SOLUTIONS LIMITED",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "AUDI",
+        "model": "RS Q3",
+        "trim": "2.5 TFSI Performance S Tronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "74,000 miles",
+        "price": "\u00a319,888",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e381a92af8bb47029a2da0e28072e847.jpg",
+        "hook": "Quattro four-wheel drive, Performance spec.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "car-city": {
+    "dealer_name": "CAR CITY",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "BMW",
+        "model": "2 Series Active Tourer",
+        "trim": "2.0 218d Sport Auto Euro 6 (s/s) 5dr",
+        "mileage": "68,300 miles",
+        "price": "\u00a36,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/1a44f45c454348f7901c111aa4413f98.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "car-kingdom-southend": {
+    "dealer_name": "CAR KINGDOM SOUTHEND",
+    "cars": [
+      {
+        "year": "2014",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo DCT Euro 6 (s/s) 2dr",
+        "mileage": "60,233 miles",
+        "price": "\u00a321,795",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/ad9a94d65bb74a199c7fda994c2525df.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2017",
+        "make": "AUDI",
+        "model": "S7",
+        "trim": "4.0 TFSI V8 Black Edition Sportback S Tronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "55,233 miles",
+        "price": "\u00a324,795",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e1b068f083c64bab82766c7804611583.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "cars-of-tardebigge-limited": {
+    "dealer_name": "CARS OF TARDEBIGGE LIMITED",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "PORSCHE",
+        "model": "718 Cayman",
+        "trim": "2.0T PDK Euro 6 (s/s) 2dr",
+        "mileage": "46,800 miles",
+        "price": "\u00a333,499",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/c980283e8945468ca17640d7b22b58f9.jpg",
+        "hook": "PDK dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "calder-motor-co": {
+    "dealer_name": "Calder Motor Co.",
+    "cars": [
+      {
+        "year": "2021",
+        "make": "AUDI",
+        "model": "RSQ8",
+        "trim": "4.0 TFSI V8 Carbon Black Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "52,100 miles",
+        "price": "\u00a369,495",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/c8306ec79da244e9a3e0dc8f2f9000bb.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "cambridgeshire-motor-house-limited": {
+    "dealer_name": "Cambridgeshire Motor House Limited",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "3.0i DCT Euro 6 (s/s) 2dr",
+        "mileage": "65,000 miles",
+        "price": "\u00a324,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/9a4fef61965e444294881b3b413f968c.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "car-city-uk-catterick": {
+    "dealer_name": "Car City UK Catterick",
+    "cars": [
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "RSQ8",
+        "trim": "4.0 TFSI V8 Carbon Black Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "76,488 miles",
+        "price": "\u00a359,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/bb97d05070f34e55806df434844c8211.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "car-genie": {
+    "dealer_name": "Car Genie",
+    "cars": [
+      {
+        "year": "2012",
+        "make": "AUDI",
+        "model": "RS3",
+        "trim": "2.5 TFSI Sportback S Tronic quattro Euro 5 5dr",
+        "mileage": "79,000 miles",
+        "price": "\u00a315,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/0f46fab7fd5e4028b1feb0c4ebdb7211.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "car-genius-ltd": {
+    "dealer_name": "Car Genius LTD",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "3.0i DCT Euro 6 (s/s) 2dr",
+        "mileage": "56,316 miles",
+        "price": "\u00a324,450",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/be76c864593f4b1caba8ebfd8fdc3b42.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "car-hunt-plus-limited": {
+    "dealer_name": "Car Hunt Plus Limited",
+    "cars": [
+      {
+        "year": "2009",
+        "make": "Volkswagen",
+        "model": "Fox",
+        "trim": "1.2 6V Urban Fox Euro 4 3dr",
+        "mileage": "50,868 miles",
+        "price": "\u00a31,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/238ddb41e65b4185b58e58a3a20bf5b8.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "car-network": {
+    "dealer_name": "Car Network",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "BMW",
+        "model": "2 Series Active Tourer",
+        "trim": "2.0 218d Sport Euro 6 (s/s) 5dr",
+        "mileage": "63,000 miles",
+        "price": "\u00a34,495",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/16b8e33abf5d4799910874e35d686722.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "car-planet-barnet": {
+    "dealer_name": "Car Planet Barnet",
+    "cars": [
+      {
+        "year": "2021",
+        "make": "BMW",
+        "model": "1 Series",
+        "trim": "1.5 118i Sport (LCP) Euro 6 (s/s) 5dr",
+        "mileage": "17,424 miles",
+        "price": "\u00a315,700",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/8873a3bd94a440aba68435cdfbdf3258.jpg",
+        "hook": "The lower-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": "https://www.car-planet.co.uk/?utm_content=barnet"
+      },
+      {
+        "year": "2019",
+        "make": "BMW",
+        "model": "1 Series",
+        "trim": "1.5 118i GPF M Sport Shadow Edition Euro 6 (s/s) 5dr",
+        "mileage": "29,261 miles",
+        "price": "\u00a313,900",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/81dbe078f50648458006244add50806f.jpg",
+        "hook": "The higher-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": "https://www.car-planet.co.uk/?utm_content=barnet"
+      },
+      {
+        "year": "2019",
+        "make": "BMW",
+        "model": "X1",
+        "trim": "1.5 18i GPF M Sport sDrive Euro 6 (s/s) 5dr",
+        "mileage": "41,125 miles",
+        "price": "\u00a313,850",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f302a0701364499688aa72318ddc926b.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://www.car-planet.co.uk/?utm_content=barnet"
+      },
+      {
+        "year": "2022",
+        "make": "AUDI",
+        "model": "Q2",
+        "trim": "1.5 TFSI CoD 35 S line Euro 6 (s/s) 5dr",
+        "mileage": "20,167 miles",
+        "price": "\u00a317,100",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/8366e3b2a18d4d01aa566e0643f9f82d.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://www.car-planet.co.uk/?utm_content=barnet"
+      }
+    ]
+  },
+  "car-planet-watford": {
+    "dealer_name": "Car Planet Watford",
+    "cars": [
+      {
+        "year": "2021",
+        "make": "BMW",
+        "model": "X1",
+        "trim": "2.0 20i xLine DCT sDrive Euro 6 (s/s) 5dr",
+        "mileage": "30,284 miles",
+        "price": "\u00a319,450",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f5c8e743d0064db894cad2e28fe7eb6b.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": "https://www.car-planet.co.uk/?utm_content=watford"
+      },
+      {
+        "year": "2018",
+        "make": "BMW",
+        "model": "X3",
+        "trim": "3.0 30d M Sport Auto xDrive Euro 6 (s/s) 5dr",
+        "mileage": "41,535 miles",
+        "price": "\u00a324,800",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/13dcfa4fda44446bb46d49b1a76ca336.jpg",
+        "hook": "The lower-mileage of the 2 we sourced from this dealer. XDrive four-wheel drive.",
+        "dealer_website": "https://www.car-planet.co.uk/?utm_content=watford"
+      },
+      {
+        "year": "2019",
+        "make": "BMW",
+        "model": "X3",
+        "trim": "2.0 20d M Sport Auto xDrive Euro 6 (s/s) 5dr",
+        "mileage": "77,897 miles",
+        "price": "\u00a317,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/7422cbcb0a7e4e11aad5c59d4ef5ed8f.jpg",
+        "hook": "The higher-mileage of the 2 we sourced from this dealer. XDrive four-wheel drive.",
+        "dealer_website": "https://www.car-planet.co.uk/?utm_content=watford"
+      },
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "RS Q3",
+        "trim": "2.5 TFSI Sportback S Tronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "45,214 miles",
+        "price": "\u00a334,750",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/1c12926004b4453191f58f810d796e21.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": "https://www.car-planet.co.uk/?utm_content=watford"
+      }
+    ]
+  },
+  "carbase-bristol": {
+    "dealer_name": "Carbase Bristol",
+    "cars": [
+      {
+        "year": "2022",
+        "make": "BMW",
+        "model": "X1",
+        "trim": "2.0 18d SE Auto sDrive Euro 6 (s/s) 5dr",
+        "mileage": "22,036 miles",
+        "price": "\u00a318,744",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/b34cdbf87ecc43b38287fbdd9671f31f.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2021",
+        "make": "BMW",
+        "model": "2 Series Gran Coupe",
+        "trim": "1.5 218i M Sport Euro 6 (s/s) 4dr",
+        "mileage": "30,751 miles",
+        "price": "\u00a317,321",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/af1202c9833f4c308f088c9dbff5df1c.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2019",
+        "make": "BMW",
+        "model": "X3",
+        "trim": "3.0 30d M Sport Auto xDrive Euro 6 (s/s) 5dr",
+        "mileage": "62,467 miles",
+        "price": "\u00a320,737",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/0b62964c5ef14ef8a6ba58f789936cd9.jpg",
+        "hook": "XDrive four-wheel drive.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2017",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "3.0i DCT Euro 6 (s/s) 2dr",
+        "mileage": "72,934 miles",
+        "price": "\u00a322,850",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/ee2372a670a14e2893ec7a548fcac91a.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2021",
+        "make": "AUDI",
+        "model": "Q2",
+        "trim": "1.0 TFSI 30 Sport Euro 6 (s/s) 5dr",
+        "mileage": "25,044 miles",
+        "price": "\u00a314,684",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/a3f9231c95794c5885122c91f970886d.jpg",
+        "hook": "The lower-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "Q2",
+        "trim": "1.0 TFSI 30 S line Euro 6 (s/s) 5dr",
+        "mileage": "42,000 miles",
+        "price": "\u00a314,000",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/696869184fa04558944b55d7d5099951.jpg",
+        "hook": "The higher-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "carderi-ltd": {
+    "dealer_name": "Carderi Ltd",
+    "cars": [
+      {
+        "year": "2021",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo Competition Steptronic Euro 6 (s/s) 2dr",
+        "mileage": "29,000 miles",
+        "price": "\u00a345,900",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/4160272a68034f7ca6b5e4718364f113.jpg",
+        "hook": "The lower-mileage of the 2 we sourced from this dealer. Competition package, Steptronic automatic gearbox.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2017",
+        "make": "BMW",
+        "model": "1 Series",
+        "trim": "2.0 125d M Sport Shadow Edition Auto Euro 6 (s/s) 5dr",
+        "mileage": "67,680 miles",
+        "price": "\u00a312,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/7bb37495ad2542629451b3fc8c33a316.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2017",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo DCT Euro 6 (s/s) 2dr",
+        "mileage": "75,000 miles",
+        "price": "\u00a322,500",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/9ba2da504b8c4a16a6138c188496c7a9.jpg",
+        "hook": "The higher-mileage of the 2 we sourced from this dealer. DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "carroway-car-group": {
+    "dealer_name": "Carroway Car Group",
+    "cars": [
+      {
+        "year": "2010",
+        "make": "Volkswagen",
+        "model": "Fox",
+        "trim": "1.2 6V Urban Fox Euro 4 3dr",
+        "mileage": "67,000 miles",
+        "price": "\u00a31,290",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/4cf85eddfbaf4b129ec095e94e3e8258.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "carsa": {
+    "dealer_name": "Carsa",
+    "cars": [
+      {
+        "year": "2022",
+        "make": "BMW",
+        "model": "X1",
+        "trim": "1.5 18i M Sport DCT sDrive Euro 6 (s/s) 5dr",
+        "mileage": "17,254 miles",
+        "price": "\u00a320,785",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/5678312814714a6da892ba4e5954bea7.jpg",
+        "hook": "The lower-mileage of the 2 we sourced from this dealer. DCT dual-clutch gearbox.",
+        "dealer_website": "https://www.carsa.co.uk/autotradervehiclelocator?vehicleid=202607204337436&VRM=LK22HTP"
+      },
+      {
+        "year": "2023",
+        "make": "BMW",
+        "model": "2 Series Gran Coupe",
+        "trim": "1.5 218i Sport (LCP) Euro 6 (s/s) 4dr",
+        "mileage": "23,159 miles",
+        "price": "\u00a317,165",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e55df30cd2dd42999ce41bc1ce1e07aa.jpg",
+        "hook": "The lower-mileage of the 3 we sourced from this dealer.",
+        "dealer_website": "https://www.carsa.co.uk/autotradervehiclelocator?vehicleid=202607174262849&VRM=ND23WEH"
+      },
+      {
+        "year": "2022",
+        "make": "BMW",
+        "model": "1 Series",
+        "trim": "1.5 118i M Sport (LCP) Euro 6 (s/s) 5dr",
+        "mileage": "23,593 miles",
+        "price": "\u00a317,212",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/5f4c6dadd08d41b6a7b5d2f60f88e847.jpg",
+        "hook": "The lower-mileage of the 4 we sourced from this dealer.",
+        "dealer_website": "https://www.carsa.co.uk/autotradervehiclelocator?vehicleid=202608054825583&VRM=LG22UGA"
+      },
+      {
+        "year": "2024",
+        "make": "BMW",
+        "model": "3 Series",
+        "trim": "2.0 320i M Sport Auto Euro 6 (s/s) 4dr",
+        "mileage": "24,364 miles",
+        "price": "\u00a327,499",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/4aee062d08a84a79bf43fe2f8806be18.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://www.carsa.co.uk/autotradervehiclelocator?vehicleid=202608054838042&VRM=YC24WRX"
+      },
+      {
+        "year": "2023",
+        "make": "BMW",
+        "model": "2 Series Gran Coupe",
+        "trim": "1.5 218i Sport (LCP) Euro 6 (s/s) 4dr",
+        "mileage": "24,680 miles",
+        "price": "\u00a317,297",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/80bc8f5895f244d8ba690f39297a0c6b.jpg",
+        "hook": "One of 3 we sourced from this dealer.",
+        "dealer_website": "https://www.carsa.co.uk/autotradervehiclelocator?vehicleid=202607204337490&VRM=WD23RWZ"
+      },
+      {
+        "year": "2022",
+        "make": "BMW",
+        "model": "X2",
+        "trim": "1.5 18i M Sport DCT sDrive Euro 6 (s/s) 5dr",
+        "mileage": "27,264 miles",
+        "price": "\u00a318,709",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/85ab4d90f5174b929de647efc64ec444.jpg",
+        "hook": "The lower-mileage of the 2 we sourced from this dealer. DCT dual-clutch gearbox.",
+        "dealer_website": "https://www.carsa.co.uk/autotradervehiclelocator?vehicleid=202607214383292&VRM=HT22AXZ"
+      },
+      {
+        "year": "2020",
+        "make": "BMW",
+        "model": "X2",
+        "trim": "2.0 M35i Auto xDrive Euro 6 (s/s) 5dr",
+        "mileage": "28,441 miles",
+        "price": "\u00a322,457",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/22192fc0ed2744c48086a240d171bb07.jpg",
+        "hook": "The higher-mileage of the 2 we sourced from this dealer. XDrive four-wheel drive.",
+        "dealer_website": "https://www.carsa.co.uk/autotradervehiclelocator?vehicleid=202608064872044&VRM=LV70CWK"
+      },
+      {
+        "year": "2021",
+        "make": "BMW",
+        "model": "1 Series",
+        "trim": "2.0 M135i Auto xDrive Euro 6 (s/s) 5dr",
+        "mileage": "57,149 miles",
+        "price": "\u00a321,183",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e25827d2eedf4a96a6b38063e0daed04.jpg",
+        "hook": "One of 4 we sourced from this dealer. XDrive four-wheel drive.",
+        "dealer_website": "https://www.carsa.co.uk/autotradervehiclelocator?vehicleid=202607284593187&VRM=FV21NXL"
+      },
+      {
+        "year": "2020",
+        "make": "BMW",
+        "model": "1 Series",
+        "trim": "1.5 118i M Sport DCT Euro 6 (s/s) 5dr",
+        "mileage": "66,528 miles",
+        "price": "\u00a314,666",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/4d168247bdc84072bf344679749ba5a1.jpg",
+        "hook": "One of 4 we sourced from this dealer. DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2022",
+        "make": "BMW",
+        "model": "2 Series Gran Coupe",
+        "trim": "2.0 218d M Sport Euro 6 (s/s) 4dr",
+        "mileage": "66,868 miles",
+        "price": "\u00a315,260",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/ade6f22055354ce59d593a7026bc7ce7.jpg",
+        "hook": "The higher-mileage of the 3 we sourced from this dealer.",
+        "dealer_website": "https://www.carsa.co.uk/autotradervehiclelocator?vehicleid=202608094938834&VRM=FP22DLK"
+      },
+      {
+        "year": "2020",
+        "make": "BMW",
+        "model": "X1",
+        "trim": "2.0 20i xLine DCT sDrive Euro 6 (s/s) 5dr",
+        "mileage": "69,592 miles",
+        "price": "\u00a314,121",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/313d61acb6a14aa8a77d84b67babc094.jpg",
+        "hook": "The higher-mileage of the 2 we sourced from this dealer. DCT dual-clutch gearbox.",
+        "dealer_website": "https://www.carsa.co.uk/autotradervehiclelocator?vehicleid=202607274541764&VRM=MD69DCF"
+      },
+      {
+        "year": "2022",
+        "make": "BMW",
+        "model": "1 Series",
+        "trim": "1.5 116d M Sport (LCP) DCT Euro 6 (s/s) 5dr",
+        "mileage": "78,595 miles",
+        "price": "\u00a314,565",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/be3e45eb06bb434592bf7f3b6782b49e.jpg",
+        "hook": "The higher-mileage of the 4 we sourced from this dealer. DCT dual-clutch gearbox.",
+        "dealer_website": "https://www.carsa.co.uk/autotradervehiclelocator?vehicleid=202608074904908&VRM=LL22FNF"
+      }
+    ]
+  },
+  "casey-armstrong": {
+    "dealer_name": "Casey Armstrong",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "AUDI",
+        "model": "RS3",
+        "trim": "2.5 TFSI Sportback S Tronic quattro Euro 6 (s/s) 5dr (Nav)",
+        "mileage": "55,000 miles",
+        "price": "\u00a318,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f2a3ff920c9a4d79854c4c82bd6ba6cf.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "charltons-of-boroughbridge": {
+    "dealer_name": "Charltons Of Boroughbridge",
+    "cars": [
+      {
+        "year": "2018",
+        "make": "BMW",
+        "model": "X2",
+        "trim": "2.0 18d SE sDrive Euro 6 (s/s) 5dr",
+        "mileage": "78,820 miles",
+        "price": "\u00a39,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/67351a53d11942d683a7feeb805228ae.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "clinkard-ltd": {
+    "dealer_name": "Clinkard Ltd",
+    "cars": [
+      {
+        "year": "1986",
+        "make": "MERCEDES",
+        "model": "300",
+        "trim": "Mercedes-Benz 300 SL 3.0 Automatic",
+        "mileage": "42,620 miles",
+        "price": "\u00a346,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/b24409e345ae4048b9c635da90e9dce4.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "http://www.clinkardcars.co.uk/"
+      }
+    ]
+  },
+  "cotswolds-cars-and-commercials-ltd": {
+    "dealer_name": "Cotswolds Cars And Commercials Ltd",
+    "cars": [
+      {
+        "year": "2014",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo DCT Euro 6 (s/s) 2dr",
+        "mileage": "75,901 miles",
+        "price": "\u00a318,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/a6f3847f3efe48f2beb5659cf2eaa489.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "cramag": {
+    "dealer_name": "Cramag",
+    "cars": [
+      {
+        "year": "2003",
+        "make": "BMW",
+        "model": "Z3",
+        "trim": "2.2i Sapphire Edition Limited Edition Roadster 2dr",
+        "mileage": "42,000 miles",
+        "price": "\u00a310,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/169e850c450f49c88902ea7f702c84f6.jpg",
+        "hook": "The lower-mileage of the 3 we sourced from this dealer. Roadster body.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2002",
+        "make": "BMW",
+        "model": "Z3",
+        "trim": "1.9i Sport 2dr",
+        "mileage": "53,500 miles",
+        "price": "\u00a36,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/d6b5b35199dd4fa29c47ac1024375d48.jpg",
+        "hook": "One of 3 we sourced from this dealer.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2007",
+        "make": "BMW",
+        "model": "Z4 M",
+        "trim": "3.2i Euro 4 2dr",
+        "mileage": "64,000 miles",
+        "price": "\u00a322,500",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/719e48a26c474715b29e0e220b624600.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2002",
+        "make": "BMW",
+        "model": "Z3",
+        "trim": "2.2i Sport Roadster 2dr",
+        "mileage": "67,000 miles",
+        "price": "\u00a38,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/ad3d99accc2b47a985cfc21ae7cabce7.jpg",
+        "hook": "The higher-mileage of the 3 we sourced from this dealer. Roadster body.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "d-mac-car-sales": {
+    "dealer_name": "D Mac Car Sales",
+    "cars": [
+      {
+        "year": "2001",
+        "make": "BMW",
+        "model": "Z3",
+        "trim": "1.9i Roadster 2dr",
+        "mileage": "42,300 miles",
+        "price": "\u00a34,650",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/12b2dd74a51f4ba68132883bd0b8d79b.jpg",
+        "hook": "Roadster body.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "dcs-specialised-in-used-cars": {
+    "dealer_name": "DCS Specialised in Used Cars",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "PORSCHE",
+        "model": "718 Cayman",
+        "trim": "2.0T PDK Euro 6 (s/s) 2dr",
+        "mileage": "48,581 miles",
+        "price": "\u00a330,795",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f61293aeda394576a4f5c3719b0c9591.jpg",
+        "hook": "PDK dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "dn-trading": {
+    "dealer_name": "DN Trading",
+    "cars": [
+      {
+        "year": "1960",
+        "make": "PORSCHE",
+        "model": "356",
+        "trim": "1.6 2dr",
+        "mileage": "44,000 miles",
+        "price": "\u00a362,500",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/6480b80cd9424ffc844c6e5c8eff9200.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "http://www.dn-trading.co.uk"
+      }
+    ]
+  },
+  "dna-cars": {
+    "dealer_name": "DNA Cars",
+    "cars": [
+      {
+        "year": "2011",
+        "make": "BMW",
+        "model": "M3",
+        "trim": "4.0 V8 DCT Euro 5 2dr",
+        "mileage": "69,000 miles",
+        "price": "\u00a317,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/944f13addaca4b0cbb5be2b140741041.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "dt-performance-cars-ltd": {
+    "dealer_name": "DT Performance Cars Ltd",
+    "cars": [
+      {
+        "year": "2007",
+        "make": "BMW",
+        "model": "Z4 M",
+        "trim": "3.2i Euro 4 2dr",
+        "mileage": "23,000 miles",
+        "price": "\u00a324,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/b31a14c827ef4bfa96fad2f93d6cebeb.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2016",
+        "make": "MERCEDES",
+        "model": "G Class",
+        "trim": "3.0 G350 CDI V6 G-Tronic 4WD Euro 6 (s/s) 5dr",
+        "mileage": "76,543 miles",
+        "price": "\u00a344,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/4915e00840be4d0996007ac3dd1c3768.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "dawn-motors": {
+    "dealer_name": "Dawn Motors",
+    "cars": [
+      {
+        "year": "2014",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo DCT Euro 6 (s/s) 2dr",
+        "mileage": "75,000 miles",
+        "price": "\u00a320,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/5e81e1d58a054ff68086e0daae61df4f.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": "https://www.dawn-motors.co.uk/"
+      }
+    ]
+  },
+  "dayan-motors-ltd": {
+    "dealer_name": "Dayan Motors Ltd",
+    "cars": [
+      {
+        "year": "2013",
+        "make": "AUDI",
+        "model": "S7",
+        "trim": "4.0 TFSI V8 Sportback S Tronic quattro Euro 5 (s/s) 5dr",
+        "mileage": "78,063 miles",
+        "price": "\u00a315,495",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/364275b204004c41a63709b28187336c.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "deane-motors-sports-prestige-4x4": {
+    "dealer_name": "Deane Motors Sports, Prestige & 4x4",
+    "cars": [
+      {
+        "year": "2019",
+        "make": "PORSCHE",
+        "model": "718 Cayman",
+        "trim": "2.0T PDK Euro 6 (s/s) 2dr",
+        "mileage": "68,700 miles",
+        "price": "\u00a331,991",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/2ff88be4cf0d48c69f33999f4e2b342c.jpg",
+        "hook": "PDK dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "derby-trade-cars": {
+    "dealer_name": "Derby Trade Cars",
+    "cars": [
+      {
+        "year": "2021",
+        "make": "AUDI",
+        "model": "RS7",
+        "trim": "4.0 TFSI V8 Vorsprung Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "30,000 miles",
+        "price": "\u00a372,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f9879b411f154269822f334fd3b328bb.jpg",
+        "hook": "Range-topping Vorsprung trim, quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "dexters": {
+    "dealer_name": "Dexters",
+    "cars": [
+      {
+        "year": "2018",
+        "make": "BMW",
+        "model": "X2",
+        "trim": "2.0 18d Sport xDrive Euro 6 (s/s) 5dr",
+        "mileage": "76,000 miles",
+        "price": "\u00a39,900",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/ed342e0ccf7d4d268a3a6de0ea3e91b5.jpg",
+        "hook": "XDrive four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "esmotor-uk": {
+    "dealer_name": "ESMOTOR UK",
+    "cars": [
+      {
+        "year": "2014",
+        "make": "AUDI",
+        "model": "RS7",
+        "trim": "4.0 TFSI V8 Sportback Tiptronic quattro Euro 5 (s/s) 5dr",
+        "mileage": "56,400 miles",
+        "price": "\u00a326,979",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/13400151a86c41f587307e840dba3e50.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "expressway-car-company-limited": {
+    "dealer_name": "EXPRESSWAY CAR COMPANY LIMITED",
+    "cars": [
+      {
+        "year": "1992",
+        "make": "MERCEDES",
+        "model": "CE Class",
+        "trim": "2dr",
+        "mileage": "80,000 miles",
+        "price": "\u00a36,975",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f0b79a942a99422e926d20e03118a5da.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://www.expresswaycars.co.uk"
+      }
+    ]
+  },
+  "emaari-automotive-ltd": {
+    "dealer_name": "Emaari Automotive Ltd",
+    "cars": [
+      {
+        "year": "2022",
+        "make": "BMW",
+        "model": "M3",
+        "trim": "3.0 BiTurbo Competition Steptronic M xDrive Euro 6 (s/s) 4dr",
+        "mileage": "38,000 miles",
+        "price": "\u00a352,489",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/2bb98173950143c6bcdcaa6d482b58c6.jpg",
+        "hook": "Competition package, xDrive four-wheel drive, Steptronic automatic gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "european-prestige-ni": {
+    "dealer_name": "European Prestige NI",
+    "cars": [
+      {
+        "year": "2009",
+        "make": "MERCEDES",
+        "model": "SLR McLaren",
+        "trim": "5.4 V8 2dr",
+        "mileage": "4,000 miles",
+        "price": "\u00a32,999,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/3e3439d3855d4839919665732c221a88.jpg",
+        "hook": "The lower-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": "https://www.europeanprestigeni.com"
+      },
+      {
+        "year": "2009",
+        "make": "MERCEDES",
+        "model": "SLR McLaren",
+        "trim": "5.4 V8 2dr",
+        "mileage": "9,300 miles",
+        "price": "\u00a3799,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f2de55bc1e4245428b5b75e1c0ed8f80.jpg",
+        "hook": "The higher-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": "https://www.europeanprestigeni.com"
+      }
+    ]
+  },
+  "ever-drive-motors": {
+    "dealer_name": "Ever Drive Motors",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "BMW",
+        "model": "2 Series Active Tourer",
+        "trim": "2.0 218d Sport Auto Euro 6 (s/s) 5dr",
+        "mileage": "65,502 miles",
+        "price": "\u00a37,495",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e70d10b639204969a485cf558958124c.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://www.everdrivemotors.co.uk/"
+      }
+    ]
+  },
+  "everyday-car-auctions-limited": {
+    "dealer_name": "Everyday Car Auctions Limited",
+    "cars": [
+      {
+        "year": "2010",
+        "make": "Volkswagen",
+        "model": "Fox",
+        "trim": "1.2 6V Urban Fox Euro 4 3dr",
+        "mileage": "78,000 miles",
+        "price": "\u00a3849",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/378e8e16fb72442ebaf1dba9bcc2ef92.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "evo-motor-group": {
+    "dealer_name": "Evo Motor Group",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "AUDI",
+        "model": "S7",
+        "trim": "4.0 TFSI V8 Sportback S Tronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "73,900 miles",
+        "price": "\u00a318,495",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/92531ad37dee48ac91e4d86546716e0f.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "exoriacars-ltd": {
+    "dealer_name": "ExoriaCars Ltd",
+    "cars": [
+      {
+        "year": "2019",
+        "make": "PORSCHE",
+        "model": "911",
+        "trim": "3.0T 992 Carrera 4S PDK 4WD Euro 6 (s/s) 2dr",
+        "mileage": "25,900 miles",
+        "price": "\u00a385,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/35ff46f3e7294d5782221c9c922e0b6e.jpg",
+        "hook": "PDK dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "f12-performance": {
+    "dealer_name": "F12 Performance",
+    "cars": [
+      {
+        "year": "2005",
+        "make": "MERCEDES",
+        "model": "SLR McLaren",
+        "trim": "5.4 V8 2dr",
+        "mileage": "19,700 miles",
+        "price": "\u00a3419,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/4ab124b94f0647e3bd6f651270216d0a.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://www.f12performance.co.uk/"
+      }
+    ]
+  },
+  "ftr-performance-ltd": {
+    "dealer_name": "FTR Performance Ltd",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo Competition DCT Euro 6 (s/s) 2dr",
+        "mileage": "50,000 miles",
+        "price": "\u00a328,849",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/3b08970035eb4e51afb06f1ad8ef09e1.jpg",
+        "hook": "Competition package, DCT dual-clutch gearbox.",
+        "dealer_website": "http://www.ftrperformance.co.uk"
+      }
+    ]
+  },
+  "farlan-automotive": {
+    "dealer_name": "Farlan Automotive",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "3.0i DCT Euro 6 (s/s) 2dr",
+        "mileage": "64,000 miles",
+        "price": "\u00a323,900",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/2ee94821da96481db873d52663095f80.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "finlay-gorham": {
+    "dealer_name": "Finlay Gorham",
+    "cars": [
+      {
+        "year": "2003",
+        "make": "PORSCHE",
+        "model": "911",
+        "trim": "3.6 996 Carrera 4 Cabriolet Tiptronic S AWD 2dr",
+        "mileage": "73,000 miles",
+        "price": "\u00a315,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/26a19374692841c0b1cbe4c1a7030b3e.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "first-autos": {
+    "dealer_name": "First Autos",
+    "cars": [
+      {
+        "year": "2018",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "3.0i DCT Euro 6 (s/s) 2dr",
+        "mileage": "58,000 miles",
+        "price": "\u00a325,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/eb51f21aaea54833a880ffbd7402f8e9.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "first-car-club-because-your-first-car-matters": {
+    "dealer_name": "First Car Club \u2013 Because Your First Car Matters",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "AUDI",
+        "model": "RS7",
+        "trim": "4.0 TFSI V8 Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "70,000 miles",
+        "price": "\u00a329,850",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/aa3a4633126f458bba6775c8ebb76f51.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "firstdirect-motor-company-ltd": {
+    "dealer_name": "Firstdirect Motor Company Ltd",
+    "cars": [
+      {
+        "year": "2021",
+        "make": "AUDI",
+        "model": "TT RS",
+        "trim": "2.5 TFSI Nogaro Edition S Tronic quattro Euro 6 (s/s) 3dr",
+        "mileage": "76,000 miles",
+        "price": "\u00a335,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/ef5fd813a05a4c1f8d034a4c000eb5e1.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "flat-out-cars-limited": {
+    "dealer_name": "Flat Out Cars Limited",
+    "cars": [
+      {
+        "year": "2002",
+        "make": "BMW",
+        "model": "Z3",
+        "trim": "1.9i Roadster 2dr",
+        "mileage": "71,000 miles",
+        "price": "\u00a34,000",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/1b0459c300374ef99b2ef799e178e4a9.jpg",
+        "hook": "Roadster body.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "franks-motorcycles-limited": {
+    "dealer_name": "Franks Motorcycles Limited",
+    "cars": [
+      {
+        "year": "1963",
+        "make": "Volkswagen",
+        "model": "Beach Buggy",
+        "trim": "",
+        "mileage": "23,000 miles",
+        "price": "\u00a39,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/d30958fbc75a41dcb53fa9270d8e6cb4.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://franksmotorcycles.co.uk/"
+      }
+    ]
+  },
+  "garage-55-ltd": {
+    "dealer_name": "GARAGE 55 LTD",
+    "cars": [
+      {
+        "year": "2019",
+        "make": "PORSCHE",
+        "model": "718 Cayman",
+        "trim": "2.0T PDK Euro 6 (s/s) 2dr",
+        "mileage": "65,000 miles",
+        "price": "\u00a330,495",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/d087d2ab835b4c13866c8e724a5cabab.jpg",
+        "hook": "PDK dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "gsat-uk-ltd": {
+    "dealer_name": "GSAT UK LTD",
+    "cars": [
+      {
+        "year": "1987",
+        "make": "MERCEDES",
+        "model": "G Class",
+        "trim": "ULTRA LOW MILE,STUNNING, 1 OWNER,1 Y MOT 2.4 3dr",
+        "mileage": "5,000 miles",
+        "price": "\u00a327,980",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/a68eb87862b34ef59458f428a08b5799.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "gsw-automotive-limited": {
+    "dealer_name": "GSW Automotive Limited",
+    "cars": [
+      {
+        "year": "2019",
+        "make": "PORSCHE",
+        "model": "718 Cayman",
+        "trim": "2.5T GTS PDK Euro 6 (s/s) 2dr",
+        "mileage": "46,290 miles",
+        "price": "\u00a344,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/0ca1607e14dd4327bdb105e1f91a6a9e.jpg",
+        "hook": "PDK dual-clutch gearbox, GTS trim.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "german-car-specialist-limited": {
+    "dealer_name": "German Car Specialist Limited",
+    "cars": [
+      {
+        "year": "2021",
+        "make": "AUDI",
+        "model": "RS7",
+        "trim": "4.0 TFSI V8 Carbon Black Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "24,000 miles",
+        "price": "\u00a368,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/094afdf0dbd2416981c5c0c0c6d7a55d.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "RSQ8",
+        "trim": "4.0 TFSI V8 Carbon Black Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "47,000 miles",
+        "price": "\u00a369,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/30e2e6f59f2a448a90c1f0620a1aee35.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "gibbons-automotive-ltd": {
+    "dealer_name": "Gibbons Automotive Ltd",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo Competition DCT Euro 6 (s/s) 2dr",
+        "mileage": "30,881 miles",
+        "price": "\u00a329,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/40702273de824b86aefa32bd5c10bd86.jpg",
+        "hook": "Competition package, DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "gold-cars-ltd": {
+    "dealer_name": "Gold Cars Ltd",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "BMW",
+        "model": "Alpina B4",
+        "trim": "3.0 Bi Turbo 2dr",
+        "mileage": "36,934 miles",
+        "price": "\u00a333,495",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/8991e0bd0762458ba2e2e84df35dc081.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "graham-walker-ltd": {
+    "dealer_name": "Graham Walker Ltd",
+    "cars": [
+      {
+        "year": "1997",
+        "make": "BMW",
+        "model": "Z3",
+        "trim": "1.9i 2dr",
+        "mileage": "26,651 miles",
+        "price": "\u00a38,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/88a737fb8416453b874ff7bba3fa448f.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "guy-pope": {
+    "dealer_name": "Guy Pope",
+    "cars": [
+      {
+        "year": "2024",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "3.0 BiTurbo Steptronic Euro 6 (s/s) 2dr",
+        "mileage": "16,000 miles",
+        "price": "\u00a354,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/685632f98c434a4eb4c16c05810a0dc1.jpg",
+        "hook": "Steptronic automatic gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "hampton-car-sales-ltd": {
+    "dealer_name": "HAMPTON CAR SALES LTD",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo DCT Euro 6 (s/s) 2dr",
+        "mileage": "61,744 miles",
+        "price": "\u00a321,495",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/415df8c316fb46c3989c4beb67c3334a.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "house-of-brage": {
+    "dealer_name": "HOUSE OF BRAGE",
+    "cars": [
+      {
+        "year": "2019",
+        "make": "BMW",
+        "model": "X2",
+        "trim": "1.5 18i Sport sDrive Euro 6 (s/s) 5dr",
+        "mileage": "70,176 miles",
+        "price": "\u00a311,691",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/46d84cbe7eae4f199cc2e806b171b8db.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "hr-sports-and-classics": {
+    "dealer_name": "HR Sports and Classics",
+    "cars": [
+      {
+        "year": "2001",
+        "make": "BMW",
+        "model": "Z3",
+        "trim": "2.2i Sport 2dr",
+        "mileage": "80,000 miles",
+        "price": "\u00a34,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e6626eead8864e0c921095c618ba3434.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://www.hrsportsandclassics.co.uk/"
+      }
+    ]
+  },
+  "hsk-automotive": {
+    "dealer_name": "HSK Automotive",
+    "cars": [
+      {
+        "year": "2011",
+        "make": "AUDI",
+        "model": "TT RS",
+        "trim": "2.5 TFSI Coupe 3dr Petrol S Tronic quattro Euro 5 (340 ps)",
+        "mileage": "49,600 miles",
+        "price": "\u00a317,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/3ee6c1ed5b0847b6b9d8297a6d54efd1.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "hw-motors-ltd": {
+    "dealer_name": "HW Motors Ltd",
+    "cars": [
+      {
+        "year": "2021",
+        "make": "AUDI",
+        "model": "RSQ8",
+        "trim": "4.0 TFSI V8 Vorsprung Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "56,000 miles",
+        "price": "\u00a369,000",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/a4c7ee8b09e74d32a671ef5f40a38392.jpg",
+        "hook": "Range-topping Vorsprung trim, quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "hamilton-grays-limited": {
+    "dealer_name": "Hamilton Grays Limited",
+    "cars": [
+      {
+        "year": "1964",
+        "make": "PORSCHE",
+        "model": "356",
+        "trim": "Coupe 1.6 LHD Manual 2dr",
+        "mileage": "56,000 miles",
+        "price": "\u00a362,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/0a770c647e8b4b17987ff03cdf11a121.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "hamptons-of-surrey": {
+    "dealer_name": "Hamptons of Surrey",
+    "cars": [
+      {
+        "year": "2018",
+        "make": "PORSCHE",
+        "model": "718 Cayman",
+        "trim": "2.0T Euro 6 (s/s) 2dr",
+        "mileage": "33,087 miles",
+        "price": "\u00a334,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/68536b42f97e44bfb70e3db98bc4f91e.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "http://www.hamptonsofsurrey.co.uk/"
+      }
+    ]
+  },
+  "heritage-car-company": {
+    "dealer_name": "Heritage Car Company",
+    "cars": [
+      {
+        "year": "2011",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "5.2 FSI V10 Spyder R Tronic quattro Euro 5 2dr",
+        "mileage": "51,800 miles",
+        "price": "\u00a338,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/37269acba5934fc18a172ba20f07d224.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "hexagon": {
+    "dealer_name": "Hexagon",
+    "cars": [
+      {
+        "year": "1989",
+        "make": "MERCEDES",
+        "model": "300",
+        "trim": "3.0 SL 2dr",
+        "mileage": "29,800 miles",
+        "price": "\u00a359,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e73e5920db2740f695cf49d939de8bd2.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "hillington-renault-dacia-alpine-vanstore": {
+    "dealer_name": "Hillington Renault / Dacia / Alpine / Vanstore",
+    "cars": [
+      {
+        "year": "2022",
+        "make": "Volkswagen",
+        "model": "Caddy California Maxi",
+        "trim": "1.5 TSI California Maxi DSG Euro 6 (s/s) 5dr",
+        "mileage": "28,579 miles",
+        "price": "\u00a327,998",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/1f1077336b10410b8ebe44116ddb279f.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "http://www.arnoldclark.com/autotradervehiclelocator?vehicleid=202608064854107&VRM=VK72XXG"
+      }
+    ]
+  },
+  "hilton-garage-ltd": {
+    "dealer_name": "Hilton Garage Ltd",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "BMW",
+        "model": "2 Series Active Tourer",
+        "trim": "1.5 225xe 7.6kWh Luxury Auto 4WD Euro 6 (s/s) 5dr",
+        "mileage": "18,650 miles",
+        "price": "\u00a312,700",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/dc33ab673e2143ceaf0c79827dd3f6f9.jpg",
+        "hook": "The lower-mileage of the 4 we sourced from this dealer.",
+        "dealer_website": "http://www.hiltongarage.co.uk/?COGDN=AT"
+      },
+      {
+        "year": "2016",
+        "make": "BMW",
+        "model": "2 Series Active Tourer",
+        "trim": "2.0 218d Luxury Auto Euro 6 (s/s) 5dr",
+        "mileage": "19,658 miles",
+        "price": "\u00a311,700",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/3afc1dbbf1f8433484054b6bd128edf7.jpg",
+        "hook": "One of 4 we sourced from this dealer.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2017",
+        "make": "BMW",
+        "model": "2 Series Active Tourer",
+        "trim": "2.0 220d M Sport Auto xDrive Euro 6 (s/s) 5dr",
+        "mileage": "31,313 miles",
+        "price": "\u00a312,700",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/4f36a449fb7a4a2b99ccd625f7c455d3.jpg",
+        "hook": "One of 4 we sourced from this dealer. XDrive four-wheel drive.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2018",
+        "make": "BMW",
+        "model": "X1",
+        "trim": "2.0 20i xLine Auto xDrive Euro 6 (s/s) 5dr",
+        "mileage": "38,627 miles",
+        "price": "\u00a313,800",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/c4026fcd9fa54791834f48a3438803a0.jpg",
+        "hook": "XDrive four-wheel drive.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2016",
+        "make": "BMW",
+        "model": "2 Series Active Tourer",
+        "trim": "2.0 220i M Sport Auto Euro 6 (s/s) 5dr",
+        "mileage": "38,850 miles",
+        "price": "\u00a310,900",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/a40d9c76f7f94003b5ece180e5f36a32.jpg",
+        "hook": "The higher-mileage of the 4 we sourced from this dealer.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2019",
+        "make": "BMW",
+        "model": "5 Series",
+        "trim": "2.0 520i GPF M Sport Auto Euro 6 (s/s) 4dr",
+        "mileage": "39,000 miles",
+        "price": "\u00a317,250",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/42629f33b6344e31a3fd5ac27a1a40ad.jpg",
+        "hook": "The lower-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2019",
+        "make": "BMW",
+        "model": "X2",
+        "trim": "1.5 18i M Sport X DCT sDrive Euro 6 (s/s) 5dr",
+        "mileage": "42,369 miles",
+        "price": "\u00a315,050",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/1214ff8dfd954c168d2a72770e1d8bff.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2020",
+        "make": "BMW",
+        "model": "1 Series",
+        "trim": "1.5 118i M Sport DCT Euro 6 (s/s) 5dr",
+        "mileage": "42,596 miles",
+        "price": "\u00a315,150",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e558eea420eb43979e5027d17a9adcf6.jpg",
+        "hook": "The lower-mileage of the 2 we sourced from this dealer. DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2019",
+        "make": "BMW",
+        "model": "5 Series",
+        "trim": "2.0 520i M Sport Auto Euro 6 (s/s) 4dr",
+        "mileage": "57,740 miles",
+        "price": "\u00a315,100",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/1b52d0fe3d554ddfaba2eef5246986c6.jpg",
+        "hook": "The higher-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2021",
+        "make": "BMW",
+        "model": "1 Series",
+        "trim": "1.5 118i M Sport (LCP) Euro 6 (s/s) 5dr",
+        "mileage": "61,434 miles",
+        "price": "\u00a314,150",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/506da7f21d24460280d060ad4d9ac02d.jpg",
+        "hook": "The higher-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2019",
+        "make": "AUDI",
+        "model": "A1",
+        "trim": "1.0 TFSI 30 S line Sportback Euro 6 (s/s) 5dr",
+        "mileage": "26,600 miles",
+        "price": "\u00a314,150",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/0008f04a806343ddb6a2b417d2bc4680.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "Q2",
+        "trim": "1.0 TFSI 30 Sport Euro 6 (s/s) 5dr",
+        "mileage": "40,012 miles",
+        "price": "\u00a312,450",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/3c941c9134ec4636beb4d45b68ae03b1.jpg",
+        "hook": "The lower-mileage of the 3 we sourced from this dealer.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2021",
+        "make": "AUDI",
+        "model": "Q2",
+        "trim": "1.0 TFSI 30 Sport Euro 6 (s/s) 5dr",
+        "mileage": "44,837 miles",
+        "price": "\u00a313,700",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/5705113e05b7460d84229dac20e2ea9e.jpg",
+        "hook": "One of 3 we sourced from this dealer.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2018",
+        "make": "AUDI",
+        "model": "Q2",
+        "trim": "1.6 TDI 30 S line S Tronic Euro 6 (s/s) 5dr",
+        "mileage": "64,370 miles",
+        "price": "\u00a312,050",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/b53e2e97997545a093b137a3c579c274.jpg",
+        "hook": "The higher-mileage of the 3 we sourced from this dealer.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "hippo-motor-group-peterborough": {
+    "dealer_name": "Hippo Motor Group Peterborough",
+    "cars": [
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "RSQ8",
+        "trim": "4.0 TFSI V8 Carbon Black Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "52,865 miles",
+        "price": "\u00a364,520",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/8ef9fcba39914a42a9cc0c73b4cd750d.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "howard-dean-car-sales-ltd": {
+    "dealer_name": "Howard Dean Car Sales Ltd",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "3.0i DCT Euro 6 (s/s) 2dr",
+        "mileage": "53,000 miles",
+        "price": "\u00a325,490",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/405edd4112774250a0cc9c460cb38a83.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "hyland-car-sales-ltd": {
+    "dealer_name": "Hyland Car Sales Ltd",
+    "cars": [
+      {
+        "year": "2009",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "4.2 FSI V8 quattro Euro 4 2dr",
+        "mileage": "47,150 miles",
+        "price": "\u00a338,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/b04a84f4deac464aa07f5910dfedd10f.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "ikk-cars": {
+    "dealer_name": "IKK cars",
+    "cars": [
+      {
+        "year": "2010",
+        "make": "AUDI",
+        "model": "RS6",
+        "trim": "5.0 TFSI V10 Tiptronic quattro 4dr",
+        "mileage": "69,992 miles",
+        "price": "\u00a322,490",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/389bd6a506054b969db04cdc9a7a47ce.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "illyrian-performance-ltd": {
+    "dealer_name": "ILLYRIAN PERFORMANCE LTD",
+    "cars": [
+      {
+        "year": "2019",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo GPF Competition DCT Euro 6 (s/s) 2dr",
+        "mileage": "31,000 miles",
+        "price": "\u00a333,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/278fef42733f4713bfd2844fd3ac60e9.jpg",
+        "hook": "Competition package, DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2018",
+        "make": "BMW",
+        "model": "M3",
+        "trim": "3.0 BiTurbo Competition DCT Euro 6 (s/s) 4dr",
+        "mileage": "54,000 miles",
+        "price": "\u00a335,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/2e726a1d9d7e4adfad54742ef27049c2.jpg",
+        "hook": "Competition package, DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "image-automotive": {
+    "dealer_name": "Image Automotive",
+    "cars": [
+      {
+        "year": "1977",
+        "make": "BMW",
+        "model": "E3",
+        "trim": "3.3 4dr",
+        "mileage": "66,084 miles",
+        "price": "\u00a399,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f2c4935a1c3443e19ef99b33ed83ed6a.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "imperial-motor-company-ltd": {
+    "dealer_name": "Imperial Motor Company Ltd",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "AUDI",
+        "model": "Q2",
+        "trim": "1.0 TFSI Sport Euro 6 (s/s) 5dr",
+        "mileage": "16,000 miles",
+        "price": "\u00a313,275",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/70ffedcbdb684fca86b4be759e2334ef.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "individual-cars": {
+    "dealer_name": "Individual Cars",
+    "cars": [
+      {
+        "year": "2006",
+        "make": "BMW",
+        "model": "Z4 M",
+        "trim": "3.2i Euro 4 2dr",
+        "mileage": "53,000 miles",
+        "price": "\u00a319,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/a1b89920ba134246be73db0baffd72fd.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "http://www.individualcarsmk.co.uk"
+      }
+    ]
+  },
+  "integrity-automotive-limited": {
+    "dealer_name": "Integrity Automotive Limited",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "AUDI",
+        "model": "TT RS",
+        "trim": "2.5 TFSI S Tronic quattro Euro 6 (s/s) 3dr",
+        "mileage": "75,924 miles",
+        "price": "\u00a325,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/2e521acc34e548aba5d6b63bc8cd079c.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "jbr-collection": {
+    "dealer_name": "JBR Collection",
+    "cars": [
+      {
+        "year": "2012",
+        "make": "AUDI",
+        "model": "RS3",
+        "trim": "2.5 TFSI Sportback S Tronic quattro Euro 5 5dr",
+        "mileage": "60,615 miles",
+        "price": "\u00a316,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/d4926f1118844dcb97db1bc3c1d564c5.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "jd-motor-company-ne-ltd": {
+    "dealer_name": "JD Motor Company (NE) Ltd",
+    "cars": [
+      {
+        "year": "2008",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "4.2 FSI V8 R Tronic quattro Euro 4 2dr",
+        "mileage": "44,501 miles",
+        "price": "\u00a340,000",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/8e6611cf456e4814911194066fc9c2fb.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "jmb-motor-sport": {
+    "dealer_name": "JMB Motor Sport",
+    "cars": [
+      {
+        "year": "1968",
+        "make": "Volkswagen",
+        "model": "Karmann",
+        "trim": "",
+        "mileage": "16,550 miles",
+        "price": "\u00a328,000",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/9c0d18e2a56248cd9bfe43b9c7ad037e.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "http://www.jmbmotorsport.com"
+      }
+    ]
+  },
+  "joe-macari-sales-limited": {
+    "dealer_name": "JOE MACARI SALES LIMITED",
+    "cars": [
+      {
+        "year": "2008",
+        "make": "MERCEDES",
+        "model": "SLR McLaren",
+        "trim": "5.4 V8 2dr",
+        "mileage": "13,225 miles",
+        "price": "\u00a3484,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/1f371b0028434dc995661386332c7172.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "js-trader": {
+    "dealer_name": "JS Trader",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "AUDI",
+        "model": "RS3",
+        "trim": "2.5 TFSI Sportback S Tronic quattro Euro 6 (s/s) 5dr (Nav)",
+        "mileage": "58,295 miles",
+        "price": "\u00a318,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/645bd1d0972c45c49fc7c23b918b54fc.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "jzm-limited": {
+    "dealer_name": "JZM Limited",
+    "cars": [
+      {
+        "year": "1991",
+        "make": "PORSCHE",
+        "model": "356",
+        "trim": "",
+        "mileage": "68,839 miles",
+        "price": "\u00a3189,900",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/7e70daea329f4b71ab297866b7be0c7b.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "jack-henry-group": {
+    "dealer_name": "Jack Henry Group",
+    "cars": [
+      {
+        "year": "2023",
+        "make": "AUDI",
+        "model": "RSQ8",
+        "trim": "4.0 TFSI V8 Vorsprung Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "44,700 miles",
+        "price": "\u00a377,495",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/6b6b7d325a384d93ba091e62f13beb31.jpg",
+        "hook": "Range-topping Vorsprung trim, quattro four-wheel drive.",
+        "dealer_website": "http://www.jackhenrygroup.co.uk/"
+      }
+    ]
+  },
+  "japan-car-imports-uk": {
+    "dealer_name": "Japan Car Imports UK",
+    "cars": [
+      {
+        "year": "2014",
+        "make": "AUDI",
+        "model": "S7",
+        "trim": "4.0 TFSI V8 Sportback S Tronic quattro Euro 5 (s/s) 5dr",
+        "mileage": "61,732 miles",
+        "price": "\u00a318,900",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/9162a83f1ecf4b34895fe7710b08d30d.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "john-holland-sales": {
+    "dealer_name": "John Holland Sales",
+    "cars": [
+      {
+        "year": "1982",
+        "make": "MERCEDES",
+        "model": "280 SL",
+        "trim": "2.7 2dr",
+        "mileage": "36,977 miles",
+        "price": "\u00a339,900",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/3083d7b77b3e4a1d85db30e56e090176.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "junction-17-cars-limited-t-a-junction-17-cars-grantham": {
+    "dealer_name": "Junction 17 Cars Limited t/a Junction 17 Cars (Grantham)",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "AUDI",
+        "model": "RS7",
+        "trim": "4.0 TFSI V8 Performance Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "60,000 miles",
+        "price": "\u00a333,475",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f0ae011340704b3caeb1a077a09b92c7.jpg",
+        "hook": "Quattro four-wheel drive, Performance spec.",
+        "dealer_website": "https://www.junction17cars.co.uk/"
+      }
+    ]
+  },
+  "junction-17-cars-peterborough": {
+    "dealer_name": "Junction 17 Cars Peterborough",
+    "cars": [
+      {
+        "year": "2012",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "4.2 FSI V8 Limited Edition R Tronic quattro Euro 5 2dr",
+        "mileage": "29,648 miles",
+        "price": "\u00a342,975",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/84270f84dfec404496938257ed83b6a1.jpg",
+        "hook": "The lower-mileage of the 2 we sourced from this dealer. Quattro four-wheel drive.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2010",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "4.2 FSI V8 quattro Euro 4 2dr",
+        "mileage": "42,320 miles",
+        "price": "\u00a343,988",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/a03644ea2193485c9daec53f3306792f.jpg",
+        "hook": "The higher-mileage of the 2 we sourced from this dealer. Quattro four-wheel drive.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "S7",
+        "trim": "3.0 TDI V6 Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "76,037 miles",
+        "price": "\u00a328,975",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/4cd7c0a1d07742c3a2ad2fc61ea96e7e.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "k-motors-london-ltd": {
+    "dealer_name": "K MOTORS LONDON LTD",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "3.0i DCT Euro 6 (s/s) 2dr",
+        "mileage": "33,000 miles",
+        "price": "\u00a328,999",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/9d11d98ee5fb40fdab88c731a8fec859.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "k-w-motors-ltd": {
+    "dealer_name": "K W Motors Ltd",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "4.2 FSI V8 S Tronic quattro Euro 5 2dr",
+        "mileage": "43,544 miles",
+        "price": "\u00a341,984",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e83d5e9a089b458d880e832e1b6c2c93.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "k-d-motors-ltd": {
+    "dealer_name": "K&D MOTORS LTD",
+    "cars": [
+      {
+        "year": "1999",
+        "make": "BMW",
+        "model": "Z3",
+        "trim": "1.9i 2dr",
+        "mileage": "49,524 miles",
+        "price": "\u00a36,725",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/36b36928f76d46639b47da267179fd36.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "kaim-park-garage": {
+    "dealer_name": "Kaim Park Garage",
+    "cars": [
+      {
+        "year": "2021",
+        "make": "AUDI",
+        "model": "RS7",
+        "trim": "4.0 TFSI V8 Carbon Black Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "37,000 miles",
+        "price": "\u00a359,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e1b5689f02794ba4a69a9f4a6f628dbf.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "karmann-classic-cars": {
+    "dealer_name": "Karmann Classic Cars",
+    "cars": [
+      {
+        "year": "2014",
+        "make": "AUDI",
+        "model": "RS Q3",
+        "trim": "2.5 TFSI S Tronic quattro Euro 5 (s/s) 5dr",
+        "mileage": "58,002 miles",
+        "price": "\u00a317,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/8c8ac52145f74cf89d2fcd48ba24b0cb.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "kintore-car-sales": {
+    "dealer_name": "Kintore Car Sales",
+    "cars": [
+      {
+        "year": "2018",
+        "make": "AUDI",
+        "model": "TT RS",
+        "trim": "2.5 TFSI S Tronic quattro Euro 6 (s/s) 3dr",
+        "mileage": "69,000 miles",
+        "price": "\u00a328,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/0a07d2f8bc694319912231a790f22d39.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": "https://www.kintorecarsales.co.uk"
+      }
+    ]
+  },
+  "la-motors": {
+    "dealer_name": "LA Motors",
+    "cars": [
+      {
+        "year": "2022",
+        "make": "MERCEDES",
+        "model": "G Class",
+        "trim": "4.0 G63 V8 BiTurbo AMG SpdS+9GT 4MATIC Euro 6 (s/s) 5dr",
+        "mileage": "68,000 miles",
+        "price": "\u00a3129,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/a8181d2c84e14a01821c0d40c95bfa4a.jpg",
+        "hook": "4MATIC four-wheel drive.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2019",
+        "make": "AUDI",
+        "model": "RS3",
+        "trim": "2.5 TFSI Audi Sport Edition Sportback S Tronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "39,000 miles",
+        "price": "\u00a336,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/5623efaa01d14b63b5f19979537971e8.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "linghams-cars": {
+    "dealer_name": "Linghams Cars",
+    "cars": [
+      {
+        "year": "2006",
+        "make": "BMW",
+        "model": "X3",
+        "trim": "3.0i Sport Auto 4WD Euro 3 5dr",
+        "mileage": "71,530 miles",
+        "price": "\u00a32,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/fc942bba03e340f4a07adf41139aba1a.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "lion-car-hub": {
+    "dealer_name": "Lion Car Hub",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "BMW",
+        "model": "X1",
+        "trim": "2.0 20i M Sport Auto xDrive Euro 6 (s/s) 5dr",
+        "mileage": "76,145 miles",
+        "price": "\u00a311,495",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/dc61360ae04c4074b24f6eba6e4644a1.jpg",
+        "hook": "XDrive four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "luxcarz-ltd": {
+    "dealer_name": "Luxcarz Ltd",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "MERCEDES",
+        "model": "G Class",
+        "trim": "3.0 G350 CDI V6 G-Tronic 4WD Euro 6 (s/s) 5dr",
+        "mileage": "64,000 miles",
+        "price": "\u00a348,499",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/a023e8ffa91644ebbff023422be6fa43.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "lynx-motor-company-ltd": {
+    "dealer_name": "Lynx Motor Company Ltd",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "AUDI",
+        "model": "RS Q3",
+        "trim": "2.5 TFSI S Tronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "70,359 miles",
+        "price": "\u00a316,795",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/9edef9e2b30a4401aa98d1d8178d84d6.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "m-m-r-motor-group": {
+    "dealer_name": "M.M.R MOTOR GROUP",
+    "cars": [
+      {
+        "year": "2014",
+        "make": "AUDI",
+        "model": "RS Q3",
+        "trim": "2.5 TFSI S Tronic quattro Euro 5 (s/s) 5dr",
+        "mileage": "77,000 miles",
+        "price": "\u00a315,650",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/60b9ff59288a43a48e22ac5b54df7251.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": "http://www.mmrmotorgroup.co.uk/"
+      }
+    ]
+  },
+  "mb-brent-park-ltd": {
+    "dealer_name": "MB Brent Park Ltd",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "PORSCHE",
+        "model": "718 Cayman",
+        "trim": "2.0T PDK Euro 6 (s/s) 2dr",
+        "mileage": "77,629 miles",
+        "price": "\u00a326,000",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/eff8eaa2475f4d73a7eee806b2435dfc.jpg",
+        "hook": "PDK dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "mbi-autos": {
+    "dealer_name": "MBI AUTOS",
+    "cars": [
+      {
+        "year": "2013",
+        "make": "BMW",
+        "model": "X1",
+        "trim": "2.0 20i xLine Auto sDrive Euro 6 (s/s) 5dr",
+        "mileage": "28,583 miles",
+        "price": "\u00a37,994",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f12ad0cbb30b47bb930be9ce772d453a.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://mbiautos.co.uk"
+      },
+      {
+        "year": "2015",
+        "make": "BMW",
+        "model": "5 Series",
+        "trim": "2.0 520i M Sport Auto Euro 6 (s/s) 4dr",
+        "mileage": "36,661 miles",
+        "price": "\u00a39,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/70c8a431b34a48d89a33a47e01d7e720.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://mbiautos.co.uk"
+      }
+    ]
+  },
+  "md-motors": {
+    "dealer_name": "MD MOTORS",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "AUDI",
+        "model": "S7",
+        "trim": "4.0 TFSI V8 Sportback S Tronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "66,500 miles",
+        "price": "\u00a322,000",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/9022b762f6164fc2993cd447876f9536.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "milestone-motors-london-ltd": {
+    "dealer_name": "MILESTONE MOTORS LONDON LTD",
+    "cars": [
+      {
+        "year": "2012",
+        "make": "AUDI",
+        "model": "RS3",
+        "trim": "2.5 TFSI Sportback S Tronic quattro Euro 5 5dr",
+        "mileage": "62,950 miles",
+        "price": "\u00a317,900",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/41772e04ee964217937ef0ea725850c5.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "ms-supercars": {
+    "dealer_name": "MS Supercars",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "PORSCHE",
+        "model": "718 Cayman",
+        "trim": "2.0T PDK Euro 6 (s/s) 2dr",
+        "mileage": "43,173 miles",
+        "price": "\u00a331,985",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/29ef6d0499f34c88b246d82158b1780a.jpg",
+        "hook": "PDK dual-clutch gearbox.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2003",
+        "make": "PORSCHE",
+        "model": "911",
+        "trim": "3.6 996 Carrera 4 Cabriolet Tiptronic S AWD 2dr",
+        "mileage": "63,398 miles",
+        "price": "\u00a318,985",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/cd83f339c03d46ae8999cd21a776efa9.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "macphersons-sons": {
+    "dealer_name": "Macphersons & Sons",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "3.0i DCT Euro 6 (s/s) 2dr",
+        "mileage": "66,392 miles",
+        "price": "\u00a325,500",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/61826c8ccb5e4caeba23f9f7aa08ef95.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "main-road-motor-company-limited": {
+    "dealer_name": "Main Road Motor Company Limited",
+    "cars": [
+      {
+        "year": "2010",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "5.2 FSI V10 Spyder R Tronic quattro Euro 4 2dr",
+        "mileage": "44,865 miles",
+        "price": "\u00a346,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/4b4b7564fd5f45cf944980a0cd463c83.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "mantles-byd-royston": {
+    "dealer_name": "Mantles BYD Royston",
+    "cars": [
+      {
+        "year": "2021",
+        "make": "AUDI",
+        "model": "Q2",
+        "trim": "1.5 TFSI CoD 35 S line S Tronic Euro 6 (s/s) 5dr",
+        "mileage": "19,445 miles",
+        "price": "\u00a317,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/b57cc009bc914fcc964af70dd5bb06fb.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "marcus-freeman-ltd": {
+    "dealer_name": "Marcus Freeman Ltd",
+    "cars": [
+      {
+        "year": "2025",
+        "make": "BMW",
+        "model": "Alpina B3",
+        "trim": "GT 3.0",
+        "mileage": "3,000 miles",
+        "price": "\u00a3101,500",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/25a97d738b664eaab592921548f6d22f.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "maundrell": {
+    "dealer_name": "Maundrell",
+    "cars": [
+      {
+        "year": "2020",
+        "make": "PORSCHE",
+        "model": "718 Cayman",
+        "trim": "2.0T Euro 6 (s/s) 2dr",
+        "mileage": "38,794 miles",
+        "price": "\u00a334,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/ad2ff3d0d43b4b9b9578c93a8d9c866d.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "mayfair-prestige-uk-ltd": {
+    "dealer_name": "Mayfair Prestige UK Ltd",
+    "cars": [
+      {
+        "year": "2011",
+        "make": "MERCEDES",
+        "model": "SLS",
+        "trim": "6.2 63 V8 AMG Roadster SpdS DCT Euro 5 2dr",
+        "mileage": "4,998 miles",
+        "price": "\u00a3229,950",
+        "photo_url": "",
+        "hook": "DCT dual-clutch gearbox, roadster body.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "mendip-autoserve-limited": {
+    "dealer_name": "Mendip Autoserve Limited",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "BMW",
+        "model": "2 Series Active Tourer",
+        "trim": "2.0 218d SE MPV 5dr Diesel Auto Euro 6 (s/s) (150 ps)",
+        "mileage": "37,282 miles",
+        "price": "\u00a38,895",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/24a5a500fb6c471194f748e5f4321424.jpg",
+        "hook": "The lower-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2015",
+        "make": "BMW",
+        "model": "5 Series",
+        "trim": "2.0 520d M Sport Saloon 4dr Diesel Auto Euro 6 (s/s) (184 ps)",
+        "mileage": "44,656 miles",
+        "price": "\u00a310,894",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/537a6320d09047e5994a2a10bf00ef4a.jpg",
+        "hook": "The lower-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2014",
+        "make": "BMW",
+        "model": "5 Series",
+        "trim": "2.0 520i Luxury Touring 5dr Petrol Auto Euro 6 (s/s) (184 ps)",
+        "mileage": "53,191 miles",
+        "price": "\u00a310,591",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/8ea30297ad2844698d0ae719535ce96b.jpg",
+        "hook": "The higher-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2015",
+        "make": "BMW",
+        "model": "2 Series Active Tourer",
+        "trim": "2.0 218d SE MPV 5dr Diesel Auto Euro 6 (s/s) (150 ps)",
+        "mileage": "54,764 miles",
+        "price": "\u00a37,496",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/ef3b76fcdef4496b91a4c28def5dbedc.jpg",
+        "hook": "The higher-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "mondial-cars": {
+    "dealer_name": "Mondial Cars",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "BMW",
+        "model": "2 Series Active Tourer",
+        "trim": "2.0 220d M Sport Auto Euro 6 (s/s) 5dr",
+        "mileage": "57,000 miles",
+        "price": "\u00a38,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/d69fb1e024c0469b85b747079495c699.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2012",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "4.2 FSI V8 Limited Edition R Tronic quattro Euro 5 2dr",
+        "mileage": "41,000 miles",
+        "price": "\u00a339,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/8642d999507c4e35af2c09828f4663ca.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "morgan-cars": {
+    "dealer_name": "Morgan Cars",
+    "cars": [
+      {
+        "year": "2007",
+        "make": "MERCEDES",
+        "model": "SLR McLaren",
+        "trim": "5.4 V8 2dr",
+        "mileage": "3,140 miles",
+        "price": "\u00a3849,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/0f02976cc1ec41e8a16610a254d70e45.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "motor-4-u-limited": {
+    "dealer_name": "Motor 4 U Limited",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "MERCEDES",
+        "model": "G Class",
+        "trim": "3.0 G350 V6 BlueTEC G-Tronic 4WD Euro 5 5dr",
+        "mileage": "60,273 miles",
+        "price": "\u00a339,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/7fe4429e181c4f329a97e6ecec1a31a5.jpg",
+        "hook": "The lower-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2014",
+        "make": "MERCEDES",
+        "model": "G Class",
+        "trim": "3.0 G350 V6 BlueTEC G-Tronic 4WD Euro 5 5dr",
+        "mileage": "77,609 miles",
+        "price": "\u00a339,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/90e2ec64ca234c488046ca151f35cc12.jpg",
+        "hook": "The higher-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "motorclass": {
+    "dealer_name": "Motorclass",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "MERCEDES",
+        "model": "G Class",
+        "trim": "3.0 5dr",
+        "mileage": "78,600 miles",
+        "price": "\u00a344,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/8b828303e6fa4a078fb0de5cc7ab7919.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "http://www.motor-class.co.uk/"
+      }
+    ]
+  },
+  "motorhouse-performance-cars": {
+    "dealer_name": "Motorhouse Performance Cars",
+    "cars": [
+      {
+        "year": "2009",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "4.2 FSI V8 quattro Euro 4 2dr",
+        "mileage": "57,000 miles",
+        "price": "\u00a339,850",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/5ef81769a9b144d5a73c3fcc40f9083d.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "motorhub": {
+    "dealer_name": "Motorhub",
+    "cars": [
+      {
+        "year": "2005",
+        "make": "MERCEDES",
+        "model": "SLR McLaren",
+        "trim": "5.4 V8 2dr",
+        "mileage": "3,400 miles",
+        "price": "\u00a3439,989",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e7944fb3ed9d4f9dbbe7e7aa8e61e414.jpg",
+        "hook": "The lower-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": "https://www.motor-hub.co.uk"
+      },
+      {
+        "year": "2005",
+        "make": "MERCEDES",
+        "model": "SLR McLaren",
+        "trim": "5.4 V8 2dr",
+        "mileage": "16,800 miles",
+        "price": "\u00a3379,989",
+        "photo_url": "",
+        "hook": "The higher-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": "https://www.motor-hub.co.uk"
+      },
+      {
+        "year": "2012",
+        "make": "MERCEDES",
+        "model": "SLS",
+        "trim": "6.2 63 V8 AMG Roadster SpdS DCT Euro 5 2dr",
+        "mileage": "29,000 miles",
+        "price": "\u00a3139,989",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/0310790b6e634fb1a24d22f781c4c778.jpg",
+        "hook": "DCT dual-clutch gearbox, roadster body.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "motors-for-less": {
+    "dealer_name": "Motors For Less",
+    "cars": [
+      {
+        "year": "2013",
+        "make": "MERCEDES",
+        "model": "G Class",
+        "trim": "3.0 G350 V6 BlueTEC G-Tronic 4WD Euro 5 5dr",
+        "mileage": "50,000 miles",
+        "price": "\u00a344,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e13cc9eab9644237beac25a67d3a4639.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://www.motors-forless.co.uk"
+      }
+    ]
+  },
+  "motorvana": {
+    "dealer_name": "Motorvana",
+    "cars": [
+      {
+        "year": "2021",
+        "make": "AUDI",
+        "model": "RSQ8",
+        "trim": "4.0 TFSI V8 Carbon Black Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "63,500 miles",
+        "price": "\u00a365,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/3ae0669beb074724b0a4cfac584a9b1c.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "mrg-part-of-chippenham-motor-company": {
+    "dealer_name": "Mrg Part Of Chippenham Motor Company",
+    "cars": [
+      {
+        "year": "2018",
+        "make": "BMW",
+        "model": "M3",
+        "trim": "3.0 BiTurbo Competition DCT Euro 6 (s/s) 4dr",
+        "mileage": "66,278 miles",
+        "price": "\u00a331,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/ecd95d208cd648de9542211890e45419.jpg",
+        "hook": "Competition package, DCT dual-clutch gearbox.",
+        "dealer_website": "https://www.chippenhammotor.co.uk/used-cars/"
+      }
+    ]
+  },
+  "my-next-car": {
+    "dealer_name": "My Next Car",
+    "cars": [
+      {
+        "year": "2002",
+        "make": "PORSCHE",
+        "model": "911",
+        "trim": "3.6 996 Carrera 2 Cabriolet Tiptronic S 2dr FULL SERVICE HISTORY + 18\" ALLOYS",
+        "mileage": "72,000 miles",
+        "price": "\u00a314,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/200cd2794d7a48bc8e36ae57b6ebcd28.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "mylson-limited": {
+    "dealer_name": "Mylson Limited",
+    "cars": [
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "RSQ8",
+        "trim": "4.0 TFSI V8 Vorsprung Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "63,000 miles",
+        "price": "\u00a365,700",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/77843454f38b40b89ca66cd64464b576.jpg",
+        "hook": "Range-topping Vorsprung trim, quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "n-k-derby": {
+    "dealer_name": "N K Derby",
+    "cars": [
+      {
+        "year": "2019",
+        "make": "AUDI",
+        "model": "S7",
+        "trim": "3.0 TDI V6 Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "37,294 miles",
+        "price": "\u00a336,499",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/df7dbabc4787426499752958f3dc3a35.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "nr-automotive-ltd": {
+    "dealer_name": "NR Automotive Ltd",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "AUDI",
+        "model": "RS Q3",
+        "trim": "2.5 TFSI S Tronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "14,590 miles",
+        "price": "\u00a327,250",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/d2e3810d88d94576b177cd6394a58a1b.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "nuneaton-car-sales-ltd": {
+    "dealer_name": "NUNEATON CAR SALES LTD",
+    "cars": [
+      {
+        "year": "2022",
+        "make": "AUDI",
+        "model": "Q2",
+        "trim": "1.0 TFSI 30 Technik Euro 6 (s/s) 5dr",
+        "mileage": "26,239 miles",
+        "price": "\u00a314,177",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/7a4da98bed984941ad9c940bd4ee2846.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "new-town-cars-ltd": {
+    "dealer_name": "New town Cars LTD",
+    "cars": [
+      {
+        "year": "2007",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "4.2 FSI V8 R Tronic quattro Euro 4 2dr",
+        "mileage": "69,444 miles",
+        "price": "\u00a326,750",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/2984d1f4855e4c849432bbf3c9eb85ee.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "norfolk-automotive": {
+    "dealer_name": "Norfolk Automotive",
+    "cars": [
+      {
+        "year": "1998",
+        "make": "BMW",
+        "model": "Z3 M",
+        "trim": "3.2 2dr",
+        "mileage": "45,246 miles",
+        "price": "\u00a335,998",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/1ff89c2abac74e9f98200891dfde37da.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "north-road-cars": {
+    "dealer_name": "North Road Cars",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "AUDI",
+        "model": "S7",
+        "trim": "4.0 TFSI V8 Sportback S Tronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "21,700 miles",
+        "price": "\u00a319,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/64b36b4d0c394b1fb31ca890afc4f0e8.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "northumbria-prestige": {
+    "dealer_name": "Northumbria Prestige",
+    "cars": [
+      {
+        "year": "2019",
+        "make": "AUDI",
+        "model": "TT RS",
+        "trim": "2.5 TFSI Roadster S Tronic quattro Euro 6 (s/s) 2dr",
+        "mileage": "15,800 miles",
+        "price": "\u00a336,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f4e6353296904036936bef600764149d.jpg",
+        "hook": "Quattro four-wheel drive, roadster body.",
+        "dealer_website": "https://www.northumbriaprestige.com"
+      }
+    ]
+  },
+  "noya-motor-group-durham-a690": {
+    "dealer_name": "Noya Motor Group Durham A690",
+    "cars": [
+      {
+        "year": "2000",
+        "make": "BMW",
+        "model": "Z3 M",
+        "trim": "3.2 2dr",
+        "mileage": "53,317 miles",
+        "price": "\u00a317,490",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/7519a5c03ea74adb9e92723935727a0a.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://www.nmg.co.uk/"
+      }
+    ]
+  },
+  "oakdene-collection": {
+    "dealer_name": "Oakdene Collection",
+    "cars": [
+      {
+        "year": "2018",
+        "make": "PORSCHE",
+        "model": "718 Cayman",
+        "trim": "2.0T PDK Euro 6 (s/s) 2dr",
+        "mileage": "58,000 miles",
+        "price": "\u00a336,280",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/36f18373efee4c9d8c88c8b9a9b36129.jpg",
+        "hook": "PDK dual-clutch gearbox.",
+        "dealer_website": "https://www.oakdenecollection.co.uk/results.php"
+      },
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "RS7",
+        "trim": "4.0 TFSI V8 Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "52,000 miles",
+        "price": "\u00a365,980",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/08199c7e88c44c12bd1b9403c827af19.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": "https://www.oakdenecollection.co.uk/results.php"
+      }
+    ]
+  },
+  "oakwood-autohaus-ltd": {
+    "dealer_name": "Oakwood Autohaus Ltd",
+    "cars": [
+      {
+        "year": "2022",
+        "make": "AUDI",
+        "model": "RSQ8",
+        "trim": "4.0 TFSI V8 Vorsprung Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "71,000 miles",
+        "price": "\u00a367,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/9a917c16f47d486ea1735a6f373fe9ad.jpg",
+        "hook": "Range-topping Vorsprung trim, quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "one-stop-car-sales": {
+    "dealer_name": "One Stop Car Sales",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "PORSCHE",
+        "model": "718 Cayman",
+        "trim": "2.0T PDK Euro 6 (s/s) 2dr",
+        "mileage": "21,267 miles",
+        "price": "\u00a333,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/be2c627498cb4848a7b129eb58744f1b.jpg",
+        "hook": "PDK dual-clutch gearbox.",
+        "dealer_website": "http://one-stopcarsales.co.uk "
+      }
+    ]
+  },
+  "otterbourne-car-company": {
+    "dealer_name": "Otterbourne Car Company",
+    "cars": [
+      {
+        "year": "2014",
+        "make": "BMW",
+        "model": "Alpina XD3",
+        "trim": "3.0d BiTurbo Auto 4WD Euro 5 (s/s) 5dr",
+        "mileage": "77,850 miles",
+        "price": "\u00a324,450",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/eebc736053554eed9a63ca07d0ec2c18.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "p-w-millar-ford": {
+    "dealer_name": "P W Millar Ford",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "MERCEDES",
+        "model": "G Class",
+        "trim": "3.0 G350 CDI V6 Night Edition G-Tronic 4WD Euro 6 (s/s) 5dr",
+        "mileage": "71,361 miles",
+        "price": "\u00a343,999",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/66820a2dc1d54bc182d027fd54abef4e.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "pcbs-sales": {
+    "dealer_name": "PCBS-SALES",
+    "cars": [
+      {
+        "year": "2007",
+        "make": "BMW",
+        "model": "Z4 M",
+        "trim": "3.2i Euro 4 2dr",
+        "mileage": "43,500 miles",
+        "price": "\u00a318,975",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/0ba60fddd0c94ffcb0961606a0a16db7.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "ph-automotive-ltd": {
+    "dealer_name": "PH AUTOMOTIVE LTD",
+    "cars": [
+      {
+        "year": "2021",
+        "make": "BMW",
+        "model": "Alpina D3",
+        "trim": "3.0d MHT S Touring Switchtronic AWD Euro 6 (s/s) 5dr STUNNING COLOUR|PANORAMIC ROOF",
+        "mileage": "47,058 miles",
+        "price": "\u00a353,840",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/145d73850a4644fdbbea19e38902ad8b.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "podium-automotive": {
+    "dealer_name": "PODIUM AUTOMOTIVE",
+    "cars": [
+      {
+        "year": "2008",
+        "make": "BMW",
+        "model": "Alpina D3",
+        "trim": "2.0d BiTurbo Euro 4 4dr",
+        "mileage": "72,000 miles",
+        "price": "\u00a37,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/4c6bac125edd460997b2ab17f4f21ccf.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "palmers-motor-company": {
+    "dealer_name": "Palmers Motor Company",
+    "cars": [
+      {
+        "year": "2010",
+        "make": "AUDI",
+        "model": "TT RS",
+        "trim": "2.5 TFSI quattro Euro 5 3dr",
+        "mileage": "55,000 miles",
+        "price": "\u00a319,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/c2f8921d264e408bb59fa10b9c273c95.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "parker-prestige-limited": {
+    "dealer_name": "Parker Prestige Limited",
+    "cars": [
+      {
+        "year": "2018",
+        "make": "PORSCHE",
+        "model": "718 Cayman",
+        "trim": "2.0T PDK Euro 6 (s/s) 2dr",
+        "mileage": "55,950 miles",
+        "price": "\u00a335,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/8312a6d96a9d4ca98b571b004eff9e8c.jpg",
+        "hook": "PDK dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "parkhouse-autos-limited": {
+    "dealer_name": "Parkhouse Autos Limited",
+    "cars": [
+      {
+        "year": "2011",
+        "make": "BMW",
+        "model": "1 Series",
+        "trim": "2.0 116i SE Euro 4 5dr",
+        "mileage": "69,000 miles",
+        "price": "\u00a3800",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/038e891d97e747c1915e808255539e62.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://parkhouseautos.com/"
+      }
+    ]
+  },
+  "parkway-specialist-cars-ltd": {
+    "dealer_name": "Parkway Specialist Cars Ltd",
+    "cars": [
+      {
+        "year": "1999",
+        "make": "BMW",
+        "model": "Z3 M",
+        "trim": "3.2 2dr",
+        "mileage": "36,120 miles",
+        "price": "\u00a344,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/a359bfa1ed1f4b4bbe21a051b186c9e7.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "parkway-volkswagen-northampton": {
+    "dealer_name": "Parkway Volkswagen Northampton",
+    "cars": [
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "TT RS",
+        "trim": "2.5 TFSI S Tronic quattro Euro 6 (s/s) 3dr",
+        "mileage": "48,901 miles",
+        "price": "\u00a334,499",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/bab3819ac0fe462bb97c1fa8742d8db0.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "paul-bailey-car-sales": {
+    "dealer_name": "Paul Bailey Car Sales",
+    "cars": [
+      {
+        "year": "2007",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "4.2 FSI V8 R Tronic quattro Euro 4 2dr",
+        "mileage": "61,143 miles",
+        "price": "\u00a331,495",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/50722e76c594467c9ed26533cb102f84.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "paul-riley-cars-ltd": {
+    "dealer_name": "Paul Riley Cars Ltd",
+    "cars": [
+      {
+        "year": "2003",
+        "make": "AUDI",
+        "model": "A2",
+        "trim": "1.4 SE 5dr",
+        "mileage": "69,597 miles",
+        "price": "\u00a35,495",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/b6e547b04b5e483385e5006e402ab59b.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "pavilion-motor-company": {
+    "dealer_name": "Pavilion Motor Company",
+    "cars": [
+      {
+        "year": "2023",
+        "make": "AUDI",
+        "model": "RSQ8",
+        "trim": "4.0 TFSI V8 Vorsprung Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "14,929 miles",
+        "price": "\u00a369,000",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/0b199142ac464afc80148999e2cf5c16.jpg",
+        "hook": "Range-topping Vorsprung trim, quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "performance-28-cars": {
+    "dealer_name": "Performance 28 Cars",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "AUDI",
+        "model": "TT RS",
+        "trim": "2.5 TFSI S Tronic quattro Euro 6 (s/s) 3dr",
+        "mileage": "51,809 miles",
+        "price": "\u00a331,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e9aba98715174c58b7439e429dc401f6.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "phantom-motor-company": {
+    "dealer_name": "Phantom Motor Company",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "3.0i Euro 6 (s/s) 2dr",
+        "mileage": "41,036 miles",
+        "price": "\u00a325,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/227217b692f0437daa8966650b9d28f2.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "http://www.phantommotorcompany.co.uk"
+      },
+      {
+        "year": "2024",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "5.2 FSI V10 Performance Edition S Tronic Euro 6 (s/s) 2dr",
+        "mileage": "5,400 miles",
+        "price": "\u00a3124,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/acf4ea41b41945df97b4df8cc6f2d5a8.jpg",
+        "hook": "Performance spec.",
+        "dealer_website": "http://www.phantommotorcompany.co.uk"
+      }
+    ]
+  },
+  "philip-raby-specialist-cars": {
+    "dealer_name": "Philip Raby Specialist Cars",
+    "cars": [
+      {
+        "year": "1964",
+        "make": "PORSCHE",
+        "model": "356",
+        "trim": "356C endurance car 1.7 2dr",
+        "mileage": "18,200 miles",
+        "price": "\u00a369,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/bd30fcd64f4445d8abecad1edc917d13.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "podium-pcl-ltd": {
+    "dealer_name": "Podium PCL Ltd",
+    "cars": [
+      {
+        "year": "2006",
+        "make": "Volkswagen",
+        "model": "Fox",
+        "trim": "1.4 16V Urban Fox Euro 4 3dr",
+        "mileage": "32,000 miles",
+        "price": "\u00a32,490",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/87931cf7a9334e3fb120cfc7882d0d72.jpg",
+        "hook": "The lower-mileage of the 4 we sourced from this dealer.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2009",
+        "make": "Volkswagen",
+        "model": "Fox",
+        "trim": "1.2 6V Urban Fox Euro 4 3dr",
+        "mileage": "50,000 miles",
+        "price": "\u00a32,490",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/db586a0deebb422b9c7f623ca2452ff6.jpg",
+        "hook": "One of 4 we sourced from this dealer.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2009",
+        "make": "Volkswagen",
+        "model": "Fox",
+        "trim": "1.2 6V Euro 4 3dr",
+        "mileage": "59,000 miles",
+        "price": "\u00a31,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/d5bf86b58fba49749a242fb0172ebb7e.jpg",
+        "hook": "One of 4 we sourced from this dealer.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2007",
+        "make": "Volkswagen",
+        "model": "Fox",
+        "trim": "1.2 6V Urban Fox Euro 4 3dr",
+        "mileage": "62,000 miles",
+        "price": "\u00a32,490",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/ff3bd2598d1945528bc3d0cc6dda6297.jpg",
+        "hook": "The higher-mileage of the 4 we sourced from this dealer.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "port-van-sales-limited": {
+    "dealer_name": "Port Van Sales Limited",
+    "cars": [
+      {
+        "year": "2014",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "4.2 FSI V8 S Tronic quattro Euro 5 2dr",
+        "mileage": "33,367 miles",
+        "price": "\u00a342,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/039ca47f204d43038b5d1932fd3cad8b.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": "https://www.portvansales.co.uk/"
+      }
+    ]
+  },
+  "portland-of-bawtry-ltd": {
+    "dealer_name": "Portland Of Bawtry Ltd",
+    "cars": [
+      {
+        "year": "2012",
+        "make": "MERCEDES",
+        "model": "SLS",
+        "trim": "6.2 63 V8 AMG SpdS DCT Euro 5 2dr",
+        "mileage": "20,674 miles",
+        "price": "\u00a3375,000",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/718d2ea740bb40609e2d127ee793abca.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": "http://www.portlandautos.co.uk"
+      }
+    ]
+  },
+  "praters": {
+    "dealer_name": "Praters",
+    "cars": [
+      {
+        "year": "2013",
+        "make": "MERCEDES",
+        "model": "G Class",
+        "trim": "G55 AMG 4dr",
+        "mileage": "49,996 miles",
+        "price": "\u00a327,500",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f568ed9e31474f15beaafb273806b792.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "prestige-cars-agent": {
+    "dealer_name": "Prestige Cars Agent",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "AUDI",
+        "model": "RS7",
+        "trim": "4.0 TFSI V8 Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "61,000 miles",
+        "price": "\u00a329,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f3601552e9db4512a8ad2d78f52e085e.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "prestige-cars-kent": {
+    "dealer_name": "Prestige Cars Kent",
+    "cars": [
+      {
+        "year": "2022",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo Competition Steptronic M xDrive Euro 6 (s/s) 2dr",
+        "mileage": "48,502 miles",
+        "price": "\u00a346,046",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/ea39ab55b55c48dfa6ba80b9ebbad233.jpg",
+        "hook": "Competition package, xDrive four-wheel drive, Steptronic automatic gearbox.",
+        "dealer_website": "https://www.prestigecarskent.co.uk/autotradervehiclelocator?vehicleid=202606053038081&VRM=SP72LCK"
+      },
+      {
+        "year": "2020",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "3.0 BiTurbo Competition DCT Euro 6 (s/s) 2dr",
+        "mileage": "51,868 miles",
+        "price": "\u00a332,551",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/5b0d0b829c364b078197de9409e77bbe.jpg",
+        "hook": "Competition package, DCT dual-clutch gearbox.",
+        "dealer_website": "https://www.prestigecarskent.co.uk/autotradervehiclelocator?vehicleid=202607204337019&VRM=AO70HJK"
+      },
+      {
+        "year": "2020",
+        "make": "MERCEDES",
+        "model": "G Class",
+        "trim": "2.9 G350d AMG Line (Premium) G-Tronic+ 4MATIC Euro 6 (s/s) 5dr",
+        "mileage": "61,384 miles",
+        "price": "\u00a398,949",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/328a5eff02624bdc93e14037458f9afe.jpg",
+        "hook": "4MATIC four-wheel drive, AMG Line Premium trim.",
+        "dealer_website": "https://www.prestigecarskent.co.uk/autotradervehiclelocator?vehicleid=202608064870290&VRM=AL11GEX"
+      },
+      {
+        "year": "2022",
+        "make": "PORSCHE",
+        "model": "718 Cayman",
+        "trim": "2.0T PDK Euro 6 (s/s) 2dr",
+        "mileage": "7,300 miles",
+        "price": "\u00a345,149",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/c5bffccab4aa40e5958d12272d499079.jpg",
+        "hook": "PDK dual-clutch gearbox.",
+        "dealer_website": "https://www.prestigecarskent.co.uk/autotradervehiclelocator?vehicleid=202605262696014&VRM=LD22VNY"
+      },
+      {
+        "year": "2024",
+        "make": "AUDI",
+        "model": "RS7",
+        "trim": "4.0 TFSI V8 Performance Carbon Vorsprung Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "17,000 miles",
+        "price": "\u00a391,149",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e2ef624ec6f646f28db645c4c75be3d6.jpg",
+        "hook": "Range-topping Carbon Vorsprung trim, quattro four-wheel drive, Performance spec.",
+        "dealer_website": "https://www.prestigecarskent.co.uk/autotradervehiclelocator?vehicleid=202607164247479&VRM=KY74ELX"
+      },
+      {
+        "year": "2021",
+        "make": "AUDI",
+        "model": "RS Q3",
+        "trim": "2.5 TFSI S Tronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "29,369 miles",
+        "price": "\u00a335,499",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e95519343a0f45fdbcdd4620f92fcece.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": "https://www.prestigecarskent.co.uk/autotradervehiclelocator?vehicleid=202605282781839&VRM=FT21MKK"
+      },
+      {
+        "year": "2019",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "5.2 FSI V10 Performance S Tronic quattro Euro 6 (s/s) 2dr",
+        "mileage": "40,479 miles",
+        "price": "\u00a393,149",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/95025a4f36bd4f9abbbe815e42576033.jpg",
+        "hook": "Quattro four-wheel drive, Performance spec.",
+        "dealer_website": "https://www.prestigecarskent.co.uk/autotradervehiclelocator?vehicleid=202606183401685&VRM=R888PFL"
+      }
+    ]
+  },
+  "prestige-cars-by-peter-cooper-west-end": {
+    "dealer_name": "Prestige Cars by Peter Cooper West End",
+    "cars": [
+      {
+        "year": "2019",
+        "make": "PORSCHE",
+        "model": "718 Cayman",
+        "trim": "2.0T PDK Euro 6 (s/s) 2dr",
+        "mileage": "49,000 miles",
+        "price": "\u00a335,294",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e1c181fec1394477adffb70b1ab99f56.jpg",
+        "hook": "PDK dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "prestige-motoring-group": {
+    "dealer_name": "Prestige Motoring Group",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo DCT Euro 6 (s/s) 2dr",
+        "mileage": "80,000 miles",
+        "price": "\u00a321,499",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/1be970d9bfc54cf39aff6d7d33e99ed6.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "preston-ramsey-cars": {
+    "dealer_name": "Preston Ramsey Cars",
+    "cars": [
+      {
+        "year": "2011",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "5.2 FSI V10 R Tronic quattro Euro 5 2dr",
+        "mileage": "41,119 miles",
+        "price": "\u00a347,450",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e2c64174c118467a916f428f83700b57.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "pricemark-motors": {
+    "dealer_name": "Pricemark Motors",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "AUDI",
+        "model": "RS Q3",
+        "trim": "2.5 TFSI S Tronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "78,000 miles",
+        "price": "\u00a312,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/08af8ca047c74c8ca5015fa92b63534d.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "prime-car-group-ltd": {
+    "dealer_name": "Prime Car Group Ltd",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo DCT Euro 6 (s/s) 2dr",
+        "mileage": "67,000 miles",
+        "price": "\u00a319,499",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/8f80adb7ac604988a6b95f8ee5f47aa5.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "prime-drive": {
+    "dealer_name": "Prime Drive",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "BMW",
+        "model": "M3",
+        "trim": "3.0 BiTurbo DCT Euro 6 (s/s) 4dr",
+        "mileage": "61,000 miles",
+        "price": "\u00a330,600",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/95954029ca6f443f803f31339efa0668.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2018",
+        "make": "BMW",
+        "model": "X1",
+        "trim": "1.5 18i GPF xLine sDrive Euro 6 (s/s) 5dr",
+        "mileage": "62,000 miles",
+        "price": "\u00a311,495",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/cb8ddee48ddb44bb924f279cbfc9dc8d.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "qaf-car-sales-leeds": {
+    "dealer_name": "QAF Car Sales Leeds",
+    "cars": [
+      {
+        "year": "2021",
+        "make": "AUDI",
+        "model": "S7",
+        "trim": "3.0 TDI V6 Vorsprung Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "68,000 miles",
+        "price": "\u00a341,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/c5e13d4133934d1090e381e53e2b618d.jpg",
+        "hook": "Range-topping Vorsprung trim, quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "qc-prestige-ltd": {
+    "dealer_name": "QC PRESTIGE LTD",
+    "cars": [
+      {
+        "year": "2006",
+        "make": "BMW",
+        "model": "Z4 M",
+        "trim": "3.2i Euro 4 2dr",
+        "mileage": "60,298 miles",
+        "price": "\u00a321,490",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f12db195db9e4595936867c45f57498c.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://www.q-cars.com/"
+      }
+    ]
+  },
+  "quality-motor-company-ltd": {
+    "dealer_name": "Quality Motor Company Ltd",
+    "cars": [
+      {
+        "year": "2011",
+        "make": "MERCEDES",
+        "model": "G Class",
+        "trim": "5.4 G55 V8 AMG SUV 5dr Petrol Tiptronic 4WD Euro 5 (507 ps)",
+        "mileage": "60,000 miles",
+        "price": "\u00a336,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/aeab8bcd866f416bb35b205d89a4cb4c.jpg",
+        "hook": "The lower-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2000",
+        "make": "MERCEDES",
+        "model": "G Class",
+        "trim": "G500 Left Hand Drive 5dr BRABUS EDITION 5.0",
+        "mileage": "70,000 miles",
+        "price": "\u00a326,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e68d1418344b459f9968f0f48e66dcec.jpg",
+        "hook": "The higher-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "quickars-ltd": {
+    "dealer_name": "Quickars Ltd.",
+    "cars": [
+      {
+        "year": "2018",
+        "make": "AUDI",
+        "model": "TT RS",
+        "trim": "2.5 TFSI Roadster S Tronic quattro Euro 6 (s/s) 2dr",
+        "mileage": "41,500 miles",
+        "price": "\u00a332,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/62e49f32443c45b694633aa48b23c87f.jpg",
+        "hook": "Quattro four-wheel drive, roadster body.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "r-automotive-uk": {
+    "dealer_name": "R Automotive UK",
+    "cars": [
+      {
+        "year": "2014",
+        "make": "MERCEDES",
+        "model": "G Class",
+        "trim": "3.0 G350 V6 BlueTEC G-Tronic 4WD Euro 5 5dr",
+        "mileage": "64,750 miles",
+        "price": "\u00a349,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/d8718e2f10a445df9f7304ef28501769.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "rsv-automotive": {
+    "dealer_name": "RSV Automotive",
+    "cars": [
+      {
+        "year": "2006",
+        "make": "BMW",
+        "model": "Z4 M",
+        "trim": "3.2i Euro 4 2dr",
+        "mileage": "52,000 miles",
+        "price": "\u00a324,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/2a7500d575bd46c19ce948647af8afe7.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "http://www.rsvautomotive.co.uk/"
+      }
+    ]
+  },
+  "rdm-direct-ltd": {
+    "dealer_name": "Rdm Direct Ltd",
+    "cars": [
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "RSQ8",
+        "trim": "4.0 TFSI V8 Carbon Black Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "47,987 miles",
+        "price": "\u00a366,098",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/71baf38408a94a92bbb1cc4834c7ff2b.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "redline-specialist-cars": {
+    "dealer_name": "Redline Specialist Cars",
+    "cars": [
+      {
+        "year": "2025",
+        "make": "AUDI",
+        "model": "S7",
+        "trim": "3.0 TDI V6 Black Edition Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "10,815 miles",
+        "price": "\u00a358,495",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/982a9fb018ab443b893752033ff6f77a.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": "https://redlinespecialistcars.co.uk"
+      }
+    ]
+  },
+  "richmond-car-sales": {
+    "dealer_name": "Richmond Car Sales",
+    "cars": [
+      {
+        "year": "2014",
+        "make": "BMW",
+        "model": "Alpina D5",
+        "trim": "3.0d Switchtronic Euro 6 (s/s) 4dr",
+        "mileage": "74,868 miles",
+        "price": "\u00a323,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/08ab60f80fb844eebe1d0a17b8ab5f04.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "riverside-car-sales-ltd": {
+    "dealer_name": "Riverside Car Sales Ltd",
+    "cars": [
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "RSQ8",
+        "trim": "4.0 TFSI V8 Vorsprung Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "40,753 miles",
+        "price": "\u00a369,000",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/8e506e8cf7ba458bb503e0ba8365fa2c.jpg",
+        "hook": "Range-topping Vorsprung trim, quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "road-sport-and-classic-ltd": {
+    "dealer_name": "Road Sport and Classic Ltd",
+    "cars": [
+      {
+        "year": "2012",
+        "make": "MERCEDES",
+        "model": "SLS",
+        "trim": "6.2 63 V8 AMG Roadster 2dr Petrol SpdS DCT Euro 5 (571 ps)",
+        "mileage": "32,600 miles",
+        "price": "\u00a3149,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/c633d5ea9b3148c59ef15ca3eb080b65.jpg",
+        "hook": "DCT dual-clutch gearbox, roadster body.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "roadstar-automobile-ltd": {
+    "dealer_name": "Roadstar Automobile Ltd",
+    "cars": [
+      {
+        "year": "2024",
+        "make": "AUDI",
+        "model": "RSQ8",
+        "trim": "4.0 TFSI V8 Vorsprung Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "14,000 miles",
+        "price": "\u00a3100,189",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/6c07080644e347bdb87994a25f52fdcb.jpg",
+        "hook": "Range-topping Vorsprung trim, quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "rockstar-motors-limited": {
+    "dealer_name": "Rockstar Motors Limited",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "PORSCHE",
+        "model": "718 Cayman",
+        "trim": "2.0T PDK Euro 6 (s/s) 2dr",
+        "mileage": "24,967 miles",
+        "price": "\u00a331,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/df59497d6fbf4891ab6da4dd53003bca.jpg",
+        "hook": "PDK dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "romano-automotive": {
+    "dealer_name": "Romano Automotive",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "AUDI",
+        "model": "Q2",
+        "trim": "1.4 TFSI CoD Edition 1 S Tronic Euro 6 (s/s) 5dr",
+        "mileage": "63,000 miles",
+        "price": "\u00a315,295",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/0f689aff4723418aae1c85715057a74b.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "romans-international": {
+    "dealer_name": "Romans International",
+    "cars": [
+      {
+        "year": "1969",
+        "make": "MERCEDES",
+        "model": "280 SL",
+        "trim": "2.8",
+        "mileage": "1,888 miles",
+        "price": "\u00a3269,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/88844ac79a4a454b9b8fb0c5b09db7ad.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2011",
+        "make": "MERCEDES",
+        "model": "SLS",
+        "trim": "6.2 63 V8 AMG SpdS DCT Euro 5 2dr",
+        "mileage": "15,907 miles",
+        "price": "\u00a3339,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/006fe64b61924772a80f499486876a6a.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "romansmotors-ltd": {
+    "dealer_name": "Romansmotors Ltd",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "AUDI",
+        "model": "S7",
+        "trim": "4.0 TFSI V8 Sportback S Tronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "39,500 miles",
+        "price": "\u00a323,490",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/7424ab52c83b465b8965237de5781480.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "ryds-group": {
+    "dealer_name": "Ryds Group",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo DCT Euro 6 (s/s) 2dr",
+        "mileage": "31,465 miles",
+        "price": "\u00a326,820",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/4045ffe8916e4b78a4059a1b454d5681.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2019",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "3.0 BiTurbo Competition DCT Euro 6 (s/s) 2dr",
+        "mileage": "44,365 miles",
+        "price": "\u00a332,890",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/47cd8ff6c2414a868fcff915ece392f3.jpg",
+        "hook": "Competition package, DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2017",
+        "make": "BMW",
+        "model": "M3",
+        "trim": "3.0 BiTurbo Competition DCT Euro 6 (s/s) 4dr",
+        "mileage": "56,522 miles",
+        "price": "\u00a336,000",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/2bfaca36820d4190add9c716c12379d1.jpg",
+        "hook": "Competition package, DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2016",
+        "make": "AUDI",
+        "model": "S7",
+        "trim": "4.0 TFSI V8 Sportback S Tronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "50,026 miles",
+        "price": "\u00a323,250",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/73b92e53f2f4442baab48020d3bc5e50.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "ryland-specialist-cars-birmingham": {
+    "dealer_name": "Ryland Specialist Cars Birmingham",
+    "cars": [
+      {
+        "year": "2025",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "3.0 BiTurbo Steptronic Euro 6 (s/s) 2dr",
+        "mileage": "9,139 miles",
+        "price": "\u00a353,850",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/dee0f28a943c42968a06b0e6ab3952b1.jpg",
+        "hook": "Steptronic automatic gearbox.",
+        "dealer_website": "https://www.ryland.co.uk/autotradervehiclelocator?vehicleid=202606083088963&VRM=LS25USO"
+      }
+    ]
+  },
+  "s-j-davidson-motors-ltd": {
+    "dealer_name": "S J Davidson Motors Ltd",
+    "cars": [
+      {
+        "year": "2024",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "5.2 FSI V10 Performance S Tronic Euro 6 (s/s) 2dr",
+        "mileage": "3,976 miles",
+        "price": "\u00a3114,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/73c7ca1e11a04dbaa69a7d9218aee621.jpg",
+        "hook": "Performance spec.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "sd-automotive": {
+    "dealer_name": "SD Automotive",
+    "cars": [
+      {
+        "year": "2009",
+        "make": "AUDI",
+        "model": "TT RS",
+        "trim": "2.5 TFSI quattro Euro 5 3dr",
+        "mileage": "71,582 miles",
+        "price": "\u00a314,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/94c2bf98a35342f983d3a4099c72012a.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "sd-vehicles-ltd": {
+    "dealer_name": "SD Vehicles Ltd",
+    "cars": [
+      {
+        "year": "2019",
+        "make": "AUDI",
+        "model": "RS3",
+        "trim": "2.5 TFSI Sportback S Tronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "43,200 miles",
+        "price": "\u00a328,795",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/1260a4dbf764441fb5803c6a25bb9450.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "sm-performance": {
+    "dealer_name": "SM Performance",
+    "cars": [
+      {
+        "year": "2022",
+        "make": "AUDI",
+        "model": "RS7",
+        "trim": "4.0 TFSI V8 Vorsprung Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "68,000 miles",
+        "price": "\u00a372,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/8bdf852fc29446a8b82addd0b4c687b2.jpg",
+        "hook": "Range-topping Vorsprung trim, quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "southern-motion": {
+    "dealer_name": "SOUTHERN MOTION",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo DCT Euro 6 (s/s) 2dr",
+        "mileage": "57,715 miles",
+        "price": "\u00a320,450",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/8b1747d95ed8488a8b6e16adcb47119f.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "springalls-car-sales-ltd": {
+    "dealer_name": "SPRINGALLS CAR SALES LTD",
+    "cars": [
+      {
+        "year": "2006",
+        "make": "BMW",
+        "model": "1 Series",
+        "trim": "2.0 118d SE Euro 4 5dr",
+        "mileage": "75,000 miles",
+        "price": "\u00a32,495",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/db617bc4476942e9bd1c60ebd885a43b.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "sss-car-sales": {
+    "dealer_name": "SSS Car Sales",
+    "cars": [
+      {
+        "year": "2014",
+        "make": "AUDI",
+        "model": "RS Q3",
+        "trim": "2.5 TFSI S Tronic quattro Euro 5 (s/s) 5dr",
+        "mileage": "70,000 miles",
+        "price": "\u00a316,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/49e90ec6e53c4711a8f43396473e3965.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "sandwell-car-sales-ltd": {
+    "dealer_name": "Sandwell Car Sales Ltd",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "AUDI",
+        "model": "RS Q3",
+        "trim": "2.5 TFSI S Tronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "70,000 miles",
+        "price": "\u00a318,475",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/de6e76aae17f422e9db0fbf5478af5ec.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "sandygate-cars-commercials-ltd": {
+    "dealer_name": "SandyGate Cars & Commercials Ltd",
+    "cars": [
+      {
+        "year": "2018",
+        "make": "MERCEDES",
+        "model": "G Class",
+        "trim": "3.0 G350 CDI V6 Night Edition G-Tronic 4WD Euro 6 (s/s) 5dr",
+        "mileage": "34,000 miles",
+        "price": "\u00a369,998",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/5f4e78344dae470ebc4077f6ef23b01d.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://www.sandygatecarsandcommercials.co.uk"
+      }
+    ]
+  },
+  "savannah": {
+    "dealer_name": "Savannah",
+    "cars": [
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "RSQ8",
+        "trim": "4.0 TFSI V8 Vorsprung Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "49,164 miles",
+        "price": "\u00a368,000",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/fefb5e8d0e064af7ac059cdefff75abe.jpg",
+        "hook": "Range-topping Vorsprung trim, quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "saxon-automobiles": {
+    "dealer_name": "Saxon Automobiles",
+    "cars": [
+      {
+        "year": "2006",
+        "make": "PORSCHE",
+        "model": "911",
+        "trim": "3.6 997 Carrera 2dr",
+        "mileage": "36,480 miles",
+        "price": "\u00a336,999",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/201ee15b17904cdca04d7d4e80a0f074.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2011",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "4.2 FSI V8 Spyder R Tronic quattro Euro 5 2dr",
+        "mileage": "35,850 miles",
+        "price": "\u00a339,999",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/acaec6dacc9e41689bcca91af7a2d94d.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "saxtons-co-uk": {
+    "dealer_name": "Saxtons.co.uk",
+    "cars": [
+      {
+        "year": "2022",
+        "make": "AUDI",
+        "model": "RSQ8",
+        "trim": "4.0 TFSI V8 Vorsprung Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "59,412 miles",
+        "price": "\u00a367,499",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/16e24ccdee8047cb9c8148193c437621.jpg",
+        "hook": "Range-topping Vorsprung trim, quattro four-wheel drive.",
+        "dealer_website": "http://www.saxtons.co.uk/autotradervehiclelocator?vehicleid=202601269418149&VRM=FX72WBJ"
+      }
+    ]
+  },
+  "sedgley-group-limited": {
+    "dealer_name": "Sedgley Group Limited",
+    "cars": [
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "RSQ8",
+        "trim": "4.0 TFSI V8 Carbon Black Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "48,000 miles",
+        "price": "\u00a366,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f2c35d03c1704807b8cbc35b5cc43ba7.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "sheffield-car-company": {
+    "dealer_name": "Sheffield Car Company",
+    "cars": [
+      {
+        "year": "2007",
+        "make": "Volkswagen",
+        "model": "Fox",
+        "trim": "1.2 6V Urban Fox Euro 4 3dr",
+        "mileage": "65,000 miles",
+        "price": "\u00a3995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/68a0a5b360f34f93a426c8e4f25cae39.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "shinsean-automotive-ltd": {
+    "dealer_name": "Shinsean Automotive Ltd",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "PORSCHE",
+        "model": "356",
+        "trim": "Super 90 1600 Type B Coupe Manual 2dr LHD 1962 PORSCHE 356B 1600 SUPER 90 1.6",
+        "mileage": "55,950 miles",
+        "price": "\u00a396,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/da18a546d36e44dba165d36c09174041.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "shotts-motorz-ltd": {
+    "dealer_name": "Shotts Motorz Ltd",
+    "cars": [
+      {
+        "year": "2013",
+        "make": "AUDI",
+        "model": "RS3",
+        "trim": "2.5 TFSI Sportback S Tronic quattro Euro 5 5dr",
+        "mileage": "77,236 miles",
+        "price": "\u00a316,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f44158f2edc746e2a4d38f7072ba7211.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "sm-auto-sales-services": {
+    "dealer_name": "Sm Auto Sales & Services",
+    "cars": [
+      {
+        "year": "2002",
+        "make": "BMW",
+        "model": "Z3",
+        "trim": "3.0i Sport 2dr",
+        "mileage": "66,142 miles",
+        "price": "\u00a36,450",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/3624e86c88d547bb9afcc3feac739ad7.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "somerset-motor-company": {
+    "dealer_name": "Somerset Motor Company",
+    "cars": [
+      {
+        "year": "2019",
+        "make": "BMW",
+        "model": "2 Series Active Tourer",
+        "trim": "1.5 218i Sport Euro 6 (s/s) 5dr",
+        "mileage": "64,953 miles",
+        "price": "\u00a38,895",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/0a9e8cee13c742028f522438a098afc6.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "southeast-motors-chichester": {
+    "dealer_name": "Southeast Motors Chichester",
+    "cars": [
+      {
+        "year": "2022",
+        "make": "BMW",
+        "model": "X2",
+        "trim": "2.0 18d M Sport Auto xDrive Euro 6 (s/s) 5dr",
+        "mileage": "41,112 miles",
+        "price": "\u00a318,490",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/06d23d8e509f401cae8d66871128f86e.jpg",
+        "hook": "XDrive four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "sovereign-trading-ltd": {
+    "dealer_name": "Sovereign Trading Ltd",
+    "cars": [
+      {
+        "year": "1968",
+        "make": "PORSCHE",
+        "model": "356",
+        "trim": "1.6",
+        "mileage": "1,864 miles",
+        "price": "\u00a349,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/c9a2d34cd6284320bf525bd9ffb1d66a.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "http://www.sovereign-trading.co.uk"
+      }
+    ]
+  },
+  "specialist-car-sales-ltd": {
+    "dealer_name": "Specialist Car Sales Ltd",
+    "cars": [
+      {
+        "year": "1998",
+        "make": "BMW",
+        "model": "Z3",
+        "trim": "2.8i 2dr",
+        "mileage": "22,000 miles",
+        "price": "\u00a39,999",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/120f46396531422c8451e74fc53ffd3b.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "specialists-performance-cars-limited": {
+    "dealer_name": "Specialists Performance Cars Limited",
+    "cars": [
+      {
+        "year": "2016",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "3.0i DCT Euro 6 (s/s) 2dr",
+        "mileage": "61,693 miles",
+        "price": "\u00a325,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/d3e1dfb8209c4dbaac24fb5c80859d73.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "springfields-motors-ltd": {
+    "dealer_name": "Springfields Motors Ltd",
+    "cars": [
+      {
+        "year": "2009",
+        "make": "AUDI",
+        "model": "TT RS",
+        "trim": "2.5 TFSI quattro Euro 5 3dr",
+        "mileage": "72,000 miles",
+        "price": "\u00a315,490",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f96580926c2b4f119c10d807010873d1.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "staffordshire-car-company": {
+    "dealer_name": "Staffordshire Car Company",
+    "cars": [
+      {
+        "year": "2014",
+        "make": "BMW",
+        "model": "Alpina D5",
+        "trim": "3.0d Switchtronic Euro 6 (s/s) 4dr",
+        "mileage": "63,315 miles",
+        "price": "\u00a322,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/8fa7bcc0a31d429a918f67dcfae1004c.jpg",
+        "hook": "The lower-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": "https://www.staffordshirecars.com/used-cars-in-staffordshire"
+      },
+      {
+        "year": "2014",
+        "make": "BMW",
+        "model": "Alpina D5",
+        "trim": "3.0d Switchtronic Euro 6 (s/s) 4dr",
+        "mileage": "75,193 miles",
+        "price": "\u00a320,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/cd6a248993f348008757371cc1a15cf9.jpg",
+        "hook": "The higher-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": "https://www.staffordshirecars.com/used-cars-in-staffordshire"
+      }
+    ]
+  },
+  "starlight-autos-limited": {
+    "dealer_name": "Starlight Autos Limited",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "AUDI",
+        "model": "A1",
+        "trim": "1.4 TFSI CoD S line Sportback S Tronic Euro 6 (s/s) 5dr",
+        "mileage": "70,000 miles",
+        "price": "\u00a310,000",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/8a9da4c1daa94f19bbcc67236f74053f.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "status-motor-group": {
+    "dealer_name": "Status Motor Group",
+    "cars": [
+      {
+        "year": "2019",
+        "make": "AUDI",
+        "model": "Q2",
+        "trim": "1.5 TFSI CoD 35 S line S Tronic Euro 6 (s/s) 5dr",
+        "mileage": "61,100 miles",
+        "price": "\u00a312,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e97977acce2b4c3eb2bb293f65e963da.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "strada-vehicle-services-trade-clearance-cars": {
+    "dealer_name": "Strada Vehicle Services Trade & Clearance Cars",
+    "cars": [
+      {
+        "year": "2007",
+        "make": "Volkswagen",
+        "model": "Fox",
+        "trim": "1.2 6V Urban Fox Euro 4 3dr",
+        "mileage": "80,000 miles",
+        "price": "\u00a31,250",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/4012da28945548a4a60b7eca89ba3b8b.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "sunnybank-car-sales": {
+    "dealer_name": "Sunnybank Car Sales",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo DCT Euro 6 (s/s) 2dr",
+        "mileage": "78,000 miles",
+        "price": "\u00a320,000",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/3c84124f0b414057a83a0c7ded743ffd.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "surrey-specialist-cars": {
+    "dealer_name": "Surrey Specialist Cars",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "BMW",
+        "model": "1 Series",
+        "trim": "1.5 118i M Sport Shadow Edition Auto Euro 6 (s/s) 5dr",
+        "mileage": "66,664 miles",
+        "price": "\u00a311,790",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/8d78be44ae534daa9e5a2323f1def60d.jpg",
+        "hook": "The lower-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": "https://www.surreyspecialistcars.co.uk/"
+      },
+      {
+        "year": "2018",
+        "make": "BMW",
+        "model": "X1",
+        "trim": "2.0 20i M Sport Auto xDrive Euro 6 (s/s) 5dr",
+        "mileage": "75,190 miles",
+        "price": "\u00a312,640",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/a0d6ba010745470aa3b87f78fa058b47.jpg",
+        "hook": "XDrive four-wheel drive.",
+        "dealer_website": "https://www.surreyspecialistcars.co.uk/"
+      },
+      {
+        "year": "2014",
+        "make": "BMW",
+        "model": "1 Series",
+        "trim": "1.6 116i M Sport Euro 6 (s/s) 5dr",
+        "mileage": "77,705 miles",
+        "price": "\u00a36,190",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/798dbc6734604769b040a0b8c2a2dab8.jpg",
+        "hook": "The higher-mileage of the 2 we sourced from this dealer.",
+        "dealer_website": "https://www.surreyspecialistcars.co.uk/"
+      }
+    ]
+  },
+  "switch-car-group": {
+    "dealer_name": "Switch Car Group",
+    "cars": [
+      {
+        "year": "1991",
+        "make": "MERCEDES",
+        "model": "300",
+        "trim": "3.0 SL 2dr",
+        "mileage": "12,862 miles",
+        "price": "\u00a319,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/adea94fdd4e64066b9578bad61dc522d.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2021",
+        "make": "AUDI",
+        "model": "RS4",
+        "trim": "2.9 RS4 Avant TFSI Tiptronic Quattro Estate 5d Petrol Auto B&O SYSTEM, SPORTS SEATS",
+        "mileage": "49,443 miles",
+        "price": "\u00a349,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/fee92db8cd1e42178833c102606d646e.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "tmt-motor-company": {
+    "dealer_name": "TMT Motor Company",
+    "cars": [
+      {
+        "year": "2023",
+        "make": "AUDI",
+        "model": "RSQ8",
+        "trim": "4.0 TFSI V8 Carbon Black Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "16,400 miles",
+        "price": "\u00a394,975",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/2bf1ec6614ab4399bf1d94d051ddd29b.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "tng-automotive-ltd": {
+    "dealer_name": "TNG AUTOMOTIVE LTD",
+    "cars": [
+      {
+        "year": "2021",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo Competition Steptronic Euro 6 (s/s) 2dr",
+        "mileage": "35,000 miles",
+        "price": "\u00a345,989",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f15b34d75c36498395c405d6e48c5315.jpg",
+        "hook": "Competition package, Steptronic automatic gearbox.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2020",
+        "make": "BMW",
+        "model": "X2",
+        "trim": "2.0 20d M Sport Auto xDrive Euro 6 (s/s) 5dr",
+        "mileage": "37,000 miles",
+        "price": "\u00a316,589",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/94a0a264b39f4a49857cc6e33148e6f1.jpg",
+        "hook": "XDrive four-wheel drive.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "RS Q3",
+        "trim": "2.5 TFSI Sportback S Tronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "55,000 miles",
+        "price": "\u00a332,989",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f7de9c95d73e424babffdf865b0ad33b.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2018",
+        "make": "AUDI",
+        "model": "Q2",
+        "trim": "1.6 TDI 30 S line S Tronic Euro 6 (s/s) 5dr",
+        "mileage": "58,000 miles",
+        "price": "\u00a312,489",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/51b4ab10163f4140a8a7e2bceebefc67.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "http://tngautomotive.com"
+      }
+    ]
+  },
+  "the-auto-lounge-limited": {
+    "dealer_name": "The Auto Lounge Limited",
+    "cars": [
+      {
+        "year": "2008",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "4.2 FSI V8 quattro Euro 4 2dr",
+        "mileage": "56,196 miles",
+        "price": "\u00a340,990",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/425a2ceaf05840b2a985519bec1f5291.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "the-gemini-group": {
+    "dealer_name": "The Gemini Group",
+    "cars": [
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "RSQ8",
+        "trim": "4.0 TFSI V8 Carbon Black Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "47,512 miles",
+        "price": "\u00a364,912",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/0a8fabe6b069425781fda88e414b847f.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "the-old-star-garage": {
+    "dealer_name": "The Old Star Garage",
+    "cars": [
+      {
+        "year": "2001",
+        "make": "PORSCHE",
+        "model": "911",
+        "trim": "3.4 996 Carrera 2 Tiptronic S 2dr",
+        "mileage": "74,000 miles",
+        "price": "\u00a314,911",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/73744642df414390bc1f8ba5636c5b61.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "the-ombersley-collection": {
+    "dealer_name": "The Ombersley Collection",
+    "cars": [
+      {
+        "year": "2000",
+        "make": "BMW",
+        "model": "Z8",
+        "trim": "5.0 V8 Euro 3 2dr",
+        "mileage": "69,593 miles",
+        "price": "\u00a3144,850",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/ce46f202de8c400f95ba6cdd8ea22f64.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "tier-one-automotive": {
+    "dealer_name": "Tier One Automotive",
+    "cars": [
+      {
+        "year": "2008",
+        "make": "BMW",
+        "model": "Z4 M",
+        "trim": "3.2i Euro 4 2dr",
+        "mileage": "4,300 miles",
+        "price": "\u00a364,980",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/77a5f35d444c4549b63c6a678f07b09b.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://www.tieroneautomotive.co.uk/"
+      }
+    ]
+  },
+  "tom-hartley": {
+    "dealer_name": "Tom Hartley",
+    "cars": [
+      {
+        "year": "2011",
+        "make": "MERCEDES",
+        "model": "SLS",
+        "trim": "6.2 63 V8 AMG SpdS DCT Euro 5 2dr",
+        "mileage": "",
+        "price": "\u00a3649,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/5adc6069b1334eeda0a4af550c7c0acd.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      },
+      {
+        "year": "1960",
+        "make": "PORSCHE",
+        "model": "356",
+        "trim": "T5 1600 Super 90",
+        "mileage": "28,500 miles",
+        "price": "\u00a3159,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/917dd4d1596849d29455a10a54cf6e2d.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "tom-hartley-jnr": {
+    "dealer_name": "Tom Hartley Jnr",
+    "cars": [
+      {
+        "year": "2000",
+        "make": "BMW",
+        "model": "Z8",
+        "trim": "5.0 V8 Euro 3 2dr",
+        "mileage": "22,012 miles",
+        "price": "\u00a3199,500",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/26f9e26d6c03461ca4378e4d3e4a3139.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "http://www.tomhartleyjnr.com/"
+      },
+      {
+        "year": "1955",
+        "make": "PORSCHE",
+        "model": "356",
+        "trim": "Pre-A Super Speedster 1.5",
+        "mileage": "1,122 miles",
+        "price": "\u00a3350,000",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/9b087c47a14d4038af8e2fb6a7ef25bf.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "http://www.tomhartleyjnr.com/"
+      }
+    ]
+  },
+  "tong-park-cars-leeds": {
+    "dealer_name": "Tong Park Cars Leeds",
+    "cars": [
+      {
+        "year": "2014",
+        "make": "AUDI",
+        "model": "RS7",
+        "trim": "4.0 TFSI V8 Sportback Tiptronic quattro Euro 5 (s/s) 5dr",
+        "mileage": "69,500 miles",
+        "price": "\u00a325,495",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f52dfcd755504e72ba5df977f56120da.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": "http://www.tpcleeds.co.uk"
+      }
+    ]
+  },
+  "top-gear-stoke-limited": {
+    "dealer_name": "Top Gear Stoke Limited",
+    "cars": [
+      {
+        "year": "2018",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "DCT 3.0 3dr Saloon Automatic Petrol",
+        "mileage": "13,169 miles",
+        "price": "\u00a325,495",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e856927c10784e34a973cd88d3026d41.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "total-vehicle-solutions": {
+    "dealer_name": "Total Vehicle Solutions",
+    "cars": [
+      {
+        "year": "2014",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo DCT Euro 6 (s/s) 2dr",
+        "mileage": "51,122 miles",
+        "price": "\u00a320,999",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/40bf3c2c10cf4a878e8af5851a715c36.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "trans-city-skoda-ltd": {
+    "dealer_name": "Trans City Skoda Ltd",
+    "cars": [
+      {
+        "year": "2020",
+        "make": "MERCEDES",
+        "model": "230 SL",
+        "trim": "",
+        "mileage": "",
+        "price": "\u00a360,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f697126aefb042d48ecec10508b51666.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "ub6-cars-ltd": {
+    "dealer_name": "UB6 CARS LTD",
+    "cars": [
+      {
+        "year": "2003",
+        "make": "PORSCHE",
+        "model": "911",
+        "trim": "3.6 996 Carrera 4 Cabriolet Tiptronic S AWD 2dr",
+        "mileage": "52,000 miles",
+        "price": "\u00a318,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/1386ea88873545c1b6149f6615ed6e2a.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "https://ub6cars.co.uk"
+      }
+    ]
+  },
+  "uk-wheels-ltd": {
+    "dealer_name": "UK Wheels Ltd",
+    "cars": [
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "RSQ8",
+        "trim": "4.0 TFSI V8 Carbon Black Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "52,100 miles",
+        "price": "\u00a363,180",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/dbbf8a7baf8f48f9999881b683b22ca7.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": "http://www.ukwheelslimited.co.uk"
+      }
+    ]
+  },
+  "uber-gt-ltd": {
+    "dealer_name": "Uber Gt Ltd",
+    "cars": [
+      {
+        "year": "1989",
+        "make": "BMW",
+        "model": "Z1",
+        "trim": "2.5I - Stunning Low Mileage Example 2dr",
+        "mileage": "11,480 miles",
+        "price": "\u00a354,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/98003a31f3f54296a90de5bfd970041e.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "vicks-motors-ltd": {
+    "dealer_name": "Vicks Motors Ltd",
+    "cars": [
+      {
+        "year": "2010",
+        "make": "BMW",
+        "model": "3 Series",
+        "trim": "M Sport Business Edition Touring 2.0 5dr",
+        "mileage": "70,000 miles",
+        "price": "\u00a33,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/b51234abed7c468696bca07e582fb03f.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "w-r-cars": {
+    "dealer_name": "W R Cars",
+    "cars": [
+      {
+        "year": "2006",
+        "make": "AUDI",
+        "model": "RS4",
+        "trim": "4.2 quattro 4dr",
+        "mileage": "62,070 miles",
+        "price": "\u00a321,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/c4dc3af3d96546fca9cab7d1b6d51c9e.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "winslow-motor-ltd": {
+    "dealer_name": "WINSLOW MOTOR LTD",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "BMW",
+        "model": "M4",
+        "trim": "3.0 BiTurbo DCT Euro 6 (s/s) 2dr",
+        "mileage": "78,000 miles",
+        "price": "\u00a318,689",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/90e349eeabbd4c4997767e0b40c5b3bc.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": "https://winslowmotors.co.uk/"
+      }
+    ]
+  },
+  "wheelbase-bagshot": {
+    "dealer_name": "Wheelbase Bagshot",
+    "cars": [
+      {
+        "year": "1968",
+        "make": "MERCEDES",
+        "model": "280 SL",
+        "trim": "",
+        "mileage": "26,736 miles",
+        "price": "\u00a3249,999",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/2b198e31d97347c88c10fed7a9d17dd8.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2008",
+        "make": "AUDI",
+        "model": "R8",
+        "trim": "4.2 FSI V8 quattro Euro 4 2dr",
+        "mileage": "44,850 miles",
+        "price": "\u00a342,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/3a4bec951cc6413896aed1879edb20e5.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "whitethor-cars": {
+    "dealer_name": "Whitethor Cars",
+    "cars": [
+      {
+        "year": "2019",
+        "make": "AUDI",
+        "model": "TT RS",
+        "trim": "2.5 TFSI Sport Edition S Tronic quattro Euro 6 (s/s) 3dr",
+        "mileage": "55,000 miles",
+        "price": "\u00a336,000",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/929e17e363ae4ca7b9b0b3f685ffc980.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "william-loughran": {
+    "dealer_name": "William Loughran",
+    "cars": [
+      {
+        "year": "1968",
+        "make": "MERCEDES",
+        "model": "280 SL",
+        "trim": "",
+        "mileage": "636 miles",
+        "price": "\u00a3169,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/8aa14312be0e4c09b9a5f754819b028b.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "williams-west-performance": {
+    "dealer_name": "Williams & West Performance",
+    "cars": [
+      {
+        "year": "2017",
+        "make": "BMW",
+        "model": "M2",
+        "trim": "3.0i DCT Euro 6 (s/s) 2dr",
+        "mileage": "70,000 miles",
+        "price": "\u00a324,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/342d0f967b994f6496afaf41bf209af7.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "williams-crawford-ltd": {
+    "dealer_name": "Williams Crawford Ltd",
+    "cars": [
+      {
+        "year": "1963",
+        "make": "PORSCHE",
+        "model": "356",
+        "trim": "C LHD coupe by Karmann 1964 1.7 2dr",
+        "mileage": "15,542 miles",
+        "price": "\u00a379,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/a699dac16e4845e29b66dca3cebb1a73.jpg",
+        "hook": "The lower-mileage of the 3 we sourced from this dealer.",
+        "dealer_website": "http://www.williamscrawford.co.uk/"
+      },
+      {
+        "year": "1957",
+        "make": "PORSCHE",
+        "model": "356",
+        "trim": "A (T1) LHD Speedster by Reutter 1957 1.7 2dr",
+        "mileage": "29,961 miles",
+        "price": "\u00a3295,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/948315e9f41f427c88028a5788194799.jpg",
+        "hook": "One of 3 we sourced from this dealer.",
+        "dealer_website": "http://www.williamscrawford.co.uk/"
+      },
+      {
+        "year": "1954",
+        "make": "PORSCHE",
+        "model": "356",
+        "trim": "Pre A LHD coupe by Reutter 1954 1.6 2dr",
+        "mileage": "67,701 miles",
+        "price": "\u00a3134,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/780559d93ff240aa951b3e556271b4fa.jpg",
+        "hook": "The higher-mileage of the 3 we sourced from this dealer.",
+        "dealer_website": "http://www.williamscrawford.co.uk/"
+      }
+    ]
+  },
+  "woburn-autos": {
+    "dealer_name": "Woburn Autos",
+    "cars": [
+      {
+        "year": "2009",
+        "make": "BMW",
+        "model": "M3",
+        "trim": "4.0 V8 DCT Euro 4 2dr",
+        "mileage": "79,000 miles",
+        "price": "\u00a314,999",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/10aa4313efd84747974fd56d7fa93734.jpg",
+        "hook": "DCT dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "wrightson-automotive-limited": {
+    "dealer_name": "Wrightson Automotive Limited",
+    "cars": [
+      {
+        "year": "2015",
+        "make": "Volkswagen",
+        "model": "XL1",
+        "trim": "2.0 2dr",
+        "mileage": "3,400 miles",
+        "price": "\u00a369,950",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/2511c843082747a3b4c35bb0a5f656ac.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "wynyard-motor-company": {
+    "dealer_name": "Wynyard Motor Company",
+    "cars": [
+      {
+        "year": "2020",
+        "make": "PORSCHE",
+        "model": "718 Cayman",
+        "trim": "2.0T T PDK Euro 6 (s/s) 2dr",
+        "mileage": "50,029 miles",
+        "price": "\u00a337,390",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/a27095cb36404edbaea6e7fec72159c0.jpg",
+        "hook": "PDK dual-clutch gearbox.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "x-motors": {
+    "dealer_name": "X Motors",
+    "cars": [
+      {
+        "year": "1997",
+        "make": "BMW",
+        "model": "Z3",
+        "trim": "1.9i 2dr",
+        "mileage": "67,000 miles",
+        "price": "\u00a32,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/4e40c0b9bc29432d974516b5d5d46628.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": "http://highgrovemotorsdewsbury.flexwebsites.co.uk/"
+      }
+    ]
+  },
+  "zci-motors": {
+    "dealer_name": "ZCI Motors",
+    "cars": [
+      {
+        "year": "2014",
+        "make": "AUDI",
+        "model": "RS Q3",
+        "trim": "2.5 TFSI S Tronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "37,020 miles",
+        "price": "\u00a315,999",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/e663bee050e2418699c2e08f3b0a5095.jpg",
+        "hook": "The lower-mileage of the 3 we sourced from this dealer. Quattro four-wheel drive.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2014",
+        "make": "AUDI",
+        "model": "RS Q3",
+        "trim": "2.5 TFSI S Tronic quattro Euro 5 (s/s) 5dr",
+        "mileage": "39,296 miles",
+        "price": "\u00a316,499",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/43f6c345fb73444985c9d70f91e0b74e.jpg",
+        "hook": "One of 3 we sourced from this dealer. Quattro four-wheel drive.",
+        "dealer_website": ""
+      },
+      {
+        "year": "2014",
+        "make": "AUDI",
+        "model": "RS Q3",
+        "trim": "2.5 TFSI S Tronic quattro Euro 5 (s/s) 5dr",
+        "mileage": "47,320 miles",
+        "price": "\u00a314,999",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/1cdf4ac0706c405b82c130007f5352c0.jpg",
+        "hook": "The higher-mileage of the 3 we sourced from this dealer. Quattro four-wheel drive.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "zedline-cars-ltd": {
+    "dealer_name": "ZEDLINE CARS LTD",
+    "cars": [
+      {
+        "year": "2020",
+        "make": "AUDI",
+        "model": "RS7",
+        "trim": "4.0 TFSI V8 Carbon Black Sportback Tiptronic quattro Euro 6 (s/s) 5dr",
+        "mileage": "59,000 miles",
+        "price": "\u00a355,989",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/f493b940b6bd42fcb10d36d82a5ff40d.jpg",
+        "hook": "Quattro four-wheel drive.",
+        "dealer_website": "http://www.zedlinecarsltd.co.uk"
+      }
+    ]
+  },
+  "zg-prestige": {
+    "dealer_name": "ZG Prestige",
+    "cars": [
+      {
+        "year": "2019",
+        "make": "AUDI",
+        "model": "TT RS",
+        "trim": "2.5 TFSI Sport Edition Roadster S Tronic quattro Euro 6 (s/s) 2dr",
+        "mileage": "41,200 miles",
+        "price": "\u00a337,995",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/0a8179cb3dad4e08b98e4e820a43fe28.jpg",
+        "hook": "Quattro four-wheel drive, roadster body.",
+        "dealer_website": ""
+      }
+    ]
+  },
+  "anycolourcar-com": {
+    "dealer_name": "anycolourcar.com",
+    "cars": [
+      {
+        "year": "2002",
+        "make": "AUDI",
+        "model": "A2",
+        "trim": "1.4 TDI SE 5dr",
+        "mileage": "49,978 miles",
+        "price": "\u00a36,999",
+        "photo_url": "https://m.atcdn.co.uk/a/media/w800/ad425a7a96d34ae28d8d7bf82ebd4d38.jpg",
+        "hook": "A clean, real example \u2014 spec and mileage as listed above.",
+        "dealer_website": ""
+      }
+    ]
+  }
+}
