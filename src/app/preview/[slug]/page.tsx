@@ -102,8 +102,8 @@ export default async function DealerPreviewPage({
 
         <div className="mx-auto mt-6 max-w-2xl space-y-4 text-left">
           <p className="text-[16px] leading-[1.75] text-charcoal">
-            <strong className="text-ink">Kerb</strong> (kerb.autos) is a new marketplace and
-            content curation brand focused on niche sectors within the second-hand car market in
+            <strong className="text-ink">Kerb</strong> (kerb.autos) is a new marketplace and we
+            curate content focused on niche sectors within the second-hand car market in
             the UK. Our interest is creating awareness of cars with specific focus on;
             Desirability, Scarcity, Investment potential, Reliability, Efficiency and Cost to run
             as well as those that may be overlooked, and{' '}
