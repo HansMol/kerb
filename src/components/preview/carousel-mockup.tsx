@@ -36,7 +36,7 @@ export function CarouselMockup({
           <div className="flex h-7 w-7 flex-shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-charcoal to-[#2A2A2E] text-[10px] font-semibold text-platinum">
             K
           </div>
-          <span className="text-xs font-semibold text-platinum">kerb.autos</span>
+          <span className="text-xs font-semibold text-platinum">realkerbappeal</span>
           <span className="ml-auto text-[11px] font-semibold text-[#4A8FE7]">Follow</span>
         </div>
 
@@ -137,7 +137,7 @@ export function CarouselMockup({
           className="px-3.5 pb-3.5 text-xs leading-[1.5] text-platinum-deep"
           style={{ whiteSpace: 'pre-wrap' }}
         >
-          <span className="font-semibold text-platinum">kerb.autos</span>{' '}
+          <span className="font-semibold text-platinum">realkerbappeal</span>{' '}
           {caption || (
             <>
               {slides[0]?.headline} <span className="text-[#4A8FE7]">#RealKerbAppeal</span>
