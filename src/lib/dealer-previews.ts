@@ -1,5 +1,14 @@
 import allPreviews from '@/data/dealer-previews.json'
 
+export type Slide = {
+  photo: string
+  kind: 'cover' | 'spec' | 'text' | 'breathing' | 'verdict'
+  kicker: string
+  headline: string
+  body?: string
+  specs?: { v: string; k: string }[]
+}
+
 export type PreviewCar = {
   year: string
   make: string
@@ -10,6 +19,14 @@ export type PreviewCar = {
   photo_url: string
   hook: string
   dealer_website: string
+  dealer_email?: string
+  dealer_phone?: string
+  slides?: Slide[]
+  // Added 18 Aug 2026: the real editorial content (spec facts, why-this-one,
+  // verdict) moved off the image overlays and into the post caption — Hans's
+  // call after reviewing the text-heavy version, so slides now carry only a
+  // cover kicker and a closing "link in description" note.
+  caption?: string
 }
 
 export type DealerPreview = {

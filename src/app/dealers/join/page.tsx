@@ -48,6 +48,11 @@ const STANDARDS = [
     title: 'No compulsory tools. No forced flow.',
     body: "There is no Deal Builder. There is no reservation system you're opted into by default. You run the deal from first contact to handover. As you always have.",
   },
+  {
+    num: 'Standard 04',
+    title: 'Your stock, featured — free.',
+    body: "Registered dealers may have specific cars from their live inventory featured across Kerb's own TikTok, Instagram, YouTube and Facebook content — always with your permission on the specific vehicle, always credited to you by name, at no cost. For now, selection is based on fit with Kerb's content pillars (desirability, scarcity, investment potential, reliability, efficiency, cost to run), so not every car will be featured. Either way, your full inventory is visible to everyone browsing Kerb once you're registered. This is content Kerb produces to bring buyers to the platform, not an ad you pay for.",
+  },
 ]
 
 const CHARTER = [
@@ -73,6 +78,7 @@ const SOLO_FEATURES = [
   'Every enquiry goes direct to you — no platform inbox',
   'Verified dealer badge',
   'Listing performance dashboard',
+  'Eligible for free social content features (with your permission, per car)',
 ]
 
 const PRO_FEATURES = [
@@ -81,6 +87,7 @@ const PRO_FEATURES = [
   'Spotlight showcase — pin 3 vehicles to the top of your profile',
   'Verified dealer badge',
   'Listing performance dashboard',
+  'Eligible for free social content features (with your permission, per car)',
 ]
 
 const PRICING_FOOTNOTES = [
@@ -215,7 +222,7 @@ export default function DealersPage() {
           Three things every dealer should expect from a marketplace.{' '}
           <span className="whitespace-nowrap">Not features — standards.</span>
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {STANDARDS.map(({ num, title, body }) => (
             <div key={num} className="bg-white border border-[#E5E5E7] rounded-lg p-9">
               <p className="text-[11px] font-semibold tracking-[0.1em] uppercase text-[#C4C6CC] mb-5">{num}</p>
@@ -274,14 +281,12 @@ export default function DealersPage() {
       </section>
 
       {/* ── Honest ── */}
-      <section className="bg-[#F8F8FA] px-6 sm:px-10 lg:px-16 py-[72px] grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
-        <div>
-          <SectionLabel light>Straight with you</SectionLabel>
-          <h2 className="text-[clamp(32px,3vw,44px)] font-normal text-[#0A0A0F] leading-[1.2] tracking-[-0.01em]">
-            We're building this. We're not pretending otherwise.
-          </h2>
-        </div>
-        <div className="space-y-4">
+      <section className="bg-[#F8F8FA] px-6 sm:px-10 lg:px-16 py-[72px]">
+        <SectionLabel light>Straight with you</SectionLabel>
+        <h2 className="text-[clamp(32px,3vw,44px)] font-normal text-[#0A0A0F] leading-[1.2] tracking-[-0.01em] mb-6">
+          We're building this. We're not pretending otherwise.
+        </h2>
+        <div className="space-y-4 max-w-[900px]">
           <p className="text-[16px] text-[#6E6E73] leading-[1.8]">
             Kerb is a new platform. We don't have ten years of traffic data and we won't claim to. What we have is a commitment to building something the industry actually needs — and the willingness to earn your trust over time, not demand it on day one.
           </p>
@@ -293,7 +298,7 @@ export default function DealersPage() {
 
       {/* ── Pricing ── */}
       <section className="bg-[#F8F8FA] px-6 sm:px-10 lg:px-16 py-[72px]" id="pricing">
-        <div className="max-w-[1040px]">
+        <div className="max-w-[1040px] mx-auto">
           <h2 className="text-[clamp(32px,3.5vw,48px)] font-light text-[#0A0A0F] leading-[1.1] tracking-[-0.01em] mb-4">
             No surprises.
           </h2>
@@ -301,7 +306,7 @@ export default function DealersPage() {
             You only pay for months we deliver
           </p>
           <p className="text-[17px] text-[#6E6E73] leading-[1.7] max-w-[520px] mb-14">
-            List free. We don&apos;t charge you until you&apos;ve had three real buyer enquiries — enough to prove it&apos;s not a fluke. After that, it&apos;s month by month: send you an enquiry that month and you pay your rate; send you nothing and you pay nothing. No enquiry, no charge — every month, not just at the start.
+            <strong className="font-bold text-[#0A0A0F]">List free.</strong> We don&apos;t charge you until you&apos;ve had three real buyer enquiries — enough to prove it&apos;s not a fluke. After that, it&apos;s month by month: send you an enquiry that month and you pay your rate; send you nothing and you pay nothing. No enquiry, no charge — every month, not just at the start.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -316,8 +321,8 @@ export default function DealersPage() {
                 <span className="text-[44px] font-light text-[#0A0A0F] tracking-[-0.02em] leading-none">55</span>
                 <span className="text-[15px] text-[#6E6E73]">/mo</span>
               </div>
-              <p className="text-[12px] font-semibold text-[#A0714A] mb-3">
-                Free until your 3rd enquiry — billed only in months you get one
+              <p className="text-[13px] font-semibold text-[#8A6040] bg-[#F5EAE0] border border-[#E5D2BE] rounded-md px-3 py-2.5 mb-3 leading-[1.5]">
+                You pay £0 until your 3rd real enquiry — and £0 again in any future month with none.
               </p>
               <p className="text-[13px] text-[#6E6E73] mb-5 pb-5 border-b border-[#E5E5E7]">
                 Standard rate <span className="line-through text-[#A8AAB0]">£79/mo</span> after founding places are filled
@@ -340,8 +345,8 @@ export default function DealersPage() {
                 <span className="text-[44px] font-light text-[#0A0A0F] tracking-[-0.02em] leading-none">132</span>
                 <span className="text-[15px] text-[#6E6E73]">/mo</span>
               </div>
-              <p className="text-[12px] font-semibold text-[#A0714A] mb-3">
-                Free until your 3rd enquiry — billed only in months you get one
+              <p className="text-[13px] font-semibold text-[#8A6040] bg-[#F5EAE0] border border-[#E5D2BE] rounded-md px-3 py-2.5 mb-3 leading-[1.5]">
+                You pay £0 until your 3rd real enquiry — and £0 again in any future month with none.
               </p>
               <p className="text-[13px] text-[#6E6E73] mb-5 pb-5 border-b border-[#E5E5E7]">
                 Standard rate <span className="line-through text-[#A8AAB0]">£189/mo</span> after founding places are filled
@@ -354,6 +359,15 @@ export default function DealersPage() {
               </Link>
             </div>
 
+          </div>
+
+          <div className="bg-[#0A0A0F] rounded-xl p-8 mb-8 text-center">
+            <p className="text-white text-[19px] font-medium leading-[1.4] mb-2">
+              This isn&apos;t a subscription you pay for and hope pays off.
+            </p>
+            <p className="text-[#C4C6CC] text-[15px] leading-[1.7] max-w-[560px] mx-auto">
+              You register free, list free, and pay nothing at all until Kerb has actually sent you 3 buyer enquiries. From then on it&apos;s month by month — a quiet month with zero enquiries costs you nothing, this month, next month, or any month after. You only ever pay in a month Kerb has already delivered for you.
+            </p>
           </div>
 
           <div className="flex flex-wrap gap-6">

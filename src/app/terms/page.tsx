@@ -126,7 +126,10 @@ export default function TermsPage() {
           The Kerb name, wordmark, and platform design are the property of Ice Clean Works Ltd. Dealers grant Kerb a non-exclusive licence to display listing content (text, photos, specifications) on the platform for the purpose of presenting the listing to buyers. This licence ends when the listing is removed or the dealer account is closed.
         </p>
         <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
-          Dealers also grant Kerb a non-exclusive licence to use listing content — including photos — in Kerb&apos;s own marketing, including social media, to promote the listing and the Kerb platform. No dealer is paid for this use, and no dealer is identified in the resulting post — a buyer only learns which dealer holds the car by clicking through to its listing on Kerb. This licence ends when the listing is removed or the dealer account is closed, except that marketing material already published before that point is not required to be taken down retrospectively.
+          Dealers also grant Kerb a non-exclusive licence to use listing content — including photos — in Kerb&apos;s own marketing, including social media, to promote the listing and the Kerb platform. No dealer is paid for this use. Where Kerb features a vehicle, the resulting post credits the dealer by name and links back to the dealer&apos;s listing. This licence ends when the listing is removed or the dealer account is closed, except that marketing material already published before that point is not required to be taken down retrospectively.
+        </p>
+        <p className="text-base leading-[1.8] text-[#3A3A3E] mb-4">
+          Being featured is not guaranteed for any vehicle or dealer. Kerb selects vehicles for content based on fit with its content pillars — currently desirability, scarcity, investment potential, reliability, efficiency, and cost to run — and these pillars may change over time. Registration and the licence above do not entitle a dealer to have any particular vehicle, or any vehicle at all, featured.
         </p>
 
         <h2 className="text-xl font-semibold text-[#0A0A0F] mt-12 mb-4 leading-snug">5. Limitation of liability</h2>
