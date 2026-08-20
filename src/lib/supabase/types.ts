@@ -132,7 +132,20 @@ type PhoneRevealEventRow = {
 
 type PhoneRevealEventInsert = Omit<PhoneRevealEventRow, 'id' | 'created_at'>
 
-export type { DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate, PublicListingRow, EnquiryRow, EnquiryInsert, AdvertiserCategory, AdvertiserRow, AdvertiserClickRow, AdvertiserApplicationRow, WaitlistEntryRow, WaitlistEntryInsert, PhoneRevealEventRow, PhoneRevealEventInsert }
+type DealerContentPermissionRow = {
+  id: string
+  dealer_slug: string
+  dealer_name: string
+  car_summary: string
+  decision: 'yes' | 'no'
+  source_ip: string | null
+  user_agent: string | null
+  created_at: string
+}
+
+type DealerContentPermissionInsert = Omit<DealerContentPermissionRow, 'id' | 'created_at'>
+
+export type { DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate, PublicListingRow, EnquiryRow, EnquiryInsert, AdvertiserCategory, AdvertiserRow, AdvertiserClickRow, AdvertiserApplicationRow, WaitlistEntryRow, WaitlistEntryInsert, PhoneRevealEventRow, PhoneRevealEventInsert, DealerContentPermissionRow, DealerContentPermissionInsert }
 
 export type Database = {
   public: {
@@ -216,6 +229,12 @@ export type Database = {
             referencedColumns: ['id']
           }
         ]
+      }
+      dealer_content_permissions: {
+        Row: DealerContentPermissionRow
+        Insert: DealerContentPermissionInsert
+        Update: never
+        Relationships: []
       }
     }
     Views: {
