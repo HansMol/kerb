@@ -70,6 +70,24 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             gtag('config','${process.env.NEXT_PUBLIC_GA_ID}');
           `}</Script>
         </>}
+        {/* Page counter — the same one Ice Clean Works and Winnowed report to,
+            so all three businesses read from one place. Google Analytics and
+            Clarity below answer questions about this site; this answers "what
+            happened across the businesses today", which neither can.
+
+            It matters most on /preview/*. The outreach email carries a bare
+            URL rather than a tracked anchor — right for deliverability, but it
+            means Instantly cannot see clicks, and Round 2 reads 0 clicks on
+            126 opens because of it rather than because nobody looked. Counting
+            at the page gets the number back without touching the email.
+
+            A day, a page, a referring host. No cookie, no address, nothing
+            about a person. */}
+        <Script id="kerb-visit-count" strategy="afterInteractive">{`
+          try{new Image().src="https://winnowed.co.uk/px?s=kerb&p="
+            +encodeURIComponent(location.pathname)
+            +"&r="+encodeURIComponent(document.referrer)}catch(e){}
+        `}</Script>
         {/* Microsoft Clarity (heatmaps) */}
         {process.env.NEXT_PUBLIC_CLARITY_ID && (
           <Script id="clarity-init" strategy="afterInteractive">{`
