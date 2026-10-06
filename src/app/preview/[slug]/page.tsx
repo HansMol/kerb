@@ -148,6 +148,24 @@ export default async function DealerPreviewPage({
         )}
       </main>
 
+      {/* ── Decision ── */}
+      <section className="bg-white px-6 py-12 text-center">
+        <h2 className="mx-auto max-w-lg text-xl font-bold text-ink sm:text-2xl">
+          {decisionHeading}
+        </h2>
+        <p className="mx-auto mt-2 mb-8 max-w-md text-[15px] text-charcoal">
+          One click either way — no account, no form. You can ask us to take anything down at
+          any time, no questions asked.
+        </p>
+
+        <PermissionButtons
+          dealerSlug={slug}
+          dealerName={preview.dealer_name}
+          carSummary={carSummary}
+        />
+
+      </section>
+
       {/* ── What we're asking ── */}
       <section className="bg-white px-6 py-14">
         <div className="mx-auto max-w-2xl">
@@ -190,22 +208,8 @@ export default async function DealerPreviewPage({
         </div>
       </section>
 
-      {/* ── Decision ── */}
-      <section className="bg-white px-6 py-16 text-center">
-        <h2 className="mx-auto max-w-lg text-xl font-bold text-ink sm:text-2xl">
-          {decisionHeading}
-        </h2>
-        <p className="mx-auto mt-2 mb-8 max-w-md text-[15px] text-charcoal">
-          One click either way — no account, no form. You can ask us to take anything down at
-          any time, no questions asked.
-        </p>
-
-        <PermissionButtons
-          dealerSlug={slug}
-          dealerName={preview.dealer_name}
-          carSummary={carSummary}
-        />
-
+      {/* ── Register ── */}
+      <section className="bg-white px-6 pb-16 text-center">
         <div className="mx-auto mt-14 max-w-2xl border-t border-silver-line pt-10">
           <p className="text-[15px] leading-[1.6] text-charcoal sm:whitespace-nowrap">
             Or register your dealership with Kerb and we&rsquo;ll promote more than just this one car.
