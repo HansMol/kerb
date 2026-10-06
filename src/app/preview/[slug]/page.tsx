@@ -212,7 +212,7 @@ export default async function DealerPreviewPage({
       <section className="bg-white px-6 pb-16 text-center">
         <div className="mx-auto mt-14 max-w-2xl border-t border-silver-line pt-10">
           <p className="text-[15px] leading-[1.6] text-charcoal sm:whitespace-nowrap">
-            Or register your dealership with Kerb and we&rsquo;ll promote more than just this one car.
+            Register your dealership with Kerb and we&rsquo;ll promote more than just one car.
           </p>
           <Link
             href="/dealers/join"
