@@ -107,7 +107,7 @@ export default async function DealerPreviewPage({
             Desirability, Scarcity, Investment potential, Reliability, Efficiency and Cost to run
             as well as those that may be overlooked, and{' '}
             {singleCar ? (
-              <>one of {preview.dealer_name}&rsquo;s cars is</>
+              <>1 of {preview.dealer_name}&rsquo;s cars is</>
             ) : (
               <>
                 {carCount} of {preview.dealer_name}&rsquo;s cars are
@@ -211,7 +211,7 @@ export default async function DealerPreviewPage({
       <section className="bg-white px-6 pb-16 text-center">
         <div className="mx-auto mt-14 max-w-2xl border-t border-silver-line pt-10">
           <p className="text-[15px] leading-[1.6] text-charcoal sm:whitespace-nowrap">
-            Register your dealership with Kerb and we&rsquo;ll promote more than just one car.
+            Register your dealership with Kerb and we&rsquo;ll promote more than just 1 car.
           </p>
           <Link
             href="/dealers/join"
