@@ -157,7 +157,7 @@ export function CarouselMockup({
         ))}
       </div>
       <p className="mt-2 text-center text-[11px] text-platinum-deep">
-        Slide {active + 1} of {slides.length} — mockup of the finished post, sourced from {dealerName}&apos;s real
+        Slide {active + 1} of {slides.length} - mockup of the finished post, sourced from {dealerName}&apos;s real
         listing photos
       </p>
     </div>

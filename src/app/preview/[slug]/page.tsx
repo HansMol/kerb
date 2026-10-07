@@ -102,9 +102,8 @@ export default async function DealerPreviewPage({
 
         <div className="mx-auto mt-6 max-w-2xl space-y-4 text-left">
           <p className="text-[16px] leading-[1.75] text-charcoal">
-            <strong className="text-ink">Kerb</strong> (kerb.autos) is a new marketplace and we
-            curate content focused on niche sectors within the second-hand car market in
-            the UK. Our interest is creating awareness of cars with specific focus on;
+            <strong className="text-ink">Kerb</strong> (kerb.autos) is curating content focusing on
+            niche sectors within the second-hand car market. Our interest is creating awareness of cars with specific focus on;
             Desirability, Scarcity, Investment potential, Reliability, Efficiency and Cost to run
             as well as those that may be overlooked, and{' '}
             {singleCar ? (
@@ -118,7 +117,7 @@ export default async function DealerPreviewPage({
           </p>
           <p className="text-[16px] leading-[1.75] text-charcoal">
             We&rsquo;d like to feature {singleCar ? 'it' : 'them'} in short-form video and
-            carousel content across Kerb&rsquo;s TikTok, Instagram, YouTube and Facebook — real
+            carousel content across Kerb&rsquo;s TikTok, Instagram, YouTube and Facebook - real
             dealer stock, real content, no cost to you.
           </p>
         </div>
@@ -154,7 +153,7 @@ export default async function DealerPreviewPage({
           {decisionHeading}
         </h2>
         <p className="mx-auto mt-2 mb-8 max-w-md text-[15px] text-charcoal">
-          One click either way — no account, no form. You can ask us to take anything down at
+          One click either way - no account, no form. You can ask us to take anything down at
           any time, no questions asked.
         </p>
 
@@ -174,8 +173,8 @@ export default async function DealerPreviewPage({
           </p>
           <ul className="space-y-4">
             {[
-              'Permission to use the photos already on your listings — no new photos needed',
-              'Zero time from your team — we handle production, start to finish',
+              'Permission to use the photos already on your listings - no new photos needed',
+              'Zero time from your team - we handle production, start to finish',
               `Every single post credits ${preview.dealer_name} by name, with a link back to you`,
             ].map((text) => (
               <li key={text} className="flex items-start gap-3 text-[16px] leading-[1.6] text-charcoal">
@@ -223,7 +222,7 @@ export default async function DealerPreviewPage({
           <p className="mt-4 text-[13px] leading-[1.6] text-stone">
             Registration and listing your vehicles is free.
             <br />
-            All registered dealers are eligible for free content features — for now, we select
+            All registered dealers are eligible for free content features - for now, we select
             vehicles that fit the pillars above, so not every car will be featured. Either way,
             your full inventory is visible to everyone browsing Kerb once you&rsquo;re registered.
           </p>

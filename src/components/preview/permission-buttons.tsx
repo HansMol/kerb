@@ -31,7 +31,7 @@ export function PermissionButtons({
   if (status === 'yes') {
     return (
       <p className="text-[16px] font-medium text-ink">
-        Thanks — we&rsquo;ve got your yes. We&rsquo;ll let you know once we&rsquo;ve posted your
+        Thanks - we&rsquo;ve got your yes. We&rsquo;ll let you know once we&rsquo;ve posted your
         content.
       </p>
     )
@@ -39,7 +39,7 @@ export function PermissionButtons({
   if (status === 'no') {
     return (
       <p className="text-[16px] font-medium text-ink">
-        No problem — we won&rsquo;t feature this car. Thanks for letting us know.
+        No problem - we won&rsquo;t feature this car. Thanks for letting us know.
       </p>
     )
   }
@@ -64,7 +64,7 @@ export function PermissionButtons({
       </div>
       {status === 'error' && (
         <p className="mt-3 text-[13px] text-stone">
-          That didn&rsquo;t go through — please try again, or just reply to the email.
+          That didn&rsquo;t go through - please try again, or just reply to the email.
         </p>
       )}
     </div>

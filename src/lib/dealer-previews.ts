@@ -41,8 +41,33 @@ export type DealerPreview = {
 // by webpack, which works the same in Workers as anywhere else.
 const previews = allPreviews as Record<string, DealerPreview>
 
+// Hans, 7 Oct 2026: no long dashes ever, only hyphens. The generated hooks,
+// captions and spec values carry em/en dashes, so they are swapped at display
+// time rather than by rewriting the data. dealer_name is the dealer's own name
+// (and is what a permission is recorded against), so it is left untouched.
+function noDash(s: string): string {
+  return s.replace(/\s+[—–]\s+/g, ' - ').replace(/[—–]/g, '-')
+}
+
+function cleanCar(car: PreviewCar): PreviewCar {
+  return {
+    ...car,
+    trim: noDash(car.trim ?? ''),
+    hook: noDash(car.hook ?? ''),
+    caption: car.caption === undefined ? undefined : noDash(car.caption),
+    slides: car.slides?.map((s) => ({
+      ...s,
+      kicker: noDash(s.kicker),
+      headline: noDash(s.headline),
+      body: s.body === undefined ? undefined : noDash(s.body),
+      specs: s.specs?.map((x) => ({ v: noDash(x.v), k: noDash(x.k) })),
+    })),
+  }
+}
+
 export function getDealerPreview(slug: string): DealerPreview | null {
-  return previews[slug] ?? null
+  const p = previews[slug]
+  return p ? { ...p, cars: p.cars.map(cleanCar) } : null
 }
 
 export function getAllDealerPreviewSlugs(): string[] {
