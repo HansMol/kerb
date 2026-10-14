@@ -3,6 +3,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { Resend } from 'resend'
 import { createServerClient } from '@/lib/supabase/server'
 import { chargeForLeads, ACTIVATION_THRESHOLD, PAUSE_AFTER_DAYS, REVIEW_FLAG_AFTER_DAYS, daysSince } from '@/lib/billing'
+import { isFoundingFree } from '@/lib/founding'
 
 export const dynamic = 'force-dynamic'
 
@@ -16,6 +17,8 @@ type Dealer = {
   subscription_status: 'not_activated' | 'awaiting_payment_method' | 'active' | 'past_due'
   billing_activated_at: string | null
   leads_invoiced_through: string | null
+  founding_dealer: boolean
+  free_until: string | null
 }
 
 async function countEnquiries(
@@ -128,7 +131,7 @@ export async function GET(req: NextRequest) {
 
   const { data: dealers, error } = await supabase
     .from('dealers')
-    .select('id, first_name, business_name, email, plan, stripe_customer_id, subscription_status, billing_activated_at, leads_invoiced_through')
+    .select('id, first_name, business_name, email, plan, stripe_customer_id, subscription_status, billing_activated_at, leads_invoiced_through, founding_dealer, free_until')
     .eq('status', 'approved')
 
   if (error) {
@@ -139,6 +142,12 @@ export async function GET(req: NextRequest) {
 
   for (const dealer of (dealers ?? []) as Dealer[]) {
     try {
+      // Founding dealers (invite link) are never activated, reminded, paused or billed
+      if (isFoundingFree(dealer, now)) {
+        results.push({ dealer_id: dealer.id, action: 'founding_free' })
+        continue
+      }
+
       if (dealer.subscription_status === 'not_activated') {
         const total = await countEnquiries(supabase, dealer.id, null)
         if (total >= ACTIVATION_THRESHOLD) {

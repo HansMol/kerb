@@ -414,7 +414,8 @@ function SuccessScreen({ data }: { data: WizardData }) {
 }
 
 // ── Wizard ────────────────────────────────────────────────────────────────
-export function DealerWizard({ initialPlan }: { initialPlan?: 'solo' | 'pro' }) {
+export function DealerWizard({ initialPlan, inviteCode }: { initialPlan?: 'solo' | 'pro'; inviteCode?: string }) {
+  const founding = !!inviteCode
   const [step, setStep]               = useState(1)
   const [data, setData]               = useState<Partial<WizardData>>({})
   const [submitting, setSubmitting]   = useState(false)
@@ -488,7 +489,7 @@ export function DealerWizard({ initialPlan }: { initialPlan?: 'solo' | 'pro' }) 
       const res = await fetch('/api/dealers/register', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...final, isSoleTrader, verifiedVia, plan }),
+        body: JSON.stringify({ ...final, isSoleTrader, verifiedVia, plan, inviteCode }),
       })
 
       if (!res.ok) {
@@ -529,11 +530,11 @@ export function DealerWizard({ initialPlan }: { initialPlan?: 'solo' | 'pro' }) 
     <div className="max-w-lg mx-auto px-4">
       <div className="mb-8">
         <p className="text-[11px] font-semibold tracking-[0.14em] uppercase text-[#C4C6CC] mb-3">
-          Dealer registration
+          {founding ? 'Founding dealer' : 'Dealer registration'}
         </p>
         <h1 className="text-[28px] sm:text-[36px] font-light text-white tracking-tight leading-tight">
-          List your inventory.<br />
-          <span className="text-[#6E6E73]">It costs nothing.</span>
+          {founding ? <>Welcome to Kerb.<br /><span className="text-[#6E6E73]">Free as a founding dealer.</span></> : <>List your inventory.<br />
+          <span className="text-[#6E6E73]">It costs nothing.</span></>}
         </h1>
       </div>
 
@@ -545,7 +546,8 @@ export function DealerWizard({ initialPlan }: { initialPlan?: 'solo' | 'pro' }) 
         {step === 1 && (
           <form onSubmit={onStep1} className="flex flex-col gap-5">
 
-            {/* Plan selector */}
+            {/* Plan selector: hidden for founding dealers, who never see pricing */}
+            {!founding && (
             <div className="pb-5 border-b border-[#1C1C1E]">
               <p className="text-[11px] font-semibold tracking-[0.1em] uppercase text-[#6E6E73] mb-2">Your plan</p>
               <div className="flex gap-2 p-1 bg-[#1C1C1E] rounded-lg">
@@ -572,6 +574,7 @@ export function DealerWizard({ initialPlan }: { initialPlan?: 'solo' | 'pro' }) 
                 No payment required now. You won&apos;t be charged until you&apos;ve had 3 real buyer enquiries — and after that, only in months we send you one.
               </p>
             </div>
+            )}
 
             <div className="grid grid-cols-2 gap-4">
               <Field label="First name" error={form1.formState.errors.firstName?.message}>

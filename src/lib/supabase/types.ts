@@ -22,12 +22,15 @@ type DealerRow = {
   subscription_status: 'not_activated' | 'awaiting_payment_method' | 'active' | 'past_due'
   billing_activated_at: string | null
   leads_invoiced_through: string | null
+  founding_dealer: boolean
+  free_until: string | null
+  invite_code: string | null
   created_at: string
 }
 
 type DealerInsert =
-  Omit<DealerRow, 'id' | 'created_at' | 'slug' | 'subscription_status' | 'billing_activated_at' | 'leads_invoiced_through'>
-  & Partial<Pick<DealerRow, 'slug' | 'subscription_status' | 'billing_activated_at' | 'leads_invoiced_through'>>
+  Omit<DealerRow, 'id' | 'created_at' | 'slug' | 'subscription_status' | 'billing_activated_at' | 'leads_invoiced_through' | 'founding_dealer' | 'free_until' | 'invite_code'>
+  & Partial<Pick<DealerRow, 'slug' | 'subscription_status' | 'billing_activated_at' | 'leads_invoiced_through' | 'founding_dealer' | 'free_until' | 'invite_code'>>
 type DealerUpdate = Partial<Omit<DealerRow, 'id' | 'created_at'>>
 
 type ListingRow = {
@@ -145,7 +148,16 @@ type DealerContentPermissionRow = {
 
 type DealerContentPermissionInsert = Omit<DealerContentPermissionRow, 'id' | 'created_at'>
 
-export type { DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate, PublicListingRow, EnquiryRow, EnquiryInsert, AdvertiserCategory, AdvertiserRow, AdvertiserClickRow, AdvertiserApplicationRow, WaitlistEntryRow, WaitlistEntryInsert, PhoneRevealEventRow, PhoneRevealEventInsert, DealerContentPermissionRow, DealerContentPermissionInsert }
+type DealerInviteRow = {
+  code: string
+  label: string
+  free_until: string | null
+  created_at: string
+  used_at: string | null
+  used_by_dealer_id: string | null
+}
+
+export type { DealerInviteRow, DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate, PublicListingRow, EnquiryRow, EnquiryInsert, AdvertiserCategory, AdvertiserRow, AdvertiserClickRow, AdvertiserApplicationRow, WaitlistEntryRow, WaitlistEntryInsert, PhoneRevealEventRow, PhoneRevealEventInsert, DealerContentPermissionRow, DealerContentPermissionInsert }
 
 export type Database = {
   public: {
@@ -234,6 +246,12 @@ export type Database = {
         Row: DealerContentPermissionRow
         Insert: DealerContentPermissionInsert
         Update: never
+        Relationships: []
+      }
+      dealer_invites: {
+        Row: DealerInviteRow
+        Insert: Pick<DealerInviteRow, 'code' | 'label'> & Partial<Pick<DealerInviteRow, 'free_until'>>
+        Update: Partial<Pick<DealerInviteRow, 'used_at' | 'used_by_dealer_id' | 'free_until'>>
         Relationships: []
       }
     }

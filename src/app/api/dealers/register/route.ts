@@ -3,6 +3,7 @@ import { Resend } from 'resend'
 import { auth } from '@clerk/nextjs/server'
 import { NextResponse } from 'next/server'
 import { createServerClient } from '@/lib/supabase/server'
+import { findUnusedInvite, type FoundingInvite } from '@/lib/founding'
 
 function esc(s: string): string {
   return s
@@ -53,10 +54,32 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: 'Already registered' }, { status: 409 })
   }
 
-  // Create Stripe customer (no payment method — billing triggered on first enquiry)
+  // Founding dealer invite: claim the code before anything else, so a used
+  // link cannot register a second free dealer. Released again if the insert fails.
+  let invite: FoundingInvite | null = null
+  if (body.inviteCode) {
+    invite = await findUnusedInvite(supabase, body.inviteCode)
+    const { data: claimed } = invite
+      ? await supabase
+          .from('dealer_invites')
+          .update({ used_at: new Date().toISOString() })
+          .eq('code', invite.code)
+          .is('used_at', null)
+          .select('code')
+      : { data: null }
+    if (!invite || !claimed?.length) {
+      return NextResponse.json(
+        { error: 'This invite link has already been used or is not valid. Please contact Hans on 07503 576689.' },
+        { status: 400 },
+      )
+    }
+  }
+
+  // Create Stripe customer (no payment method — billing triggered on first enquiry).
+  // Founding dealers are never set up in Stripe.
   let stripeCustomerId: string | null = null
   const stripeKey = process.env.STRIPE_SECRET_KEY
-  if (stripeKey && stripeKey !== 'sk_test_REPLACE_ME') {
+  if (!invite && stripeKey && stripeKey !== 'sk_test_REPLACE_ME') {
     try {
       const stripe   = new Stripe(stripeKey)
       const customer = await stripe.customers.create({
@@ -127,13 +150,23 @@ export async function POST(request: Request) {
       plan:             body.plan ?? 'solo',
       slug,
       stripe_customer_id: stripeCustomerId,
+      founding_dealer:  !!invite,
+      free_until:       invite?.free_until ?? null,
+      invite_code:      invite?.code ?? null,
     })
     .select('id')
     .single()
 
   if (error) {
     console.error('Dealer registration error:', error)
+    if (invite) {
+      await supabase.from('dealer_invites').update({ used_at: null }).eq('code', invite.code)
+    }
     return NextResponse.json({ error: 'Registration failed' }, { status: 500 })
+  }
+
+  if (invite) {
+    await supabase.from('dealer_invites').update({ used_by_dealer_id: data.id }).eq('code', invite.code)
   }
 
   // Dealer-facing copy promises "a real person will call you within one
@@ -159,7 +192,7 @@ export async function POST(request: Request) {
               <tr><td style="padding:8px 0;border-bottom:1px solid #E5E5E7;color:#6E6E73">Contact</td><td style="padding:8px 0;border-bottom:1px solid #E5E5E7">${esc(body.firstName)} ${esc(body.lastName)}</td></tr>
               <tr><td style="padding:8px 0;border-bottom:1px solid #E5E5E7;color:#6E6E73">Email</td><td style="padding:8px 0;border-bottom:1px solid #E5E5E7"><a href="mailto:${esc(body.email)}" style="color:#0A0A0F">${esc(body.email)}</a></td></tr>
               <tr><td style="padding:8px 0;border-bottom:1px solid #E5E5E7;color:#6E6E73">Phone</td><td style="padding:8px 0;border-bottom:1px solid #E5E5E7"><a href="tel:${esc(body.phone)}" style="color:#0A0A0F">${esc(body.phone)}</a></td></tr>
-              <tr><td style="padding:8px 0;border-bottom:1px solid #E5E5E7;color:#6E6E73">Plan</td><td style="padding:8px 0;border-bottom:1px solid #E5E5E7">${esc((body.plan ?? 'solo') as string)}</td></tr>
+              <tr><td style="padding:8px 0;border-bottom:1px solid #E5E5E7;color:#6E6E73">Plan</td><td style="padding:8px 0;border-bottom:1px solid #E5E5E7">${invite ? `Founding dealer, free (invite: ${esc(invite.label)})` : esc((body.plan ?? 'solo') as string)}</td></tr>
               <tr><td style="padding:8px 0;color:#6E6E73">Verification</td><td style="padding:8px 0">${esc(verifiedVia)} — status: ${dealerStatus}</td></tr>
             </table>
 
