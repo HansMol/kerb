@@ -545,7 +545,8 @@ export function DealerWizard({ initialPlan, inviteCode }: { initialPlan?: 'solo'
       }
 
       // Sole trader → redirect to Stripe Identity
-      if (isSoleTrader) {
+      // Invited sole traders are approved on sign-up: no Stripe Identity step
+      if (isSoleTrader && !founding) {
         const idRes = await fetch('/api/stripe/identity', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
@@ -711,8 +712,8 @@ export function DealerWizard({ initialPlan, inviteCode }: { initialPlan?: 'solo'
               />
             </Field>
 
-            {/* Sole trader: ID verification notice */}
-            {isSoleTrader && (
+            {/* Sole trader: ID verification notice (not for invited dealers, who skip it) */}
+            {isSoleTrader && !founding && (
               <div className="flex items-start gap-3 bg-[#C4C6CC]/8 border border-[#C4C6CC]/20 rounded-lg px-4 py-3">
                 <div className="w-5 h-5 rounded-full bg-[#C4C6CC]/15 border border-[#C4C6CC]/30 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <span className="text-[10px] text-[#C4C6CC] font-bold">i</span>

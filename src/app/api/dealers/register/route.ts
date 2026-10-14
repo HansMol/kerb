@@ -126,6 +126,16 @@ export async function POST(request: Request) {
     }
   }
 
+  // An invited dealer was vetted by Hans before the invite was made (Hans,
+  // 14 Oct 2026), so they are approved now. Sole traders skip the Stripe
+  // Identity passport-and-selfie check; companies keep their Companies House
+  // result on record. Without approval a dealer is hidden from /dealers and
+  // buyers cannot reveal their phone number.
+  if (invite && dealerStatus !== 'approved') {
+    dealerStatus = 'approved'
+    verifiedVia = body.isSoleTrader ? 'Founding invite, sole trader (vetted by Hans)' : 'Founding invite (vetted by Hans)'
+  }
+
   const slug = await generateSlug(supabase, body.businessName)
 
   const { data, error } = await supabase
