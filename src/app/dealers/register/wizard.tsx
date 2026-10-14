@@ -31,6 +31,15 @@ const step3Schema = z.object({
   termsAccepted: z.literal(true, { error: () => ({ message: 'You must accept the terms to register' }) }),
 })
 
+// Founding dealers (invite link, Hans 14 Oct 2026) skip the stock profile:
+// their stock tells us more than these questions, and the goal is to get
+// them to add cars with as little friction as possible. The terms tick stays.
+const step3FoundingSchema = step3Schema.extend({
+  makes:         z.array(z.string()),
+  inventorySize: z.string(),
+  priceRange:    z.string(),
+})
+
 type Step1Data = z.infer<typeof step1Schema>
 type Step2Data = z.infer<typeof step2Schema>
 type Step3Data = z.infer<typeof step3Schema>
@@ -65,6 +74,12 @@ const STEPS = [
   { number: 1, label: 'Your details' },
   { number: 2, label: 'Your dealership' },
   { number: 3, label: 'Your stock' },
+]
+
+const FOUNDING_STEPS = [
+  { number: 1, label: 'Your details' },
+  { number: 2, label: 'Your dealership' },
+  { number: 3, label: 'Confirm' },
 ]
 
 // ── Companies House search ────────────────────────────────────────────────
@@ -282,10 +297,10 @@ function OptionCard({ label, selected, onClick }: { label: string; selected: boo
 }
 
 // ── Step indicator ────────────────────────────────────────────────────────
-function StepIndicator({ current }: { current: number }) {
+function StepIndicator({ current, steps = STEPS }: { current: number; steps?: typeof STEPS }) {
   return (
     <div className="flex items-start gap-0 mb-10">
-      {STEPS.map((step, i) => (
+      {steps.map((step, i) => (
         <div key={step.number} className="flex items-start">
           <div className="flex flex-col items-center gap-1.5">
             <div className={`w-8 h-8 rounded-full flex items-center justify-center text-[12px] font-semibold transition-colors ${
@@ -303,7 +318,7 @@ function StepIndicator({ current }: { current: number }) {
               {step.label}
             </span>
           </div>
-          {i < STEPS.length - 1 && (
+          {i < steps.length - 1 && (
             <div className={`h-px w-16 sm:w-24 mx-2 mt-4 transition-colors ${
               current > step.number ? 'bg-[#C4C6CC]' : 'bg-[#2A2A2E]'
             }`} />
@@ -346,8 +361,38 @@ function StepNav({ onBack, isFirst, isLast, submitting }: {
 }
 
 // ── Success screen ────────────────────────────────────────────────────────
-function SuccessScreen({ data }: { data: WizardData }) {
+function SuccessScreen({ data, founding }: { data: WizardData; founding?: boolean }) {
   const isVerified = data.companyStatus === 'active'
+
+  // Founding dealers were invited by Hans, so the next step is their cars, not verification
+  if (founding) {
+    return (
+      <div className="max-w-lg mx-auto px-4 text-center">
+        <div className="w-16 h-16 rounded-full bg-[#C4C6CC] flex items-center justify-center mx-auto mb-6">
+          <Check className="text-[#0A0A0F]" size={28} />
+        </div>
+        <h1 className="text-[32px] font-light text-white tracking-tight mb-3">
+          You&apos;re in, {data.firstName}.
+        </h1>
+        <p className="text-[16px] text-[#6E6E73] leading-relaxed mb-8">
+          {data.businessName} is a founding dealer on Kerb. Add your cars with the photos you already have,
+          and we&apos;ll feature the best of them on Instagram, credited to you.
+        </p>
+        <a
+          href="/dashboard/listings/new"
+          className="inline-flex items-center gap-2 bg-[#C4C6CC] hover:bg-[#A8AAB0] text-[#0A0A0F] text-[14px] font-semibold px-6 py-3 rounded-lg transition-colors mb-4"
+        >
+          Add your first car <ChevronRight size={16} />
+        </a>
+        <p className="text-[13px] text-[#6E6E73] mb-8">
+          Lots of cars?{' '}
+          <a href="/dashboard/listings/bulk-upload" className="text-[#C4C6CC] underline underline-offset-2">Upload a spreadsheet</a>
+          {' '}or{' '}
+          <a href="/dashboard" className="text-[#C4C6CC] underline underline-offset-2">go to your dashboard</a>.
+        </p>
+      </div>
+    )
+  }
 
   return (
     <div className="max-w-lg mx-auto px-4 text-center">
@@ -447,7 +492,7 @@ export function DealerWizard({ initialPlan, inviteCode }: { initialPlan?: 'solo'
   })
 
   const form3 = useForm<Step3Data>({
-    resolver: zodResolver(step3Schema),
+    resolver: zodResolver(founding ? step3FoundingSchema : step3Schema),
     defaultValues: {
       makes:         data.makes         ?? [],
       inventorySize: data.inventorySize ?? '',
@@ -524,7 +569,7 @@ export function DealerWizard({ initialPlan, inviteCode }: { initialPlan?: 'solo'
     }
   })
 
-  if (done) return <SuccessScreen data={data as WizardData} />
+  if (done) return <SuccessScreen data={data as WizardData} founding={founding} />
 
   return (
     <div className="max-w-lg mx-auto px-4">
@@ -538,7 +583,7 @@ export function DealerWizard({ initialPlan, inviteCode }: { initialPlan?: 'solo'
         </h1>
       </div>
 
-      <StepIndicator current={step} />
+      <StepIndicator current={step} steps={founding ? FOUNDING_STEPS : STEPS} />
 
       <div className="bg-[#111113] border border-[#1C1C1E] rounded-xl p-6 sm:p-8">
 
@@ -700,6 +745,12 @@ export function DealerWizard({ initialPlan, inviteCode }: { initialPlan?: 'solo'
         {/* Step 3 — Stock profile */}
         {step === 3 && (
           <form onSubmit={onStep3} className="flex flex-col gap-6">
+            {founding && (
+              <p className="text-[15px] text-[#C4C6CC] leading-relaxed">
+                Last step. Once you&apos;re in, you can add your cars straight away.
+              </p>
+            )}
+            {!founding && (<>
             <div>
               <label className="text-[11px] font-semibold tracking-[0.1em] uppercase text-[#6E6E73] mb-3 block">
                 Makes you typically stock
@@ -750,6 +801,7 @@ export function DealerWizard({ initialPlan, inviteCode }: { initialPlan?: 'solo'
                 ))}
               </div>
             </Field>
+            </>)}
 
             <div className="border border-[#2A2A2E] rounded-lg p-4 flex flex-col gap-3">
               <p className="text-[11px] font-semibold tracking-[0.1em] uppercase text-[#6E6E73]">Founding commitments — binding at signup</p>
