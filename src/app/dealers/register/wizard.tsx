@@ -210,7 +210,7 @@ function CompanySearch({
           <Check size={13} className="text-[#C4C6CC] flex-shrink-0" />
           <p className="text-[12px] text-white">
             <span className="font-semibold">{selected.title}</span>
-            <span className="text-[#6E6E73]"> — active · {selected.company_number}</span>
+            <span className="text-[#6E6E73]"> - active · {selected.company_number}</span>
           </p>
         </div>
       )}
@@ -219,7 +219,7 @@ function CompanySearch({
         <div className="flex items-center gap-2 px-3 py-2 bg-[#1C1C1E] border border-[#2A2A2E] rounded-lg">
           <AlertCircle size={13} className="text-[#6E6E73] flex-shrink-0" />
           <p className="text-[12px] text-[#6E6E73]">
-            <span className="text-white font-semibold">{selected.title}</span> is listed as <span className="font-semibold">{selected.company_status}</span> on Companies House — we can&apos;t verify this automatically. <span className="text-[#C4C6CC]">Contact us and we&apos;ll verify you another way.</span>
+            <span className="text-white font-semibold">{selected.title}</span> is listed as <span className="font-semibold">{selected.company_status}</span> on Companies House - we can&apos;t verify this automatically. <span className="text-[#C4C6CC]">Contact us and we&apos;ll verify you another way.</span>
           </p>
         </div>
       )}
@@ -229,7 +229,7 @@ function CompanySearch({
         <p className="text-[12px] text-[#6E6E73] px-1">
           No results found.{' '}
           <span className="text-[#C4C6CC]">Sole trader or not registered?</span>{' '}
-          Fill in your details below — we&apos;ll verify you another way.
+          Fill in your details below - we&apos;ll verify you another way.
         </p>
       )}
     </div>
@@ -425,7 +425,7 @@ function SuccessScreen({ data, founding }: { data: WizardData; founding?: boolea
             ]
           : [
               { title: 'We verify your dealership', body: 'A quick call to confirm your details before your listings go live.' },
-              { title: 'Your inventory goes live', body: 'We add your first batch of cars together — no fiddly upload portals.' },
+              { title: 'Your inventory goes live', body: 'We add your first batch of cars together - no fiddly upload portals.' },
               { title: 'Buyers start calling you', body: 'Every enquiry routes straight to your phone. No platform inbox, no delays.' },
             ]
         ).map((item, i) => (
@@ -605,7 +605,7 @@ export function DealerWizard({ initialPlan, inviteCode }: { initialPlan?: 'solo'
                     plan === 'solo' ? 'bg-[#C4C6CC] text-[#0A0A0F]' : 'text-[#6E6E73] hover:text-white'
                   }`}
                 >
-                  Solo — £55/mo
+                  Solo - £55/mo
                 </button>
                 <button
                   type="button"
@@ -614,11 +614,11 @@ export function DealerWizard({ initialPlan, inviteCode }: { initialPlan?: 'solo'
                     plan === 'pro' ? 'bg-[#C4C6CC] text-[#0A0A0F]' : 'text-[#6E6E73] hover:text-white'
                   }`}
                 >
-                  Pro — £132/mo
+                  Pro - £132/mo
                 </button>
               </div>
               <p className="text-[11px] text-[#6E6E73] mt-2 px-1">
-                No payment required now. You won&apos;t be charged until you&apos;ve had 3 real buyer enquiries — and after that, only in months we send you one.
+                No payment required now. You won&apos;t be charged until you&apos;ve had 3 real buyer enquiries - and after that, only in months we send you one.
               </p>
             </div>
             )}
@@ -806,15 +806,15 @@ export function DealerWizard({ initialPlan, inviteCode }: { initialPlan?: 'solo'
             </>)}
 
             <div className="border border-[#2A2A2E] rounded-lg p-4 flex flex-col gap-3">
-              <p className="text-[11px] font-semibold tracking-[0.1em] uppercase text-[#6E6E73]">Founding commitments — binding at signup</p>
+              <p className="text-[11px] font-semibold tracking-[0.1em] uppercase text-[#6E6E73]">Founding commitments - binding at signup</p>
               <ul className="flex flex-col gap-1.5">
                 {[
-                  'Enquiry Ownership — every enquiry goes directly to you. We never intercept or monetise your enquiries.',
-                  'Search Integrity — organic results are ordered by relevance and recency only. No dealer can pay to rank above another.',
-                  'Exit With Your Data — your data belongs to you. Full export available at any time. Leaving costs nothing.',
+                  'Enquiry Ownership - every enquiry goes directly to you. We never intercept or monetise your enquiries.',
+                  'Search Integrity - organic results are ordered by relevance and recency only. No dealer can pay to rank above another.',
+                  'Exit With Your Data - your data belongs to you. Full export available at any time. Leaving costs nothing.',
                 ].map((line, i) => (
                   <li key={i} className="flex items-start gap-2 text-[13px] text-[#6E6E73]">
-                    <span className="text-[#C4C6CC] mt-0.5 flex-shrink-0">—</span>
+                    <span className="text-[#C4C6CC] mt-0.5 flex-shrink-0">-</span>
                     <span>{line}</span>
                   </li>
                 ))}
