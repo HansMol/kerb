@@ -796,7 +796,9 @@ export function DealerWizard({ initialPlan, inviteCode }: { initialPlan?: 'solo'
       </div>
 
       <p className="text-center text-[12px] text-[#6E6E73] mt-6">
-        No payment required. No commitment. A real person will call you within one working day.
+        {founding
+          ? 'A real person will call you within one working day.'
+          : 'No payment required. No commitment. A real person will call you within one working day.'}
       </p>
     </div>
   )
