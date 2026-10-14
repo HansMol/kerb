@@ -204,7 +204,69 @@ export async function POST(request: Request) {
       console.error('[DealerRegister] Failed to send notification email:', err)
       // Non-fatal — registration already succeeded, don't fail the request over a notification
     }
+
+    // Welcome email to a dealer who joined through an invite. Wording approved
+    // by Hans, 14 Oct 2026: gratitude, what to expect, no "founding dealer".
+    if (invite) {
+      try {
+        await resend.emails.send({
+          from: 'Kerb <hello@kerb.autos>',
+          to: body.email,
+          replyTo: 'hans@kerb.autos',
+          subject: `Welcome to Kerb, ${body.firstName}`,
+          text: welcomeText(body.firstName, body.businessName),
+          html: welcomeHtml(body.firstName, body.businessName),
+        })
+      } catch (err) {
+        console.error('[DealerRegister] Failed to send welcome email:', err)
+      }
+    }
   }
 
   return NextResponse.json({ dealerId: data.id }, { status: 201 })
+}
+
+function welcomeText(firstName: string, business: string): string {
+  return [
+    `Hi ${firstName},`,
+    '',
+    `Thank you for joining Kerb. Having ${business} with us this early means a lot, and I'm grateful for your trust.`,
+    '',
+    "Your dealership is now set up. Here's what to expect:",
+    '',
+    '1. Add your cars with the photos you already have: https://kerb.autos/dashboard/listings/new. Each car appears on kerb.autos for buyers as soon as you publish it.',
+    '2. Buyers\' enquiries come straight to you. We never sit in the middle.',
+    `3. We'll feature the best of your cars on Instagram at @realkerbappeal, credited to ${business} with a link back to you.`,
+    '',
+    "Lots of cars? Send me your stock list in any format, or a link to it, and we'll load them for you.",
+    '',
+    'Questions? Reply to this email or call me on 07503 576689.',
+    '',
+    'Kind regards',
+    '',
+    'Hans Mol',
+    'Founder, Kerb',
+  ].join('\n')
+}
+
+function welcomeHtml(firstName: string, business: string): string {
+  const f = esc(firstName)
+  const b = esc(business)
+  const p = 'margin:0 0 16px;line-height:1.6'
+  return `
+    <div style="font-family:sans-serif;max-width:560px;margin:0 auto;color:#0A0A0F;font-size:15px">
+      <p style="${p}">Hi ${f},</p>
+      <p style="${p}">Thank you for joining Kerb. Having ${b} with us this early means a lot, and I'm grateful for your trust.</p>
+      <p style="${p}">Your dealership is now set up. Here's what to expect:</p>
+      <ol style="margin:0 0 16px;padding-left:20px;line-height:1.6">
+        <li style="margin-bottom:8px">Add your cars with the photos you already have: <a href="https://kerb.autos/dashboard/listings/new" style="color:#0A0A0F">kerb.autos/dashboard/listings/new</a>. Each car appears on kerb.autos for buyers as soon as you publish it.</li>
+        <li style="margin-bottom:8px">Buyers' enquiries come straight to you. We never sit in the middle.</li>
+        <li>We'll feature the best of your cars on Instagram at @realkerbappeal, credited to ${b} with a link back to you.</li>
+      </ol>
+      <p style="${p}">Lots of cars? Send me your stock list in any format, or a link to it, and we'll load them for you.</p>
+      <p style="${p}">Questions? Reply to this email or call me on 07503 576689.</p>
+      <p style="${p}">Kind regards</p>
+      <p style="margin:0;line-height:1.6">Hans Mol<br>Founder, Kerb</p>
+    </div>
+  `
 }

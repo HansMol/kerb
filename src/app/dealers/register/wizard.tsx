@@ -450,9 +450,10 @@ function SuccessScreen({ data, founding }: { data: WizardData; founding?: boolea
         </a>
       )}
 
+      {/* "Confirmation sent to" removed 14 Oct 2026: the standard sign-up sends the dealer no email */}
       <div className="flex items-center justify-center gap-2 text-[13px] text-[#6E6E73]">
         <Phone size={14} />
-        <span>Confirmation sent to <span className="text-white">{data.email}</span></span>
+        <span>We&apos;ll be in touch on <span className="text-white">{data.phone}</span></span>
       </div>
     </div>
   )
