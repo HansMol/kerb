@@ -25,12 +25,14 @@ type DealerRow = {
   founding_dealer: boolean
   free_until: string | null
   invite_code: string | null
+  founding_check_at: string | null
+  founding_check: string | null
   created_at: string
 }
 
 type DealerInsert =
-  Omit<DealerRow, 'id' | 'created_at' | 'slug' | 'subscription_status' | 'billing_activated_at' | 'leads_invoiced_through' | 'founding_dealer' | 'free_until' | 'invite_code'>
-  & Partial<Pick<DealerRow, 'slug' | 'subscription_status' | 'billing_activated_at' | 'leads_invoiced_through' | 'founding_dealer' | 'free_until' | 'invite_code'>>
+  Omit<DealerRow, 'id' | 'created_at' | 'slug' | 'subscription_status' | 'billing_activated_at' | 'leads_invoiced_through' | 'founding_dealer' | 'free_until' | 'invite_code' | 'founding_check_at' | 'founding_check'>
+  & Partial<Pick<DealerRow, 'slug' | 'subscription_status' | 'billing_activated_at' | 'leads_invoiced_through' | 'founding_dealer' | 'free_until' | 'invite_code' | 'founding_check_at' | 'founding_check'>>
 type DealerUpdate = Partial<Omit<DealerRow, 'id' | 'created_at'>>
 
 type ListingRow = {
@@ -155,6 +157,10 @@ type DealerInviteRow = {
   created_at: string
   used_at: string | null
   used_by_dealer_id: string | null
+  company_number: string | null
+  company_name: string | null
+  postcode: string | null
+  source: string | null
 }
 
 export type { DealerInviteRow, DealerRow, DealerInsert, DealerUpdate, ListingRow, ListingInsert, ListingUpdate, PublicListingRow, EnquiryRow, EnquiryInsert, AdvertiserCategory, AdvertiserRow, AdvertiserClickRow, AdvertiserApplicationRow, WaitlistEntryRow, WaitlistEntryInsert, PhoneRevealEventRow, PhoneRevealEventInsert, DealerContentPermissionRow, DealerContentPermissionInsert }
@@ -250,7 +256,7 @@ export type Database = {
       }
       dealer_invites: {
         Row: DealerInviteRow
-        Insert: Pick<DealerInviteRow, 'code' | 'label'> & Partial<Pick<DealerInviteRow, 'free_until'>>
+        Insert: Pick<DealerInviteRow, 'code' | 'label'> & Partial<Pick<DealerInviteRow, 'free_until' | 'company_number' | 'company_name' | 'postcode' | 'source'>>
         Update: Partial<Pick<DealerInviteRow, 'used_at' | 'used_by_dealer_id' | 'free_until'>>
         Relationships: []
       }

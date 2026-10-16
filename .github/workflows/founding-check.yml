@@ -1,0 +1,25 @@
+name: Founding Dealer Check
+
+on:
+  schedule:
+    # 07:00 UTC every day: checks founding dealers who signed up since the last run
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check new founding dealers against Companies House
+        run: |
+          response=$(curl -s -w "\n%{http_code}" \
+            -H "Authorization: Bearer ${{ secrets.CRON_SECRET }}" \
+            https://kerb.autos/api/cron/founding-check)
+          body=$(echo "$response" | head -n -1)
+          status=$(echo "$response" | tail -n 1)
+          echo "HTTP $status"
+          echo "$body"
+          if [ "$status" != "200" ]; then
+            echo "::error::Founding dealer check returned HTTP $status"
+            exit 1
+          fi
